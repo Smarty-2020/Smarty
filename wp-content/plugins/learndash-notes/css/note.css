@@ -1,0 +1,136 @@
+.nt-note-wrapper, .nt-note-tab {background: rgba(0,0,0,.95);position: fixed;z-index: 9000;right: 30px;}
+#nt-course-note {margin: 0 !important;}
+.nt-note-wrapper {top: 30%;right: 30px;}
+.nt-note-tab {text-align: center;display: block;color: #fff;font-weight: bold;bottom: 0;text-decoration: none;border-bottom: 0 !important;font-size: 14px;box-shadow: none !important;transition: all ease-in-out 250ms;}
+.nt-note-tab:hover {color: #fff;opacity: .8;}
+.nt-note-tab i {display: block;padding: 12px 15px 15px;background: rgba(0,0,0,.1);}
+.nt-note-tab::after {display: none;}
+.nt-note-tab span {display: inline-block;padding: 12px 30px 15px 15px;text-transform: uppercase;font-weight: bold;font-size: 14px;letter-spacing: 1px;}
+#nt-note-body {color: #000;}
+.ld-note-icon {background: #f1f1f1;color: #333;padding: 5px 10px;margin-left: .5em;text-transform: none !important;letter-spacing: 0 !important;border-radius: 3px;}
+.ld-table-list-item .ld-note-icon {font-weight: bold;font-size: 12px;color: #333;display: inline-block;margin: 10px 0 0;padding: 0 10px;}
+.nt-note-tab.top {bottom: auto;top: 0;border-radius: 0 0 2px 2px;}
+body.admin-bar .nt-note-tab.top {top: 32px;}
+.nt-note-tab i {display: inline-block;letter-spacing: 1px;font-size: 14px;color: #fff;}
+.ldnt-content-notes {text-align: center;position: relative;z-index: 9999;}
+.ldnt-content-notes .nt-note-tab {position: static;display: inline-block;margin: 20px auto;color: #fff;}
+.ldnt-content-notes .nt-note-tab i {font-size: 16px;}
+.nt-screen-reader-text {display: inline-block;}
+.nt-note-wrapper {top: 200px;right: 15px;min-width: 350px;max-width: 350px;width: auto;box-sizing: content-box;}
+.ldnt-in-content-notes .nt-note-wrapper {max-width: 100%;}
+.nt-utility-links {text-align: center;font-size: 12px;clear: both;}
+.nt-utility-links span {opacity: .5;}
+#ldnt-shortcode .nt-location {font-style: italic;font-size: 12px;}
+..nt-utility-links a {color: #fff;text-decoration: underline;}
+.nt-note-wrapper.nt-dragged {right: auto;}
+.nt-note-wrapper.nt-resized {max-width: unset;min-width: unset;}
+.nt-note-wrapper #nt-note-body_ifr {max-width: 100%;}
+.note-header-title {background: rgba(66,66,66,.8);margin: -15px -25px 10px -25px;border-bottom: 1px solid rgba(255,255,255,.15);padding: 15px 25px 15px 25px;text-transform: uppercase;font-weight: bold;letter-spacing: 2px;font-size: 12px;cursor: grab;color: #fff;}
+.nt-screen-reader-text {display: inline-block;}
+.note-body textarea, .note-body input {margin: 0 0 15px 0;font-family: "arial","helvetica",san-serif;padding: 5px 10px;border: 0 !important;background: #f9f9f9;border-radius: 0 !important;box-shadow: 0 !important;}
+.note-body input:focus {background: #fff;}
+.nt-close-icon {z-index: 5;color: #fff;font-weight: normal;position: absolute;right: 10px;top: 13px;height: 50px;font-size: 18px;width: 30px;border-radius: 100%;text-align: center;cursor: pointer;}
+#nt-note-actions {display: block;display: flex;list-style: none;margin: 0;padding: 0;justify-content: space-between;width: 100%;background: #f3f3f3;}
+#nt-note-actions li {width: 15%;list-style: none;margin: 0;padding: 0;height: 55px;}
+#nt-note-actions li:first-child {width: 75%;}
+#nt-note-actions li:nth-child(2) {border-right: 1px solid rgba(0,0,0,.1);}
+#nt-note-actions li:nth-child(3) {border-right: 1px solid rgba(0,0,0,.1);}
+#nt-note-actions li a {text-decoration: none !important;border: 0 !important;box-shadow: none;}
+.coursenote-embedded-editor #nt-note-actions li:nth-child(2), .coursenote-embedded-editor #nt-note-actions li:nth-child(3) {border: 0;border-left: 1px solid #fff;}
+#nt-note-actions li a {font-size: 18px;color: #000;text-decoration: none;transition: all ease-in-out 250ms;text-align: center;display: block;height: 55px;line-height: 55px;}
+#nt-note-actions li a:hover {background: #fff;box-shadow: 0 0 10px rgba(0,0,0,.1);color: #000;}
+#nt-note-submit {background: #bdd537;color: #3a4111;border: 0px;border: 0;font-weight: bold;font-size: 14px;text-transform: uppercase;letter-spacing: 1px;width: 100%;padding: 0 15px;margin: 0;height: 55px;line-height: 55px;}
+#nt-note-submit:hover {cursor: pointer;background: #fff !important;color: #333 !important;box-shadow: 0 0 5px rgba(0,0,0,.1);}
+#nt-utility-links {background: #333;color: #999;margin: 0;border-radius: 0 0 4px 4px;text-align: center;}
+#nt-utility-links a {padding: 10px 15px;display: block;text-decoration: none;text-align: center;color: #fff;font-size: 12px;transition: all ease-in-out 250ms;}
+#nt-utility-links a:hover {background: rgba(255,255,255,.1);}
+#nt-utility-links.all-notes {display: flex;justify-content: center;}
+#nt-utility-links.all-notes a {width: 50%;}
+#nt-utility-links.all-notes a:first-child {border-right: 1px solid rgba(255,255,255,.1);}
+.nt-utility-links a {color: #fff;}
+.coursenote-embedded-editor #wp-nt-note-body-wrap {padding: 15px;background: #f3f3f3;margin: 0 0 1px 0;border-radius: 4px 4px 0 0;}
+#nt-note-submit:hover {background: #999;color: #fff;}
+#nt-note-submit.nt-note-saving {background: #999;color: #fff;}
+#nt-note-title-bar {border-radius: 4px 4px 0 0;color: #fff;text-align: left;padding: 15px;font-weight: normal;font-size: 16px;background: #000;position: relative;}
+#nt-note-title-field {padding: 15px;background: #f3f3f3;text-align: left;}
+#nt-note-title-field small {text-transform: uppercase;font-size: 12px;font-weight: bold;color: #555;}
+#nt-note-title-field input[type='text']#nt-note-title {background: transparent;text-align: left;padding: 5px 0;border-bottom: 2px dashed #aaa !important;margin: 0;display: block;font-size: 14px;font-family: "Arial","helvetica","san-serif";box-shadow: none;color: #333;}
+#nt-note-editor-body {padding: 15px;}
+#nt-note-actions-wrapper {display: flex;justify-content: space-between;}
+.note-body input {width: 100%;box-sizing: border-box;}
+.nt-note-submit {margin-top: 15px;}
+.nt-note-wrapper {display: none;box-shadow: 0 0 20px rgba(0,0,0,.15);cursor: all-scroll;background: #fff;border-radius: 4px;}
+#apf-response {margin: 10px 0;background: #bdd537;color: #3a4111;text-align: center;font-weight: bold;padding: 15px;display: none;}
+.nt-hide {display: none;}
+#nt_note_cont .ui-resizable, .nt-note-wrapper.ui-resizable {position: fixed !important;z-index: 9999;}
+.ui-resizable-handle {position: absolute;font-size: .1px;display: block;}
+.ui-resizable-disabled .ui-resizable-handle, .ui-resizable-autohide .ui-resizable-handle {display: none;}
+.ui-resizable-n {cursor: n-resize;height: 7px;width: 100%;top: -5px;left: 0;}
+.ui-resizable-s {cursor: s-resize;height: 7px;width: 100%;bottom: -5px;left: 0;}
+.ui-resizable-e {cursor: e-resize;width: 7px;right: -5px;top: 0;height: 100%;}
+.ui-resizable-w {cursor: w-resize;width: 7px;left: -5px;top: 0;height: 100%;}
+.ui-resizable-se {cursor: se-resize;width: 12px;height: 12px;right: 1px;bottom: 1px;}
+.ui-resizable-sw {cursor: sw-resize;width: 9px;height: 9px;left: -5px;bottom: -5px;}
+.ui-resizable-nw {cursor: nw-resize;width: 9px;height: 9px;left: -5px;top: -5px;}
+.ui-resizable-ne {cursor: ne-resize;width: 9px;height: 9px;right: -5px;top: -5px;}
+table.notes-listing, table.nt-course-list-table {border: 1px solid #ddd;width: 100%;}
+table.notes-listing a, table.nt-course-list-table a {text-decoration: none;box-shadow: none;border-bottom: 0;}
+table.notes-listing thead tr th:first-child {width: 7%;max-width: 50px;}
+table.nt-course-list-table {margin: 0 0 30px 0;}
+.nt-breadcrumbs {margin-bottom: 30px;padding-bottom: 15px;border-bottom: 1px solid #ddd;}
+table.nt-course-list-table td, table.nt-course-list-table th {padding: 20px;}
+table.notes-listing th {background: #333;color: #fff;}
+table.nt-course-list-table table {width: 100%;}
+table.nt-course-list-table > thead th {border-bottom: 1px solid #ddd;}
+table.nt-course-list-table > tbody > tr > td {border-bottom: 1px solid #eee;}
+.note-col {text-align: right;}
+table.nt-course-list-table tr td, table.notes-listing tr td {background: #fff;}
+table.notes-listing tr:nth-child( even ) td {background: #f3f3f3;}
+.ldnotes-hide {display: none;}
+.learndash-notes-utilities {list-style: none;margin: 0 !important;padding: 0px !important;float: right;}
+.learndash-notes-utilities li {display: inline-block;margin: 0 0 0 10px !important;padding: 0 !important;}
+.learndash-notes-utilities li a {width: 30px;height: 30px;line-height: 30px;transition: all ease-in-out 250ms;border-radius: 100%;display: inline-block;color: #333;font-size: 18px;text-align: center;box-shadow: 0 0 0 5px #efefef;}
+.learndash-notes-utilities li a:hover {transform: scale(1.25);}
+input.nt-live-search {float: right;margin-bottom: 10px;width: 50%;}
+#ldnt-shortcode table, #ldnt-shortcode table tr, #ldnt-shortcode table td, #ldnt-shortcode table th {border: 0;border-collapse: collapse;}
+#ldnt-shortcode table tr td, #ldnt-shortcode table tr th {padding: 20px;}
+#ldnt-shortcode tbody tr td {background: #f3f3f3;}
+#ldnt-shortcode tbody tr:nth-child(even) td {background: #fafafa;}
+#ldnt-shortcode tbody h5 a {text-decoration: none;}
+#ldnt-shortcode .ldnt-note-nav {margin: 0 !important;padding: 0 !important;list-style: none;}
+#ldnt-shortcode .ldnt-note-nav {float: right;text-align: right;}
+#ldnt-shortcode .ldnt-note-nav ul {margin: 0 !important;padding: 0 !important;display: inline-block;}
+#ldnt-shortcode .ldnt-note-nav ul li {list-style: none;display: inline-block;margin: 0 0 0 10px !important;padding: 0 !important;}
+#ldnt-shortcode .lds-bulk-download, #ldnt-shortcode .ldnt-note-nav ul li a {display: inline-block;padding: 15px;padding: 10px 15px;font-weight: bold;text-transform: uppercase;font-size: 14px;background: #fafafa;background: #333;letter-spacing: 1px;text-decoration: none;color: #fff;border: 0;cursor: pointer;line-height: 1.5em;}
+#ldnt-shortcode .ldnt-note-nav ul li a:hover {background: #555;}
+.ldnt-note-filters {margin: 20px 0;}
+#ldnt-shortcode .ldnt-note-filters input[type="text"] {border: 1px solid #ddd;padding: 5px 10px;font-size: 16px;box-shadow: none;display: inline-block;}
+#ldnt-shortcode .ldnt-select-wrap {border: 1px solid #ddd;margin: 0;padding: 0;display: inline-block;position: relative;}
+#ldnt-shortcode .ldnt-select-wrap::before {font-size: 16px;position: absolute;right: 5px;display: block;content: "↓";top: 5px;}
+#ldnt-shortcode .ldnt-select-wrap select {border: 0;margin: 0;display: inline-block;font-size: 16px;padding: 5px 40px 5px 10px;-moz-appearance: none;-webkit-appearance: none;appearance: none;}
+@media screen and ( max-width: 768px ) {.nt-note-wrapper *, .nt-note-tab * {box-sizing: border-box !important;-webkit-box-sizing: border-box !important;-moz-box-sizing: border-box !important;}
+	.nt-note-wrapper {position: fixed !important;width: auto !important;height: auto !important;left: 0 !important;right: 0 !important;bottom: 0 !important;top: auto !important;padding-bottom: 45px;max-width: unset !important;min-width: unset !important;border-radius: 0px;}
+	.nt-close-icon {left: 50%;margin-left: -15px;background: #fff;top: -15px;border-radius: 100%;color: #000;width: 30px;height: 30px;font-size: 16px;line-height: 30px;text-align: center;box-shadow: 0 0 10px rgba(0,0,0,.1);}
+	#nt-note-editor-body {overflow: scroll;}
+	#nt-note-editor-body, #wp-nt-note-body-wrap {height: 200px;}
+	#nt-note-title-bar {display: none;}
+	#nt-note-title-field {padding: 10px;}
+	#nt-note-actions-wrapper {position: fixed;bottom: 0;left: 0;right: 0;}
+	#nt-note-actions li a, #nt-note-actions li input#nt-note-submit, #nt-note-actions li {height: 45px;}
+	#nt-note-actions li a, #nt-note-actions li input#nt-note-submit {line-height: 45px;}
+	#nt-note-submit, #nt-note-title {font-size: 14px !important;}
+	.nt-note-wrapper br {display: none;}
+	#nt-note-submit {margin: 0;}
+	#wp-nt-note-body-editor-container {overflow-x: auto;}
+	#nt-note-body_ifr {width: auto !important;min-height: unset !important;}
+	.nt-note-wrapper .mce-statusbar {display: none;}
+	#mceu_7, #mceu_8 {display: none;}
+	.nt-hide-mobile, .nt-reset-dimensions {display: none !important;}}
+@font-face {font-family: "ldntnotepad";src: url("../assets/font/fontello.eot?283350512");src: url("../assets/font/fontello.eot?283350512#iefix") format("embedded-opentype"),url("../assets/font/fontello.woff2?283350512") format("woff2"),url("../assets/font/fontello.woff?283350512") format("woff"),url("../assets/font/fontello.ttf?283350512") format("truetype"),url("../assets/font/fontello.svg?283350512#fontello") format("svg");font-weight: normal;font-style: normal;}
+*
+.ldnt-alert {padding: 15px;text-align: center;background: #fcf8e3;font-weight: bold;margin: 30px 0;border: 2px solid #ebe7d2;}
+.nticon-print:before, .nticon-file-word:before, .nticon-file-pdf:before, .nticon-trash:before, [class^="nticon-"]:before, [class*=" nticon-"]:before {font-family: "ldntnotepad";font-style: normal;font-weight: normal;speak: none;display: inline-block;text-decoration: inherit;width: 1em;margin-right: .2em;text-align: center;font-variant: normal;text-transform: none;line-height: 1em;margin-left: .2em;-webkit-font-smoothing: antialiased;-moz-osx-font-smoothing: grayscale;}
+.nticon-print:before {content: "";}
+.nticon-file-word:before {content: "";}
+.nticon-trash:before {content: "";}
+.nticon-doc:before {content: "";}

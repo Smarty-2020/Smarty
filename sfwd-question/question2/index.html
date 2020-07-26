@@ -1,0 +1,1420 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+	<meta charset="UTF-8">
+		<title>Smarty – A Univers Of Learning!</title>
+<style type="text/css">#wp-admin-bar-wp-logo{display:none;}#wp-admin-bar-comments{display:none;}#wp-admin-bar-new-content{display:none;}#wp-admin-bar-_legacyoptions{display:none;}</style>                        <script>
+                            /* You can add more configuration options to webfontloader by previously defining the WebFontConfig with your options */
+                            if ( typeof WebFontConfig === "undefined" ) {
+                                WebFontConfig = new Object();
+                            }
+                            WebFontConfig['google'] = {families: ['Open+Sans:400', 'Roboto+Condensed:300,400']};
+
+                            (function() {
+                                var wf = document.createElement( 'script' );
+                                wf.src = 'https://ajax.googleapis.com/ajax/libs/webfont/1.5.3/webfont.js';
+                                wf.type = 'text/javascript';
+                                wf.async = 'true';
+                                var s = document.getElementsByTagName( 'script' )[0];
+                                s.parentNode.insertBefore( wf, s );
+                            })();
+                        </script>
+                    
+<link rel="dns-prefetch" href="//fonts.googleapis.com">
+<link rel="dns-prefetch" href="//s.w.org">
+
+
+
+<link rel="stylesheet" id="admin-subscription-css-css" href="https://smarty-2020.github.io/Smarty/wp-content/plugins/mycred/assets/css/admin-subscription.css" type="text/css" media="all">
+<link rel="stylesheet" id="tribe-common-skeleton-style-css" href="https://smarty-2020.github.io/Smarty/wp-content/plugins/the-events-calendar/common/src/resources/css/common-skeleton.min.css" type="text/css" media="all">
+<link rel="stylesheet" id="tribe-tooltip-css" href="https://smarty-2020.github.io/Smarty/wp-content/plugins/the-events-calendar/common/src/resources/css/tooltip.min.css" type="text/css" media="all">
+<link rel="stylesheet" id="wp-block-library-css" href="https://smarty-2020.github.io/Smarty/wp-includes/css/dist/block-library/style.min.css" type="text/css" media="all">
+<link rel="stylesheet" id="bp-member-block-css" href="https://smarty-2020.github.io/Smarty/wp-content/plugins/buddypress/bp-members/css/blocks/member.min.css" type="text/css" media="all">
+<link rel="stylesheet" id="bp-group-block-css" href="https://smarty-2020.github.io/Smarty/wp-content/plugins/buddypress/bp-groups/css/blocks/group.min.css" type="text/css" media="all">
+<link rel="stylesheet" id="learndash-blocks-css" href="https://smarty-2020.github.io/Smarty/wp-content/plugins/sfwd-lms/includes/gutenberg/assets/css/blocks.style.css" type="text/css" media="all">
+<link rel="stylesheet" id="buddymeet-css-css" href="https://smarty-2020.github.io/Smarty/wp-content/plugins/buddymeet/assets/css/buddymeet.css" type="text/css" media="screen">
+<link rel="stylesheet" id="learndash-notes-css" href="https://smarty-2020.github.io/Smarty/wp-content/plugins/learndash-notes/css/note.css" type="text/css" media="all">
+<link rel="stylesheet" id="leaderboard-style-css" href="https://smarty-2020.github.io/Smarty/wp-content/plugins/mycred-learndash/inc/assets/css/mycred-leaderboard-style.css" type="text/css" media="all">
+<link rel="stylesheet" id="learndash_quiz_front_css-css" href="http://PLACEHOLDER.wpsho/wp-content/plugins/sfwd-lms/themes/legacy/templates/learndash_quiz_front.min.css" type="text/css" media="all">
+<link rel="stylesheet" id="jquery-dropdown-css-css" href="http://PLACEHOLDER.wpsho/wp-content/plugins/sfwd-lms/assets/css/jquery.dropdown.min.css" type="text/css" media="all">
+<link rel="stylesheet" id="learndash_lesson_video-css" href="http://PLACEHOLDER.wpsho/wp-content/plugins/sfwd-lms/themes/legacy/templates/learndash_lesson_video.min.css" type="text/css" media="all">
+<link rel="stylesheet" id="learndash-front-css" href="http://PLACEHOLDER.wpsho/wp-content/plugins/sfwd-lms/themes/ld30/assets/css/learndash.min.css" type="text/css" media="all">
+<link rel="stylesheet" id="wppu-css" href="https://smarty-2020.github.io/Smarty/wp-content/plugins/wppu-preloader-unlimited/public/css/wppu-public.css" type="text/css" media="all">
+<link rel="stylesheet" id="youzer-customStyle-css" href="https://smarty-2020.github.io/Smarty/wp-content/plugins/youzer/includes/admin/assets/css/custom-script.css" type="text/css" media="all">
+<style id="youzer-customStyle-inline-css" type="text/css">
+
+.youzer div.item-list-tabs li.yz-activity-show-search .yz-activity-show-search-form i,
+#yz-wall-nav .item-list-tabs li#activity-filter-select label,
+.yz-media-filter .yz-filter-item .yz-current-filter,
+.yz-community-hashtags .yz-hashtag-item:hover,
+.youzer table tfoot tr,
+.youzer table thead tr,
+#yz-group-body h1:before,
+.yz-product-actions .yz-addtocart,
+.youzer .checkout_coupon,
+.youzer .yzwc-box-title h3,
+.youzer .woocommerce-customer-details h2,
+.youzer .yzwc-main-content .track_order .form-row button,
+.yz-view-order .yzwc-main-content > p mark.order-status,
+.youzer .yzwc-main-content button[type='submit'],
+.youzer .yzwc-main-content #payment #place_order,
+.youzer .yzwc-main-content h3,
+.youzer .wc-proceed-to-checkout a.checkout-button,
+.youzer .wc-proceed-to-checkout a.checkout-button:hover,
+.youzer .yzwc-main-content .woocommerce-checkout-review-order table.shop_table tfoot .order-total,
+.youzer .yzwc-main-content .woocommerce-checkout-review-order table.shop_table thead,
+.youzer .yzwc-main-content table.shop_table td a.woocommerce-MyAccount-downloads-file:before,
+.youzer .yzwc-main-content table.shop_table td a.view:before,
+.youzer table.shop_table.order_details tfoot tr:last-child,
+.youzer .yzwc-main-content table.shop_table td.actions .coupon button,
+.youzer .yzwc-main-content table.shop_table td.woocommerce-orders-table__cell-order-number a,
+.youzer .yzwc-main-content table.shop_table thead,
+.yz-forums-topic-item .yz-forums-topic-icon i,
+.yz-forums-forum-item .yz-forums-forum-icon i,
+div.bbp-submit-wrapper button,
+#bbpress-forums li.bbp-header,
+#bbpress-forums .bbp-search-form #bbp_search_submit,
+#bbpress-forums #bbp-search-form #bbp_search_submit,
+.widget_display_search #bbp_search_submit,
+.widget_display_forums li a:before,
+.widget_display_views li .bbp-view-title:before,
+.widget_display_topics li:before,
+#bbpress-forums li.bbp-footer,
+.bbp-pagination .page-numbers.current,
+.yz-items-list-widget .yz-list-item .yz-item-action .yz-add-button i,
+#yz-members-list .yzm-user-actions .friendship-button .requested,
+.yz-wall-embed .yz-embed-action .friendship-button a.requested,
+.yz-widget .yz-user-tags .yz-utag-values .yz-utag-value-item,
+.item-list-tabs #search-message-form #messages_search_submit,
+#yz-groups-list .action .group-button .membership-requested,
+#yz-members-list .yzm-user-actions .friendship-button a,
+#yz-groups-list .action .group-button .request-membership,
+.yz-wall-embed .yz-embed-action .friendship-button a,
+.yz-group-manage-members-search #members_search_submit,
+#yz-groups-list .action .group-button .accept-invite,
+.notifications-options-nav #notification-bulk-manage,
+.notifications .notification-actions .mark-read span,
+.sitewide-notices .thread-options .activate-notice,
+#yz-groups-list .action .group-button .join-group,
+.yz-social-buttons .friendship-button a.requested,
+#yz-directory-search-box form input[type=submit],
+.yzm-user-actions .friendship-button a.requested,
+.yz-wall-embed .yz-embed-action .group-button a,
+#yz-group-buttons .group-button a.join-group,
+.messages-notices .thread-options .read span,
+.yz-social-buttons .friendship-button a,
+#search-members-form #members_search_submit,
+.messages-options-nav #messages-bulk-manage,
+.yz-group-settings-tab input[type='submit'],
+.yzm-user-actions .friendship-button a.add,
+#group-settings-form input[type='submit'],
+.yz-product-content .yz-featured-product,
+.my-friends #friend-list .action a.accept,
+.yz-wall-new-post .yz-post-more-button,
+.group-request-list .action .accept a,
+#message-recipients .highlight-icon i,
+.yz-pagination .page-numbers.current,
+.yz-project-content .yz-project-type,
+.yzb-author .yzb-account-settings,
+.yz-product-actions .yz-addtocart,
+.group-button.request-membership,
+#send_message_form .submit #send,
+#send-invite-form .submit input,
+#send-reply #send_reply_button,
+.yz-wall-actions .yz-wall-post,
+.yz-post-content .yz-post-type,
+.yz-nav-effect .yz-menu-border,
+#group-create-tabs li.current,
+.group-button.accept-invite,
+.yz-tab-post .yz-read-more,
+.group-button.join-group,
+.yz-service-icon i:hover,
+.yz-loading .youzer_msg,
+.yz-scrolltotop i:hover,
+.yz-post .yz-read-more,
+.yzb-author .yzb-login,
+.pagination .current,
+.yz-tab-title-box,
+.yzw-file-post,
+.button.accept {
+            background-color: #fea633 !important;
+        }
+
+@media screen and ( max-width: 768px ) {
+#youzer .yz-group div.item-list-tabs li.last label,
+#youzer .yz-profile div.item-list-tabs li.last label,
+#youzer .yz-directory-filter .item-list-tabs li#groups-order-select label,
+#youzer .yz-directory-filter .item-list-tabs li#members-order-select label {
+    background-color: #fea633 !important;
+    color: #fff;
+}
+}
+        .yz-bbp-topic-head-meta .yz-bbp-head-meta-last-updated a:not(.bbp-author-name),
+        .widget_display_topics li .topic-author a.bbp-author-name,
+        .activity-header .activity-head p a:not(:first-child),
+        #message-recipients .highlight .highlight-meta a,
+        .thread-sender .thread-from .from .thread-count,
+        .yz-profile-navmenu .yz-navbar-item a:hover i,
+        .widget_display_replies li a.bbp-author-name,
+        .yz-profile-navmenu .yz-navbar-item a:hover,
+        .yz-link-main-content .yz-link-url:hover,
+        .yz-wall-new-post .yz-post-title a:hover,
+        .yz-recent-posts .yz-post-title a:hover,
+        .yz-post-content .yz-post-title a:hover,
+        .yz-group-settings-tab fieldset legend,
+        .yz-wall-link-data .yz-wall-link-url,
+        .yz-tab-post .yz-post-title a:hover,
+        .yz-project-tags .yz-tag-symbole,
+        .yz-post-tags .yz-tag-symbole,
+        .yz-group-navmenu li a:hover {
+            color: #fea633 !important;
+        }
+        
+        .yz-bbp-topic-head,
+        .youzer .yzwc-main-content address .yz-bullet,
+        .yz-profile-navmenu .yz-navbar-item.yz-active-menu,
+        .yz-group-navmenu li.current {
+            border-color: #fea633 !important;
+        }
+
+        body .quote-with-img:before,body .yz-link-content,body .yz-no-thumbnail,body a.yz-settings-widget {
+            background: #fea633 url(https://smarty-2020.github.io/Smarty/wp-content/plugins/youzer/includes/public/assets/images/dotted-bg.png) !important;
+        }
+    
+
+                    .yz-hdr-v1 .yz-cover-content .yz-inner-content,
+                                #yz-profile-navmenu .yz-inner-content,
+                                .yz-vertical-layout .yz-content,
+                                .youzer .yz-boxed-navbar,
+                                .youzer .wild-content,
+                                #yz-members-directory,
+                                #yz-groups-list,
+                                .yz-page-main-content,
+                                .yz-header-content,
+                                .yz-cover-content {
+                	max-width: 1300px !important;
+                    }
+
+                    .yz-page {
+                	background-color: #fafbfd !important;
+                    }
+</style>
+<link rel="stylesheet" id="youzer-css" href="https://smarty-2020.github.io/Smarty/wp-content/plugins/youzer/includes/public/assets/css/youzer.min.css" type="text/css" media="all">
+<link rel="stylesheet" id="yz-headers-css" href="https://smarty-2020.github.io/Smarty/wp-content/plugins/youzer/includes/public/assets/css/yz-headers.min.css" type="text/css" media="all">
+<link rel="stylesheet" id="yz-scheme-css" href="https://smarty-2020.github.io/Smarty/wp-content/plugins/youzer/includes/public/assets/css/schemes/yz-yellow-scheme.min.css" type="text/css" media="all">
+<link rel="stylesheet" id="dashicons-css" href="https://smarty-2020.github.io/Smarty/wp-includes/css/dashicons.min.css" type="text/css" media="all">
+<link rel="stylesheet" id="yz-social-css" href="https://smarty-2020.github.io/Smarty/wp-content/plugins/youzer/includes/public/assets/css/yz-social.min.css" type="text/css" media="all">
+<link rel="stylesheet" id="yz-icons-css" href="https://smarty-2020.github.io/Smarty/wp-content/plugins/youzer/includes/admin/assets/css/all.min.css" type="text/css" media="all">
+<link rel="stylesheet" id="yz-mycred-css" href="https://smarty-2020.github.io/Smarty/wp-content/plugins/youzer/includes/public/assets/css/yz-mycred.min.css" type="text/css" media="all">
+<link rel="stylesheet" id="yz-posts-reactions-css" href="https://smarty-2020.github.io/Smarty/wp-content/plugins/youzer-activity-reactions/assets/css/yz-posts-reactions.min.css" type="text/css" media="all">
+<link rel="stylesheet" id="eael-lib-view-css" href="https://smarty-2020.github.io/Smarty/wp-content/plugins/essential-addons-for-elementor-lite/assets/front-end/css/lib-view/lib-view.min.css" type="text/css" media="all">
+<link rel="stylesheet" id="eael-view-css" href="https://smarty-2020.github.io/Smarty/wp-content/plugins/essential-addons-for-elementor-lite/assets/front-end/css/view/view.min.css" type="text/css" media="all">
+<link rel="stylesheet" id="eael-pro-lib-view-css" href="https://smarty-2020.github.io/Smarty/wp-content/plugins/essential-addons-elementor/assets/front-end/css/lib-view/lib-view.min.css" type="text/css" media="all">
+<link rel="stylesheet" id="eael-pro-view-css" href="https://smarty-2020.github.io/Smarty/wp-content/plugins/essential-addons-elementor/assets/front-end/css/view/view.min.css" type="text/css" media="all">
+<link rel="stylesheet" id="select2-css-css" href="https://smarty-2020.github.io/Smarty/wp-content/plugins/ld-dashboard/public/css/select2.min.css" type="text/css" media="all">
+<link rel="stylesheet" id="ld-dashboard-css" href="https://smarty-2020.github.io/Smarty/wp-content/plugins/ld-dashboard/public/css/ld-dashboard-public.css" type="text/css" media="all">
+<link rel="stylesheet" id="yz-reviews-css" href="https://smarty-2020.github.io/Smarty/wp-content/plugins/youzer/includes/public/assets/css/yz-reviews.min.css" type="text/css" media="all">
+<link rel="stylesheet" id="magnific-popup-css-css" href="https://smarty-2020.github.io/Smarty/wp-content/themes/olympus/css/magnific-popup.css" type="text/css" media="all">
+<link rel="stylesheet" id="fw-option-type-icon-v2-pack-linecons-css" href="https://smarty-2020.github.io/Smarty/wp-content/plugins/unyson/framework/static/libs/linecons/css/linecons.css" type="text/css" media="all">
+<link rel="stylesheet" id="fw-option-type-icon-v2-pack-entypo-css" href="https://smarty-2020.github.io/Smarty/wp-content/plugins/unyson/framework/static/libs/entypo/css/entypo.css" type="text/css" media="all">
+<link rel="stylesheet" id="fw-option-type-icon-v2-pack-linearicons-css" href="https://smarty-2020.github.io/Smarty/wp-content/plugins/unyson/framework/static/libs/lnr/css/lnr.css" type="text/css" media="all">
+<link rel="stylesheet" id="fw-option-type-icon-v2-pack-typicons-css" href="https://smarty-2020.github.io/Smarty/wp-content/plugins/unyson/framework/static/libs/typcn/css/typcn.css" type="text/css" media="all">
+<link rel="stylesheet" id="fw-option-type-icon-v2-pack-unycon-css" href="https://smarty-2020.github.io/Smarty/wp-content/plugins/unyson/framework/static/libs/unycon/unycon.css" type="text/css" media="all">
+<link rel="stylesheet" id="fw-option-type-icon-v2-pack-olympus-css" href="https://smarty-2020.github.io/Smarty/wp-content/themes/olympus/css/olympus-icons-font.css" type="text/css" media="all">
+<link rel="stylesheet" id="olympus-theme-font-css" href="https://fonts.googleapis.com/css?family=Roboto%3A300%2C400%2C500%2C700&subset=latin&display=swap&ver=3.1" type="text/css" media="all">
+<link rel="stylesheet" id="bootstrap-css" href="https://smarty-2020.github.io/Smarty/wp-content/themes/olympus/Bootstrap/dist/css/bootstrap.css" type="text/css" media="all">
+<link rel="stylesheet" id="olympus-widgets-css" href="https://smarty-2020.github.io/Smarty/wp-content/themes/olympus/css/widgets.css" type="text/css" media="all">
+<link rel="stylesheet" id="olympus-js-plugins-css" href="https://smarty-2020.github.io/Smarty/wp-content/themes/olympus/css/theme-js-plugins.css" type="text/css" media="all">
+<link rel="stylesheet" id="olympus-main-css" href="https://smarty-2020.github.io/Smarty/wp-content/themes/olympus/css/main.css" type="text/css" media="all">
+<style id="olympus-main-inline-css" type="text/css">
+html:root {
+--primary-accent-color: #fea633;
+--primary-color-darken: #e65535;
+--secondary-accent-color: #38a9ff;
+--secondary-color-darken: #3399e6;
+--third-accent-color: #7c5ac2;
+--icon-color: #9a9fbf;
+}.header--standard .logo .img-wrap img {max-height:60px;}#site-header {background-color:#3f4257;}#site-header .search-bar .form-group.with-button button {background-color:#494c62;}#site-header .search-bar.w-search {background-color:#494c62;}#site-header .page-title > * {color:#ffffff;}#site-header .control-icon {fill:#ffffff;}#site-header .control-block .author-title {color:#ffffff;}#site-header .search-bar .form-group.with-button input {color:#9a9fbf;}#site-header .search-bar .form-group.with-button input::placeholder {color:#9a9fbf;}#site-header .search-bar .form-group.with-button button {color:#9a9fbf;}#site-header .control-block .author-subtitle {color:#9a9fbf;}#header--standard {background-color:#ffffff;}#header--standard .primary-menu {background-color:#ffffff;}#header--standard .logo {color:#3f4257;}#header--standard li.cart-menulocation > a {color:#9a9fbf;}h1, .h1{} h2, .h2{} h3, .h3{} h4, .h4{} h5, .h5{} h6, .h6{} body, article p{} .primary-menu-menu .menu-item > a,.primary-menu-responsive.primary-menu .showhide,.primary-menu-menu ul.sub-menu li a,.primary-menu-menu > li.menu-item-has-mega-menu .megamenu ul > li a,.primary-menu-menu > li.menu-item-has-mega-menu .megamenu .column-tittle {} .may-contain-custom-bg .ui-block {background-color: #ffffff}.fixed-sidebar-left {background-color: #ffffff}
+</style>
+<link rel="stylesheet" id="olympus-icons-font-css" href="https://smarty-2020.github.io/Smarty/wp-content/themes/olympus/css/olympus-icons-font.css" type="text/css" media="all">
+<link rel="stylesheet" id="fw-ext-forms-default-styles-css" href="https://smarty-2020.github.io/Smarty/wp-content/plugins/unyson/framework/extensions/forms/static/css/frontend.css" type="text/css" media="all">
+<link rel="stylesheet" id="font-awesome-css" href="https://smarty-2020.github.io/Smarty/wp-content/plugins/elementor/assets/lib/font-awesome/css/font-awesome.min.css" type="text/css" media="all">
+<link rel="stylesheet" id="crumina-ext-contact-form-css" href="https://smarty-2020.github.io/Smarty/wp-content/plugins/unyson/framework/extensions/contact-form/static/css/contact-form.css" type="text/css" media="all">
+<link rel="stylesheet" id="sign-form-css" href="https://smarty-2020.github.io/Smarty/wp-content/plugins/unyson/framework/extensions/sign-form/static/css/styles.css" type="text/css" media="all">
+<link rel="stylesheet" id="crumina-stunning-header-css" href="https://smarty-2020.github.io/Smarty/wp-content/plugins/unyson/framework/extensions/stunning-header/static/css/stunning-header.css" type="text/css" media="all">
+<style id="crumina-stunning-header-inline-css" type="text/css">
+#stunning-header {color:#ffffff;}#stunning-header .stunning-header-content-wrap {color:#ffffff;}#stunning-header .stunning-header-content-wrap * {color:#ffffff;}#stunning-header {padding-top:125px;}#stunning-header {padding-bottom:125px;}#stunning-header .crumina-heading-background {background-image: url("https://smarty-2020.github.io/Smarty/wp-content/uploads/2018/09/landing-bg.jpg");}#stunning-header {background-color:#eeeeee;}
+</style>
+<link rel="stylesheet" id="crumina-reaction-styles-css" href="https://smarty-2020.github.io/Smarty/wp-content/plugins/unyson/framework/extensions/post-reaction/static/css/styles.css" type="text/css" media="all">
+<link rel="stylesheet" id="yz-bbpress-css" href="https://smarty-2020.github.io/Smarty/wp-content/plugins/youzer/includes/public/assets/css/yz-bbpress.min.css" type="text/css" media="all">
+<link rel="stylesheet" id="elementskit-framework-css-frontend-css" href="https://smarty-2020.github.io/Smarty/wp-content/plugins/elementskit-lite/libs/framework/assets/css/frontend-style.min.css" type="text/css" media="all">
+<link rel="stylesheet" id="mycred-front-css" href="https://smarty-2020.github.io/Smarty/wp-content/plugins/mycred/assets/css/mycred-front.css" type="text/css" media="all">
+<link rel="stylesheet" id="yz-opensans-css" href="https://fonts.googleapis.com/css?family=Open+Sans%3A400%2C600&ver=2.5.0" type="text/css" media="all">
+<link rel="stylesheet" id="logy-style-css" href="https://smarty-2020.github.io/Smarty/wp-content/plugins/youzer/includes/logy/includes/public/assets/css/logy.min.css" type="text/css" media="all">
+<link rel="stylesheet" id="logy-customStyle-css" href="https://smarty-2020.github.io/Smarty/wp-content/plugins/youzer/includes/admin/assets/css/custom-script.css" type="text/css" media="all">
+<style id="logy-customStyle-inline-css" type="text/css">
+
+                    .logy-login-page .logy-action-item button {
+                	background-color: #007eff !important;
+                    }
+
+                    .logy-login-page .logy-action-item button {
+                	color: #ffffff !important;
+                    }
+
+                    .logy-login-page .logy-link-button {
+                	background-color: #fea633 !important;
+                    }
+
+                    .logy-login-page .logy-link-button {
+                	color: #ffffff !important;
+                    }
+
+                    .logy-login-widget {
+                	margin-top: 40px !important;
+                    }
+
+                    .logy-login-widget {
+                	margin-bottom: 40px !important;
+                    }
+</style>
+<link rel="stylesheet" id="yz-social-share-css" href="https://smarty-2020.github.io/Smarty/wp-content/plugins/youzer-social-share/assets/css/yz-social-share.min.css" type="text/css" media="all">
+<link rel="stylesheet" id="elementor-icons-css" href="https://smarty-2020.github.io/Smarty/wp-content/plugins/elementor/assets/lib/eicons/css/elementor-icons.min.css" type="text/css" media="all">
+<link rel="stylesheet" id="elementor-animations-css" href="https://smarty-2020.github.io/Smarty/wp-content/plugins/elementor/assets/lib/animations/animations.min.css" type="text/css" media="all">
+<link rel="stylesheet" id="elementor-frontend-css" href="https://smarty-2020.github.io/Smarty/wp-content/plugins/elementor/assets/css/frontend.min.css" type="text/css" media="all">
+<link rel="stylesheet" id="dce-all-css-css" href="https://smarty-2020.github.io/Smarty/wp-content/uploads/elementor/css/dce-frontend.min.css" type="text/css" media="all">
+<link rel="stylesheet" id="elementor-pro-css" href="https://smarty-2020.github.io/Smarty/wp-content/plugins/elementor-pro/assets/css/frontend.min.css" type="text/css" media="all">
+<link rel="stylesheet" id="uael-frontend-css" href="https://smarty-2020.github.io/Smarty/wp-content/plugins/ultimate-elementor/assets/min-css/uael-frontend.min.css" type="text/css" media="all">
+<link rel="stylesheet" id="namogo-icons-css" href="https://smarty-2020.github.io/Smarty/wp-content/plugins/elementor-extras/assets/lib/nicons/css/nicons.css" type="text/css" media="all">
+<link rel="stylesheet" id="elementor-extras-frontend-css" href="https://smarty-2020.github.io/Smarty/wp-content/plugins/elementor-extras/assets/css/frontend.min.css" type="text/css" media="all">
+<link rel="stylesheet" id="elementskit-css-widgetarea-control-editor-css" href="https://smarty-2020.github.io/Smarty/wp-content/plugins/elementskit-lite/modules/controls/assets/css/widgetarea-editor.css" type="text/css" media="all">
+<link rel="stylesheet" id="elementor-global-css" href="https://smarty-2020.github.io/Smarty/wp-content/uploads/elementor/css/global.css" type="text/css" media="all">
+<link rel="stylesheet" id="elementor-post-1528-css" href="https://smarty-2020.github.io/Smarty/wp-content/uploads/elementor/css/post-1528.css" type="text/css" media="all">
+<link rel="stylesheet" id="buddypress-learndash-css" href="https://smarty-2020.github.io/Smarty/wp-content/plugins/buddypress-learndash/assets/css/buddypress-learndash.min.css" type="text/css" media="all">
+<link rel="stylesheet" id="child-style-css" href="https://smarty-2020.github.io/Smarty/wp-content/themes/olympus-child/style.css" type="text/css" media="all">
+<link rel="stylesheet" id="elementskit-vendors-css" href="https://smarty-2020.github.io/Smarty/wp-content/plugins/elementskit-lite/widgets/init/assets/css/vendors.css" type="text/css" media="all">
+<link rel="stylesheet" id="elementskit-style-css" href="https://smarty-2020.github.io/Smarty/wp-content/plugins/elementskit-lite/widgets/init/assets/css/style.css" type="text/css" media="all">
+<link rel="stylesheet" id="elementskit-responsive-css" href="https://smarty-2020.github.io/Smarty/wp-content/plugins/elementskit-lite/widgets/init/assets/css/responsive.css" type="text/css" media="all">
+<link rel="stylesheet" id="olympus-youzer-css" href="https://smarty-2020.github.io/Smarty/wp-content/themes/olympus/css/youzer/youzer.css" type="text/css" media="all">
+<link rel="stylesheet" id="olympus-youzer-icons-customization-css" href="https://smarty-2020.github.io/Smarty/wp-content/themes/olympus/css/youzer/yz-icons-customization.css" type="text/css" media="all">
+<link rel="stylesheet" id="youzer-customization-css" href="https://smarty-2020.github.io/Smarty/wp-content/themes/olympus/css/youzer-customization.css" type="text/css" media="all">
+<link rel="stylesheet" id="olympus-yz-headers-css" href="https://smarty-2020.github.io/Smarty/wp-content/themes/olympus/css/youzer/yz-headers.css" type="text/css" media="all">
+<link rel="stylesheet" id="olympus-yz-social-css" href="https://smarty-2020.github.io/Smarty/wp-content/themes/olympus/css/youzer/yz-social.css" type="text/css" media="all">
+<link rel="stylesheet" id="olympus-yz-reviews-css" href="https://smarty-2020.github.io/Smarty/wp-content/themes/olympus/css/youzer/yz-reviews.css" type="text/css" media="all">
+<link rel="stylesheet" id="olympus-yz-mycred-css" href="https://smarty-2020.github.io/Smarty/wp-content/themes/olympus/css/youzer/yz-mycred.css" type="text/css" media="all">
+<link rel="stylesheet" id="olympus-yz-bbpress-css" href="https://smarty-2020.github.io/Smarty/wp-content/themes/olympus/css/youzer/yz-bbpress.css" type="text/css" media="all">
+<link rel="stylesheet" id="olympus-logy-style-css" href="https://smarty-2020.github.io/Smarty/wp-content/themes/olympus/css/youzer/logy.css" type="text/css" media="all">
+<link rel="stylesheet" id="wp-add-custom-css-css" href="https://smarty-2020.github.io/Smarty" type="text/css" media="all">
+<link rel="stylesheet" id="the-event-calendar-customization-css" href="https://smarty-2020.github.io/Smarty/wp-content/themes/olympus/css/the-event-calendar-customization.css" type="text/css" media="all">
+<link rel="stylesheet" id="google-fonts-1-css" href="https://fonts.googleapis.com/css?family=Roboto%3A100%2C100italic%2C200%2C200italic%2C300%2C300italic%2C400%2C400italic%2C500%2C500italic%2C600%2C600italic%2C700%2C700italic%2C800%2C800italic%2C900%2C900italic%7CRoboto+Slab%3A100%2C100italic%2C200%2C200italic%2C300%2C300italic%2C400%2C400italic%2C500%2C500italic%2C600%2C600italic%2C700%2C700italic%2C800%2C800italic%2C900%2C900italic%7CPatrick+Hand+SC%3A100%2C100italic%2C200%2C200italic%2C300%2C300italic%2C400%2C400italic%2C500%2C500italic%2C600%2C600italic%2C700%2C700italic%2C800%2C800italic%2C900%2C900italic%7CPatrick+Hand%3A100%2C100italic%2C200%2C200italic%2C300%2C300italic%2C400%2C400italic%2C500%2C500italic%2C600%2C600italic%2C700%2C700italic%2C800%2C800italic%2C900%2C900italic&ver=5.4.2" type="text/css" media="all">
+<link rel="stylesheet" id="elementor-icons-olympus-icons-font-css" href="https://smarty-2020.github.io/Smarty/wp-content/themes/olympus/css/olympus-icons-font.css" type="text/css" media="all">
+<link rel="stylesheet" id="elementor-icons-shared-0-css" href="https://smarty-2020.github.io/Smarty/wp-content/plugins/elementor/assets/lib/font-awesome/css/fontawesome.min.css" type="text/css" media="all">
+<link rel="stylesheet" id="elementor-icons-fa-regular-css" href="https://smarty-2020.github.io/Smarty/wp-content/plugins/elementor/assets/lib/font-awesome/css/regular.min.css" type="text/css" media="all">
+<link rel="stylesheet" id="elementor-icons-fa-brands-css" href="https://smarty-2020.github.io/Smarty/wp-content/plugins/elementor/assets/lib/font-awesome/css/brands.min.css" type="text/css" media="all">
+<link rel="stylesheet" id="elementor-icons-fa-solid-css" href="https://smarty-2020.github.io/Smarty/wp-content/plugins/elementor/assets/lib/font-awesome/css/solid.min.css" type="text/css" media="all">
+<link rel="stylesheet" id="elementor-icons-shared-1-css" href="https://smarty-2020.github.io/Smarty/wp-content/plugins/elementskit-lite/modules/controls/assets/css/ekiticons.css" type="text/css" media="all">
+<link rel="stylesheet" id="elementor-icons-ekiticons-css" href="https://smarty-2020.github.io/Smarty/wp-content/plugins/elementskit-lite/modules/controls/assets/css/ekiticons.css" type="text/css" media="all">
+<script type="text/javascript">
+/* <![CDATA[ */
+var uael_script = {"post_loader":"https:\/\/smarty-2020.github.io\/Smarty\/wp-content\/plugins\/ultimate-elementor\/assets\/img\/post-loader.gif","url":"https:\/\/smarty-2020.github.io\/Smarty\/wp-admin\/admin-ajax.php","search_str":"Search:","table_not_found_str":"No matching records found","table_length_string":"Show _MENU_ Entries","uael_particles_url":"https:\/\/smarty-2020.github.io\/Smarty\/wp-content\/plugins\/ultimate-elementor\/assets\/min-js\/uael-particles.min.js","particles_url":"https:\/\/smarty-2020.github.io\/Smarty\/wp-content\/plugins\/ultimate-elementor\/assets\/lib\/particles\/particles.min.js"};
+var uael = {"ajax_url":"https:\/\/smarty-2020.github.io\/Smarty\/wp-admin\/admin-ajax.php"};
+var uaelRegistration = {"invalid_mail":"Enter valid Email!","pass_unmatch":"The specified password do not match!","required":"This Field is required!","form_nonce":"cec7b53b6e","incorrect_password":"Error: The Password you have entered is incorrect.","invalid_username":"Unknown username. Check again or try your email address.","invalid_email":"Unknown email address. Check again or try your username."};
+/* ]]> */
+</script>
+<script type="text/javascript" src="https://smarty-2020.github.io/Smarty/wp-includes/js/jquery/jquery.js"></script>
+<script type="text/javascript" src="https://smarty-2020.github.io/Smarty/wp-includes/js/jquery/jquery-migrate.min.js"></script>
+<script type="text/javascript">
+window.scope_array = [];
+								window.backend = 0;
+								jQuery.cachedScript = function( url, options ) {
+									// Allow user to set any option except for dataType, cache, and url.
+									options = jQuery.extend( options || {}, {
+										dataType: "script",
+										cache: true,
+										url: url
+									});
+									// Return the jqXHR object so we can chain callbacks.
+									return jQuery.ajax( options );
+								};
+							    jQuery( window ).on( "elementor/frontend/init", function() {
+									elementorFrontend.hooks.addAction( "frontend/element_ready/global", function( $scope, $ ){
+										if ( "undefined" == typeof $scope ) {
+												return;
+										}
+										if ( $scope.hasClass( "uael-particle-yes" ) ) {
+											window.scope_array.push( $scope );
+											$scope.find(".uael-particle-wrapper").addClass("js-is-enabled");
+										}else{
+											return;
+										}
+										if(elementorFrontend.isEditMode() && $scope.find(".uael-particle-wrapper").hasClass("js-is-enabled") && window.backend == 0 ){		
+											var uael_url = uael_script.uael_particles_url;
+											
+											jQuery.cachedScript( uael_url );
+											window.backend = 1;
+										}else if(elementorFrontend.isEditMode()){
+											var uael_url = uael_script.uael_particles_url;
+											jQuery.cachedScript( uael_url ).done(function(){
+												var flag = true;
+											});
+										}
+									});
+								});
+								jQuery(document).ready(function(){
+									if ( jQuery.find( ".uael-particle-yes" ).length < 1 ) {
+										return;
+									}
+									var uael_url = uael_script.uael_particles_url;
+									jQuery.cachedScript = function( url, options ) {
+										// Allow user to set any option except for dataType, cache, and url.
+										options = jQuery.extend( options || {}, {
+											dataType: "script",
+											cache: true,
+											url: url
+										});
+										// Return the jqXHR object so we can chain callbacks.
+										return jQuery.ajax( options );
+									};
+									jQuery.cachedScript( uael_url );
+								});	
+</script>
+<script type="text/javascript" src="https://smarty-2020.github.io/Smarty/wp-content/plugins/sfwd-lms/includes/gutenberg/assets/js/frontend.blocks.js"></script>
+<script type="text/javascript">
+/* <![CDATA[ */
+var BP_Confirm = {"are_you_sure":"Are you sure?"};
+/* ]]> */
+</script>
+<script type="text/javascript" src="https://smarty-2020.github.io/Smarty/wp-content/plugins/buddypress/bp-core/js/confirm.min.js"></script>
+<script type="text/javascript" src="https://smarty-2020.github.io/Smarty/wp-content/plugins/buddypress/bp-core/js/widget-members.min.js"></script>
+<script type="text/javascript" src="https://smarty-2020.github.io/Smarty/wp-content/plugins/buddypress/bp-core/js/jquery-query.min.js"></script>
+<script type="text/javascript" src="https://smarty-2020.github.io/Smarty/wp-content/plugins/buddypress/bp-core/js/vendor/jquery-cookie.min.js"></script>
+<script type="text/javascript" src="https://smarty-2020.github.io/Smarty/wp-content/plugins/buddypress/bp-core/js/vendor/jquery-scroll-to.min.js"></script>
+<script type="text/javascript">
+/* <![CDATA[ */
+var BP_DTheme = {"accepted":"Accepted","close":"Close","comments":"comments","leave_group_confirm":"Are you sure you want to leave this group?","mark_as_fav":"Like","my_favs":"My Favorites","rejected":"Rejected","remove_fav":"Unlike","show_all":"Show all","show_all_comments":"Show all comments for this thread","show_x_comments":"Show all comments (%d)","unsaved_changes":"Your profile has unsaved changes. If you leave the page, the changes will be lost.","view":"View","store_filter_settings":""};
+/* ]]> */
+</script>
+<script type="text/javascript" src="https://smarty-2020.github.io/Smarty/wp-content/plugins/youzer/includes/public/assets/js/buddypress.min.js"></script>
+<script type="text/javascript" src="https://smarty-2020.github.io/Smarty/wp-content/plugins/buddypress/bp-groups/js/widget-groups.min.js"></script>
+<script type="text/javascript">
+/* <![CDATA[ */
+var LD_MYCRED_Handler = {"ajax_url":"https:\/\/smarty-2020.github.io\/Smarty\/wp-admin\/admin-ajax.php"};
+/* ]]> */
+</script>
+<script type="text/javascript" src="https://smarty-2020.github.io/Smarty/wp-content/plugins/mycred-learndash/inc/assets/js/learndash-mycred-pts-handler.js"></script>
+<script type="text/javascript" src="https://smarty-2020.github.io/Smarty/wp-content/plugins/youzer-moderation/assets/js/yz-moderation.js"></script>
+<script type="text/javascript" src="https://smarty-2020.github.io/Smarty/wp-content/plugins/unyson/framework/extensions/stunning-header/static/js/stunning-header.js"></script>
+<script type="text/javascript" src="https://smarty-2020.github.io/Smarty/wp-content/plugins/unyson/framework/extensions/post-reaction/static/js/sweetalert2.js"></script>
+<script type="text/javascript">
+/* <![CDATA[ */
+var crumina_reaction = {"ajax":"https:\/\/smarty-2020.github.io\/Smarty\/wp-admin\/admin-ajax.php"};
+/* ]]> */
+</script>
+<script type="text/javascript" src="https://smarty-2020.github.io/Smarty/wp-content/plugins/unyson/framework/extensions/post-reaction/static/js/scripts.js"></script>
+<script type="text/javascript" src="https://smarty-2020.github.io/Smarty/wp-includes/js/imagesloaded.min.js"></script>
+<script type="text/javascript">
+/* <![CDATA[ */
+var crumina_ajax_blog = {"ajax":"https:\/\/smarty-2020.github.io\/Smarty\/wp-admin\/admin-ajax.php","filter_id":"ajax-filter-panel","grid_id":"ajax-grid","masonry_sel":"sorting-item","nav_type":"nav","type":"classic","preloader":"https:\/\/smarty-2020.github.io\/Smarty\/wp-content\/plugins\/unyson\/framework\/extensions\/ajax-blog\/static\/img\/spinner.gif","obj_id":"1528","template_part":"templates\/post\/classic\/content","categories":"0","cat_exclude":"0","posts_per_page":"12","paginate_base":"https:\/\/smarty-2020.github.io\/Smarty\/page\/%#%\/","sidebar_conf":{"content-classes":"col-md-12 col-sm-12 col-lg-12","sidebar-classes":"col-md-12 col-sm-12 youzer-sidebar olympus-theme-sidebar col-lg-12","position":"full"}};
+/* ]]> */
+</script>
+<script type="text/javascript" src="https://smarty-2020.github.io/Smarty/wp-content/plugins/unyson/framework/extensions/ajax-blog/static/js/scripts.js"></script>
+<script type="text/javascript" src="https://smarty-2020.github.io/Smarty/wp-content/plugins/youzer-social-share/assets/js/yz-social-share.min.js"></script>
+
+
+
+
+
+
+
+
+	<script type="text/javascript">var ajaxurl = 'https://smarty-2020.github.io/Smarty/wp-admin/admin-ajax.php';</script>
+
+
+	<style>
+		#wppu-fill-loader-text {
+		  display: inline-block;
+		  margin: auto;
+		  position: relative;
+		  text-align: center;
+		  width: auto;
+		}
+		#wppu-fill-loader-text h2 {
+		  color: rgba(0, 0, 0, 0.1);
+		  display: inline-block;
+		  font-size: 5.75em;
+		  letter-spacing: 0;
+		  line-height: 1.5;
+		  overflow: hidden;
+		  position: relative;
+		  text-transform: none;
+		}
+		#wppu-fill-loader-text h2.wppu_fill_h2_attr {
+		  color: #000;
+		  display: block;
+		  left: 0;
+		  position: absolute;
+		  top: 0;
+		  width: 0%;
+		}
+		.wppu-fill-loader-thumb {
+		  width: 100px;
+		  position: relative;
+		}
+		.wppu-fill-loader-thumb img {
+		  display: block;
+		  height: auto;
+		  opacity: 0.3;
+		  position: relative;
+		  width: 100%;
+		  z-index: 1;
+		}
+
+		.wppu-fill-thumbnail-fill {
+		  background-position: center bottom;
+		  background-repeat: no-repeat;
+		  background-size: cover;
+		  bottom: 0;
+		  display: block;
+		  height: 0;
+		  left: 0;
+		  position: absolute;
+		  transition: all 0s ease 0s;
+		  width: 100%;
+		  z-index: 3;
+		}
+		#run_animation_fill {
+		  background-color: #000;
+		  color: #fff;
+		  cursor: pointer;
+		  line-height: 1em;
+		  padding: 6px 10px 8px;
+		  position: absolute;
+		  right: 0;
+		  top: 0;
+		  z-index: 991;
+		}
+		.wppu_fill_progress_bar {
+		  height: 2px;
+		  left: 0;
+		  position: absolute;
+		  top: 0;
+		  display: none;
+		  width: 0%;
+		  z-index: 140;
+		  background-color: #ed4e6e;
+		}
+		.wppu_fill_progress_pos-top.wppu_fill_progress_bar {
+		  display: block;
+		  top: 0;
+		  left: 0;
+		}
+		.wppu_fill_progress_pos-bottom.wppu_fill_progress_bar {
+		  display: block;
+		  top: inherit;
+		  bottom: 0;
+		  left: 0;
+		}
+		.wppu_fill_counter {
+		  line-height: 1;
+		  margin-top: 20px;
+		}
+		#wppu-fill-loader-thunb {
+		  width: 100px;
+		  position: relative;
+		  margin: auto;
+		}
+		#wppu-fill-loader-thunb img {
+		  display: block;
+		  height: auto;
+		  opacity: 0.3;
+		  position: relative;
+		  width: 100%;
+		  z-index: 1;
+		}
+		.wppu-fill-thumbnail-fill {
+		  background-position: center bottom;
+		  background-repeat: no-repeat;
+		  background-size: cover;
+		  bottom: 0;
+		  display: block;
+		  height: 0;
+		  left: 0;
+		  position: absolute;
+		  transition: all 0s ease 0s;
+		  width: 100%;
+		  z-index: 3;
+		}
+
+		.wppu-preloader-loaded .wppu_fill_progress_bar,
+		.wppu-preloader-loaded h2.wppu_fill_h2_attr {
+		    transition: width 0.9s ease 0s;
+		    -webkit-transition: width 0.9s ease 0s;
+		    -moz-transition: width 0.9s ease 0s;
+		    -o-transition: width 0.9s ease 0s;
+		    -ms-transition: width 0.9s ease 0s;
+		    width: 100% !important;
+		}
+		.wppu-preloader-loaded .wppu-fill-thumbnail-fill {
+			transition: height 0.9s ease 0s;
+		    -webkit-transition: height 0.9s ease 0s;
+		    -moz-transition: height 0.9s ease 0s;
+		    -o-transition: height 0.9s ease 0s;
+		    -ms-transition: height 0.9s ease 0s;
+		    height: 100% !important;
+		}
+	</style>
+	
+	
+	<section class="wppu-preloader loading not-loaded" style="background-color:#FFF;">
+
+			    <div class="wppu-logo-loader wppu_frameT">
+	    	<div class="wppu_frameTC">
+		        <div class="wppu_special_preloader">
+		            <div id="wppu_fill_main_loader">
+		                
+													<div id="wppu-fill-loader-thunb" style="width:174px;">
+					        	<div class="wppu-fill-thumbnail-fill" style="background-image:url(https://smarty-2020.github.io/Smarty/wp-content/uploads/2020/06/endpoint-1.png);"></div>
+								<img src="https://smarty-2020.github.io/Smarty/wp-content/uploads/2020/06/endpoint-1.png" alt="">
+					        </div>
+						
+		            </div>
+		        </div>
+	        </div>
+	    </div>
+	</section>
+	
+
+		<script>
+		var ajaxurl = 'https://smarty-2020.github.io/Smarty/wp-admin/admin-ajax.php';
+	</script>
+<meta name="tec-api-version" content="v1"><meta name="tec-api-origin" content="https://smarty-2020.github.io/Smarty"><link rel="https://theeventscalendar.com/" href="https://smarty-2020.github.io/Smarty/wp-json/tribe/events/v1/">
+<script>
+		function olympusModal() {
+			return {
+				show: false,
+				modalOpen() { this.show = true; document.querySelector('body').classList.add('overlay-enable') },
+				modalClose() { this.show = false; document.querySelector('body').classList.remove('overlay-enable') },
+				isModalOpen() { return this.show === true },
+			}
+		}
+		</script><link rel="icon" href="https://smarty-2020.github.io/Smarty/wp-content/uploads/2020/06/cropped-endpoint-1-32x32.png" sizes="32x32">
+<link rel="icon" href="https://smarty-2020.github.io/Smarty/wp-content/uploads/2020/06/cropped-endpoint-1-192x192.png" sizes="192x192">
+<link rel="apple-touch-icon" href="https://smarty-2020.github.io/Smarty/wp-content/uploads/2020/06/cropped-endpoint-1-180x180.png">
+<meta name="msapplication-TileImage" content="https://smarty-2020.github.io/Smarty/wp-content/uploads/2020/06/cropped-endpoint-1-270x270.png">
+		<style type="text/css" id="wp-custom-css">
+			.olympus-theme #buddypress div.item-list-tabs ul li#members-all a span {display:none !important;}
+		</style>
+		<noscript><style> .wpb_animate_when_almost_visible { opacity: 1; }</style></noscript>	<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover"></head>
+<body class="home-page bp-legacy home page-template page-template-elementor_canvas page page-id-1528 yz-yellow-scheme not-logged-in tribe-no-js page-template-cxampphtdocsta3lim-wp-content-themes-olympus-page-php elementor-dce no-stunning-header yz-share-btns-colorful yz-share-btns-radius wpb-js-composer js-comp-ver-6.1 vc_responsive elementor-default elementor-template-canvas elementor-kit-1220 elementor-page elementor-page-1528 no-js enable-sticky-standard-header bg-white page-has-header-social page-has-not-panels olympus-theme">
+			<div data-elementor-type="wp-page" data-elementor-id="1528" data-post-id="1528" class="elementor elementor-1528 dce-elementor-post-1528" data-elementor-settings="[]">
+			<div class="elementor-inner">
+				<div class="elementor-section-wrap">
+							<section data-particle_enable="false" data-particle-mobile-disabled="false" class="elementor-element elementor-element-7317baf elementor-section-full_width elementor-section-height-min-height elementor-section-height-default elementor-section-items-middle elementor-section elementor-top-section" data-id="7317baf" data-element_type="section" data-settings='{"background_background":"classic"}'>
+						<div class="elementor-container elementor-column-gap-default">
+				<div class="elementor-row">
+				<div class="elementor-element elementor-element-70b8ae6 elementor-column elementor-col-25 elementor-top-column" data-id="70b8ae6" data-element_type="column">
+			<div class="elementor-column-wrap  elementor-element-populated">
+					<div class="elementor-widget-wrap">
+				<div class="elementor-element elementor-element-36b2a51 elementor-absolute elementor-widget__width-initial dce_masking-none elementor-widget elementor-widget-image" data-id="36b2a51" data-element_type="widget" data-settings='{"_position":"absolute"}' data-widget_type="image.default">
+				<div class="elementor-widget-container">
+					<div class="elementor-image">
+										<img src="https://smarty-2020.github.io/Smarty/wp-content/uploads/2020/06/PicsArt_06-23-06.18.01.png" title="PicsArt_06-23-06.18.01" alt="PicsArt_06-23-06.18.01" class="elementor-animation-wobble-bottom">											</div>
+				</div>
+				</div>
+						</div>
+			</div>
+		</div>
+				<div class="elementor-element elementor-element-d00eb0d elementor-column elementor-col-50 elementor-top-column" data-id="d00eb0d" data-element_type="column">
+			<div class="elementor-column-wrap  elementor-element-populated">
+					<div class="elementor-widget-wrap">
+				<div class="elementor-element elementor-element-7a30e13 elementor-nav-menu--indicator-classic elementor-nav-menu--dropdown-tablet elementor-nav-menu__text-align-aside elementor-nav-menu--toggle elementor-nav-menu--burger elementor-widget elementor-widget-nav-menu" data-id="7a30e13" data-element_type="widget" data-settings='{"layout":"horizontal","toggle":"burger"}' data-widget_type="nav-menu.default">
+				<div class="elementor-widget-container">
+						<nav role="navigation" class="elementor-nav-menu--main elementor-nav-menu__container elementor-nav-menu--layout-horizontal e--pointer-background e--animation-fade"><ul id="menu-1-7a30e13" class="elementor-nav-menu"><li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1807"><a href="https://smarty-2020.github.io/Smarty/about-us/" class="elementor-item">About us</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1808"><a href="https://smarty-2020.github.io/Smarty/classes/" class="elementor-item">Classes</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1809"><a href="https://smarty-2020.github.io/Smarty/members/" class="elementor-item">Members</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1812"><a href="https://smarty-2020.github.io/Smarty/library/" class="elementor-item">Library</a></li>
+<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1823"><a href="https://smarty-2020.github.io/Smarty/events/" class="elementor-item">Events</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1822"><a href="https://smarty-2020.github.io/Smarty/blog-classic/" class="elementor-item">Blog</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1821"><a href="https://smarty-2020.github.io/Smarty/contacts/" class="elementor-item">Contacts</a></li>
+</ul></nav>
+					<div class="elementor-menu-toggle" role="button" tabindex="0" aria-label="Menu Toggle" aria-expanded="false">
+			<i class="eicon-menu-bar" aria-hidden="true"></i>
+			<span class="elementor-screen-only">Menu</span>
+		</div>
+			<nav class="elementor-nav-menu--dropdown elementor-nav-menu__container" role="navigation" aria-hidden="true"><ul id="menu-2-7a30e13" class="elementor-nav-menu"><li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1807"><a href="https://smarty-2020.github.io/Smarty/about-us/" class="elementor-item">About us</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1808"><a href="https://smarty-2020.github.io/Smarty/classes/" class="elementor-item">Classes</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1809"><a href="https://smarty-2020.github.io/Smarty/members/" class="elementor-item">Members</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1812"><a href="https://smarty-2020.github.io/Smarty/library/" class="elementor-item">Library</a></li>
+<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1823"><a href="https://smarty-2020.github.io/Smarty/events/" class="elementor-item">Events</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1822"><a href="https://smarty-2020.github.io/Smarty/blog-classic/" class="elementor-item">Blog</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1821"><a href="https://smarty-2020.github.io/Smarty/contacts/" class="elementor-item">Contacts</a></li>
+</ul></nav>
+				</div>
+				</div>
+						</div>
+			</div>
+		</div>
+				<div class="elementor-element elementor-element-919e514 elementor-column elementor-col-25 elementor-top-column" data-id="919e514" data-element_type="column">
+			<div class="elementor-column-wrap  elementor-element-populated">
+					<div class="elementor-widget-wrap">
+				<div class="elementor-element elementor-element-7a5d47e elementor-align-center elementor-absolute elementor-widget elementor-widget-button" data-id="7a5d47e" data-element_type="widget" data-settings='{"_position":"absolute"}' data-widget_type="button.default">
+				<div class="elementor-widget-container">
+					<div class="elementor-button-wrapper">
+			<a href="#elementor-action%3Aaction%3Dpopup%3Aopen%26settings%3DeyJpZCI6IjE4MDIiLCJ0b2dnbGUiOmZhbHNlfQ%3D%3D" class="elementor-button-link elementor-button elementor-size-md elementor-animation-pop" role="button">
+						<span class="elementor-button-content-wrapper">
+						<span class="elementor-button-icon elementor-align-icon-left">
+				<i aria-hidden="true" class="olympus-icon olympus-icon-Login-Icon"></i>			</span>
+						<span class="elementor-button-text">Login</span>
+		</span>
+					</a>
+		</div>
+				</div>
+				</div>
+						</div>
+			</div>
+		</div>
+						</div>
+			</div>
+		</section>
+				<section data-particle_enable="false" data-particle-mobile-disabled="false" class="elementor-element elementor-element-1a24d13 elementor-section-height-min-height elementor-section-full_width elementor-section-height-default elementor-section-items-middle elementor-section elementor-top-section" data-id="1a24d13" data-element_type="section" data-settings='{"background_background":"classic","shape_divider_bottom":"wave-brush"}'>
+					<div class="elementor-shape elementor-shape-bottom" data-negative="false">
+			<svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 283.5 27.8" preserveaspectratio="none">
+	<path class="elementor-shape-fill" d="M283.5,9.7c0,0-7.3,4.3-14,4.6c-6.8,0.3-12.6,0-20.9-1.5c-11.3-2-33.1-10.1-44.7-5.7	s-12.1,4.6-18,7.4c-6.6,3.2-20,9.6-36.6,9.3C131.6,23.5,99.5,7.2,86.3,8c-1.4,0.1-6.6,0.8-10.5,2c-3.8,1.2-9.4,3.8-17,4.7	c-3.2,0.4-8.3,1.1-14.2,0.9c-1.5-0.1-6.3-0.4-12-1.6c-5.7-1.2-11-3.1-15.8-3.7C6.5,9.2,0,10.8,0,10.8V0h283.5V9.7z M260.8,11.3	c-0.7-1-2-0.4-4.3-0.4c-2.3,0-6.1-1.2-5.8-1.1c0.3,0.1,3.1,1.5,6,1.9C259.7,12.2,261.4,12.3,260.8,11.3z M242.4,8.6	c0,0-2.4-0.2-5.6-0.9c-3.2-0.8-10.3-2.8-15.1-3.5c-8.2-1.1-15.8,0-15.1,0.1c0.8,0.1,9.6-0.6,17.6,1.1c3.3,0.7,9.3,2.2,12.4,2.7	C239.9,8.7,242.4,8.6,242.4,8.6z M185.2,8.5c1.7-0.7-13.3,4.7-18.5,6.1c-2.1,0.6-6.2,1.6-10,2c-3.9,0.4-8.9,0.4-8.8,0.5	c0,0.2,5.8,0.8,11.2,0c5.4-0.8,5.2-1.1,7.6-1.6C170.5,14.7,183.5,9.2,185.2,8.5z M199.1,6.9c0.2,0-0.8-0.4-4.8,1.1	c-4,1.5-6.7,3.5-6.9,3.7c-0.2,0.1,3.5-1.8,6.6-3C197,7.5,199,6.9,199.1,6.9z M283,6c-0.1,0.1-1.9,1.1-4.8,2.5s-6.9,2.8-6.7,2.7	c0.2,0,3.5-0.6,7.4-2.5C282.8,6.8,283.1,5.9,283,6z M31.3,11.6c0.1-0.2-1.9-0.2-4.5-1.2s-5.4-1.6-7.8-2C15,7.6,7.3,8.5,7.7,8.6	C8,8.7,15.9,8.3,20.2,9.3c2.2,0.5,2.4,0.5,5.7,1.6S31.2,11.9,31.3,11.6z M73,9.2c0.4-0.1,3.5-1.6,8.4-2.6c4.9-1.1,8.9-0.5,8.9-0.8	c0-0.3-1-0.9-6.2-0.3S72.6,9.3,73,9.2z M71.6,6.7C71.8,6.8,75,5.4,77.3,5c2.3-0.3,1.9-0.5,1.9-0.6c0-0.1-1.1-0.2-2.7,0.2	C74.8,5.1,71.4,6.6,71.6,6.7z M93.6,4.4c0.1,0.2,3.5,0.8,5.6,1.8c2.1,1,1.8,0.6,1.9,0.5c0.1-0.1-0.8-0.8-2.4-1.3	C97.1,4.8,93.5,4.2,93.6,4.4z M65.4,11.1c-0.1,0.3,0.3,0.5,1.9-0.2s2.6-1.3,2.2-1.2s-0.9,0.4-2.5,0.8C65.3,10.9,65.5,10.8,65.4,11.1	z M34.5,12.4c-0.2,0,2.1,0.8,3.3,0.9c1.2,0.1,2,0.1,2-0.2c0-0.3-0.1-0.5-1.6-0.4C36.6,12.8,34.7,12.4,34.5,12.4z M152.2,21.1	c-0.1,0.1-2.4-0.3-7.5-0.3c-5,0-13.6-2.4-17.2-3.5c-3.6-1.1,10,3.9,16.5,4.1C150.5,21.6,152.3,21,152.2,21.1z"></path>
+	<path class="elementor-shape-fill" d="M269.6,18c-0.1-0.1-4.6,0.3-7.2,0c-7.3-0.7-17-3.2-16.6-2.9c0.4,0.3,13.7,3.1,17,3.3	C267.7,18.8,269.7,18,269.6,18z"></path>
+	<path class="elementor-shape-fill" d="M227.4,9.8c-0.2-0.1-4.5-1-9.5-1.2c-5-0.2-12.7,0.6-12.3,0.5c0.3-0.1,5.9-1.8,13.3-1.2	S227.6,9.9,227.4,9.8z"></path>
+	<path class="elementor-shape-fill" d="M204.5,13.4c-0.1-0.1,2-1,3.2-1.1c1.2-0.1,2,0,2,0.3c0,0.3-0.1,0.5-1.6,0.4	C206.4,12.9,204.6,13.5,204.5,13.4z"></path>
+	<path class="elementor-shape-fill" d="M201,10.6c0-0.1-4.4,1.2-6.3,2.2c-1.9,0.9-6.2,3.1-6.1,3.1c0.1,0.1,4.2-1.6,6.3-2.6	S201,10.7,201,10.6z"></path>
+	<path class="elementor-shape-fill" d="M154.5,26.7c-0.1-0.1-4.6,0.3-7.2,0c-7.3-0.7-17-3.2-16.6-2.9c0.4,0.3,13.7,3.1,17,3.3	C152.6,27.5,154.6,26.8,154.5,26.7z"></path>
+	<path class="elementor-shape-fill" d="M41.9,19.3c0,0,1.2-0.3,2.9-0.1c1.7,0.2,5.8,0.9,8.2,0.7c4.2-0.4,7.4-2.7,7-2.6	c-0.4,0-4.3,2.2-8.6,1.9c-1.8-0.1-5.1-0.5-6.7-0.4S41.9,19.3,41.9,19.3z"></path>
+	<path class="elementor-shape-fill" d="M75.5,12.6c0.2,0.1,2-0.8,4.3-1.1c2.3-0.2,2.1-0.3,2.1-0.5c0-0.1-1.8-0.4-3.4,0	C76.9,11.5,75.3,12.5,75.5,12.6z"></path>
+	<path class="elementor-shape-fill" d="M15.6,13.2c0-0.1,4.3,0,6.7,0.5c2.4,0.5,5,1.9,5,2c0,0.1-2.7-0.8-5.1-1.4	C19.9,13.7,15.7,13.3,15.6,13.2z"></path>
+</svg>		</div>
+					<div class="elementor-container elementor-column-gap-default">
+				<div class="elementor-row">
+				<div class="elementor-element elementor-element-08e7642 elementor-column elementor-col-50 elementor-top-column" data-id="08e7642" data-element_type="column">
+			<div class="elementor-column-wrap  elementor-element-populated">
+					<div class="elementor-widget-wrap">
+				<div class="elementor-element elementor-element-3bec2ad elementor-absolute dce_masking-none elementor-widget elementor-widget-image" data-id="3bec2ad" data-element_type="widget" data-settings='{"_position":"absolute"}' data-widget_type="image.default">
+				<div class="elementor-widget-container">
+					<div class="elementor-image">
+										<img width="1024" height="1024" src="https://smarty-2020.github.io/Smarty/wp-content/uploads/2020/07/PicsArt_07-02-08.03.08-1024x1024.png" class="attachment-large size-large" alt="" srcset="https://smarty-2020.github.io/Smarty/wp-content/uploads/2020/07/PicsArt_07-02-08.03.08-1024x1024.png 1024w,https://smarty-2020.github.io/Smarty/wp-content/uploads/2020/07/PicsArt_07-02-08.03.08-300x300.png 300w,https://smarty-2020.github.io/Smarty/wp-content/uploads/2020/07/PicsArt_07-02-08.03.08-150x150.png 150w,https://smarty-2020.github.io/Smarty/wp-content/uploads/2020/07/PicsArt_07-02-08.03.08-768x768.png 768w,https://smarty-2020.github.io/Smarty/wp-content/uploads/2020/07/PicsArt_07-02-08.03.08-1536x1536.png 1536w,https://smarty-2020.github.io/Smarty/wp-content/uploads/2020/07/PicsArt_07-02-08.03.08-2048x2048.png 2048w,https://smarty-2020.github.io/Smarty/wp-content/uploads/2020/07/PicsArt_07-02-08.03.08-110x110.png 110w" sizes="(max-width: 1024px) 100vw, 1024px">											</div>
+				</div>
+				</div>
+				<div class="elementor-element elementor-element-35c8073 elementor-absolute elementor-widget elementor-widget-button" data-id="35c8073" data-element_type="widget" data-settings='{"_position":"absolute"}' data-widget_type="button.default">
+				<div class="elementor-widget-container">
+					<div class="elementor-button-wrapper">
+			<a href="https://smarty-2020.github.io/Smarty/register/" target="_blank" class="elementor-button-link elementor-button elementor-size-lg elementor-animation-wobble-skew" role="button">
+						<span class="elementor-button-content-wrapper">
+						<span class="elementor-button-icon elementor-align-icon-left">
+				<i aria-hidden="true" class="far fa-arrow-alt-circle-right"></i>			</span>
+						<span class="elementor-button-text">Create a free acounte</span>
+		</span>
+					</a>
+		</div>
+				</div>
+				</div>
+						</div>
+			</div>
+		</div>
+				<div class="elementor-element elementor-element-78b320d elementor-column elementor-col-50 elementor-top-column" data-id="78b320d" data-element_type="column">
+			<div class="elementor-column-wrap  elementor-element-populated">
+					<div class="elementor-widget-wrap">
+				<div class="elementor-element elementor-element-2409a19 elementor-absolute elementor-widget__width-initial elementor-widget elementor-widget-ucaddon_blob_shapes" data-id="2409a19" data-element_type="widget" data-settings='{"_position":"absolute"}' data-widget_type="ucaddon_blob_shapes.default">
+				<div class="elementor-widget-container">
+			
+			<style type="text/css">/* widget: Blob Shapes */
+
+#uc_blob_shapes_elementor16504
+{
+  mix-blend-mode: lighten;
+  background-size:cover;
+  background-repeat:no-repeat;
+  background-position:center;
+  opacity: 100%;
+  
+}
+
+#uc_blob_shapes_elementor16504_size {
+  width: 100%;
+  clip-path: polygon(96.500% 13.800%, 97.700% 15.900%, 98.600% 18.100%, 99.300% 20.500%, 99.700% 23.000%, 99.900% 25.600%, 99.900% 28.300%, 99.700% 31.100%, 99.500% 34.000%, 99.000% 36.900%, 98.400% 39.900%, 97.700% 42.900%, 96.900% 45.900%, 96.000% 49.000%, 95.100% 52.100%, 94.100% 55.200%, 93.100% 58.200%, 92.100% 61.200%, 91.100% 64.100%, 90.100% 67.000%, 89.100% 69.800%, 88.000% 72.600%, 86.900% 75.300%, 85.700% 77.900%, 84.500% 80.400%, 83.200% 82.800%, 81.800% 85.100%, 80.300% 87.200%, 78.700% 89.200%, 77.000% 91.000%, 75.200% 92.700%, 73.300% 94.200%, 71.200% 95.600%, 69.000% 96.800%, 66.700% 97.800%, 64.300% 98.600%, 61.800% 99.200%, 59.200% 99.700%, 56.500% 100.000%, 53.800% 100.100%, 51.000% 100.100%, 48.200% 99.900%, 45.400% 99.600%, 42.600% 99.100%, 39.800% 98.500%, 37.000% 97.700%, 34.300% 96.800%, 31.700% 95.700%, 29.100% 94.500%, 26.600% 93.100%, 24.200% 91.600%, 21.900% 90.000%, 19.700% 88.300%, 17.600% 86.500%, 15.600% 84.500%, 13.700% 82.400%, 11.900% 80.300%, 10.300% 78.100%, 8.800% 75.800%, 7.400% 73.400%, 6.100% 70.900%, 4.900% 68.400%, 3.800% 65.800%, 2.800% 63.100%, 2.000% 60.400%, 1.300% 57.600%, 0.700% 54.800%, 0.200% 52.000%, -0.100% 49.200%, -0.300% 46.400%, 0.000% 43.300%, 0.100% 40.500%, 0.300% 37.700%, 0.700% 35.000%, 1.200% 32.300%, 1.900% 29.700%, 2.800% 27.200%, 3.800% 24.700%, 5.000% 22.300%, 6.400% 20.000%, 8.000% 17.900%, 9.800% 15.900%, 11.700% 14.000%, 13.800% 12.200%, 16.100% 10.500%, 18.500% 9.000%, 21.000% 7.600%, 23.700% 6.300%, 26.500% 5.100%, 29.400% 4.100%, 32.400% 3.200%, 35.500% 2.400%, 38.700% 1.700%, 41.900% 1.100%, 45.200% 0.600%, 48.500% 0.300%, 51.900% 0.100%, 55.300% 0.000%, 58.700% 0.000%, 62.100% 0.100%, 65.500% 0.300%, 68.800% 0.700%, 72.100% 1.200%, 75.300% 1.800%, 78.400% 2.600%, 81.300% 3.500%, 84.100% 4.500%, 86.700% 5.700%, 89.100% 7.000%, 91.300% 8.500%, 93.300% 10.100%, 95.000% 11.900%, 96.500% 13.800%);
+  -webkit-clip-path: polygon(96.500% 13.800%, 97.700% 15.900%, 98.600% 18.100%, 99.300% 20.500%, 99.700% 23.000%, 99.900% 25.600%, 99.900% 28.300%, 99.700% 31.100%, 99.500% 34.000%, 99.000% 36.900%, 98.400% 39.900%, 97.700% 42.900%, 96.900% 45.900%, 96.000% 49.000%, 95.100% 52.100%, 94.100% 55.200%, 93.100% 58.200%, 92.100% 61.200%, 91.100% 64.100%, 90.100% 67.000%, 89.100% 69.800%, 88.000% 72.600%, 86.900% 75.300%, 85.700% 77.900%, 84.500% 80.400%, 83.200% 82.800%, 81.800% 85.100%, 80.300% 87.200%, 78.700% 89.200%, 77.000% 91.000%, 75.200% 92.700%, 73.300% 94.200%, 71.200% 95.600%, 69.000% 96.800%, 66.700% 97.800%, 64.300% 98.600%, 61.800% 99.200%, 59.200% 99.700%, 56.500% 100.000%, 53.800% 100.100%, 51.000% 100.100%, 48.200% 99.900%, 45.400% 99.600%, 42.600% 99.100%, 39.800% 98.500%, 37.000% 97.700%, 34.300% 96.800%, 31.700% 95.700%, 29.100% 94.500%, 26.600% 93.100%, 24.200% 91.600%, 21.900% 90.000%, 19.700% 88.300%, 17.600% 86.500%, 15.600% 84.500%, 13.700% 82.400%, 11.900% 80.300%, 10.300% 78.100%, 8.800% 75.800%, 7.400% 73.400%, 6.100% 70.900%, 4.900% 68.400%, 3.800% 65.800%, 2.800% 63.100%, 2.000% 60.400%, 1.300% 57.600%, 0.700% 54.800%, 0.200% 52.000%, -0.100% 49.200%, -0.300% 46.400%, 0.000% 43.300%, 0.100% 40.500%, 0.300% 37.700%, 0.700% 35.000%, 1.200% 32.300%, 1.900% 29.700%, 2.800% 27.200%, 3.800% 24.700%, 5.000% 22.300%, 6.400% 20.000%, 8.000% 17.900%, 9.800% 15.900%, 11.700% 14.000%, 13.800% 12.200%, 16.100% 10.500%, 18.500% 9.000%, 21.000% 7.600%, 23.700% 6.300%, 26.500% 5.100%, 29.400% 4.100%, 32.400% 3.200%, 35.500% 2.400%, 38.700% 1.700%, 41.900% 1.100%, 45.200% 0.600%, 48.500% 0.300%, 51.900% 0.100%, 55.300% 0.000%, 58.700% 0.000%, 62.100% 0.100%, 65.500% 0.300%, 68.800% 0.700%, 72.100% 1.200%, 75.300% 1.800%, 78.400% 2.600%, 81.300% 3.500%, 84.100% 4.500%, 86.700% 5.700%, 89.100% 7.000%, 91.300% 8.500%, 93.300% 10.100%, 95.000% 11.900%, 96.500% 13.800%);
+  background:linear-gradient(1deg,  5%, 50%,  100%); 
+}
+
+#uc_blob_shapes_elementor16504_justification {
+  display: flex;
+  justify-content: center;
+}
+
+</style>
+
+			<div id="uc_blob_shapes_elementor16504_justification">
+<div id="uc_blob_shapes_elementor16504_size">
+    	
+    <div id="uc_blob_shapes_elementor16504" style="background-image:url(https://smarty-2020.github.io/Smarty/wp-content/uploads/2020/05/e-learning-2.jpg)" class="blob">
+    </div>
+    </div>
+</div>
+					</div>
+				</div>
+				<div class="elementor-element elementor-element-0e9135f elementor-absolute elementor-widget elementor-widget-ucaddon_blox_play_button" data-id="0e9135f" data-element_type="widget" data-settings='{"_position":"absolute"}' data-widget_type="ucaddon_blox_play_button.default">
+				<div class="elementor-widget-container">
+			
+		<link id="font-awesome-4-shim-css" href="https://smarty-2020.github.io/Smarty/wp-content/plugins/unlimited-elements-for-elementor-premium/assets_libraries/font-awesome5/css/fontawesome-v4-shims.css" type="text/css" rel="stylesheet">
+		<link id="lity-css" href="https://smarty-2020.github.io/Smarty/wp-content/plugins/unlimited-elements-for-elementor-premium/assets_libraries/lity/lity.min.css" type="text/css" rel="stylesheet">
+
+			<style type="text/css">/* widget: Video Play Button Popup */
+
+#uc_blox_play_button_elementor22811
+{
+ width:100%;
+}
+#uc_blox_play_button_elementor22811 a
+{
+  display:inline-block;
+  transition:0.5s;
+  text-decoration:none;
+}
+
+#uc_blox_play_button_elementor22811 a:hover
+{
+  transform:scale(1.1,1.1);
+}
+
+#uc_blox_play_button_elementor22811 a span
+{
+  display:inline-block;
+
+  background-color:#007EFF;
+   align-items: center;
+    justify-content: center;
+    flex-direction: column; 
+   display:flex;
+  border:0px solid #007EFF;
+  position:relative;
+}
+
+#uc_blox_play_button_elementor22811 i
+{
+  font-size:23px;
+  color:#FFFFFF;
+  vertical-align:middle;
+}
+
+
+
+</style>
+
+			<div style="text-align:center;" id="uc_blox_play_button_elementor22811">  
+<a href="//www.youtube.com/watch?v=XSGBVzeBUbk" data-lity>
+  <span class="video-button">
+  <i class="fas fa-play"> </i>
+  </span>  
+</a>
+</div>
+					</div>
+				</div>
+						</div>
+			</div>
+		</div>
+						</div>
+			</div>
+		</section>
+				<section data-particle_enable="false" data-particle-mobile-disabled="false" class="elementor-element elementor-element-97a1129 elementor-section-full_width elementor-section-height-min-height elementor-section-height-default elementor-section-items-middle elementor-section elementor-top-section" data-id="97a1129" data-element_type="section">
+						<div class="elementor-container elementor-column-gap-default">
+				<div class="elementor-row">
+				<div class="elementor-element elementor-element-e046acb elementor-column elementor-col-100 elementor-top-column" data-id="e046acb" data-element_type="column">
+			<div class="elementor-column-wrap  elementor-element-populated">
+					<div class="elementor-widget-wrap">
+				<div class="elementor-element elementor-element-4f9a151 elementor-widget elementor-widget-heading" data-id="4f9a151" data-element_type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+			<h3 class="elementor-heading-title elementor-size-default">What's Smarty?</h3>		</div>
+				</div>
+				<div class="elementor-element elementor-element-45462b5 elementor-widget elementor-widget-heading" data-id="45462b5" data-element_type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+			<h1 class="elementor-heading-title elementor-size-default">A platform for</h1>		</div>
+				</div>
+				<div class="elementor-element elementor-element-0e45740 elementor--h-position-center elementor--v-position-middle elementor-arrows-position-inside elementor-pagination-position-inside elementor-widget elementor-widget-slides" data-id="0e45740" data-element_type="widget" data-settings='{"navigation":"both","autoplay":"yes","pause_on_hover":"yes","autoplay_speed":5000,"infinite":"yes","transition":"slide","transition_speed":500}' data-widget_type="slides.default">
+				<div class="elementor-widget-container">
+					<div class="elementor-swiper">
+			<div class="elementor-slides-wrapper elementor-main-swiper swiper-container" dir="ltr" data-animation="fadeInRight">
+				<div class="swiper-wrapper elementor-slides">
+					<div class="elementor-repeater-item-47bf5f8 swiper-slide"><div class="swiper-slide-bg"></div><div class="swiper-slide-inner"><div class="swiper-slide-contents"><div class="elementor-slide-heading">Share moments in class.</div></div></div></div><div class="elementor-repeater-item-7dd5502 swiper-slide"><div class="swiper-slide-bg"></div><div class="swiper-slide-inner"><div class="swiper-slide-contents"><div class="elementor-slide-heading">Engage parents.</div></div></div></div><div class="elementor-repeater-item-87bd180 swiper-slide"><div class="swiper-slide-bg"></div><div class="swiper-slide-inner"><div class="swiper-slide-contents"><div class="elementor-slide-heading">meet students.</div></div></div></div><div class="elementor-repeater-item-057ec55 swiper-slide"><div class="swiper-slide-bg"></div><div class="swiper-slide-inner"><div class="swiper-slide-contents"><div class="elementor-slide-heading">Talk privately to parents.</div></div></div></div><div class="elementor-repeater-item-5b54fd6 swiper-slide"><div class="swiper-slide-bg"></div><div class="swiper-slide-inner"><div class="swiper-slide-contents"><div class="elementor-slide-heading">Share courses.</div></div></div></div>				</div>
+															<div class="swiper-pagination"></div>
+																<div class="elementor-swiper-button elementor-swiper-button-prev">
+							<i class="eicon-chevron-left" aria-hidden="true"></i>
+							<span class="elementor-screen-only">Previous</span>
+						</div>
+						<div class="elementor-swiper-button elementor-swiper-button-next">
+							<i class="eicon-chevron-right" aria-hidden="true"></i>
+							<span class="elementor-screen-only">Next</span>
+						</div>
+												</div>
+		</div>
+				</div>
+				</div>
+						</div>
+			</div>
+		</div>
+						</div>
+			</div>
+		</section>
+				<section data-particle_enable="false" data-particle-mobile-disabled="false" class="elementor-element elementor-element-46edaad elementor-section-full_width elementor-section-height-min-height elementor-section-height-default elementor-section-items-middle elementor-section elementor-top-section" data-id="46edaad" data-element_type="section" data-settings='{"background_background":"classic","shape_divider_top":"mountains","shape_divider_bottom":"drops"}'>
+					<div class="elementor-shape elementor-shape-top" data-negative="false">
+			<svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 1000 100" preserveaspectratio="none">
+	<path class="elementor-shape-fill" opacity="0.33" d="M473,67.3c-203.9,88.3-263.1-34-320.3,0C66,119.1,0,59.7,0,59.7V0h1000v59.7 c0,0-62.1,26.1-94.9,29.3c-32.8,3.3-62.8-12.3-75.8-22.1C806,49.6,745.3,8.7,694.9,4.7S492.4,59,473,67.3z"></path>
+	<path class="elementor-shape-fill" opacity="0.66" d="M734,67.3c-45.5,0-77.2-23.2-129.1-39.1c-28.6-8.7-150.3-10.1-254,39.1 s-91.7-34.4-149.2,0C115.7,118.3,0,39.8,0,39.8V0h1000v36.5c0,0-28.2-18.5-92.1-18.5C810.2,18.1,775.7,67.3,734,67.3z"></path>
+	<path class="elementor-shape-fill" d="M766.1,28.9c-200-57.5-266,65.5-395.1,19.5C242,1.8,242,5.4,184.8,20.6C128,35.8,132.3,44.9,89.9,52.5C28.6,63.7,0,0,0,0 h1000c0,0-9.9,40.9-83.6,48.1S829.6,47,766.1,28.9z"></path>
+</svg>		</div>
+				<div class="elementor-shape elementor-shape-bottom" data-negative="false">
+			<svg xmlns="http://www.w3.org/2000/svg" height="100%" viewbox="0 0 283.5 27.8" preserveaspectratio="xMidYMax slice">
+	<path class="elementor-shape-fill" d="M0 0v1.4c.6.7 1.1 1.4 1.4 2 2 3.8 2.2 6.6 1.8 10.8-.3 3.3-2.4 9.4 0 12.3 1.7 2 3.7 1.4 4.6-.9 1.4-3.8-.7-8.2-.6-12 .1-3.7 3.2-5.5 6.9-4.9 4 .6 4.8 4 4.9 7.4.1 1.8-1.1 7 0 8.5.6.8 1.6 1.2 2.4.5 1.4-1.1.1-5.4.1-6.9.1-3.7.3-8.6 4.1-10.5 5-2.5 6.2 1.6 5.4 5.6-.4 1.7-1 9.2 2.9 6.3 1.5-1.1.7-3.5.5-4.9-.4-2.4-.4-4.3 1-6.5.9-1.4 2.4-3.1 4.2-3 2.4.1 2.7 2.2 4 3.7 1.5 1.8 1.8 2.2 3 .1 1.1-1.9 1.2-2.8 3.6-3.3 1.3-.3 4.8-1.4 5.9-.5 1.5 1.1.6 2.8.4 4.3-.2 1.1-.6 4 1.8 3.4 1.7-.4-.3-4.1.6-5.6 1.3-2.2 5.8-1.4 7 .5 1.3 2.1.5 5.8.1 8.1s-1.2 5-.6 7.4c1.3 5.1 4.4.9 4.3-2.4-.1-4.4-2-8.8-.5-13 .9-2.4 4.6-6.6 7.7-4.5 2.7 1.8.5 7.8.2 10.3-.2 1.7-.8 4.6.2 6.2.9 1.4 2 1.5 2.6-.3.5-1.5-.9-4.5-1-6.1-.2-1.7-.4-3.7.2-5.4 1.8-5.6 3.5 2.4 6.3.6 1.4-.9 4.3-9.4 6.1-3.1.6 2.2-1.3 7.8.7 8.9 4.2 2.3 1.5-7.1 2.2-8 3.1-4 4.7 3.8 6.1 4.1 3.1.7 2.8-7.9 8.1-4.5 1.7 1.1 2.9 3.3 3.2 5.2.4 2.2-1 4.5-.6 6.6 1 4.3 4.4 1.5 4.4-1.7 0-2.7-3-8.3 1.4-9.1 4.4-.9 7.3 3.5 7.8 6.9.3 2-1.5 10.9 1.3 11.3 4.1.6-3.2-15.7 4.8-15.8 4.7-.1 2.8 4.1 3.9 6.6 1 2.4 2.1 1 2.3-.8.3-1.9-.9-3.2 1.3-4.3 5.9-2.9 5.9 5.4 5.5 8.5-.3 2-1.7 8.4 2 8.1 6.9-.5-2.8-16.9 4.8-18.7 4.7-1.2 6.1 3.6 6.3 7.1.1 1.7-1.2 8.1.6 9.1 3.5 2 1.9-7 2-8.4.2-4 1.2-9.6 6.4-9.8 4.7-.2 3.2 4.6 2.7 7.5-.4 2.2 1.3 8.6 3.8 4.4 1.1-1.9-.3-4.1-.3-6 0-1.7.4-3.2 1.3-4.6 1-1.6 2.9-3.5 5.1-2.9 2.5.6 2.3 4.1 4.1 4.9 1.9.8 1.6-.9 2.3-2.1 1.2-2.1 2.1-2.1 4.4-2.4 1.4-.2 3.6-1.5 4.9-.5 2.3 1.7-.7 4.4.1 6.5.6 1.5 2.1 1.7 2.8.3.7-1.4-1.1-3.4-.3-4.8 1.4-2.5 6.2-1.2 7.2 1 2.3 4.8-3.3 12-.2 16.3 3 4.1 3.9-2.8 3.8-4.8-.4-4.3-2.1-8.9 0-13.1 1.3-2.5 5.9-5.7 7.9-2.4 2 3.2-1.3 9.8-.8 13.4.5 4.4 3.5 3.3 2.7-.8-.4-1.9-2.4-10 .6-11.1 3.7-1.4 2.8 7.2 6.5.4 2.2-4.1 4.9-3.1 5.2 1.2.1 1.5-.6 3.1-.4 4.6.2 1.9 1.8 3.7 3.3 1.3 1-1.6-2.6-10.4 2.9-7.3 2.6 1.5 1.6 6.5 4.8 2.7 1.3-1.5 1.7-3.6 4-3.7 2.2-.1 4 2.3 4.8 4.1 1.3 2.9-1.5 8.4.9 10.3 4.2 3.3 3-5.5 2.7-6.9-.6-3.9 1-7.2 5.5-5 4.1 2.1 4.3 7.7 4.1 11.6 0 .8-.6 9.5 2.5 5.2 1.2-1.7-.1-7.7.1-9.6.3-2.9 1.2-5.5 4.3-6.2 4.5-1 7.7 1.5 7.4 5.8-.2 3.5-1.8 7.7-.5 11.1 1 2.7 3.6 2.8 5 .2 1.6-3.1 0-8.3-.4-11.6-.4-4.2-.2-7 1.8-10.8 0 0-.1.1-.1.2-.2.4-.3.7-.4.8v.1c-.1.2-.1.2 0 0v-.1l.4-.8c0-.1.1-.1.1-.2.2-.4.5-.8.8-1.2V0H0zM282.7 3.4z"></path>
+</svg>		</div>
+					<div class="elementor-container elementor-column-gap-default">
+				<div class="elementor-row">
+				<div class="elementor-element elementor-element-1b6a8f0 elementor-column elementor-col-14 elementor-top-column" data-id="1b6a8f0" data-element_type="column">
+			<div class="elementor-column-wrap  elementor-element-populated">
+					<div class="elementor-widget-wrap">
+				<div class="elementor-element elementor-element-bdcf763 elementor-view-default elementor-widget elementor-widget-icon" data-id="bdcf763" data-element_type="widget" data-widget_type="icon.default">
+				<div class="elementor-widget-container">
+					<div class="elementor-icon-wrapper">
+			<div class="elementor-icon">
+			<i aria-hidden="true" class="fab fa-facebook"></i>			</div>
+		</div>
+				</div>
+				</div>
+				<div class="elementor-element elementor-element-e3bbc53 elementor-widget elementor-widget-heading" data-id="e3bbc53" data-element_type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+			<h2 class="elementor-heading-title elementor-size-default">Social Media System</h2>		</div>
+				</div>
+						</div>
+			</div>
+		</div>
+				<div class="elementor-element elementor-element-e69e574 elementor-column elementor-col-14 elementor-top-column" data-id="e69e574" data-element_type="column">
+			<div class="elementor-column-wrap  elementor-element-populated">
+					<div class="elementor-widget-wrap">
+				<div class="elementor-element elementor-element-9707fd7 elementor-view-default elementor-widget elementor-widget-icon" data-id="9707fd7" data-element_type="widget" data-widget_type="icon.default">
+				<div class="elementor-widget-container">
+					<div class="elementor-icon-wrapper">
+			<div class="elementor-icon">
+			<i aria-hidden="true" class="fas fa-plus"></i>			</div>
+		</div>
+				</div>
+				</div>
+						</div>
+			</div>
+		</div>
+				<div class="elementor-element elementor-element-0aa5367 elementor-column elementor-col-14 elementor-top-column" data-id="0aa5367" data-element_type="column">
+			<div class="elementor-column-wrap  elementor-element-populated">
+					<div class="elementor-widget-wrap">
+				<div class="elementor-element elementor-element-ec75fb5 elementor-view-default elementor-widget elementor-widget-icon" data-id="ec75fb5" data-element_type="widget" data-widget_type="icon.default">
+				<div class="elementor-widget-container">
+					<div class="elementor-icon-wrapper">
+			<div class="elementor-icon">
+			<i aria-hidden="true" class="fab fa-leanpub"></i>			</div>
+		</div>
+				</div>
+				</div>
+				<div class="elementor-element elementor-element-d114e14 elementor-widget elementor-widget-heading" data-id="d114e14" data-element_type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+			<h2 class="elementor-heading-title elementor-size-default">Learning Manegment System</h2>		</div>
+				</div>
+						</div>
+			</div>
+		</div>
+				<div class="elementor-element elementor-element-be4eed1 elementor-column elementor-col-14 elementor-top-column" data-id="be4eed1" data-element_type="column">
+			<div class="elementor-column-wrap  elementor-element-populated">
+					<div class="elementor-widget-wrap">
+				<div class="elementor-element elementor-element-66075d9 elementor-view-default elementor-widget elementor-widget-icon" data-id="66075d9" data-element_type="widget" data-widget_type="icon.default">
+				<div class="elementor-widget-container">
+					<div class="elementor-icon-wrapper">
+			<div class="elementor-icon">
+			<i aria-hidden="true" class="fas fa-plus"></i>			</div>
+		</div>
+				</div>
+				</div>
+						</div>
+			</div>
+		</div>
+				<div class="elementor-element elementor-element-450a6e5 elementor-column elementor-col-14 elementor-top-column" data-id="450a6e5" data-element_type="column">
+			<div class="elementor-column-wrap  elementor-element-populated">
+					<div class="elementor-widget-wrap">
+				<div class="elementor-element elementor-element-1aa82ee elementor-view-default elementor-widget elementor-widget-icon" data-id="1aa82ee" data-element_type="widget" data-widget_type="icon.default">
+				<div class="elementor-widget-container">
+					<div class="elementor-icon-wrapper">
+			<div class="elementor-icon">
+			<i aria-hidden="true" class="icon icon-valentines-heart"></i>			</div>
+		</div>
+				</div>
+				</div>
+				<div class="elementor-element elementor-element-7f36509 elementor-widget elementor-widget-heading" data-id="7f36509" data-element_type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+			<h2 class="elementor-heading-title elementor-size-default">Love</h2>		</div>
+				</div>
+						</div>
+			</div>
+		</div>
+				<div class="elementor-element elementor-element-c37fea7 elementor-column elementor-col-14 elementor-top-column" data-id="c37fea7" data-element_type="column">
+			<div class="elementor-column-wrap  elementor-element-populated">
+					<div class="elementor-widget-wrap">
+				<div class="elementor-element elementor-element-b43e502 elementor-view-default elementor-widget elementor-widget-icon" data-id="b43e502" data-element_type="widget" data-widget_type="icon.default">
+				<div class="elementor-widget-container">
+					<div class="elementor-icon-wrapper">
+			<div class="elementor-icon">
+			<i aria-hidden="true" class="fas fa-equals"></i>			</div>
+		</div>
+				</div>
+				</div>
+						</div>
+			</div>
+		</div>
+				<div class="elementor-element elementor-element-b368019 elementor-column elementor-col-14 elementor-top-column" data-id="b368019" data-element_type="column">
+			<div class="elementor-column-wrap  elementor-element-populated">
+					<div class="elementor-widget-wrap">
+				<div class="elementor-element elementor-element-3ceb3fc elementor-absolute dce_masking-none elementor-widget elementor-widget-image" data-id="3ceb3fc" data-element_type="widget" data-settings='{"_position":"absolute"}' data-widget_type="image.default">
+				<div class="elementor-widget-container">
+					<div class="elementor-image">
+										<img width="512" height="512" src="https://smarty-2020.github.io/Smarty/wp-content/uploads/2020/06/endpoint-1.png" class="attachment-large size-large" alt="" srcset="https://smarty-2020.github.io/Smarty/wp-content/uploads/2020/06/endpoint-1.png 512w,https://smarty-2020.github.io/Smarty/wp-content/uploads/2020/06/endpoint-1-300x300.png 300w,https://smarty-2020.github.io/Smarty/wp-content/uploads/2020/06/endpoint-1-150x150.png 150w,https://smarty-2020.github.io/Smarty/wp-content/uploads/2020/06/endpoint-1-110x110.png 110w" sizes="(max-width: 512px) 100vw, 512px">											</div>
+				</div>
+				</div>
+						</div>
+			</div>
+		</div>
+						</div>
+			</div>
+		</section>
+				<section data-particle_enable="false" data-particle-mobile-disabled="false" class="elementor-element elementor-element-89dab5c elementor-section-boxed elementor-section-height-default elementor-section-height-default elementor-section elementor-top-section" data-id="89dab5c" data-element_type="section">
+						<div class="elementor-container elementor-column-gap-default">
+				<div class="elementor-row">
+				<div class="elementor-element elementor-element-5424ae5 elementor-column elementor-col-33 elementor-top-column" data-id="5424ae5" data-element_type="column">
+			<div class="elementor-column-wrap  elementor-element-populated">
+					<div class="elementor-widget-wrap">
+				<div class="elementor-element elementor-element-4345684 elementor-flip-box--direction-left elementor-flip-box--3d elementor-flip-box--effect-flip elementor-widget elementor-widget-flip-box" data-id="4345684" data-element_type="widget" data-widget_type="flip-box.default">
+				<div class="elementor-widget-container">
+					<div class="elementor-flip-box">
+			<div class="elementor-flip-box__layer elementor-flip-box__front">
+				<div class="elementor-flip-box__layer__overlay">
+					<div class="elementor-flip-box__layer__inner">
+													<div class="elementor-icon-wrapper elementor-view-framed elementor-shape-circle">
+								<div class="elementor-icon">
+									<i class="fas fa-chalkboard-teacher"></i>								</div>
+							</div>
+						
+													<h3 class="elementor-flip-box__layer__title">
+								Teacher							</h3>
+						
+													<div class="elementor-flip-box__layer__description">
+								Best plateform to create interactive courses and share it with your students							</div>
+											</div>
+				</div>
+			</div>
+			<div class="elementor-flip-box__layer elementor-flip-box__back">
+			<div class="elementor-flip-box__layer__overlay">
+				<div class="elementor-flip-box__layer__inner">
+											<h3 class="elementor-flip-box__layer__title">
+							Register Now and create your virtual classroom.						</h3>
+					
+					
+											<a class="elementor-flip-box__button elementor-button elementor-size-sm" href="https://smarty-2020.github.io/Smarty/register/" target="_blank">
+						Register Now!						</a>
+								</div>
+		</div>
+		</div>
+		</div>
+				</div>
+				</div>
+						</div>
+			</div>
+		</div>
+				<div class="elementor-element elementor-element-4b6cd44 elementor-column elementor-col-33 elementor-top-column" data-id="4b6cd44" data-element_type="column">
+			<div class="elementor-column-wrap  elementor-element-populated">
+					<div class="elementor-widget-wrap">
+				<div class="elementor-element elementor-element-92398ab elementor-flip-box--3d elementor-flip-box--effect-flip elementor-flip-box--direction-up elementor-widget elementor-widget-flip-box" data-id="92398ab" data-element_type="widget" data-widget_type="flip-box.default">
+				<div class="elementor-widget-container">
+					<div class="elementor-flip-box">
+			<div class="elementor-flip-box__layer elementor-flip-box__front">
+				<div class="elementor-flip-box__layer__overlay">
+					<div class="elementor-flip-box__layer__inner">
+													<div class="elementor-icon-wrapper elementor-view-framed elementor-shape-circle">
+								<div class="elementor-icon">
+									<i class="fas fa-book-reader"></i>								</div>
+							</div>
+						
+													<h3 class="elementor-flip-box__layer__title">
+								Student							</h3>
+						
+													<div class="elementor-flip-box__layer__description">
+								Join your classe, contact your teacher and your friends  and share moments.							</div>
+											</div>
+				</div>
+			</div>
+			<div class="elementor-flip-box__layer elementor-flip-box__back">
+			<div class="elementor-flip-box__layer__overlay">
+				<div class="elementor-flip-box__layer__inner">
+											<h3 class="elementor-flip-box__layer__title">
+							Registre now and join your classe with your classmates.						</h3>
+					
+					
+											<a class="elementor-flip-box__button elementor-button elementor-size-sm" href="https://smarty-2020.github.io/Smarty/register/" target="_blank">
+						Register Now!						</a>
+								</div>
+		</div>
+		</div>
+		</div>
+				</div>
+				</div>
+						</div>
+			</div>
+		</div>
+				<div class="elementor-element elementor-element-d83baba elementor-column elementor-col-33 elementor-top-column" data-id="d83baba" data-element_type="column">
+			<div class="elementor-column-wrap  elementor-element-populated">
+					<div class="elementor-widget-wrap">
+				<div class="elementor-element elementor-element-46bb8fd elementor-flip-box--direction-right elementor-flip-box--3d elementor-flip-box--effect-flip elementor-widget elementor-widget-flip-box" data-id="46bb8fd" data-element_type="widget" data-widget_type="flip-box.default">
+				<div class="elementor-widget-container">
+					<div class="elementor-flip-box">
+			<div class="elementor-flip-box__layer elementor-flip-box__front">
+				<div class="elementor-flip-box__layer__overlay">
+					<div class="elementor-flip-box__layer__inner">
+													<div class="elementor-icon-wrapper elementor-view-framed elementor-shape-circle">
+								<div class="elementor-icon">
+									<i class="icon icon-Family"></i>								</div>
+							</div>
+						
+													<h3 class="elementor-flip-box__layer__title">
+								Parents							</h3>
+						
+													<div class="elementor-flip-box__layer__description">
+								You want to control your child from your home or you work. Smarty is the best solution							</div>
+											</div>
+				</div>
+			</div>
+			<div class="elementor-flip-box__layer elementor-flip-box__back">
+			<div class="elementor-flip-box__layer__overlay">
+				<div class="elementor-flip-box__layer__inner">
+											<h3 class="elementor-flip-box__layer__title">
+							Register Now and control your child education.						</h3>
+					
+					
+											<a class="elementor-flip-box__button elementor-button elementor-size-sm" href="https://smarty-2020.github.io/Smarty/register/" target="_blank">
+						Register Now!						</a>
+								</div>
+		</div>
+		</div>
+		</div>
+				</div>
+				</div>
+						</div>
+			</div>
+		</div>
+						</div>
+			</div>
+		</section>
+				<section data-particle_enable="false" data-particle-mobile-disabled="false" class="elementor-element elementor-element-22e058a elementor-section-boxed elementor-section-height-default elementor-section-height-default elementor-section elementor-top-section" data-id="22e058a" data-element_type="section">
+						<div class="elementor-container elementor-column-gap-default">
+				<div class="elementor-row">
+				<div class="elementor-element elementor-element-53c06a7 elementor-column elementor-col-100 elementor-top-column" data-id="53c06a7" data-element_type="column">
+			<div class="elementor-column-wrap">
+					<div class="elementor-widget-wrap">
+						</div>
+			</div>
+		</div>
+						</div>
+			</div>
+		</section>
+						</div>
+			</div>
+		</div>
+		<input type="hidden" id="yzpr-post-reaction-nonce" name="yzpr-post-reaction-nonce" value="62c24c3578"><input type="hidden" name="_wp_http_referer" value="/ta3lim/">		<script>
+		( function ( body ) {
+			'use strict';
+			body.className = body.className.replace( /\btribe-no-js\b/, 'tribe-js' );
+		} )( document.body );
+		</script>
+				<div data-elementor-type="popup" data-elementor-id="1802" data-post-id="1528" class="elementor elementor-1802 dce-elementor-post-1528 elementor-location-popup" data-elementor-settings='{"timing":[]}'>
+		<div class="elementor-inner">
+			<div class="elementor-section-wrap">
+						<section data-particle_enable="false" data-particle-mobile-disabled="false" class="elementor-element elementor-element-729c472 elementor-section-height-min-height elementor-section-content-middle elementor-section-boxed elementor-section-height-default elementor-section-items-middle elementor-section elementor-top-section" data-id="729c472" data-element_type="section" data-settings='{"background_background":"classic"}'>
+						<div class="elementor-container elementor-column-gap-wider">
+				<div class="elementor-row">
+				<div class="elementor-element elementor-element-4f8b7c7 elementor-column elementor-col-100 elementor-top-column" data-id="4f8b7c7" data-element_type="column">
+			<div class="elementor-column-wrap  elementor-element-populated">
+					<div class="elementor-widget-wrap">
+				<div class="elementor-element elementor-element-a14e060 elementor-widget elementor-widget-shortcode" data-id="a14e060" data-element_type="widget" data-widget_type="shortcode.default">
+				<div class="elementor-widget-container">
+			<div class="logy-login-shortcode">		
+		<div class="logy-form logy-login-page logy-with-header logy-with-labels logy-fields-icon logy-full-border logy-border-flat logy-icons-left logy-silver-icons">
+
+			
+    	<header class="logy-form-header">
+	    		    		<div class="logy-form-cover logy-custom-cover" style="background-image: url( https://smarty-2020.github.io/Smarty/wp-content/uploads/2020/06/3560436-scaled.jpg )">
+			        <h2 class="form-cover-title">Hi, Welcome Back!</h2>
+	    		</div>
+	    	    	</header>
+
+	    					
+		
+		
+		
+		
+	
+			<form id="logy-form" class="logy-login-form" method="post" action="https://smarty-2020.github.io/Smarty/wp-login.php">
+
+				
+				
+								<div class="logy-form-item">
+		    		<div class="logy-item-content">
+			           				           		<label for="user_login">Username or Email</label>
+			        				           <div class="logy-field-content">
+		           								           <div class="logy-field-icon">
+		           					<i class="fas fa-user"></i>
+		           				</div>
+		        							    		<input type="text" name="log" autocomplete="false" placeholder="" value="" required>
+			            </div>
+		        	</div>
+		       	</div>
+							<div class="logy-form-item">
+		    		<div class="logy-item-content">
+			           				           		<label for="user_pass">Password</label>
+			        				           <div class="logy-field-content">
+		           								           <div class="logy-field-icon">
+		           					<i class="fas fa-lock"></i>
+		           				</div>
+		        							    		<input type="password" name="pwd" autocomplete="false" placeholder="" value="" required>
+			            </div>
+		        	</div>
+		       	</div>
+					    	<div class="logy-form-item logy-remember-me">
+		    		<div class="logy-item-content">
+			        	<label class="logy_checkbox_field"><input name="rememberme" type="checkbox" value="forever"><div class="logy_field_indication"></div>Remember Me</label>
+		    			
+		        	</div>
+					<a class="logy-forgot-password" href="https://smarty-2020.github.io/Smarty/lost-password/">Lost password?</a>		        </div>
+							<div class="logy-form-actions logy-fullwidth-button logy-border-radius">				<div class="logy-action-item logy-submit-item">
+					<div class="logy-item-inner">
+	           			<button type="submit" value="submit" name="signin_submit">
+	            				           				<span class="logy-button-title">Log In</span>
+	           			</button>
+	            	</div>
+	            </div>
+							<div class="logy-action-item logy-link-item">
+					<div class="logy-item-inner">
+	            		<a href="https://smarty-2020.github.io/Smarty/register/" class="logy-link-button">
+	            				           				Create New Account	            		</a>
+	            	</div>
+	            </div>
+										</div>
+				
+						
+		<input type="hidden" name="yz_ajax_login_nonce" value="5f75706ad1">
+
+		
+				<input type="hidden" name="logy-form" value="1">
+
+			</form>
+
+		</div>
+
+		</div>		<div class="elementor-shortcode"></div>
+				</div>
+				</div>
+						</div>
+			</div>
+		</div>
+						</div>
+			</div>
+		</section>
+					</div>
+		</div>
+		</div>
+		
+    <div class="yz-popup-login" style="opacity: 0; visibility: hidden;">
+        <div class="logy-login-shortcode">		
+		<div class="logy-form logy-login-page logy-with-header logy-with-labels logy-fields-icon logy-full-border logy-border-flat logy-icons-left logy-silver-icons">
+
+			
+    	<header class="logy-form-header">
+	    		    		<div class="logy-form-cover logy-custom-cover" style="background-image: url( https://smarty-2020.github.io/Smarty/wp-content/uploads/2020/06/3560436-scaled.jpg )">
+			        <h2 class="form-cover-title">Hi, Welcome Back!</h2>
+	    		</div>
+	    	    	</header>
+
+	    					
+		
+		
+		
+		
+	
+			<form id="logy-form" class="logy-login-form" method="post" action="https://smarty-2020.github.io/Smarty/wp-login.php">
+
+				
+				
+								<div class="logy-form-item">
+		    		<div class="logy-item-content">
+			           				           		<label for="user_login">Username or Email</label>
+			        				           <div class="logy-field-content">
+		           								           <div class="logy-field-icon">
+		           					<i class="fas fa-user"></i>
+		           				</div>
+		        							    		<input type="text" name="log" autocomplete="false" placeholder="" value="" required>
+			            </div>
+		        	</div>
+		       	</div>
+							<div class="logy-form-item">
+		    		<div class="logy-item-content">
+			           				           		<label for="user_pass">Password</label>
+			        				           <div class="logy-field-content">
+		           								           <div class="logy-field-icon">
+		           					<i class="fas fa-lock"></i>
+		           				</div>
+		        							    		<input type="password" name="pwd" autocomplete="false" placeholder="" value="" required>
+			            </div>
+		        	</div>
+		       	</div>
+					    	<div class="logy-form-item logy-remember-me">
+		    		<div class="logy-item-content">
+			        	<label class="logy_checkbox_field"><input name="rememberme" type="checkbox" value="forever"><div class="logy_field_indication"></div>Remember Me</label>
+		    			
+		        	</div>
+					<a class="logy-forgot-password" href="https://smarty-2020.github.io/Smarty/lost-password/">Lost password?</a>		        </div>
+							<div class="logy-form-actions logy-fullwidth-button logy-border-radius">				<div class="logy-action-item logy-submit-item">
+					<div class="logy-item-inner">
+	           			<button type="submit" value="submit" name="signin_submit">
+	            				           				<span class="logy-button-title">Log In</span>
+	           			</button>
+	            	</div>
+	            </div>
+							<div class="logy-action-item logy-link-item">
+					<div class="logy-item-inner">
+	            		<a href="https://smarty-2020.github.io/Smarty/register/" class="logy-link-button">
+	            				           				Create New Account	            		</a>
+	            	</div>
+	            </div>
+										</div>
+				
+						
+		<input type="hidden" name="yz_ajax_login_nonce" value="5f75706ad1">
+
+		
+				<input type="hidden" name="logy-form" value="1">
+
+			</form>
+
+		</div>
+
+		</div>    </div>
+
+    <script> /* <![CDATA[ */var tribe_l10n_datatables = {"aria":{"sort_ascending":": activate to sort column ascending","sort_descending":": activate to sort column descending"},"length_menu":"Show _MENU_ entries","empty_table":"No data available in table","info":"Showing _START_ to _END_ of _TOTAL_ entries","info_empty":"Showing 0 to 0 of 0 entries","info_filtered":"(filtered from _MAX_ total entries)","zero_records":"No matching records found","search":"Search:","all_selected_text":"All items on this page were selected. ","select_all_link":"Select all pages","clear_selection":"Clear Selection.","pagination":{"all":"All","next":"Next","previous":"Previous"},"select":{"rows":{"0":"","_":": Selected %d rows","1":": Selected 1 row"}},"datepicker":{"dayNames":["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"],"dayNamesShort":["Sun","Mon","Tue","Wed","Thu","Fri","Sat"],"dayNamesMin":["S","M","T","W","T","F","S"],"monthNames":["January","February","March","April","May","June","July","August","September","October","November","December"],"monthNamesShort":["January","February","March","April","May","June","July","August","September","October","November","December"],"monthNamesMin":["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],"nextText":"Next","prevText":"Prev","currentText":"Today","closeText":"Done","today":"Today","clear":"Clear"}};/* ]]> */ </script><link rel="stylesheet" id="elementor-post-1802-css" href="https://smarty-2020.github.io/Smarty/wp-content/uploads/elementor/css/post-1802.css" type="text/css" media="all">
+<script type="text/javascript">
+/* <![CDATA[ */
+var ekit_site_url = {"siteurl":"https:\/\/PLACEHOLDER.wpsho"};
+/* ]]> */
+</script>
+<script type="text/javascript" src="https://smarty-2020.github.io/Smarty/wp-content/plugins/elementskit-lite/widgets/mail-chimp/assets/js/mail-chimp.js"></script>
+<script type="text/javascript">
+/* <![CDATA[ */
+var ajaxurl = "https:\/\/smarty-2020.github.io\/Smarty\/wp-admin\/admin-ajax.php";
+var ldVars = {"postID":"1528","videoReqMsg":"You must watch the video before accessing this content"};
+/* ]]> */
+</script>
+<script type="text/javascript" src="http://PLACEHOLDER.wpsho/wp-content/plugins/sfwd-lms/themes/ld30/assets/js/learndash.js"></script>
+<script type="text/javascript">
+/* <![CDATA[ */
+var wppreloaderData = {"options_type":"fill_radio_options","effect":"fadeOut","delay":"500","load_type":"window","load_time":"1500","transition":"600"};
+/* ]]> */
+</script>
+<script type="text/javascript" src="https://smarty-2020.github.io/Smarty/wp-content/plugins/wppu-preloader-unlimited/public/js/fill/fill-fadeOut.js"></script>
+<script type="text/javascript" src="https://smarty-2020.github.io/Smarty/wp-includes/js/dist/vendor/wp-polyfill.min.js"></script>
+<script type="text/javascript">
+( 'fetch' in window ) || document.write( '<script src="https://smarty-2020.github.io/Smarty/wp-includes/js/dist/vendor/wp-polyfill-fetch.min.js?ver=3.0.0">' + 'ipt>' );( document.contains ) || document.write( '<script src="https://smarty-2020.github.io/Smarty/wp-includes/js/dist/vendor/wp-polyfill-node-contains.min.js?ver=3.42.0">' + 'ipt>' );( window.DOMRect ) || document.write( '<script src="https://smarty-2020.github.io/Smarty/wp-includes/js/dist/vendor/wp-polyfill-dom-rect.min.js?ver=3.42.0">' + 'ipt>' );( window.URL && window.URL.prototype && window.URLSearchParams ) || document.write( '<script src="https://smarty-2020.github.io/Smarty/wp-includes/js/dist/vendor/wp-polyfill-url.min.js?ver=3.6.4">' + 'ipt>' );( window.FormData && window.FormData.prototype.keys ) || document.write( '<script src="https://smarty-2020.github.io/Smarty/wp-includes/js/dist/vendor/wp-polyfill-formdata.min.js?ver=3.0.12">' + 'ipt>' );( Element.prototype.matches && Element.prototype.closest ) || document.write( '<script src="https://smarty-2020.github.io/Smarty/wp-includes/js/dist/vendor/wp-polyfill-element-closest.min.js?ver=2.0.2">' + 'ipt>' );
+</script>
+<script type="text/javascript" src="https://smarty-2020.github.io/Smarty/wp-includes/js/dist/i18n.min.js"></script>
+<script type="text/javascript">
+/* <![CDATA[ */
+var Youzer = {"unknown_error":"An unknown error occurred. Please try again later.","slideshow_auto":"1","slides_height_type":"fixed","activity_autoloader":"on","authenticating":"Authenticating ...","security_nonce":"23dd0f1d29","displayed_user_id":"0","ajax_url":"https:\/\/smarty-2020.github.io\/Smarty\/wp-admin\/admin-ajax.php","save_changes":"Save Changes","thanks":"OK! Thanks","confirm":"Confirm","cancel":"Cancel","menu_title":"Menu","gotit":"Got it!","done":"Done !","ops":"Oops !","slideshow_speed":"5","assets":"https:\/\/smarty-2020.github.io\/Smarty\/wp-content\/plugins\/youzer\/includes\/public\/assets\/","youzer_url":"https:\/\/smarty-2020.github.io\/Smarty\/wp-content\/plugins\/youzer\/","ajax_enabled":"on","login_popup":"on"};
+/* ]]> */
+</script>
+<script type="text/javascript" src="https://smarty-2020.github.io/Smarty/wp-content/plugins/youzer/includes/public/assets/js/youzer.min.js"></script>
+<script type="text/javascript" src="https://smarty-2020.github.io/Smarty/wp-content/plugins/youzer-activity-reactions/assets/js/yz-posts-reactions.min.js"></script>
+<script type="text/javascript" src="https://smarty-2020.github.io/Smarty/wp-content/plugins/essential-addons-for-elementor-lite/assets/front-end/js/lib-view/lib-view.min.js"></script>
+<script type="text/javascript">
+/* <![CDATA[ */
+var localize = {"ajaxurl":"https:\/\/smarty-2020.github.io\/Smarty\/wp-admin\/admin-ajax.php","nonce":"6b588b101d","ParticleThemesData":{"default":"{\"particles\":{\"number\":{\"value\":160,\"density\":{\"enable\":true,\"value_area\":800}},\"color\":{\"value\":\"#ffffff\"},\"shape\":{\"type\":\"circle\",\"stroke\":{\"width\":0,\"color\":\"#000000\"},\"polygon\":{\"nb_sides\":5},\"image\":{\"src\":\"img\/github.svg\",\"width\":100,\"height\":100}},\"opacity\":{\"value\":0.5,\"random\":false,\"anim\":{\"enable\":false,\"speed\":1,\"opacity_min\":0.1,\"sync\":false}},\"size\":{\"value\":3,\"random\":true,\"anim\":{\"enable\":false,\"speed\":40,\"size_min\":0.1,\"sync\":false}},\"line_linked\":{\"enable\":true,\"distance\":150,\"color\":\"#ffffff\",\"opacity\":0.4,\"width\":1},\"move\":{\"enable\":true,\"speed\":6,\"direction\":\"none\",\"random\":false,\"straight\":false,\"out_mode\":\"out\",\"bounce\":false,\"attract\":{\"enable\":false,\"rotateX\":600,\"rotateY\":1200}}},\"interactivity\":{\"detect_on\":\"canvas\",\"events\":{\"onhover\":{\"enable\":true,\"mode\":\"repulse\"},\"onclick\":{\"enable\":true,\"mode\":\"push\"},\"resize\":true},\"modes\":{\"grab\":{\"distance\":400,\"line_linked\":{\"opacity\":1}},\"bubble\":{\"distance\":400,\"size\":40,\"duration\":2,\"opacity\":8,\"speed\":3},\"repulse\":{\"distance\":200,\"duration\":0.4},\"push\":{\"particles_nb\":4},\"remove\":{\"particles_nb\":2}}},\"retina_detect\":true}","nasa":"{\"particles\":{\"number\":{\"value\":250,\"density\":{\"enable\":true,\"value_area\":800}},\"color\":{\"value\":\"#ffffff\"},\"shape\":{\"type\":\"circle\",\"stroke\":{\"width\":0,\"color\":\"#000000\"},\"polygon\":{\"nb_sides\":5},\"image\":{\"src\":\"img\/github.svg\",\"width\":100,\"height\":100}},\"opacity\":{\"value\":1,\"random\":true,\"anim\":{\"enable\":true,\"speed\":1,\"opacity_min\":0,\"sync\":false}},\"size\":{\"value\":3,\"random\":true,\"anim\":{\"enable\":false,\"speed\":4,\"size_min\":0.3,\"sync\":false}},\"line_linked\":{\"enable\":false,\"distance\":150,\"color\":\"#ffffff\",\"opacity\":0.4,\"width\":1},\"move\":{\"enable\":true,\"speed\":1,\"direction\":\"none\",\"random\":true,\"straight\":false,\"out_mode\":\"out\",\"bounce\":false,\"attract\":{\"enable\":false,\"rotateX\":600,\"rotateY\":600}}},\"interactivity\":{\"detect_on\":\"canvas\",\"events\":{\"onhover\":{\"enable\":true,\"mode\":\"bubble\"},\"onclick\":{\"enable\":true,\"mode\":\"repulse\"},\"resize\":true},\"modes\":{\"grab\":{\"distance\":400,\"line_linked\":{\"opacity\":1}},\"bubble\":{\"distance\":250,\"size\":0,\"duration\":2,\"opacity\":0,\"speed\":3},\"repulse\":{\"distance\":400,\"duration\":0.4},\"push\":{\"particles_nb\":4},\"remove\":{\"particles_nb\":2}}},\"retina_detect\":true}","bubble":"{\"particles\":{\"number\":{\"value\":15,\"density\":{\"enable\":true,\"value_area\":800}},\"color\":{\"value\":\"#1b1e34\"},\"shape\":{\"type\":\"polygon\",\"stroke\":{\"width\":0,\"color\":\"#000\"},\"polygon\":{\"nb_sides\":6},\"image\":{\"src\":\"img\/github.svg\",\"width\":100,\"height\":100}},\"opacity\":{\"value\":0.3,\"random\":true,\"anim\":{\"enable\":false,\"speed\":1,\"opacity_min\":0.1,\"sync\":false}},\"size\":{\"value\":50,\"random\":false,\"anim\":{\"enable\":true,\"speed\":10,\"size_min\":40,\"sync\":false}},\"line_linked\":{\"enable\":false,\"distance\":200,\"color\":\"#ffffff\",\"opacity\":1,\"width\":2},\"move\":{\"enable\":true,\"speed\":8,\"direction\":\"none\",\"random\":false,\"straight\":false,\"out_mode\":\"out\",\"bounce\":false,\"attract\":{\"enable\":false,\"rotateX\":600,\"rotateY\":1200}}},\"interactivity\":{\"detect_on\":\"canvas\",\"events\":{\"onhover\":{\"enable\":false,\"mode\":\"grab\"},\"onclick\":{\"enable\":false,\"mode\":\"push\"},\"resize\":true},\"modes\":{\"grab\":{\"distance\":400,\"line_linked\":{\"opacity\":1}},\"bubble\":{\"distance\":400,\"size\":40,\"duration\":2,\"opacity\":8,\"speed\":3},\"repulse\":{\"distance\":200,\"duration\":0.4},\"push\":{\"particles_nb\":4},\"remove\":{\"particles_nb\":2}}},\"retina_detect\":true}","snow":"{\"particles\":{\"number\":{\"value\":450,\"density\":{\"enable\":true,\"value_area\":800}},\"color\":{\"value\":\"#fff\"},\"shape\":{\"type\":\"circle\",\"stroke\":{\"width\":0,\"color\":\"#000000\"},\"polygon\":{\"nb_sides\":5},\"image\":{\"src\":\"img\/github.svg\",\"width\":100,\"height\":100}},\"opacity\":{\"value\":0.5,\"random\":true,\"anim\":{\"enable\":false,\"speed\":1,\"opacity_min\":0.1,\"sync\":false}},\"size\":{\"value\":5,\"random\":true,\"anim\":{\"enable\":false,\"speed\":40,\"size_min\":0.1,\"sync\":false}},\"line_linked\":{\"enable\":false,\"distance\":500,\"color\":\"#ffffff\",\"opacity\":0.4,\"width\":2},\"move\":{\"enable\":true,\"speed\":6,\"direction\":\"bottom\",\"random\":false,\"straight\":false,\"out_mode\":\"out\",\"bounce\":false,\"attract\":{\"enable\":false,\"rotateX\":600,\"rotateY\":1200}}},\"interactivity\":{\"detect_on\":\"canvas\",\"events\":{\"onhover\":{\"enable\":true,\"mode\":\"bubble\"},\"onclick\":{\"enable\":true,\"mode\":\"repulse\"},\"resize\":true},\"modes\":{\"grab\":{\"distance\":400,\"line_linked\":{\"opacity\":0.5}},\"bubble\":{\"distance\":400,\"size\":4,\"duration\":0.3,\"opacity\":1,\"speed\":3},\"repulse\":{\"distance\":200,\"duration\":0.4},\"push\":{\"particles_nb\":4},\"remove\":{\"particles_nb\":2}}},\"retina_detect\":true}","nyan_cat":"{\"particles\":{\"number\":{\"value\":150,\"density\":{\"enable\":false,\"value_area\":800}},\"color\":{\"value\":\"#ffffff\"},\"shape\":{\"type\":\"star\",\"stroke\":{\"width\":0,\"color\":\"#000000\"},\"polygon\":{\"nb_sides\":5},\"image\":{\"src\":\"http:\/\/wiki.lexisnexis.com\/academic\/images\/f\/fb\/Itunes_podcast_icon_300.jpg\",\"width\":100,\"height\":100}},\"opacity\":{\"value\":0.5,\"random\":false,\"anim\":{\"enable\":false,\"speed\":1,\"opacity_min\":0.1,\"sync\":false}},\"size\":{\"value\":4,\"random\":true,\"anim\":{\"enable\":false,\"speed\":40,\"size_min\":0.1,\"sync\":false}},\"line_linked\":{\"enable\":false,\"distance\":150,\"color\":\"#ffffff\",\"opacity\":0.4,\"width\":1},\"move\":{\"enable\":true,\"speed\":14,\"direction\":\"left\",\"random\":false,\"straight\":true,\"out_mode\":\"out\",\"bounce\":false,\"attract\":{\"enable\":false,\"rotateX\":600,\"rotateY\":1200}}},\"interactivity\":{\"detect_on\":\"canvas\",\"events\":{\"onhover\":{\"enable\":false,\"mode\":\"grab\"},\"onclick\":{\"enable\":true,\"mode\":\"repulse\"},\"resize\":true},\"modes\":{\"grab\":{\"distance\":200,\"line_linked\":{\"opacity\":1}},\"bubble\":{\"distance\":400,\"size\":40,\"duration\":2,\"opacity\":8,\"speed\":3},\"repulse\":{\"distance\":200,\"duration\":0.4},\"push\":{\"particles_nb\":4},\"remove\":{\"particles_nb\":2}}},\"retina_detect\":true}"}};
+/* ]]> */
+</script>
+<script type="text/javascript" src="https://smarty-2020.github.io/Smarty/wp-content/plugins/essential-addons-for-elementor-lite/assets/front-end/js/view/view.min.js"></script>
+<script type="text/javascript" src="https://smarty-2020.github.io/Smarty/wp-content/plugins/essential-addons-elementor/assets/front-end/js/lib-view/lib-view.min.js"></script>
+<script type="text/javascript" src="https://smarty-2020.github.io/Smarty/wp-content/plugins/essential-addons-elementor/assets/front-end/js/view/view.min.js"></script>
+<script type="text/javascript" src="https://smarty-2020.github.io/Smarty/wp-content/plugins/essential-addons-elementor/assets/front-end/js/edit/edit.min.js"></script>
+<script type="text/javascript" src="https://smarty-2020.github.io/Smarty/wp-content/themes/olympus/js/plugins/swiper.min.js"></script>
+<script type="text/javascript" src="https://smarty-2020.github.io/Smarty/wp-content/themes/olympus/js/alpine.min.js"></script>
+<script type="text/javascript" src="https://smarty-2020.github.io/Smarty/wp-content/themes/olympus/js/plugins/magnific-popup.min.js"></script>
+<script type="text/javascript" src="https://smarty-2020.github.io/Smarty/wp-content/themes/olympus/js/plugins/perfect-scrollbar.min.js"></script>
+<script type="text/javascript" src="https://smarty-2020.github.io/Smarty/wp-content/themes/olympus/Bootstrap/dist/js/bootstrap.bundle.js"></script>
+<script type="text/javascript" src="https://smarty-2020.github.io/Smarty/wp-content/themes/olympus/js/crum-mega-menu.js"></script>
+<script type="text/javascript" src="https://smarty-2020.github.io/Smarty/wp-content/themes/olympus/js/plugins/jquery.scrollTo.min.js"></script>
+<script type="text/javascript" src="https://smarty-2020.github.io/Smarty/wp-content/themes/olympus/js/plugins/smooth-scroll.js"></script>
+<script type="text/javascript" src="https://smarty-2020.github.io/Smarty/wp-content/themes/olympus/js/plugins/material-forms.js"></script>
+<script type="text/javascript" src="https://smarty-2020.github.io/Smarty/wp-content/themes/olympus/js/plugins/scroll-to-fixed.js"></script>
+<script type="text/javascript">
+/* <![CDATA[ */
+var themeOptions = {"ajaxUrl":"https:\/\/smarty-2020.github.io\/Smarty\/wp-admin\/admin-ajax.php"};
+/* ]]> */
+</script>
+<script type="text/javascript" src="https://smarty-2020.github.io/Smarty/wp-content/themes/olympus/js/theme-main.js"></script>
+<script type="text/javascript" src="https://smarty-2020.github.io/Smarty/wp-content/themes/olympus/js/svg-loader.js"></script>
+<script type="text/javascript">
+/* <![CDATA[ */
+var fwAjaxUrl = "\/ta3lim\/wp-admin\/admin-ajax.php";
+/* ]]> */
+</script>
+<script type="text/javascript" src="https://smarty-2020.github.io/Smarty/wp-content/plugins/unyson/framework/static/js/fw-form-helpers.js"></script>
+<script type="text/javascript">
+/* <![CDATA[ */
+var signFormConfig = {"menuLocation":"menu-vcard","builderComponent":"sign-form","registerLinkSC":"register-link","currentUserSC":"current-user","actions":{"signIn":"crumina-signin-form","signUp":"crumina-signup-form"},"selectors":{"form":"crumina-sign-form","formContainer":"crumina-sign-form-container","formRegister":"crumina-sign-form-register","formLogin":"crumina-sign-form-login"},"ajaxUrl":"https:\/\/smarty-2020.github.io\/Smarty\/wp-admin\/admin-ajax.php"};
+/* ]]> */
+</script>
+<script type="text/javascript" src="https://smarty-2020.github.io/Smarty/wp-content/plugins/unyson/framework/extensions/sign-form/static/js/scripts.js"></script>
+<script type="text/javascript" src="https://smarty-2020.github.io/Smarty/wp-content/plugins/elementskit-lite/libs/framework/assets/js/frontend-script.js"></script>
+<script type="text/javascript">
+        //console.log(window.elementskit);
+
+		var elementskit = {
+            resturl: 'https://smarty-2020.github.io/Smarty/wp-json/elementskit/v1/',
+        }
+
+        //console.log(window.elementskit);
+		
+</script>
+<script type="text/javascript" src="https://smarty-2020.github.io/Smarty/wp-content/plugins/elementskit-lite/widgets/init/assets/js/nav-menu.js"></script>
+<script type="text/javascript" src="https://smarty-2020.github.io/Smarty/wp-content/plugins/elementskit-lite/widgets/init/assets/js/ui-slim.min.js"></script>
+<script type="text/javascript" src="https://smarty-2020.github.io/Smarty/wp-content/plugins/elementor-pro/assets/lib/smartmenus/jquery.smartmenus.min.js"></script>
+<script type="text/javascript" src="https://smarty-2020.github.io/Smarty/wp-content/plugins/unlimited-elements-for-elementor-premium/assets_libraries/lity/lity.min.js"></script>
+<script type="text/javascript" src="https://smarty-2020.github.io/Smarty/wp-content/plugins/elementor/assets/js/frontend-modules.min.js"></script>
+<script type="text/javascript" src="https://smarty-2020.github.io/Smarty/wp-content/plugins/elementor-pro/assets/lib/sticky/jquery.sticky.min.js"></script>
+<script type="text/javascript">
+var ElementorProFrontendConfig = {"ajaxurl":"https:\/\/smarty-2020.github.io\/Smarty\/wp-admin\/admin-ajax.php","nonce":"e7ae3adfd2","i18n":{"toc_no_headings_found":"No headings were found on this page."},"shareButtonsNetworks":{"facebook":{"title":"Facebook","has_counter":true},"twitter":{"title":"Twitter"},"google":{"title":"Google+","has_counter":true},"linkedin":{"title":"LinkedIn","has_counter":true},"pinterest":{"title":"Pinterest","has_counter":true},"reddit":{"title":"Reddit","has_counter":true},"vk":{"title":"VK","has_counter":true},"odnoklassniki":{"title":"OK","has_counter":true},"tumblr":{"title":"Tumblr"},"delicious":{"title":"Delicious"},"digg":{"title":"Digg"},"skype":{"title":"Skype"},"stumbleupon":{"title":"StumbleUpon","has_counter":true},"mix":{"title":"Mix"},"telegram":{"title":"Telegram"},"pocket":{"title":"Pocket","has_counter":true},"xing":{"title":"XING","has_counter":true},"whatsapp":{"title":"WhatsApp"},"email":{"title":"Email"},"print":{"title":"Print"}},"facebook_sdk":{"lang":"en_US","app_id":""}};
+</script>
+<script type="text/javascript" src="https://smarty-2020.github.io/Smarty/wp-content/plugins/elementor-pro/assets/js/frontend.min.js"></script>
+<script type="text/javascript" src="https://smarty-2020.github.io/Smarty/wp-includes/js/jquery/ui/position.min.js"></script>
+<script type="text/javascript" src="https://smarty-2020.github.io/Smarty/wp-content/plugins/elementor/assets/lib/dialog/dialog.min.js"></script>
+<script type="text/javascript" src="https://smarty-2020.github.io/Smarty/wp-content/plugins/elementor/assets/lib/waypoints/waypoints.min.js"></script>
+<script type="text/javascript" src="https://smarty-2020.github.io/Smarty/wp-content/plugins/elementor/assets/lib/swiper/swiper.min.js"></script>
+<script type="text/javascript" src="https://smarty-2020.github.io/Smarty/wp-content/plugins/elementor/assets/lib/share-link/share-link.min.js"></script>
+<script type="text/javascript">
+var elementorFrontendConfig = {"environmentMode":{"edit":false,"wpPreview":false},"i18n":{"shareOnFacebook":"Share on Facebook","shareOnTwitter":"Share on Twitter","pinIt":"Pin it","downloadImage":"Download image"},"is_rtl":false,"breakpoints":{"xs":0,"sm":480,"md":768,"lg":1025,"xl":1440,"xxl":1600},"version":"2.9.11","urls":{"assets":"https:\/\/smarty-2020.github.io\/Smarty\/wp-content\/plugins\/elementor\/assets\/"},"settings":{"page":[],"general":{"elementor_global_image_lightbox":"yes","elementor_lightbox_enable_counter":"yes","elementor_lightbox_enable_fullscreen":"yes","elementor_lightbox_enable_zoom":"yes","elementor_lightbox_enable_share":"yes","elementor_lightbox_title_src":"title","elementor_lightbox_description_src":"description"},"editorPreferences":[],"dynamicooo":[],"extras":{"ee_tooltips_position":"bottom","ee_tooltips_delay_in":{"unit":"px","size":0,"sizes":[]},"ee_tooltips_delay_out":{"unit":"px","size":0,"sizes":[]},"ee_tooltips_duration":{"unit":"px","size":0.2,"sizes":[]}}},"post":{"id":1528,"title":"Smarty%20%E2%80%93%20A%20Univers%20Of%20Learning%21","excerpt":"","featuredImage":false}};
+</script>
+<script type="text/javascript" src="https://smarty-2020.github.io/Smarty/wp-content/plugins/elementor/assets/js/frontend.min.js"></script>
+<script type="text/javascript" src="https://smarty-2020.github.io/Smarty/wp-content/plugins/elementskit-lite/widgets/init/assets/js/elementor.js"></script>
+<script type="text/javascript" src="https://smarty-2020.github.io/Smarty/wp-content/uploads/elementor/js/dce-frontend.min.js"></script>
+<script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TweenMax.min.js"></script>
+<script type="text/javascript">
+/* <![CDATA[ */
+var elementorExtrasFrontendConfig = {"urls":{"assets":"https:\/\/smarty-2020.github.io\/Smarty\/wp-content\/plugins\/elementor-extras\/assets\/"},"refreshableWidgets":["ee-offcanvas.classic","ee-popup.classic","gallery-slider.default","media-carousel.default","image-carousel.default","slides.default"]};
+/* ]]> */
+</script>
+<script type="text/javascript" src="https://smarty-2020.github.io/Smarty/wp-content/plugins/elementor-extras/assets/js/frontend.min.js"></script>
+<script type="text/javascript" src="https://smarty-2020.github.io/Smarty/wp-content/plugins/elementor-extras/assets/lib/parallax-gallery/parallax-gallery.min.js"></script>
+<script type="text/javascript" src="https://smarty-2020.github.io/Smarty/wp-content/plugins/elementor-extras/assets/lib/hotips/hotips.min.js"></script>
+<script type="text/javascript" src="https://smarty-2020.github.io/Smarty/wp-content/plugins/elementskit-lite/modules/controls/assets/js/widgetarea-editor.js"></script>
+	</body>
+</html>

@@ -1,0 +1,378 @@
+.yz-navbar-inline-icons .yz-navbar-item a i {margin: 0 10px 0 0;vertical-align: middle;}
+.rtl .yz-navbar-inline-icons .yz-navbar-item a i {margin: 0 0 0 10px;}
+.yz-items-list-widget .yz-list-item .yz-item-action .yz-close-button i {background-color: #9ba0be;width: 36px;height: 36px;line-height: 36px;color: #fff;}
+.yz-navbar-block-icons .yz-navbar-item a i {display: block;margin: 0 0 12px;}
+.yz-tools-only-icons .yz-tool-btn .yz-tool-icon i.fa-times:before {content: "" !important;font-family: olympus !important;font-size: 14px;}
+.yz-tools-only-icons .yz-tool-btn .yz-tool-icon i.fa-star:before {content: "" !important;font-family: olympus !important;font-size: 13px;}
+.yz-tools-only-icons .yz-tool-btn .yz-tool-icon i.fa-edit:before {content: "" !important;font-family: olympus !important;font-size: 14px;}
+.yz-tools-only-icons .yz-tool-btn .yz-tool-icon i.fa-check:before {content: "" !important;font-family: olympus !important;font-size: 11px;}
+.yz-notif-item .yz-notif-icon.fa-reply:before, .yz-tools-full-btns .yz-tool-btn .yz-tool-icon i.fa-check:before, .yz-tools-full-btns .yz-tool-btn .yz-tool-icon i.fa-share-alt:before, .yz-tools-full-btns .yz-tool-btn .yz-tool-icon i.fa-star:before, .yz-tools-full-btns .yz-tool-btn .yz-tool-icon i.fa-times:before {font-size: 20px;font-family: olympus !important;font-weight: 400;}
+.yz-tools-full-btns .yz-tool-btn .yz-tool-icon i.fa-share-alt:before {content: "" !important;}
+.yz-tools-full-btns .yz-tool-btn .yz-tool-icon i.fa-star:before {content: "" !important;}
+.yz-tools-full-btns .yz-tool-btn .yz-tool-icon i.fa-times:before {content: "" !important;}
+.yz-tools-full-btns .yz-tool-btn .yz-tool-icon i.fa-check:before {content: "" !important;}
+.yz-notif-item .yz-notif-icon.fa-reply:before {content: "";}
+.yz-notif-item .yz-notif-content .yz-notif-time i.fa-clock:before {content: "";font-family: olympus !important;font-size: 13px;font-weight: 400;}
+.yz-notif-icons-colorful .yz-notif-bbp_new_reply .yz-notif-icon i:before, .yz-notif-icons-colorful .yz-notif-friendship_accepted .yz-notif-icon i:before, .yz-notif-icons-colorful .yz-notif-update_reply .yz-notif-icon i:before {content: "";font-family: olympus !important;font-size: 20px;font-weight: 400;}
+.yz-notif-icons-colorful .yz-notif-friendship_request .yz-notif-icon i:before {content: "";font-family: olympus !important;font-size: 20px;font-weight: 400;}
+.yz-notif-icons-colorful .yz-notif-new_at_mention .yz-notif-icon i:before {content: "";font-family: olympus !important;font-size: 20px;font-weight: 400;}
+.follow-button .follow:before {content: "";font-family: olympus !important;font-size: 20px;font-weight: 400;animation: none !important;}
+.follow-button .unfollow:before {content: "";font-family: olympus !important;font-size: 20px;font-weight: 400;animation: none !important;}
+.friendship-button .add:before {content: "";font-size: 20px;font-family: olympus !important;}
+.youzer .yzm-user-actions a.muted:before, .youzer .yzm-user-actions a.unmuted:before {content: "";font-family: olympus !important;font-size: 20px;font-weight: 400;margin-right: 8px;}
+.message-button .yz-send-message:before {content: "";font-size: 20px;font-family: olympus !important;}
+.friendship-button .pending_friend:before, .friendship-button .remove:before {content: "";font-size: 20px;font-family: olympus !important;}
+#yz-groups-list .action .group-button a.join-group:before, #yz-groups-list .action .group-button a.leave-group:before, #yz-groups-list .action .group-button a.request-membership:before, .friendship-button a.awaiting_response_friend:before, .group-button a.join-group:before, .group-button a.leave-group:before, .group-button a.request-membership:before, .youzer-sidebar .widget_display_forums .widget-title:before, .youzer-sidebar .widget_display_topics li:before, .youzer-sidebar .widget_yz_friend_suggestions_widget .widget-title:before, .youzer-sidebar .widget_yz_media .widget-title:before, .youzer-sidebar .widget_yz_notifications_widget .widget-title:before {font-family: olympus !important;font-size: 20px;font-weight: 400;}
+.friendship-button a.awaiting_response_friend:before {content: "" !important;animation: none;}
+#yz-groups-list .action .group-button a.join-group:before, .group-button a.join-group:before {content: "" !important;animation: none !important;}
+#yz-groups-list .action .group-button a.leave-group:before, .group-button a.leave-group:before {content: "" !important;animation: none;animation: none !important;}
+#yz-groups-list .action .group-button a.request-membership:before, .group-button a.request-membership:before {content: "" !important;animation: none !important;}
+#yz-groups-list .action .group-button a.membership-requested:before, .group-button a.membership-requested:before {content: "" !important;font-family: olympus !important;font-size: 20px;font-weight: 400;animation: none;}
+.youzer-sidebar .widget_yz_media .widget-title:before {content: "";border-radius: 0 !important;}
+.youzer-sidebar .widget_yz_notifications_widget .widget-title:before {content: "";border-radius: 0 !important;}
+.youzer-sidebar .widget_display_topics li:before {content: "";}
+.youzer-sidebar .widget_display_forums .widget-title:before {content: "";border-radius: 0 !important;}
+.youzer-sidebar .widget_yz_friend_suggestions_widget .widget-title:before {content: "";border-radius: 0 !important;}
+.youzer-sidebar .yz-group-infos-widget .widget-title:before {content: "";font-size: 20px;font-weight: 400;font-family: olympus !important;border-radius: 0 !important;}
+.youzer-sidebar .widget_yz_group_suggestions_widget .widget-title:before {content: "";font-family: olympus !important;font-size: 20px;font-weight: 400;border-radius: 0 !important;}
+.youzer-sidebar .widget_yz_group_administrators_widget .widget-title:before {content: "";font-family: olympus !important;font-size: 20px;font-weight: 400;border-radius: 0 !important;}
+.youzer-sidebar .widget_bp_core_whos_online_widget .widget-title:before {content: "";font-family: olympus !important;font-size: 20px;font-weight: 400;}
+.youzer-sidebar .widget-mycred-list .widget-title:before {content: "";font-family: olympus !important;font-size: 20px;font-weight: 400;border-radius: 0 !important;}
+.youzer-sidebar .widget_bp_core_recently_active_widget .widget-title:before {content: "";font-family: olympus !important;font-size: 20px;font-weight: 400;border-radius: 0 !important;}
+.youzer-sidebar .widget_bp_core_members_widget .widget-title:before {content: "";font-family: olympus !important;font-size: 20px;font-weight: 400;border-radius: 0 !important;}
+.youzer-sidebar .widget_yz_community_hashtags .widget-title:before {content: "";font-family: olympus !important;font-size: 20px;font-weight: 400;border-radius: 0 !important;}
+.youzer-sidebar .widget_bp_groups_widget .widget-title:before {content: "";font-family: olympus !important;font-size: 20px;font-weight: 400;border-radius: 0 !important;}
+.yz-wp-widget-box a:before {content: "";font-family: olympus !important;font-size: 24px;font-weight: 400;}
+.yz-wp-widget-box a i.fa-rss:before {content: "";font-family: olympus !important;font-size: 20px;font-weight: 400;}
+.yz-success-dialog .yz-dialog-header i.fa-check:before {content: "";font-family: olympus !important;font-size: 35px;font-weight: 400;}
+.widget_bp_core_login_widget .bp-login-widget-user-logout a:before {content: "";font-family: olympus !important;font-size: 20px;font-weight: 400;}
+.widget_display_forums li a:before {content: "";font-family: olympus !important;font-size: 16px;font-weight: 400;}
+.yz-items-list-widget .yz-list-item .yz-item-meta .yz-meta-item i.fa-globe-asia:before {content: "";font-family: olympus !important;font-size: 15px;font-weight: 400;}
+.yz-items-list-widget .yz-list-item .yz-item-meta .yz-meta-item i.fa-lock:before {content: "";font-family: olympus !important;font-size: 15px;font-weight: 400;}
+.yz-items-list-widget .yz-list-item .yz-item-action .yz-add-button i:before {content: "";font-family: olympus !important;font-size: 16px;font-weight: 400;}
+.yz-items-list-widget .yz-list-item .yz-item-action .yz-close-button i:before {content: "";font-family: olympus !important;font-size: 16px;font-weight: 400;}
+.yz-bookmark-tool .yz-tool-icon i.fa-bookmark:before, .yz-bookmark-tool .yz-tool-icon i.fa-times:before, .yz-item-tool.yz-delete-tool .yz-tool-icon i.fa-trash-alt:before, .yz-item-tool.yz-delete-tool .yz-tool-icon i.fa-trash:before, .yz-item-tool.yz-edit-tool .yz-tool-icon i.fa-edit:before, .yz-pin-tool .yz-tool-icon i.fa-thumbtack:before {font-size: 15px;font-weight: 400;font-family: olympus !important;}
+.yz-pin-tool .yz-tool-icon i.fa-thumbtack:before {content: "";}
+.yz-bookmark-tool .yz-tool-icon i.fa-bookmark:before {content: "" !important;animation: none !important;}
+.yz-bookmark-tool .yz-tool-icon i.fa-times:before {content: "" !important;animation: none !important;}
+.yz-item-tool.yz-delete-tool .yz-tool-icon i.fa-trash-alt:before {content: "" !important;animation: none !important;}
+.yz-item-tool.yz-edit-tool .yz-tool-icon i.fa-edit:before {content: "";}
+.yz-item-tool.yz-delete-tool .yz-tool-icon i.fa-trash:before {content: "" !important;}
+#yz-modal .yz-modal-title>i.fa-edit:before {content: "";font-family: olympus !important;font-size: 20px;font-weight: 400;}
+#yz-modal .yz-modal-actions button i.fa-trash-alt:before {content: "" !important;font-family: olympus !important;font-size: 16px;font-weight: 400;}
+#yz-modal .yz-big-close-icon .yz-modal-close-icon:before {content: "";font-family: olympus !important;font-size: 16px;font-weight: 400;}
+.yz-head-buttons .yz-head-buttons-inner i.fa-camera-retro:before, .yz-head-buttons .yz-head-buttons-inner i.fa-home:before, .yz-head-buttons .yz-head-buttons-inner i.fa-power-off:before, .yz-head-buttons .yz-head-buttons-inner i.fa-share-alt:before, .yz-head-buttons .yz-head-buttons-inner i.fa-user-circle:before, .yz-head-buttons .yz-head-buttons-inner i.fa-user:before {font-size: 20px;font-family: olympus !important;font-weight: 400;}
+.yz-head-buttons .yz-head-buttons-inner i.fa-home:before {content: "";}
+.yz-head-buttons .yz-head-buttons-inner i.fa-user:before {content: "";}
+.yz-head-buttons .yz-head-buttons-inner i.fa-share-alt:before {content: "";}
+.yz-head-buttons .yz-head-buttons-inner i.fa-user-circle:before {content: "";}
+.yz-head-buttons .yz-head-buttons-inner i.fa-camera-retro:before {content: "";}
+.yz-head-buttons .yz-head-buttons-inner i.fa-power-off:before {content: "";}
+.yz-account-settings-menu .yz-menu-icon i.yza-account-settings:before {content: "";font-family: olympus !important;font-size: 16px;font-weight: 400;}
+.yz-account-settings-menu .yz-menu-icon i.yza-profile-settings:before {content: "";font-family: olympus !important;font-size: 16px;font-weight: 400;}
+.yz-account-settings-menu .yz-menu-icon i.yza-widgets-settings:before {content: "";font-family: olympus !important;font-size: 16px;font-weight: 400;}
+.yz-settings-sidebar .yz-account-menus ul li i.fa-user:before {content: "";font-size: 16px;font-weight: 400;font-family: olympus !important;}
+.yz-settings-sidebar .yz-account-menus ul li i.fa-tasks:before {content: "";font-size: 16px;font-weight: 400;font-family: olympus !important;}
+.yz-settings-sidebar .yz-account-menus ul li i.fa-images:before {content: "";font-size: 16px;font-weight: 400;font-family: olympus !important;}
+.yz-settings-sidebar .yz-account-menus ul li i.fa-film:before {content: "";font-size: 16px;font-weight: 400;font-family: olympus !important;}
+.yz-settings-sidebar .yz-account-menus ul li i.fa-wrench:before {content: "";font-size: 16px;font-weight: 400;font-family: olympus !important;}
+.yz-settings-sidebar .yz-account-menus ul li i.fa-suitcase:before {content: "";font-size: 16px;font-weight: 400;font-family: olympus !important;}
+.yz-settings-sidebar .yz-account-menus ul li i.fa-quote-right:before {content: "";font-size: 16px;font-weight: 400;font-family: olympus !important;}
+.yz-settings-sidebar .yz-account-menus ul li i.fa-link:before {content: "";font-size: 16px;font-weight: 400;font-family: olympus !important;}
+.yz-settings-sidebar .yz-account-menus ul li i.fa-video:before {content: "";font-size: 16px;font-weight: 400;font-family: olympus !important;}
+.yz-settings-sidebar .yz-account-menus ul li i.fa-pencil-alt:before {content: "";font-size: 16px;font-weight: 400;font-family: olympus !important;}
+.yz-settings-sidebar .yz-account-menus ul li i.fa-instagram:before {content: "";font-size: 16px;font-weight: 400;font-family: olympus !important;}
+.yz-settings-sidebar .yz-account-menus ul li i.fa-info:before {content: "";font-size: 16px;font-weight: 400;font-family: olympus !important;}
+.yz-settings-sidebar .yz-account-menus ul li i.fa-envelope:before {content: "";font-size: 16px;font-weight: 400;font-family: olympus !important;}
+.yz-settings-sidebar .yz-account-menus ul li i.fa-lock:before {content: "";font-size: 16px;font-weight: 400;font-family: olympus !important;}
+.yz-settings-sidebar .yz-account-menus ul li i.fa-bell:before {content: "";font-size: 16px;font-weight: 400;font-family: olympus !important;}
+.yz-settings-sidebar .yz-account-menus ul li i.fa-file-export:before {content: "";font-size: 16px;font-weight: 400;font-family: olympus !important;}
+.yz-settings-sidebar .yz-account-menus ul li i.fa-trash-alt:before {content: "";font-size: 16px;font-weight: 400;font-family: olympus !important;}
+.yz-settings-sidebar .yz-account-menus ul li i.fa-user-secret:before {content: "";font-size: 16px;font-weight: 400;font-family: olympus !important;}
+.yz-settings-sidebar .yz-account-menus ul li i.fa-flickr:before {content: "";font-size: 16px;font-weight: 400;font-family: olympus !important;}
+.settings-inner-content .options-section-title h2 i.fa-video:before {content: "";font-size: 22px;font-weight: 400;font-family: olympus !important;}
+.settings-inner-content .options-section-title h2 i.fa-user:before {content: "";font-size: 22px;font-weight: 400;font-family: olympus !important;}
+.settings-inner-content .options-section-title h2 i.fa-tasks:before {content: "";font-size: 22px;font-weight: 400;font-family: olympus !important;}
+.settings-inner-content .options-section-title h2 i.fa-images:before {content: "";font-size: 22px;font-weight: 400;font-family: olympus !important;}
+.settings-inner-content .options-section-title h2 i.fa-film:before {content: "";font-size: 22px;font-weight: 400;font-family: olympus !important;}
+.settings-inner-content .options-section-title h2 i.fa-suitcase:before {content: "";font-size: 22px;font-weight: 400;font-family: olympus !important;}
+.settings-inner-content .options-section-title h2 i.fa-quote-right:before {content: "";font-size: 22px;font-weight: 400;font-family: olympus !important;}
+.settings-inner-content .options-section-title h2 i.fa-link:before {content: "";font-size: 22px;font-weight: 400;font-family: olympus !important;}
+.settings-inner-content .options-section-title h2 i.fa-pencil-alt:before {content: "";font-size: 22px;font-weight: 400;font-family: olympus !important;}
+.settings-inner-content .options-section-title h2 i.fa-info:before {content: "";font-size: 22px;font-weight: 400;font-family: olympus !important;}
+.settings-inner-content .options-section-title h2 i.fa-envelope:before {content: "";font-size: 22px;font-weight: 400;font-family: olympus !important;}
+.settings-inner-content .options-section-title h2 i.fa-lock:before {content: "";font-size: 22px;font-weight: 400;font-family: olympus !important;}
+.settings-inner-content .options-section-title h2 i.fa-bell:before {content: "";font-size: 22px;font-weight: 400;font-family: olympus !important;}
+.settings-inner-content .options-section-title h2 i.fa-file-export:before {content: "";font-size: 22px;font-weight: 400;font-family: olympus !important;}
+.settings-inner-content .options-section-title h2 i.fa-user-secret:before {content: "";font-size: 22px;font-weight: 400;font-family: olympus !important;}
+.settings-inner-content .options-section-title h2 i.fa-wrench:before {content: "";font-size: 22px;font-weight: 400;font-family: olympus !important;}
+.settings-inner-content .options-section-title h2 i.fa-share-alt:before {content: "";font-size: 22px;font-weight: 400;font-family: olympus !important;}
+.settings-inner-content .options-section-title h2 i.fa-user-circle:before {content: "";font-size: 22px;font-weight: 400;font-family: olympus !important;}
+.settings-inner-content .options-section-title h2 i.fa-camera-retro:before {content: "";font-size: 22px;font-weight: 400;font-family: olympus !important;}
+.settings-inner-content .options-section-title h2 i.fa-instagram:before {content: "";font-size: 22px;font-weight: 400;font-family: olympus !important;}
+.settings-inner-content .options-section-title h2 i.fa-flickr:before {content: "";font-size: 22px;font-weight: 400;font-family: olympus !important;}
+.youzer .editfield label[for*=public] .field-visibility-text:before {content: "";font-size: 16px;font-weight: 400;font-family: olympus !important;}
+.youzer .editfield label[for*=adminsonly] .field-visibility-text:before {content: "";font-size: 16px;font-weight: 400;font-family: olympus !important;}
+.youzer .editfield label[for*=loggedin] .field-visibility-text:before {content: "";font-size: 16px;font-weight: 400;font-family: olympus !important;}
+.youzer .editfield label[for*=friends] .field-visibility-text:before {content: "";font-size: 16px;font-weight: 400;font-family: olympus !important;}
+.youzer .editfield .field-visibility-settings-toggle .visibility-toggle-link i.fa-cogs:before {content: "";font-size: 14px;font-weight: 400;font-family: olympus !important;}
+.youzer .editfield .field-visibility-settings .field-visibility-settings-close i.fa-times:before {content: "";font-size: 12px;font-weight: 400;font-family: olympus !important;}
+#bbpress-forums div.bbp-breadcrumb .bbp-breadcrumb-current a:before {content: "";font-size: 10px;font-weight: 400;font-family: olympus !important;}
+body #bbpress-forums div.bbp-breadcrumb a.bbp-breadcrumb-home:before {color: #9a9fbf;color: var(--icon-color);content: "";font-size: 20px;font-weight: 400;font-family: olympus !important;}
+.yz-bbp-topic-head-meta .yz-bbp-topic-head-meta-item i.fa-pencil-alt:before {content: "";font-size: 13px;font-weight: 400;font-family: olympus !important;}
+.yz-bbp-topic-head-meta .yz-bbp-topic-head-meta-item i.fa-comments:before {content: "";font-size: 13px;font-weight: 400;font-family: olympus !important;}
+#bbpress-forums .yz-bbp-box .yz-bbp-box-title i:before {content: "";font-size: 20px;font-weight: 400;font-family: olympus !important;border-radius: 0 !important;}
+#bbpress-forums .yz-bbp-box .yz-bbp-box-title i.fa-pencil-alt:before {content: "";font-size: 20px;font-weight: 400;font-family: olympus !important;border-radius: 0 !important;}
+div.bbp-submit-wrapper button i:before {content: "";font-size: 16px;font-weight: 400;font-family: olympus !important;}
+.bbp-topics ul.sticky .yz-forums-topic-icon i.fa-thumbtack:before {content: "";font-size: 20px;font-weight: 400;font-family: olympus !important;}
+#bbpress-forums li.bbp-forum-topic-count i.fa-file-alt:before {content: "";font-size: 20px;font-weight: 400;font-family: olympus !important;}
+#bbpress-forums li.bbp-forum-reply-count i.fa-pencil-alt:before {content: "";font-size: 20px;font-weight: 400;font-family: olympus !important;}
+#bbpress-forums li.bbp-topic-voice-count i.fa-microphone-alt:before {content: "";font-size: 20px;font-weight: 400;font-family: olympus !important;}
+#bbpress-forums li.bbp-topic-reply-count i.fa-comments:before {content: "";font-size: 20px;font-weight: 400;font-family: olympus !important;}
+.yz-forums-topic-item .yz-forums-topic-icon i.fa-file-alt:before {content: "";font-size: 20px;font-weight: 400;font-family: olympus !important;}
+.yz-forums-forum-item .yz-forums-forum-icon i:before {content: "";font-size: 20px;font-weight: 400;font-family: olympus !important;}
+.bbp-reply-header .bbp-reply-post-date i.fa-calendar-alt:before {content: "";font-size: 16px;font-weight: 400;font-family: olympus !important;}
+.bbp-header .bbp-reply-content #favorite-toggle a:before {content: "";font-size: 14px;font-weight: 400;font-family: olympus !important;}
+.bbp-header .bbp-reply-content #favorite-toggle .is-favorite a::before {content: "";}
+.bbp-header .bbp-reply-content #subscription-toggle a:before {content: "";font-size: 14px;font-weight: 400;font-family: olympus !important;}
+.bbp-header .bbp-reply-content #subscription-toggle .is-subscribed a:before {content: "";}
+.bbp-header .bbp-reply-content #favorite-toggle .is-favorite a:before {background-image: none;}
+#bbpress-forums div.bbp-breadcrumb .bbp-breadcrumb-current .is-subscribed a:before {content: "";}
+.youzer #avatar-crop-actions .avatar-crop-submit:before {content: "";font-size: 18px;font-weight: 400;font-family: olympus !important;}
+.yz-directory-filter .item-list-tabs li#group-create-nav a:before, .yz-directory-filter .item-list-tabs li#groups-all a:before, .yz-directory-filter .item-list-tabs li#groups-personal a:before {font-size: 20px;font-family: olympus !important;font-weight: 400;border-radius: 0 !important;animation: none !important;}
+.youzer #bp-browse-button {background-color: #ff5e3a;background-color: var(--primary-accent-color);outline: 0;opacity: .85;}
+.yz-directory-filter .item-list-tabs li#groups-all a:before {content: "" !important;background: 0 0;}
+.yz-directory-filter .item-list-tabs li#groups-personal a:before {content: "" !important;background: 0 0;}
+.yz-directory-filter .item-list-tabs li#group-create-nav a:before {content: "" !important;background: 0 0;}
+.yz-tabs-list-gradient #members-all a::before {font-weight: 400;}
+.yz-directory-filter .item-list-tabs li#members-all a:before {content: "";border-radius: 0 !important;font-family: olympus !important;background: 0 0;color: #9a9fbf;color: var(--icon-color);font-size: 18px;}
+.yz-directory-filter .item-list-tabs li#members-following a:before {content: "";font-size: 20px;font-weight: 400;font-family: olympus !important;border-radius: 0 !important;}
+.yz-directory-filter .item-list-tabs li#members-personal a:before {content: "";font-family: olympus !important;font-size: 20px;background: 0 0;border-radius: 0 !important;}
+.yz-directory-filter .item-list-tabs li a:before {font-weight: 400;color: #9a9fbf;color: var(--icon-color);}
+.yz-directory-filter #directory-show-search a:before {content: "";font-size: 20px;font-weight: 400;font-family: olympus !important;border-radius: 0 !important;}
+.yzm-user-statistics .yz-data-item span.dashicons-edit:before {content: "";font-family: olympus !important;font-weight: 400;}
+.yzm-user-statistics .yz-data-item span.dashicons-format-status:before {content: "";font-family: olympus !important;font-weight: 400;}
+.yzm-user-statistics .yz-data-item span.dashicons-welcome-view-site:before {content: "";font-family: olympus !important;font-weight: 400;}
+.yzm-user-statistics .yz-data-item span.dashicons-groups:before {content: "";font-family: olympus !important;font-weight: 400;}
+.yzm-user-statistics .yz-data-item span.dashicons-awards:before {content: "";font-family: olympus !important;font-weight: 400;}
+.yzm-user-statistics .yz-data-item span.dashicons-rss:before {content: "";font-family: olympus !important;font-weight: 400;}
+.yzm-user-statistics .yz-data-item span.dashicons-redo:before {content: "";font-family: olympus !important;font-weight: 400;}
+.yzm-user-actions .yz-profile-settings i:before {content: "";font-family: olympus !important;font-size: 18px;font-weight: 400;}
+.yzm-user-actions .yzmd-second-btn i:before {content: "";font-family: olympus !important;font-size: 18px;font-weight: 400;}
+#yz-groups-list .item .item-meta .group-status i:before {content: "";font-family: olympus !important;font-size: 20px;font-weight: 400;}
+.yzg-user-statistics .yz-data-posts span:before {content: "";font-family: olympus !important;font-size: 20px;font-weight: 400;}
+.yzg-user-statistics .yz-data-activity span:before {content: "";font-family: olympus !important;font-size: 20px;font-weight: 400;}
+.yzg-user-statistics .yz-data-members span:before {content: "";font-family: olympus !important;font-size: 20px;font-weight: 400;}
+#yz-groups-list .action .yz-manage-group i:before {content: "";font-family: olympus !important;font-size: 20px;font-weight: 400;}
+#yz-members-list .yzm-user-actions .follow-button a.loading.unfollow:before {content: "";font-family: olympus !important;font-size: 20px;font-weight: 400;}
+#yz-members-list .yzm-user-actions .follow-button a.loading.follow:before {content: "";font-family: olympus !important;font-size: 20px;font-weight: 400;}
+#invite-list .list-title i.fa-paper-plane:before {content: "";font-family: olympus !important;font-size: 20px;font-weight: 400;border-radius: 0 !important;}
+.yz-group-navmenu a#admin:before, .yz-group-navmenu a#group-info:before, .yz-group-navmenu a#group-media:before, .yz-group-navmenu a#home:before, .yz-group-navmenu a#invite:before, .yz-group-navmenu a#media:before, .yz-group-navmenu a#members:before, .yz-group-navmenu a#nav-forum:before {border-radius: 0;font-size: 20px;font-weight: 400;font-family: olympus !important;}
+.yz-group-navmenu a:before {vertical-align: middle;}
+.yz-group-navmenu a#home:before {content: "";}
+.yz-group-navmenu a#nav-forum:before {content: "";}
+.yz-group-navmenu a#group-media:before {content: "";}
+.yz-group-navmenu a#members:before {content: "";}
+.yz-group-navmenu a#invite:before {content: "";}
+.yz-group-navmenu a#group-info:before {content: "";}
+.yz-group-navmenu a#admin:before {content: "";}
+.yz-group-navmenu a#media:before {background-image: none;content: "";}
+#yz-wall-nav li>a::before, .youzer div.item-list-tabs li a i, .youzer div.item-list-tabs li a:before {background: 0 0 !important;}
+.yz-group-infos-widget .yz-group-widget-title i.fa-file-alt:before {content: "";font-size: 20px;font-weight: 400;font-family: olympus !important;border-radius: 0 !important;}
+.yzb-author .yzb-account-menu .dashicons-groups:before {content: "";font-size: 20px;font-weight: 400;font-family: olympus !important;}
+.yzb-author .yzb-account-menu .dashicons-email-alt:before {content: "";font-size: 20px;font-weight: 400;font-family: olympus !important;}
+.yzb-author .yzb-account-menu .fa-globe-asia:before {content: "";font-size: 20px;font-weight: 400;font-family: olympus !important;}
+.yz-usermeta li i.fa-globe-asia:before {content: "";font-size: 14px;font-weight: 400;font-family: olympus !important;}
+.yz-usermeta li i.fa-clock:before {content: "";font-size: 14px;font-weight: 400;font-family: olympus !important;}
+.yz-tab-title-box .yz-tab-title-icon i.fa-trophy:before {content: "";font-size: 25px;font-weight: 400;font-family: olympus !important;}
+.yz-link .yz-widget-title i.fa-link:before, .yz-post .yz-widget-title i.fa-pencil-alt:before, .yz-project .yz-widget-title i.fa-suitcase:before, .yz-quote .yz-widget-title i.fa-quote-right:before, .yz-reviews .yz-widget-title i.fa-star:before, .yz-services .yz-widget-title i.fa-wrench:before, .yz-skills .yz-widget-title i.fa-tasks:before, .yz-video .yz-widget-title i.fa-video:before, .yz-widget .yz-widget-head .yz-widget-title i.fa-envelope:before, .yz-widget .yz-widget-head .yz-widget-title i.fa-globe:before, .yz-widget .yz-widget-head .yz-widget-title i.fa-info:before, .yz-widget .yz-widget-head i.fa-edit:before {font-size: 20px;font-weight: 400;font-family: olympus !important;}
+.yz-widget .yz-widget-head .yz-widget-title i.fa-info:before {content: "";}
+.yz-widget .yz-widget-head .yz-widget-title i.fa-envelope:before {content: "";}
+.yz-widget .yz-widget-head .yz-widget-title i.fa-globe:before {content: "";}
+.yz-widget .yz-widget-head i.fa-edit:before {content: "";}
+.yz-project .yz-widget-title i.fa-suitcase:before {content: "";}
+.yz-skills .yz-widget-title i.fa-tasks:before {content: "";}
+.yz-portfolio .yz-widget-title i.fa-images:before {content: "";font-family: olympus !important;font-size: 20px;font-weight: 400;}
+.yz-services .yz-widget-title i.fa-wrench:before {content: "";}
+.yz-link .yz-widget-title i.fa-link:before {content: "";}
+.yz-reviews .yz-widget-title i.fa-star:before {content: "";}
+.yz-quote .yz-widget-title i.fa-quote-right:before {content: "";}
+.yz-post .yz-widget-title i.fa-pencil-alt:before {content: "";}
+.yz-video .yz-widget-title i.fa-video:before {content: "";}
+.yz-post-content .yz-post-meta ul li i.fa-calendar-alt:before {content: "";font-family: olympus !important;font-size: 16px;font-weight: 400;}
+.yz-post-content .yz-post-meta ul li i.fa-tags:before {content: "";font-family: olympus !important;font-size: 16px;font-weight: 400;}
+.yz-post-content .yz-post-meta ul li i.fa-comments:before {content: "";font-family: olympus !important;font-size: 16px;font-weight: 400;}
+.yz-box-head .yz-box-icon i.fa-envelope:before {content: "";font-family: olympus !important;font-size: 16px;font-weight: 400;}
+.yz-box-head .yz-box-icon i.fa-home:before {content: "";font-family: olympus !important;font-size: 20px;font-weight: 400;}
+.yz-box-head .yz-box-icon i.fa-link:before, .yz-box-head .yz-box-icon i.fa-phone-volume:before {content: "";font-family: olympus !important;font-size: 20px;font-weight: 400;}
+.yz-recent-posts .yz-no-thumbnail .thumbnail-icon i.fa-file-alt:before {content: "";font-family: olympus !important;font-size: 20px;font-weight: 400;}
+.yz-tab-post .yz-post-meta ul li i.fa-calendar-alt:before {content: "";font-family: olympus !important;font-size: 16px;font-weight: 400;}
+.yz-tab-post .yz-post-meta ul li i.fa-tags:before {content: "";font-family: olympus !important;font-size: 16px;font-weight: 400;}
+.yz-tab-post .yz-post-meta ul li i.fa-comments:before {content: "";font-family: olympus !important;font-size: 16px;font-weight: 400;}
+.yz-tab-comment .view-comment-button i.fa-comment-dots:before {content: "";font-family: olympus !important;font-size: 13px;font-weight: 400;}
+#yz-profile-navmenu .yz-settings-menu a i.fa-user:before {content: "";font-family: olympus !important;font-size: 20px;font-weight: 400;}
+#yz-profile-navmenu .yz-settings-menu a i.fa-cogs:before {content: "";font-family: olympus !important;font-size: 20px;font-weight: 400;}
+#yz-profile-navmenu .yz-settings-menu a i.fa-sliders-h:before {content: "";font-family: olympus !important;font-size: 20px;font-weight: 400;}
+#yz-profile-navmenu .yz-settings-menu a i.fa-camera-retro:before {content: "";font-family: olympus !important;font-size: 20px;font-weight: 400;}
+#yz-profile-navmenu .yz-settings-menu a i.fa-lock:before {content: "";font-family: olympus !important;font-size: 20px;font-weight: 400;}
+#yz-profile-navmenu .yz-settings-menu a i.fa-power-off:before {content: "";font-family: olympus !important;font-size: 20px;font-weight: 400;}
+.yz-profile-login i.fa-user-circle:before {content: "";font-family: olympus !important;font-size: 20px;font-weight: 400;}
+.yz-profile-login:before {content: "";font-family: olympus !important;font-size: 24px;font-weight: 400;}
+.my-friends .youzer #friend-list .action a.reject:before {content: "";font-family: olympus !important;font-size: 24px;font-weight: 400;}
+.my-groups .youzer #yz-groups-list .action a.accept:before {content: "";font-family: olympus !important;font-size: 24px;font-weight: 400;}
+.my-groups .youzer #yz-groups-list .action a.reject:before {content: "";font-family: olympus !important;font-size: 24px;font-weight: 400;}
+.youzer #friend-list .action a.remove:before {content: "";font-family: olympus !important;font-size: 24px;font-weight: 400;}
+.youzer #friend-list .action a.accept:before {content: "";font-family: olympus !important;font-size: 24px;font-weight: 400;}
+.youzer div.item-list-tabs li a#edit-details:before, .youzer div.item-list-tabs li a#forum:before, .youzer div.item-list-tabs li a#group-avatar:before, .youzer div.item-list-tabs li a#group-cover-image:before, .youzer div.item-list-tabs li a#group-settings:before, .youzer div.item-list-tabs li a#manage-members:before, .youzer div.item-list-tabs li a#media-all:before, .youzer div.item-list-tabs li a#media-audios:before, .youzer div.item-list-tabs li a#media-files:before, .youzer div.item-list-tabs li a#media-photos:before, .youzer div.item-list-tabs li a#media-setting:before, .youzer div.item-list-tabs li a#media-videos:before {font-size: 18px;border-radius: 0;font-family: olympus !important;font-weight: 400;}
+.youzer div.item-list-tabs li a i.fa-search:before {content: "";font-family: olympus !important;font-weight: 400;}
+.youzer div.item-list-tabs li a#edit-details:before {content: "";}
+.youzer div.item-list-tabs li a#group-settings:before {content: "";}
+.youzer div.item-list-tabs li a#group-avatar:before {content: "";}
+.youzer div.item-list-tabs li a#manage-members:before {content: "";}
+.youzer div.item-list-tabs li a#media-setting:before {content: "";}
+.youzer div.item-list-tabs li a#forum:before {content: "";}
+.youzer div.item-list-tabs li a#delete-group:before {content: "";font-family: olympus !important;font-size: 18px;font-weight: 400;border-radius: 0;}
+.youzer div.item-list-tabs li a#group-cover-image:before {content: "";}
+.youzer div.item-list-tabs li a#media-all:before {content: "";}
+.youzer div.item-list-tabs li a#media-photos:before {content: "";}
+.youzer div.item-list-tabs li a#media-videos:before {content: "";}
+.youzer div.item-list-tabs li a#media-audios:before {content: "";}
+.youzer div.item-list-tabs li a#media-files:before {content: "";}
+.youzer div.item-list-tabs li.feed a:before {content: "";font-family: olympus !important;font-size: 20px;font-weight: 400;border-radius: 0;}
+.youzer div.item-list-tabs li a#rtmedia-nav-item-all:before {content: "";font-family: olympus !important;font-size: 20px;font-weight: 400;border-radius: 0;margin-right: 10px;}
+.youzer div.item-list-tabs li a#rtmedia-nav-item-albums:before {content: "";font-family: olympus !important;font-size: 20px;font-weight: 400;border-radius: 0;margin-right: 10px;}
+.youzer div.item-list-tabs li a#rtmedia-nav-item-photo:before {content: "";font-family: olympus !important;font-size: 20px;font-weight: 400;border-radius: 0;margin-right: 10px;}
+.youzer div.item-list-tabs li a#rtmedia-nav-item-video:before {content: "";font-family: olympus !important;font-size: 20px;font-weight: 400;border-radius: 0;margin-right: 10px;}
+.youzer div.item-list-tabs li a#rtmedia-nav-item-music:before {content: "";font-family: olympus !important;font-size: 20px;font-weight: 400;border-radius: 0;margin-right: 10px;}
+.messages-notices .thread-options a span.deactivate-notice:before {content: "";font-family: olympus !important;font-size: 20px;font-weight: 400;}
+.messages-notices .thread-options a span.activate-notice:before {content: "";font-family: olympus !important;font-size: 20px;font-weight: 400;}
+.notifications .notification-actions .mark-unread span:before {content: "";font-family: olympus !important;font-size: 20px;font-weight: 400;}
+.messages-notices .thread-options a.delete span:before, .notifications .notification-actions .delete span:before {content: "";font-family: olympus !important;font-size: 20px;font-weight: 400;}
+.messages-notices .thread-options a.unread span:before, .notifications .notification-actions .unread span:before {content: "";font-family: olympus !important;font-size: 20px;font-weight: 400;}
+.messages-notices .thread-options a.read span:before, .notifications .notification-actions .mark-read span.dashicons-visibility:before {content: "";font-family: olympus !important;font-size: 20px;font-weight: 400;}
+#message-recipients .highlight-icon i.fa-comments:before {content: "";font-family: olympus !important;font-size: 24px;font-weight: 400;}
+#message-recipients a.button.confirm i.fa-trash-alt:before {content: "" !important;font-family: olympus !important;font-size: 20px;font-weight: 400;animation: none !important;}
+#yz-wall-nav #activity-all a:before, #yz-wall-nav #activity-following a:before, #yz-wall-nav #activity-groups a:before {border-radius: 0;animation: none;font-family: olympus !important;font-weight: 400;font-size: 20px;}
+#send-reply #send_reply_button i.fa-paper-plane:before {content: "" !important;font-family: olympus !important;font-size: 20px;font-weight: 400;}
+.yz-quick-buttons .yz-button-item .dashicons-groups:before {content: "";font-family: olympus !important;font-size: 20px;font-weight: 400;}
+.yz-quick-buttons .yz-button-item .dashicons-email-alt:before {content: "";font-family: olympus !important;font-size: 20px;font-weight: 400;}
+.yz-quick-buttons .yz-button-item i.fa-globe-asia:before {content: "";font-family: olympus !important;font-size: 20px;font-weight: 400;}
+.youzer div.item-list-tabs li.yz-activity-show-search .yz-activity-show-search-form i.fa-search:before {content: "";font-family: olympus !important;font-weight: 400;}
+.youzer div.item-list-tabs li#activity-filter-select .yz-activity-show-filter i.fa-sliders-h:before {content: "";font-family: olympus !important;font-weight: 400;}
+.yz-tabs-list-gradient div.item-list-tabs a::before {color: #9a9fbf;color: var(--icon-color);}
+#yz-wall-nav #activity-all a:before {content: "" !important;}
+#yz-wall-nav #activity-groups a:before {content: "" !important;}
+#yz-wall-nav #activity-following a:before {content: "" !important;}
+#yz-wall-nav #activity-favorites a:before {content: "" !important;font-family: olympus !important;font-weight: 400;font-size: 20px;border-radius: 0;animation: none;}
+#yz-wall-nav #activity-friends a:before, #yz-wall-nav #activity-mentions a:before {font-family: olympus !important;font-weight: 400;font-size: 22px;border-radius: 0;animation: none;}
+#yz-wall-nav #activity-mentions a:before {content: "" !important;}
+#yz-wall-nav #activity-friends a:before {content: "" !important;}
+#youzer .activity-meta a.delete-activity-single:before, #youzer .activity-meta a.delete-activity:before, #youzer .activity-meta a.view:before, #youzer .activity-meta a.yz-edit-activity:before, .youzer .activity-meta .yz-post-comments-nbr i.fa-comments:before {animation: none !important;font-family: olympus !important;font-weight: 400;}
+.youzer .activity-header p .yz-pinned-post-tag i.fa-thumbtack:before {content: "";font-family: olympus !important;font-weight: 400;font-size: 12px;}
+.youzer .activity-header .yz-timestamp-area i.fa-globe-asia:before {content: "" !important;font-family: olympus !important;font-weight: 400;font-size: 13px;}
+#youzer .activity-meta a.delete-activity-single:before {content: "" !important;font-size: 18px;}
+#youzer .activity-meta a.view:before {content: "" !important;font-size: 24px;}
+#youzer .activity-meta a.delete-activity:before {content: "" !important;font-size: 18px;}
+#youzer .activity-meta a.yz-edit-activity:before {content: "" !important;font-size: 20px;}
+.youzer .activity-meta .yz-post-comments-nbr i.fa-comments:before {content: "" !important;font-size: 18px;}
+.yzw-file-post .yzw-file-icon.fa-cloud-download-alt:before {content: "" !important;font-family: olympus !important;font-weight: 400;font-size: 84px;}
+.yzw-file-post .yzw-file-download i.fa-download:before {content: "" !important;font-family: olympus !important;font-weight: 400;font-size: 20px;}
+.youzer .activity-comments .acomment-meta a .fa-clock:before {content: "" !important;font-family: olympus !important;font-weight: 400;font-size: 13px;}
+.yz-wall-options .yz-wall-opts-item label i.fa-comment-dots:before {content: "" !important;font-family: olympus !important;font-weight: 400;font-size: 20px;}
+.yz-wall-options .yz-wall-opts-item label i.fa-camera-retro:before {content: "" !important;font-family: olympus !important;font-weight: 400;font-size: 20px;}
+.yz-wall-options .yz-wall-opts-item label i.fa-film:before {content: "" !important;font-family: olympus !important;font-weight: 400;font-size: 20px;}
+.yz-wall-options .yz-wall-opts-item label i.fa-quote-right:before {content: "" !important;font-family: olympus !important;font-weight: 400;font-size: 20px;}
+.yz-wall-options .yz-wall-opts-item label i.fa-images:before {content: "" !important;font-family: olympus !important;font-weight: 400;font-size: 20px;}
+.yz-wall-options .yz-wall-opts-item label i.fa-cloud-download-alt:before {content: "";font-family: olympus !important;font-weight: 400;font-size: 20px;}
+.yz-wall-options .yz-wall-opts-item label i.fa-video:before {content: "";font-family: olympus !important;font-weight: 400;font-size: 20px;}
+.yz-wall-options .yz-wall-opts-item label i.fa-volume-up:before {content: "";font-family: olympus !important;font-weight: 400;font-size: 18px;}
+.yz-wall-options .yz-wall-opts-item label i.fa-link:before {content: "";font-family: olympus !important;font-weight: 400;font-size: 20px;}
+.yz-form-tool i.fa-user-tag:before {content: "";font-family: olympus !important;font-weight: 400;font-size: 20px;}
+.yz-wall-actions .yz-wall-upload-btn i.fa-paperclip:before {content: "";font-family: olympus !important;font-weight: 400;font-size: 20px;}
+.youzer .yz-wall-embed .yz-embed-meta .yz-embed-meta-item i.fa-globe-asia:before {content: "";font-family: olympus !important;font-weight: 400;font-size: 15px;}
+.youzer .yz-wall-embed .yz-embed-meta .yz-embed-meta-item i.fa-users:before {content: "";font-family: olympus !important;font-weight: 400;font-size: 15px;}
+.youzer .yz-wall-embed .yz-embed-meta .yz-embed-meta-item i.fa-lock:before {content: "";font-family: olympus !important;font-weight: 400;font-size: 15px;}
+.yz-form-tool.yz-user-mood-tool i.fa-smile:before {content: "";font-family: olympus !important;font-weight: 400;font-size: 18px;}
+.yz-list-search-box .yz-list-search-icon i.fa-search:before {content: "";font-family: olympus !important;font-weight: 400;font-size: 20px;}
+.yz-list-search-box .yz-list-close-icon i.fa-times:before {content: "";font-family: olympus !important;font-weight: 400;font-size: 20px;}
+.yz-activity-privacy .current[data-value=onlyme]:before, .yz-activity-privacy div[data-value=onlyme]:before {content: "";font-family: olympus !important;font-weight: 400;}
+.yz-activity-privacy .current:before, .yz-activity-privacy .current[data-value=public]:before, .yz-activity-privacy div[data-value=public]:before {content: "";font-family: olympus !important;font-weight: 400;}
+.yz-activity-privacy .current[data-value=friends]:before, .yz-activity-privacy div[data-value=friends]:before {content: "";font-family: olympus !important;font-weight: 400;}
+.yz-activity-privacy .current[data-value=members]:before, .yz-activity-privacy div[data-value=members]:before {content: "";font-family: olympus !important;font-weight: 400;}
+#youzer div.item-list-tabs .yz-activity-search i:before {content: "";font-family: olympus !important;font-weight: 400;font-size: 20px;}
+#youzer .youzer .wc-proceed-to-checkout a.checkout-button:before {content: "";font-family: olympus !important;font-weight: 400;font-size: 20px;}
+.youzer .woocommerce-Address-title a.edit:before {content: "";font-family: olympus !important;font-weight: 400;}
+.youzer .yzwc-box-title i.fa-address-card:before {content: "";font-family: olympus !important;font-weight: 400;font-size: 20px;}
+.youzer .yzwc-box-title i.fa-shopping-cart:before {content: "";font-family: olympus !important;font-weight: 400;font-size: 20px;}
+.youzer .yzwc-box-title i.fa-shipping-fast:before, .youzer .yzwc-box-title i.fa-truck-moving:before {content: "";font-family: olympus !important;font-weight: 400;font-size: 20px;}
+.youzer .yz-directory-filter #directory-show-filter a i, .youzer .yz-directory-filter #directory-show-filter a:before, .youzer .yz-directory-filter #directory-show-search a i, .youzer .yz-directory-filter #directory-show-search a:before, .youzer .yz-directory-filter .item-list-tabs li a:before, .yz-wp-activity-rss-box .fa-rss:before {font-size: 16px;font-family: olympus !important;font-weight: 400;}
+.yz-wp-activity-rss-box .fa-rss:before {content: "";}
+.yz-widget .yz-widget-title i.fa-group:before, .yz-widget .yz-widget-title i.fa-users:before {font-weight: 400;font-size: 20px;font-family: olympus !important;content: "";}
+.yz-widget .yz-widget-title i.fa-trophy:before {font-weight: 400;font-size: 20px;font-family: olympus !important;content: "";}
+.yz-widget .yz-widget-title i.fa-user:before {font-weight: 400;font-size: 20px;font-family: olympus !important;content: "";}
+.yz-widget .yz-widget-title i.fa-share-alt:before {font-weight: 400;font-size: 20px;font-family: olympus !important;content: "";}
+.yz-widget .yz-widget-title i.fa-handshake:before {font-weight: 400;font-size: 20px;font-family: olympus !important;content: "";}
+.yz-widget .yz-widget-title i.fa-newspaper:before {font-weight: 400;font-size: 20px;font-family: olympus !important;content: "";}
+.yz-widget .yz-widget-title i.fa-photo-video:before {font-weight: 400;font-size: 20px;font-family: olympus !important;content: "";}
+.yz-widget .yz-widget-title i.fa-gem:before {font-family: "Font Awesome 5 Free" !important;}
+.yz-media-filter .yz-filter-item .yz-filter-content i.fa-image:before {content: "";font-size: 20px;font-weight: 400;font-family: olympus !important;}
+.yz-media-filter .yz-filter-item .yz-filter-content i.fa-film:before {content: "";font-size: 20px;font-weight: 400;font-family: olympus !important;}
+.yz-media-filter .yz-filter-item .yz-filter-content i.fa-volume-up:before {content: "";font-size: 20px;font-weight: 400;font-family: olympus !important;}
+.yz-media-filter .yz-filter-item .yz-filter-content i.fa-cloud-download-alt:before {content: "";font-size: 20px;font-weight: 400;font-family: olympus !important;}
+.yz-media-small-box .yz-media-item .yz-media-item-tools i:before {font-size: 13px;font-family: olympus !important;font-weight: 400;}
+.yz-media-small-box .yz-media-item .yz-media-item-tools i.yz-media-post-link:before {content: "";font-weight: 400;font-family: olympus !important;}
+.yz-media-small-box .yz-media-item .yz-media-item-tools i.yz-media-zoom-photo:before {content: "";font-weight: 400;font-family: olympus !important;}
+.yz-media-small-box .yz-media-item .yz-media-item-tools i.yz-media-video-play:before {content: "";font-weight: 400;font-family: olympus !important;}
+.yz-media-item .yz-media-item-img .fa-link:before {content: "";font-family: olympus !important;font-weight: 400;font-size: 18px;}
+.yz-media-item .yz-media-item-img .fa-search:before {content: "";font-family: olympus !important;font-weight: 400;font-size: 18px;}
+.yz-media .yz-media-group-icon i.fa-image:before {content: "";font-family: olympus !important;font-weight: 400;font-size: 20px;}
+.yz-media .yz-media-group-icon i.fa-film:before {content: "";font-family: olympus !important;font-weight: 400;font-size: 20px;}
+.yz-media .yz-media-group-icon i.fa-volume-up:before {content: "";font-family: olympus !important;font-weight: 400;font-size: 20px;}
+.yz-media .yz-media-group-icon i.fa-file-import:before {content: "";font-family: olympus !important;font-weight: 400;font-size: 20px;}
+.yz-media-filter .yz-filter-item .yz-filter-content:not(.yz-current-filter):hover i {color: #ff5e3a;color: var(--primary-accent-color);}
+#youzer div.item-list-tabs .yz-activity-search i, .yz-tabs-list-gradient .yz-default-subnav li a i, .yz-tabs-list-gradient div.item-list-tabs a i {color: #9a9fbf;color: var(--icon-color);}
+.youzer div.item-list-tabs li a i, .youzer div.item-list-tabs li a::before {font-size: 18px;}
+.yz-profile-navmenu .yz-navbar-item a i.fa-address-card:before, .yz-profile-navmenu .yz-navbar-item a i.fa-bars:before, .yz-profile-navmenu .yz-navbar-item a i.fa-bookmark:before, .yz-profile-navmenu .yz-navbar-item a i.fa-comments:before, .yz-profile-navmenu .yz-navbar-item a i.fa-globe-asia:before, .yz-profile-navmenu .yz-navbar-item a i.fa-handshake:before, .yz-profile-navmenu .yz-navbar-item a i.fa-info:before, .yz-profile-navmenu .yz-navbar-item a i.fa-pencil-alt:before, .yz-profile-navmenu .yz-navbar-item a i.fa-photo-video:before, .yz-profile-navmenu .yz-navbar-item a i.fa-shopping-cart:before, .yz-profile-navmenu .yz-navbar-item a i.fa-star:before, .yz-profile-navmenu .yz-navbar-item a i.fa-trophy:before, .yz-profile-navmenu .yz-navbar-item a i.fa-users:before {font-family: olympus !important;font-weight: 400;}
+.yz-profile-navmenu .yz-navbar-item a i.fa-bars:before {content: "";font-size: 16px;}
+.yz-profile-navmenu .yz-navbar-item a[href*=overview] i.fa-globe-asia:before {content: "";}
+.yz-profile-navmenu .yz-navbar-item a[href*=info] i.fa-info:before {content: "";}
+.yz-profile-navmenu .yz-navbar-item a[href*=user-media] i.fa-globe-asia:before, .yz-profile-navmenu .yz-navbar-item a[href*=media] i.fa-photo-video:before {content: "";}
+.yz-profile-navmenu .yz-navbar-item a[href*=activity] i.fa-address-card:before {content: "";}
+.yz-profile-navmenu .yz-navbar-item a[href*=posts] i.fa-pencil-alt:before {content: "";}
+.yz-profile-navmenu .yz-navbar-item a[href*=comments] i.fa-comments:before {content: "";}
+.yz-profile-navmenu .yz-navbar-item a[href*=friends] i.fa-handshake:before {content: "";}
+.yz-profile-navmenu .yz-navbar-item a[href*=groups] i.fa-users:before {content: "";}
+.yz-profile-navmenu .yz-navbar-item a[href*=forums] i.fa-comments:before {content: "";}
+.yz-profile-navmenu .yz-navbar-item a[href*=reviews] i.fa-star:before {content: "";}
+.yz-profile-navmenu .yz-navbar-item a[href*=bookmarks] i.fa-bookmark:before {content: "";}
+.yz-profile-navmenu .yz-navbar-item a[href*=badges] i.fa-trophy:before {content: "";}
+.yz-profile-navmenu .yz-navbar-item a[href*=shop] i.fa-shopping-cart:before {content: "";}
+.youzer div.item-list-tabs li a i.fa-address-card:before, .youzer div.item-list-tabs li a i.fa-at:before, .youzer div.item-list-tabs li a i.fa-bell:before, .youzer div.item-list-tabs li a i.fa-comments:before, .youzer div.item-list-tabs li a i.fa-credit-card:before, .youzer div.item-list-tabs li a i.fa-download:before, .youzer div.item-list-tabs li a i.fa-file-alt:before, .youzer div.item-list-tabs li a i.fa-file-import:before, .youzer div.item-list-tabs li a i.fa-film:before, .youzer div.item-list-tabs li a i.fa-globe:before, .youzer div.item-list-tabs li a i.fa-handshake:before, .youzer div.item-list-tabs li a i.fa-heart:before, .youzer div.item-list-tabs li a i.fa-image:before, .youzer div.item-list-tabs li a i.fa-paper-plane:before, .youzer div.item-list-tabs li a i.fa-photo-video:before, .youzer div.item-list-tabs li a i.fa-shopping-basket:before, .youzer div.item-list-tabs li a i.fa-shopping-cart:before, .youzer div.item-list-tabs li a i.fa-thumbs-up:before, .youzer div.item-list-tabs li a i.fa-truck-moving:before, .youzer div.item-list-tabs li a i.fa-user-circle:before, .youzer div.item-list-tabs li a i.fa-users:before, .youzer div.item-list-tabs li a i.fa-volume-up:before {font-family: olympus !important;font-weight: 400;}
+.youzer div.item-list-tabs li a[id=just-me] i.fa-user-circle:before {content: "";}
+.youzer div.item-list-tabs li a[href*=mentions] i.fa-at:before {content: "";}
+.youzer div.item-list-tabs li a[href*=favorites] i.fa-heart:before {content: "";}
+.youzer div.item-list-tabs li a[href*=friends] i.fa-handshake:before {content: "";}
+.youzer div.item-list-tabs li a[href*=groups] i.fa-users:before {content: "";}
+.youzer div.item-list-tabs li a[id=all] i.fa-photo-video:before {content: "";}
+.youzer div.item-list-tabs li a[href*=photos] i.fa-image:before {content: "";}
+.youzer div.item-list-tabs li a[href*=friends] i.fa-users:before {content: "";}
+.youzer div.item-list-tabs li a[href*=videos] i.fa-film:before {content: "";}
+.youzer div.item-list-tabs li a[href*=audios] i.fa-volume-up:before {content: "";}
+.youzer div.item-list-tabs li a[href*=files] i.fa-file-import:before {content: "";}
+.youzer div.item-list-tabs li a[id=topics] i.fa-file-alt:before {content: "";}
+.youzer div.item-list-tabs li a[href*=replies] i.fa-comments:before {content: "";}
+.youzer div.item-list-tabs li a[href*=engagements] i.fa-handshake:before {content: "";}
+.youzer div.item-list-tabs li a[href*=favorites] i.fa-thumbs-up:before {content: "";}
+.youzer div.item-list-tabs li a[href*=shop] i.fa-shopping-cart:before {content: "";}
+.youzer div.item-list-tabs li a[href*=checkout] i.fa-credit-card:before {content: "";}
+.youzer div.item-list-tabs li a[href*=track] i.fa-truck-moving:before {content: "";}
+.youzer div.item-list-tabs li a[href*=orders] i.fa-shopping-basket:before {content: "";}
+.youzer div.item-list-tabs li a[href*=downloads] i.fa-download:before {content: "";}
+.youzer div.item-list-tabs li a[href*=edit-address] i.fa-address-card:before {content: "";}
+.youzer div.item-list-tabs li a[href*=payment-methods] i.fa-credit-card:before {content: "";}
+.youzer div.item-list-tabs li a[href*=edit-account] i.fa-user-circle:before {content: "";}
+.youzer div.item-list-tabs li a[href*=requests] i.fa-handshake:before {content: "";}
+.youzer div.item-list-tabs li a[href*=invites] i.fa-paper-plane:before {content: "";}
+.youzer div.item-list-tabs li a[href*=subscriptions] i.fa-bell:before {content: "";}
+.youzer div.item-list-tabs li a i.fa-eye:before {content: "";font-family: olympus !important;font-weight: 400;}
+.youzer div.item-list-tabs li a i.fa-eye-slash:before {content: "";font-family: olympus !important;font-weight: 400;}

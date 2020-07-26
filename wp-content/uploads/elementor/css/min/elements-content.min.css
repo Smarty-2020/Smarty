@@ -1,0 +1,3 @@
+.dce-content {display: block;}
+.dce-content.unfolded {overflow: hidden;transition: height .5s ease;}
+.unfold-btn a {display: block;text-align: center;}

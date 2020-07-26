@@ -1,0 +1,14 @@
+.elementor-1474 .elementor-element.elementor-element-b2fa8e1 .uael-login-form-footer a.uael-login-form-footer-link:not(:last-child) span:after {content: "|";margin: 0 .4em;}
+.elementor-1474 .elementor-element.elementor-element-b2fa8e1 .uael-login-form-footer {justify-content: flex-start;}
+.elementor-1474 .elementor-element.elementor-element-b2fa8e1 .uael-login-form .elementor-field-group:not( :first-child ), .elementor-1474 .elementor-element.elementor-element-b2fa8e1.uael-login-form-social-stack .elementor-field-group:not(:first-child) {margin-top: 24px;}
+.elementor-1474 .elementor-element.elementor-element-b2fa8e1 .elementor-field, .elementor-1474 .elementor-element.elementor-element-b2fa8e1 .uael-login-form input[type="checkbox"] + span:before {background-color: #fafafa;}
+.elementor-1474 .elementor-element.elementor-element-b2fa8e1 .uael-loginform-error {color: #d9534f;}
+.elementor-1474 .elementor-element.elementor-element-fad1b2c .elementor-field-group {padding-right: calc(10px / 2);padding-left: calc(10px / 2);}
+.elementor-1474 .elementor-element.elementor-element-fad1b2c .elementor-form-fields-wrapper {margin-left: calc(-10px / 2);margin-right: calc(-10px / 2);}
+.elementor-1474 .elementor-element.elementor-element-fad1b2c .elementor-field-group:not( .elementor-field-type-submit ):not( .uael-rform-footer ):not( .uael-recaptcha-align-bottomright ):not( .uael-recaptcha-align-bottomleft ) {margin-bottom: 20px;}
+body.rtl .elementor-1474 .elementor-element.elementor-element-fad1b2c .elementor-labels-inline .elementor-field-group > label {padding-left: 0px;}
+body:not(.rtl) .elementor-1474 .elementor-element.elementor-element-fad1b2c .elementor-labels-inline .elementor-field-group > label {padding-right: 0px;}
+body .elementor-1474 .elementor-element.elementor-element-fad1b2c .elementor-labels-above .elementor-field-group > label {padding-bottom: 0px;}
+.elementor-1474 .elementor-element.elementor-element-fad1b2c .elementor-field-group .elementor-field {background-color: #fff;border-color: #c4c4c4;border-radius: 2px 2px 2px 2px;}
+.elementor-1474 .elementor-element.elementor-element-fad1b2c .elementor-field-group .elementor-field:focus {border-color: #a5afb8;}
+.elementor-1474 .elementor-element.elementor-element-fad1b2c .uael-register-error {color: #f00;}

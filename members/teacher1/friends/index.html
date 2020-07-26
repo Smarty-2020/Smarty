@@ -1,0 +1,1023 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset="UTF-8">
+    
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<title>Friends – teacher 1 – Smarty</title>
+<style type="text/css">#wp-admin-bar-wp-logo{display:none;}#wp-admin-bar-comments{display:none;}#wp-admin-bar-new-content{display:none;}#wp-admin-bar-_legacyoptions{display:none;}</style>                        <script>
+                            /* You can add more configuration options to webfontloader by previously defining the WebFontConfig with your options */
+                            if ( typeof WebFontConfig === "undefined" ) {
+                                WebFontConfig = new Object();
+                            }
+                            WebFontConfig['google'] = {families: ['Open+Sans:400', 'Roboto+Condensed:300,400']};
+
+                            (function() {
+                                var wf = document.createElement( 'script' );
+                                wf.src = 'https://ajax.googleapis.com/ajax/libs/webfont/1.5.3/webfont.js';
+                                wf.type = 'text/javascript';
+                                wf.async = 'true';
+                                var s = document.getElementsByTagName( 'script' )[0];
+                                s.parentNode.insertBefore( wf, s );
+                            })();
+                        </script>
+                    
+<link rel="dns-prefetch" href="//fonts.googleapis.com">
+<link rel="dns-prefetch" href="//s.w.org">
+
+
+
+<link rel="stylesheet" id="youzer-customStyle-css" href="https://smarty-2020.github.io/Smarty/wp-content/plugins/youzer/includes/admin/assets/css/custom-script.css" type="text/css" media="all">
+<style id="youzer-customStyle-inline-css" type="text/css">
+
+                    .youzer .yz-profile-navmenu a,.yz-profile .yz-settings-name {
+                	color: #ffffff !important;
+                    }
+
+                    .youzer .yz-profile-navmenu a:hover {
+                	color: #fba434 !important;
+                    }
+
+                    .yz-scrolltotop i:hover {
+                	background-color: #fea633 !important;
+                    }
+
+                    .yz-account-verified {
+                	background-color: #08ddc1 !important;
+                    }
+
+                    .yz-account-verified {
+                	color: #ffffff !important;
+                    }
+
+.youzer div.item-list-tabs li.yz-activity-show-search .yz-activity-show-search-form i,
+#yz-wall-nav .item-list-tabs li#activity-filter-select label,
+.yz-media-filter .yz-filter-item .yz-current-filter,
+.yz-community-hashtags .yz-hashtag-item:hover,
+.youzer table tfoot tr,
+.youzer table thead tr,
+#yz-group-body h1:before,
+.yz-product-actions .yz-addtocart,
+.youzer .checkout_coupon,
+.youzer .yzwc-box-title h3,
+.youzer .woocommerce-customer-details h2,
+.youzer .yzwc-main-content .track_order .form-row button,
+.yz-view-order .yzwc-main-content > p mark.order-status,
+.youzer .yzwc-main-content button[type='submit'],
+.youzer .yzwc-main-content #payment #place_order,
+.youzer .yzwc-main-content h3,
+.youzer .wc-proceed-to-checkout a.checkout-button,
+.youzer .wc-proceed-to-checkout a.checkout-button:hover,
+.youzer .yzwc-main-content .woocommerce-checkout-review-order table.shop_table tfoot .order-total,
+.youzer .yzwc-main-content .woocommerce-checkout-review-order table.shop_table thead,
+.youzer .yzwc-main-content table.shop_table td a.woocommerce-MyAccount-downloads-file:before,
+.youzer .yzwc-main-content table.shop_table td a.view:before,
+.youzer table.shop_table.order_details tfoot tr:last-child,
+.youzer .yzwc-main-content table.shop_table td.actions .coupon button,
+.youzer .yzwc-main-content table.shop_table td.woocommerce-orders-table__cell-order-number a,
+.youzer .yzwc-main-content table.shop_table thead,
+.yz-forums-topic-item .yz-forums-topic-icon i,
+.yz-forums-forum-item .yz-forums-forum-icon i,
+div.bbp-submit-wrapper button,
+#bbpress-forums li.bbp-header,
+#bbpress-forums .bbp-search-form #bbp_search_submit,
+#bbpress-forums #bbp-search-form #bbp_search_submit,
+.widget_display_search #bbp_search_submit,
+.widget_display_forums li a:before,
+.widget_display_views li .bbp-view-title:before,
+.widget_display_topics li:before,
+#bbpress-forums li.bbp-footer,
+.bbp-pagination .page-numbers.current,
+.yz-items-list-widget .yz-list-item .yz-item-action .yz-add-button i,
+#yz-members-list .yzm-user-actions .friendship-button .requested,
+.yz-wall-embed .yz-embed-action .friendship-button a.requested,
+.yz-widget .yz-user-tags .yz-utag-values .yz-utag-value-item,
+.item-list-tabs #search-message-form #messages_search_submit,
+#yz-groups-list .action .group-button .membership-requested,
+#yz-members-list .yzm-user-actions .friendship-button a,
+#yz-groups-list .action .group-button .request-membership,
+.yz-wall-embed .yz-embed-action .friendship-button a,
+.yz-group-manage-members-search #members_search_submit,
+#yz-groups-list .action .group-button .accept-invite,
+.notifications-options-nav #notification-bulk-manage,
+.notifications .notification-actions .mark-read span,
+.sitewide-notices .thread-options .activate-notice,
+#yz-groups-list .action .group-button .join-group,
+.yz-social-buttons .friendship-button a.requested,
+#yz-directory-search-box form input[type=submit],
+.yzm-user-actions .friendship-button a.requested,
+.yz-wall-embed .yz-embed-action .group-button a,
+#yz-group-buttons .group-button a.join-group,
+.messages-notices .thread-options .read span,
+.yz-social-buttons .friendship-button a,
+#search-members-form #members_search_submit,
+.messages-options-nav #messages-bulk-manage,
+.yz-group-settings-tab input[type='submit'],
+.yzm-user-actions .friendship-button a.add,
+#group-settings-form input[type='submit'],
+.yz-product-content .yz-featured-product,
+.my-friends #friend-list .action a.accept,
+.yz-wall-new-post .yz-post-more-button,
+.group-request-list .action .accept a,
+#message-recipients .highlight-icon i,
+.yz-pagination .page-numbers.current,
+.yz-project-content .yz-project-type,
+.yzb-author .yzb-account-settings,
+.yz-product-actions .yz-addtocart,
+.group-button.request-membership,
+#send_message_form .submit #send,
+#send-invite-form .submit input,
+#send-reply #send_reply_button,
+.yz-wall-actions .yz-wall-post,
+.yz-post-content .yz-post-type,
+.yz-nav-effect .yz-menu-border,
+#group-create-tabs li.current,
+.group-button.accept-invite,
+.yz-tab-post .yz-read-more,
+.group-button.join-group,
+.yz-service-icon i:hover,
+.yz-loading .youzer_msg,
+.yz-scrolltotop i:hover,
+.yz-post .yz-read-more,
+.yzb-author .yzb-login,
+.pagination .current,
+.yz-tab-title-box,
+.yzw-file-post,
+.button.accept {
+            background-color: #fea633 !important;
+        }
+
+@media screen and ( max-width: 768px ) {
+#youzer .yz-group div.item-list-tabs li.last label,
+#youzer .yz-profile div.item-list-tabs li.last label,
+#youzer .yz-directory-filter .item-list-tabs li#groups-order-select label,
+#youzer .yz-directory-filter .item-list-tabs li#members-order-select label {
+    background-color: #fea633 !important;
+    color: #fff;
+}
+}
+        .yz-bbp-topic-head-meta .yz-bbp-head-meta-last-updated a:not(.bbp-author-name),
+        .widget_display_topics li .topic-author a.bbp-author-name,
+        .activity-header .activity-head p a:not(:first-child),
+        #message-recipients .highlight .highlight-meta a,
+        .thread-sender .thread-from .from .thread-count,
+        .yz-profile-navmenu .yz-navbar-item a:hover i,
+        .widget_display_replies li a.bbp-author-name,
+        .yz-profile-navmenu .yz-navbar-item a:hover,
+        .yz-link-main-content .yz-link-url:hover,
+        .yz-wall-new-post .yz-post-title a:hover,
+        .yz-recent-posts .yz-post-title a:hover,
+        .yz-post-content .yz-post-title a:hover,
+        .yz-group-settings-tab fieldset legend,
+        .yz-wall-link-data .yz-wall-link-url,
+        .yz-tab-post .yz-post-title a:hover,
+        .yz-project-tags .yz-tag-symbole,
+        .yz-post-tags .yz-tag-symbole,
+        .yz-group-navmenu li a:hover {
+            color: #fea633 !important;
+        }
+        
+        .yz-bbp-topic-head,
+        .youzer .yzwc-main-content address .yz-bullet,
+        .yz-profile-navmenu .yz-navbar-item.yz-active-menu,
+        .yz-group-navmenu li.current {
+            border-color: #fea633 !important;
+        }
+
+        body .quote-with-img:before,body .yz-link-content,body .yz-no-thumbnail,body a.yz-settings-widget {
+            background: #fea633 url(https://smarty-2020.github.io/Smarty/wp-content/plugins/youzer/includes/public/assets/images/dotted-bg.png) !important;
+        }
+    
+
+                    .yz-hdr-v1 .yz-cover-content .yz-inner-content,
+                                #yz-profile-navmenu .yz-inner-content,
+                                .yz-vertical-layout .yz-content,
+                                .youzer .yz-boxed-navbar,
+                                .youzer .wild-content,
+                                #yz-members-directory,
+                                #yz-groups-list,
+                                .yz-page-main-content,
+                                .yz-header-content,
+                                .yz-cover-content {
+                	max-width: 1300px !important;
+                    }
+
+                    .yz-page {
+                	background-color: #fafbfd !important;
+                    }
+</style>
+<link rel="stylesheet" id="admin-subscription-css-css" href="https://smarty-2020.github.io/Smarty/wp-content/plugins/mycred/assets/css/admin-subscription.css" type="text/css" media="all">
+<link rel="stylesheet" id="tribe-common-skeleton-style-css" href="https://smarty-2020.github.io/Smarty/wp-content/plugins/the-events-calendar/common/src/resources/css/common-skeleton.min.css" type="text/css" media="all">
+<link rel="stylesheet" id="tribe-tooltip-css" href="https://smarty-2020.github.io/Smarty/wp-content/plugins/the-events-calendar/common/src/resources/css/tooltip.min.css" type="text/css" media="all">
+<link rel="stylesheet" id="wp-block-library-css" href="https://smarty-2020.github.io/Smarty/wp-includes/css/dist/block-library/style.min.css" type="text/css" media="all">
+<link rel="stylesheet" id="bp-member-block-css" href="https://smarty-2020.github.io/Smarty/wp-content/plugins/buddypress/bp-members/css/blocks/member.min.css" type="text/css" media="all">
+<link rel="stylesheet" id="bp-group-block-css" href="https://smarty-2020.github.io/Smarty/wp-content/plugins/buddypress/bp-groups/css/blocks/group.min.css" type="text/css" media="all">
+<link rel="stylesheet" id="learndash-blocks-css" href="https://smarty-2020.github.io/Smarty/wp-content/plugins/sfwd-lms/includes/gutenberg/assets/css/blocks.style.css" type="text/css" media="all">
+<link rel="stylesheet" id="buddymeet-css-css" href="https://smarty-2020.github.io/Smarty/wp-content/plugins/buddymeet/assets/css/buddymeet.css" type="text/css" media="screen">
+<link rel="stylesheet" id="learndash-notes-css" href="https://smarty-2020.github.io/Smarty/wp-content/plugins/learndash-notes/css/note.css" type="text/css" media="all">
+<link rel="stylesheet" id="leaderboard-style-css" href="https://smarty-2020.github.io/Smarty/wp-content/plugins/mycred-learndash/inc/assets/css/mycred-leaderboard-style.css" type="text/css" media="all">
+<link rel="stylesheet" id="learndash_quiz_front_css-css" href="http://PLACEHOLDER.wpsho/wp-content/plugins/sfwd-lms/themes/legacy/templates/learndash_quiz_front.min.css" type="text/css" media="all">
+<link rel="stylesheet" id="jquery-dropdown-css-css" href="http://PLACEHOLDER.wpsho/wp-content/plugins/sfwd-lms/assets/css/jquery.dropdown.min.css" type="text/css" media="all">
+<link rel="stylesheet" id="learndash_lesson_video-css" href="http://PLACEHOLDER.wpsho/wp-content/plugins/sfwd-lms/themes/legacy/templates/learndash_lesson_video.min.css" type="text/css" media="all">
+<link rel="stylesheet" id="learndash-front-css" href="http://PLACEHOLDER.wpsho/wp-content/plugins/sfwd-lms/themes/ld30/assets/css/learndash.min.css" type="text/css" media="all">
+<link rel="stylesheet" id="wppu-css" href="https://smarty-2020.github.io/Smarty/wp-content/plugins/wppu-preloader-unlimited/public/css/wppu-public.css" type="text/css" media="all">
+<link rel="stylesheet" id="youzer-css" href="https://smarty-2020.github.io/Smarty/wp-content/plugins/youzer/includes/public/assets/css/youzer.min.css" type="text/css" media="all">
+<link rel="stylesheet" id="yz-headers-css" href="https://smarty-2020.github.io/Smarty/wp-content/plugins/youzer/includes/public/assets/css/yz-headers.min.css" type="text/css" media="all">
+<link rel="stylesheet" id="yz-scheme-css" href="https://smarty-2020.github.io/Smarty/wp-content/plugins/youzer/includes/public/assets/css/schemes/yz-yellow-scheme.min.css" type="text/css" media="all">
+<link rel="stylesheet" id="dashicons-css" href="https://smarty-2020.github.io/Smarty/wp-includes/css/dashicons.min.css" type="text/css" media="all">
+<link rel="stylesheet" id="yz-social-css" href="https://smarty-2020.github.io/Smarty/wp-content/plugins/youzer/includes/public/assets/css/yz-social.min.css" type="text/css" media="all">
+<link rel="stylesheet" id="yz-icons-css" href="https://smarty-2020.github.io/Smarty/wp-content/plugins/youzer/includes/admin/assets/css/all.min.css" type="text/css" media="all">
+<link rel="stylesheet" id="yz-mycred-css" href="https://smarty-2020.github.io/Smarty/wp-content/plugins/youzer/includes/public/assets/css/yz-mycred.min.css" type="text/css" media="all">
+<link rel="stylesheet" id="yz-posts-reactions-css" href="https://smarty-2020.github.io/Smarty/wp-content/plugins/youzer-activity-reactions/assets/css/yz-posts-reactions.min.css" type="text/css" media="all">
+<link rel="stylesheet" id="select2-css-css" href="https://smarty-2020.github.io/Smarty/wp-content/plugins/ld-dashboard/public/css/select2.min.css" type="text/css" media="all">
+<link rel="stylesheet" id="ld-dashboard-css" href="https://smarty-2020.github.io/Smarty/wp-content/plugins/ld-dashboard/public/css/ld-dashboard-public.css" type="text/css" media="all">
+<link rel="stylesheet" id="yz-reviews-css" href="https://smarty-2020.github.io/Smarty/wp-content/plugins/youzer/includes/public/assets/css/yz-reviews.min.css" type="text/css" media="all">
+<link rel="stylesheet" id="magnific-popup-css-css" href="https://smarty-2020.github.io/Smarty/wp-content/themes/olympus/css/magnific-popup.css" type="text/css" media="all">
+<link rel="stylesheet" id="fw-option-type-icon-v2-pack-linecons-css" href="https://smarty-2020.github.io/Smarty/wp-content/plugins/unyson/framework/static/libs/linecons/css/linecons.css" type="text/css" media="all">
+<link rel="stylesheet" id="fw-option-type-icon-v2-pack-entypo-css" href="https://smarty-2020.github.io/Smarty/wp-content/plugins/unyson/framework/static/libs/entypo/css/entypo.css" type="text/css" media="all">
+<link rel="stylesheet" id="fw-option-type-icon-v2-pack-linearicons-css" href="https://smarty-2020.github.io/Smarty/wp-content/plugins/unyson/framework/static/libs/lnr/css/lnr.css" type="text/css" media="all">
+<link rel="stylesheet" id="fw-option-type-icon-v2-pack-typicons-css" href="https://smarty-2020.github.io/Smarty/wp-content/plugins/unyson/framework/static/libs/typcn/css/typcn.css" type="text/css" media="all">
+<link rel="stylesheet" id="fw-option-type-icon-v2-pack-unycon-css" href="https://smarty-2020.github.io/Smarty/wp-content/plugins/unyson/framework/static/libs/unycon/unycon.css" type="text/css" media="all">
+<link rel="stylesheet" id="fw-option-type-icon-v2-pack-olympus-css" href="https://smarty-2020.github.io/Smarty/wp-content/themes/olympus/css/olympus-icons-font.css" type="text/css" media="all">
+<link rel="stylesheet" id="olympus-theme-font-css" href="https://fonts.googleapis.com/css?family=Roboto%3A300%2C400%2C500%2C700&subset=latin&display=swap&ver=3.1" type="text/css" media="all">
+<link rel="stylesheet" id="bootstrap-css" href="https://smarty-2020.github.io/Smarty/wp-content/themes/olympus/Bootstrap/dist/css/bootstrap.css" type="text/css" media="all">
+<link rel="stylesheet" id="olympus-widgets-css" href="https://smarty-2020.github.io/Smarty/wp-content/themes/olympus/css/widgets.css" type="text/css" media="all">
+<link rel="stylesheet" id="olympus-js-plugins-css" href="https://smarty-2020.github.io/Smarty/wp-content/themes/olympus/css/theme-js-plugins.css" type="text/css" media="all">
+<link rel="stylesheet" id="olympus-main-css" href="https://smarty-2020.github.io/Smarty/wp-content/themes/olympus/css/main.css" type="text/css" media="all">
+<style id="olympus-main-inline-css" type="text/css">
+html:root {
+--primary-accent-color: #fea633;
+--primary-color-darken: #e65535;
+--secondary-accent-color: #38a9ff;
+--secondary-color-darken: #3399e6;
+--third-accent-color: #7c5ac2;
+--icon-color: #9a9fbf;
+}.header--standard .logo .img-wrap img {max-height:60px;}#site-header {background-color:#3f4257;}#site-header .search-bar .form-group.with-button button {background-color:#494c62;}#site-header .search-bar.w-search {background-color:#494c62;}#site-header .page-title > * {color:#ffffff;}#site-header .control-icon {fill:#ffffff;}#site-header .control-block .author-title {color:#ffffff;}#site-header .search-bar .form-group.with-button input {color:#9a9fbf;}#site-header .search-bar .form-group.with-button input::placeholder {color:#9a9fbf;}#site-header .search-bar .form-group.with-button button {color:#9a9fbf;}#site-header .control-block .author-subtitle {color:#9a9fbf;}#header--standard {background-color:#ffffff;}#header--standard .primary-menu {background-color:#ffffff;}#header--standard .logo {color:#3f4257;}#header--standard li.cart-menulocation > a {color:#9a9fbf;}h1, .h1{} h2, .h2{} h3, .h3{} h4, .h4{} h5, .h5{} h6, .h6{} body, article p{} .primary-menu-menu .menu-item > a,.primary-menu-responsive.primary-menu .showhide,.primary-menu-menu ul.sub-menu li a,.primary-menu-menu > li.menu-item-has-mega-menu .megamenu ul > li a,.primary-menu-menu > li.menu-item-has-mega-menu .megamenu .column-tittle {} .may-contain-custom-bg .ui-block {background-color: #ffffff}.fixed-sidebar-left {background-color: #ffffff}
+</style>
+<link rel="stylesheet" id="olympus-icons-font-css" href="https://smarty-2020.github.io/Smarty/wp-content/themes/olympus/css/olympus-icons-font.css" type="text/css" media="all">
+<link rel="stylesheet" id="fw-ext-forms-default-styles-css" href="https://smarty-2020.github.io/Smarty/wp-content/plugins/unyson/framework/extensions/forms/static/css/frontend.css" type="text/css" media="all">
+<link rel="stylesheet" id="font-awesome-css" href="https://smarty-2020.github.io/Smarty/wp-content/plugins/elementor/assets/lib/font-awesome/css/font-awesome.min.css" type="text/css" media="all">
+<link rel="stylesheet" id="crumina-ext-contact-form-css" href="https://smarty-2020.github.io/Smarty/wp-content/plugins/unyson/framework/extensions/contact-form/static/css/contact-form.css" type="text/css" media="all">
+<link rel="stylesheet" id="sign-form-css" href="https://smarty-2020.github.io/Smarty/wp-content/plugins/unyson/framework/extensions/sign-form/static/css/styles.css" type="text/css" media="all">
+<link rel="stylesheet" id="crumina-stunning-header-css" href="https://smarty-2020.github.io/Smarty/wp-content/plugins/unyson/framework/extensions/stunning-header/static/css/stunning-header.css" type="text/css" media="all">
+<style id="crumina-stunning-header-inline-css" type="text/css">
+#stunning-header {color:#ffffff;}#stunning-header .stunning-header-content-wrap {color:#ffffff;}#stunning-header .stunning-header-content-wrap * {color:#ffffff;}#stunning-header {padding-top:60px;}#stunning-header .crumina-heading-background {background-image: url("https://smarty-2020.github.io/Smarty/wp-content/uploads/2019/03/background2.jpg");}#stunning-header {background-color:#eeeeee;}
+</style>
+<link rel="stylesheet" id="crumina-reaction-styles-css" href="https://smarty-2020.github.io/Smarty/wp-content/plugins/unyson/framework/extensions/post-reaction/static/css/styles.css" type="text/css" media="all">
+<link rel="stylesheet" id="yz-bbpress-css" href="https://smarty-2020.github.io/Smarty/wp-content/plugins/youzer/includes/public/assets/css/yz-bbpress.min.css" type="text/css" media="all">
+<link rel="stylesheet" id="elementskit-framework-css-frontend-css" href="https://smarty-2020.github.io/Smarty/wp-content/plugins/elementskit-lite/libs/framework/assets/css/frontend-style.min.css" type="text/css" media="all">
+<link rel="stylesheet" id="mycred-front-css" href="https://smarty-2020.github.io/Smarty/wp-content/plugins/mycred/assets/css/mycred-front.css" type="text/css" media="all">
+<link rel="stylesheet" id="yz-profile-css" href="https://smarty-2020.github.io/Smarty/wp-content/plugins/youzer/includes/public/assets/css/yz-profile-style.min.css" type="text/css" media="all">
+<link rel="stylesheet" id="yz-animation-css" href="https://smarty-2020.github.io/Smarty/wp-content/plugins/youzer/includes/public/assets/css/animate.min.css" type="text/css" media="all">
+<link rel="stylesheet" id="yz-opensans-css" href="https://fonts.googleapis.com/css?family=Open+Sans%3A400%2C600&ver=2.5.0" type="text/css" media="all">
+<link rel="stylesheet" id="logy-style-css" href="https://smarty-2020.github.io/Smarty/wp-content/plugins/youzer/includes/logy/includes/public/assets/css/logy.min.css" type="text/css" media="all">
+<link rel="stylesheet" id="logy-customStyle-css" href="https://smarty-2020.github.io/Smarty/wp-content/plugins/youzer/includes/admin/assets/css/custom-script.css" type="text/css" media="all">
+<style id="logy-customStyle-inline-css" type="text/css">
+
+                    .logy-login-page .logy-action-item button {
+                	background-color: #007eff !important;
+                    }
+
+                    .logy-login-page .logy-action-item button {
+                	color: #ffffff !important;
+                    }
+
+                    .logy-login-page .logy-link-button {
+                	background-color: #fea633 !important;
+                    }
+
+                    .logy-login-page .logy-link-button {
+                	color: #ffffff !important;
+                    }
+
+                    .logy-login-widget {
+                	margin-top: 40px !important;
+                    }
+
+                    .logy-login-widget {
+                	margin-bottom: 40px !important;
+                    }
+</style>
+<link rel="stylesheet" id="yz-social-share-css" href="https://smarty-2020.github.io/Smarty/wp-content/plugins/youzer-social-share/assets/css/yz-social-share.min.css" type="text/css" media="all">
+<link rel="stylesheet" id="buddypress-learndash-css" href="https://smarty-2020.github.io/Smarty/wp-content/plugins/buddypress-learndash/assets/css/buddypress-learndash.min.css" type="text/css" media="all">
+<link rel="stylesheet" id="child-style-css" href="https://smarty-2020.github.io/Smarty/wp-content/themes/olympus-child/style.css" type="text/css" media="all">
+<link rel="stylesheet" id="elementskit-vendors-css" href="https://smarty-2020.github.io/Smarty/wp-content/plugins/elementskit-lite/widgets/init/assets/css/vendors.css" type="text/css" media="all">
+<link rel="stylesheet" id="elementskit-style-css" href="https://smarty-2020.github.io/Smarty/wp-content/plugins/elementskit-lite/widgets/init/assets/css/style.css" type="text/css" media="all">
+<link rel="stylesheet" id="elementskit-responsive-css" href="https://smarty-2020.github.io/Smarty/wp-content/plugins/elementskit-lite/widgets/init/assets/css/responsive.css" type="text/css" media="all">
+<link rel="stylesheet" id="olympus-youzer-css" href="https://smarty-2020.github.io/Smarty/wp-content/themes/olympus/css/youzer/youzer.css" type="text/css" media="all">
+<link rel="stylesheet" id="olympus-youzer-icons-customization-css" href="https://smarty-2020.github.io/Smarty/wp-content/themes/olympus/css/youzer/yz-icons-customization.css" type="text/css" media="all">
+<link rel="stylesheet" id="youzer-customization-css" href="https://smarty-2020.github.io/Smarty/wp-content/themes/olympus/css/youzer-customization.css" type="text/css" media="all">
+<link rel="stylesheet" id="olympus-yz-profile-css" href="https://smarty-2020.github.io/Smarty/wp-content/themes/olympus/css/youzer/yz-profile-style.css" type="text/css" media="all">
+<link rel="stylesheet" id="olympus-yz-headers-css" href="https://smarty-2020.github.io/Smarty/wp-content/themes/olympus/css/youzer/yz-headers.css" type="text/css" media="all">
+<link rel="stylesheet" id="olympus-yz-social-css" href="https://smarty-2020.github.io/Smarty/wp-content/themes/olympus/css/youzer/yz-social.css" type="text/css" media="all">
+<link rel="stylesheet" id="olympus-yz-reviews-css" href="https://smarty-2020.github.io/Smarty/wp-content/themes/olympus/css/youzer/yz-reviews.css" type="text/css" media="all">
+<link rel="stylesheet" id="olympus-yz-mycred-css" href="https://smarty-2020.github.io/Smarty/wp-content/themes/olympus/css/youzer/yz-mycred.css" type="text/css" media="all">
+<link rel="stylesheet" id="olympus-yz-bbpress-css" href="https://smarty-2020.github.io/Smarty/wp-content/themes/olympus/css/youzer/yz-bbpress.css" type="text/css" media="all">
+<link rel="stylesheet" id="olympus-logy-style-css" href="https://smarty-2020.github.io/Smarty/wp-content/themes/olympus/css/youzer/logy.css" type="text/css" media="all">
+<link rel="stylesheet" id="wp-add-custom-css-css" href="https://smarty-2020.github.io/Smarty" type="text/css" media="all">
+<link rel="stylesheet" id="the-event-calendar-customization-css" href="https://smarty-2020.github.io/Smarty/wp-content/themes/olympus/css/the-event-calendar-customization.css" type="text/css" media="all">
+<script type="text/javascript">
+/* <![CDATA[ */
+var uael_script = {"post_loader":"https:\/\/smarty-2020.github.io\/Smarty\/wp-content\/plugins\/ultimate-elementor\/assets\/img\/post-loader.gif","url":"https:\/\/smarty-2020.github.io\/Smarty\/wp-admin\/admin-ajax.php","search_str":"Search:","table_not_found_str":"No matching records found","table_length_string":"Show _MENU_ Entries","uael_particles_url":"https:\/\/smarty-2020.github.io\/Smarty\/wp-content\/plugins\/ultimate-elementor\/assets\/min-js\/uael-particles.min.js","particles_url":"https:\/\/smarty-2020.github.io\/Smarty\/wp-content\/plugins\/ultimate-elementor\/assets\/lib\/particles\/particles.min.js"};
+var uael = {"ajax_url":"https:\/\/smarty-2020.github.io\/Smarty\/wp-admin\/admin-ajax.php"};
+var uaelRegistration = {"invalid_mail":"Enter valid Email!","pass_unmatch":"The specified password do not match!","required":"This Field is required!","form_nonce":"cec7b53b6e","incorrect_password":"Error: The Password you have entered is incorrect.","invalid_username":"Unknown username. Check again or try your email address.","invalid_email":"Unknown email address. Check again or try your username."};
+/* ]]> */
+</script>
+<script type="text/javascript" src="https://smarty-2020.github.io/Smarty/wp-includes/js/jquery/jquery.js"></script>
+<script type="text/javascript" src="https://smarty-2020.github.io/Smarty/wp-includes/js/jquery/jquery-migrate.min.js"></script>
+<script type="text/javascript" src="https://smarty-2020.github.io/Smarty/wp-content/plugins/sfwd-lms/includes/gutenberg/assets/js/frontend.blocks.js"></script>
+<script type="text/javascript">
+/* <![CDATA[ */
+var BP_Confirm = {"are_you_sure":"Are you sure?"};
+/* ]]> */
+</script>
+<script type="text/javascript" src="https://smarty-2020.github.io/Smarty/wp-content/plugins/buddypress/bp-core/js/confirm.min.js"></script>
+<script type="text/javascript" src="https://smarty-2020.github.io/Smarty/wp-content/plugins/buddypress/bp-core/js/widget-members.min.js"></script>
+<script type="text/javascript" src="https://smarty-2020.github.io/Smarty/wp-content/plugins/buddypress/bp-core/js/jquery-query.min.js"></script>
+<script type="text/javascript" src="https://smarty-2020.github.io/Smarty/wp-content/plugins/buddypress/bp-core/js/vendor/jquery-cookie.min.js"></script>
+<script type="text/javascript" src="https://smarty-2020.github.io/Smarty/wp-content/plugins/buddypress/bp-core/js/vendor/jquery-scroll-to.min.js"></script>
+<script type="text/javascript">
+/* <![CDATA[ */
+var BP_DTheme = {"accepted":"Accepted","close":"Close","comments":"comments","leave_group_confirm":"Are you sure you want to leave this group?","mark_as_fav":"Like","my_favs":"My Favorites","rejected":"Rejected","remove_fav":"Unlike","show_all":"Show all","show_all_comments":"Show all comments for this thread","show_x_comments":"Show all comments (%d)","unsaved_changes":"Your profile has unsaved changes. If you leave the page, the changes will be lost.","view":"View","store_filter_settings":""};
+/* ]]> */
+</script>
+<script type="text/javascript" src="https://smarty-2020.github.io/Smarty/wp-content/plugins/youzer/includes/public/assets/js/buddypress.min.js"></script>
+<script type="text/javascript" src="https://smarty-2020.github.io/Smarty/wp-content/plugins/buddypress/bp-groups/js/widget-groups.min.js"></script>
+<script type="text/javascript">
+/* <![CDATA[ */
+var LD_MYCRED_Handler = {"ajax_url":"https:\/\/smarty-2020.github.io\/Smarty\/wp-admin\/admin-ajax.php"};
+/* ]]> */
+</script>
+<script type="text/javascript" src="https://smarty-2020.github.io/Smarty/wp-content/plugins/mycred-learndash/inc/assets/js/learndash-mycred-pts-handler.js"></script>
+<script type="text/javascript" src="https://smarty-2020.github.io/Smarty/wp-content/plugins/youzer-moderation/assets/js/yz-moderation.js"></script>
+<script type="text/javascript" src="https://smarty-2020.github.io/Smarty/wp-content/plugins/unyson/framework/extensions/stunning-header/static/js/stunning-header.js"></script>
+<script type="text/javascript" src="https://smarty-2020.github.io/Smarty/wp-content/plugins/unyson/framework/extensions/post-reaction/static/js/sweetalert2.js"></script>
+<script type="text/javascript">
+/* <![CDATA[ */
+var crumina_reaction = {"ajax":"https:\/\/smarty-2020.github.io\/Smarty\/wp-admin\/admin-ajax.php"};
+/* ]]> */
+</script>
+<script type="text/javascript" src="https://smarty-2020.github.io/Smarty/wp-content/plugins/unyson/framework/extensions/post-reaction/static/js/scripts.js"></script>
+<script type="text/javascript" src="https://smarty-2020.github.io/Smarty/wp-includes/js/imagesloaded.min.js"></script>
+<script type="text/javascript">
+/* <![CDATA[ */
+var crumina_ajax_blog = {"ajax":"https:\/\/smarty-2020.github.io\/Smarty\/wp-admin\/admin-ajax.php","filter_id":"ajax-filter-panel","grid_id":"ajax-grid","masonry_sel":"sorting-item","nav_type":"nav","type":"classic","preloader":"https:\/\/smarty-2020.github.io\/Smarty\/wp-content\/plugins\/unyson\/framework\/extensions\/ajax-blog\/static\/img\/spinner.gif","obj_id":"0","template_part":"templates\/post\/classic\/content","categories":"0","cat_exclude":"0","posts_per_page":"0","paginate_base":"https:\/\/smarty-2020.github.io\/Smarty\/members\/teacher1\/friends\/page\/%#%\/","sidebar_conf":{"content-classes":"col-md-12 col-sm-12 col-lg-12","sidebar-classes":"col-md-12 col-sm-12 youzer-sidebar olympus-theme-sidebar col-lg-12","position":"full"}};
+/* ]]> */
+</script>
+<script type="text/javascript" src="https://smarty-2020.github.io/Smarty/wp-content/plugins/unyson/framework/extensions/ajax-blog/static/js/scripts.js"></script>
+<script type="text/javascript" src="https://smarty-2020.github.io/Smarty/wp-content/plugins/youzer-social-share/assets/js/yz-social-share.min.js"></script>
+
+
+
+
+
+
+	<script type="text/javascript">var ajaxurl = 'https://smarty-2020.github.io/Smarty/wp-admin/admin-ajax.php';</script>
+
+	<script>
+		var ajaxurl = 'https://smarty-2020.github.io/Smarty/wp-admin/admin-ajax.php';
+	</script>
+<meta name="tec-api-version" content="v1"><meta name="tec-api-origin" content="https://smarty-2020.github.io/Smarty"><link rel="https://theeventscalendar.com/" href="https://smarty-2020.github.io/Smarty/wp-json/tribe/events/v1/">
+    
+
+    <meta property="og:type" content="profile">
+
+            <meta property="og:title" content="teacher 1">
+    
+    <meta property="og:url" content="https://smarty-2020.github.io/Smarty/members/teacher1/">
+
+                    <meta property="og:image" content="https://smarty-2020.github.io/Smarty/wp-content/uploads/buddypress/members/12/cover-image/5ee612be42ebb-bp-cover-image.jpg">
+        <meta property="og:image:url" content="https://smarty-2020.github.io/Smarty/wp-content/uploads/buddypress/members/12/cover-image/5ee612be42ebb-bp-cover-image.jpg">
+                    <meta property="og:image:width" content="1350">
+            <meta property="og:image:height" content="350">
+            
+    
+    
+
+    
+
+	
+
+
+	
+
+
+<script>
+		function olympusModal() {
+			return {
+				show: false,
+				modalOpen() { this.show = true; document.querySelector('body').classList.add('overlay-enable') },
+				modalClose() { this.show = false; document.querySelector('body').classList.remove('overlay-enable') },
+				isModalOpen() { return this.show === true },
+			}
+		}
+		</script><link rel="icon" href="https://smarty-2020.github.io/Smarty/wp-content/uploads/2020/06/cropped-endpoint-1-32x32.png" sizes="32x32">
+<link rel="icon" href="https://smarty-2020.github.io/Smarty/wp-content/uploads/2020/06/cropped-endpoint-1-192x192.png" sizes="192x192">
+<link rel="apple-touch-icon" href="https://smarty-2020.github.io/Smarty/wp-content/uploads/2020/06/cropped-endpoint-1-180x180.png">
+<meta name="msapplication-TileImage" content="https://smarty-2020.github.io/Smarty/wp-content/uploads/2020/06/cropped-endpoint-1-270x270.png">
+<style type="text/css">
+
+</style>
+		<style type="text/css" id="wp-custom-css">
+			.olympus-theme #buddypress div.item-list-tabs ul li#members-all a span {display:none !important;}
+		</style>
+		<noscript><style> .wpb_animate_when_almost_visible { opacity: 1; }</style></noscript></head>
+	<body class="friends bp-user member-type-teacher my-friends buddypress bp-legacy bbp-user-page single singular bbpress page-template-default page page-id-0 page-parent yz-yellow-scheme not-logged-in tribe-no-js page-template-cxampphtdocsta3lim-wp-content-themes-olympus-page-php elementor-dce no-stunning-header yz-share-btns-colorful yz-share-btns-radius wpb-js-composer js-comp-ver-6.1 vc_responsive elementor-default no-js enable-sticky-standard-header bg-body page-has-header-social page-has-not-panels olympus-theme" itemscope="itemscope" itemtype="https://schema.org/WebPage">
+		<div id="overflow-x-wrapper" x-data="olympusModal()">
+	<a class="skip-link screen-reader-text" href="#content">Skip to content</a>
+	
+<header class="header header--logout" id="site-header">
+	<div class="header-content-wrapper">
+
+					<form id="top-search-form" action="https://smarty-2020.github.io/Smarty/" method="GET" class="search-bar w-search notification-list friend-requests">
+				<div class="form-group with-button">
+					<div class="selectize-control form-control js-user-search multi">
+						<div class="selectize-input items not-full has-options">
+							<input type="text" autocomplete="off" name="s" id="s" value="" placeholder="Search here people or pages...">
+						</div>
+						<div class="selectize-dropdown multi form-control js-user-search mCustomScrollbar">
+							<div class="selectize-dropdown-content"></div>
+						</div>
+					</div>
+					<button>
+						<i class="olympus-icon olympus-icon-Magnifying-Glass-Icon"></i>
+						<svg class="olymp-search-spinner" width="135" height="135" viewbox="0 0 135 135" xmlns="http://www.w3.org/2000/svg">
+							<path d="M67.447 58c5.523 0 10-4.477 10-10s-4.477-10-10-10-10 4.477-10 10 4.477 10 10 10zm9.448 9.447c0 5.523 4.477 10 10 10 5.522 0 10-4.477 10-10s-4.478-10-10-10c-5.523 0-10 4.477-10 10zm-9.448 9.448c-5.523 0-10 4.477-10 10 0 5.522 4.477 10 10 10s10-4.478 10-10c0-5.523-4.477-10-10-10zM58 67.447c0-5.523-4.477-10-10-10s-10 4.477-10 10 4.477 10 10 10 10-4.477 10-10z">
+								<animatetransform attributename="transform" type="rotate" from="0 67 67" to="-360 67 67" dur="2.5s" repeatcount="indefinite"></animatetransform>
+							</path>
+							<path d="M28.19 40.31c6.627 0 12-5.374 12-12 0-6.628-5.373-12-12-12-6.628 0-12 5.372-12 12 0 6.626 5.372 12 12 12zm30.72-19.825c4.686 4.687 12.284 4.687 16.97 0 4.686-4.686 4.686-12.284 0-16.97-4.686-4.687-12.284-4.687-16.97 0-4.687 4.686-4.687 12.284 0 16.97zm35.74 7.705c0 6.627 5.37 12 12 12 6.626 0 12-5.373 12-12 0-6.628-5.374-12-12-12-6.63 0-12 5.372-12 12zm19.822 30.72c-4.686 4.686-4.686 12.284 0 16.97 4.687 4.686 12.285 4.686 16.97 0 4.687-4.686 4.687-12.284 0-16.97-4.685-4.687-12.283-4.687-16.97 0zm-7.704 35.74c-6.627 0-12 5.37-12 12 0 6.626 5.373 12 12 12s12-5.374 12-12c0-6.63-5.373-12-12-12zm-30.72 19.822c-4.686-4.686-12.284-4.686-16.97 0-4.686 4.687-4.686 12.285 0 16.97 4.686 4.687 12.284 4.687 16.97 0 4.687-4.685 4.687-12.283 0-16.97zm-35.74-7.704c0-6.627-5.372-12-12-12-6.626 0-12 5.373-12 12s5.374 12 12 12c6.628 0 12-5.373 12-12zm-19.823-30.72c4.687-4.686 4.687-12.284 0-16.97-4.686-4.686-12.284-4.686-16.97 0-4.687 4.686-4.687 12.284 0 16.97 4.686 4.687 12.284 4.687 16.97 0z">
+								<animatetransform attributename="transform" type="rotate" from="0 67 67" to="360 67 67" dur="8s" repeatcount="indefinite"></animatetransform>
+							</path>
+						</svg>
+					</button>
+				</div>
+			</form>
+		
+					<a href="https://smarty-2020.github.io/Smarty/login/" data-show-youzer-login="true" class="side-menu-open" data-toggle="tooltip" data-placement="left" data-original-title="Login / Register">
+				<i class="olymp-login-icon olymp-menu-icon olympus-icon-Login-Icon"></i>			</a>
+			</div>
+	</header>
+
+
+<div id="content" class="site-content hfeed site">
+<div id="youzer">
+
+	
+<div id="yz-bp" class="youzer noLightbox yz-page yz-profile yz-horizontal-layout yz-wild-content yz-tabs-list-gray yz-wg-border-radius yz-page-btns-border-radius">
+	
+	
+	<div class="yz-content">
+
+		
+		<header id="yz-profile-header" class="yz-profile-header yz-hdr-v2 yz_effect" data-effect="bounceInRight">
+
+			
+	<div class="yz-tools yz-user-tools yz-tools-full-btns" data-nonce="19d4fad191" data-user-id="12" data-component="profile">
+		
+	<div class="yz-tool-btn yz-social-share-btn">
+			<div class="yz-tool-icon"><i class="fas fa-share-alt"></i></div><div class="yz-tool-name">Share Profile</div>	</div>
+
+		</div>
+
+	
+		<div class="yz-header-cover" style="background-image:url( https://smarty-2020.github.io/Smarty/wp-content/uploads/buddypress/members/12/cover-image/5ee612be42ebb-bp-cover-image.jpg ); background-size: cover;">
+						<div class="yz-cover-content">
+								<div class="yz-profile-photo yz-photo-circle yz-photo-border yz-profile-photo-effect"><a href="https://smarty-2020.github.io/Smarty/members/teacher1/" class="yz-profile-img"><img src="https://smarty-2020.github.io/Smarty/wp-content/uploads/avatars/12/5ee5247019937-bpfull.png" class="avatar user-12-avatar avatar-150 photo" width="150" height="150" alt="Profile Photo"></a></div>				<div class="yz-inner-content">
+															<div class="yz-head-content">
+																							</div>
+					<div class="yz-name"><h2>teacher 1<span class="yz-user-status yz-user-offline">offline</span></h2></div>
+	    <div class="yzb-user-ratings">
+	    	
+	<div class="yz-user-ratings-details">
+		
+				<div class="yz-user-rating-stars"><div class="yz-star-rating"><i class="fas fa-star star-full"></i><i class="fas fa-star star-full"></i><i class="fas fa-star star-full"></i><i class="fas fa-star star-full"></i><i class="fas fa-star star-full"></i></div></div>
+				
+				<span class="yz-separator">•</span>			<div class="yz-user-ratings-rate">5 out of 5</div>
+			
+					<span class="yz-separator">•</span>			<div class="yz-user-ratings-total">1 rating</div>
+		
+	</div>
+
+		    </div>
+
+	    <div class="yz-usermeta"><ul><li><i class="fas fa-user-circle"></i><span>Teacher</span></li></ul></div>									</div>
+							</div>
+					</div>
+
+		<div class="yz-header-content">
+			<div class="yz-header-head">
+							</div>
+						<div class="yz-user-statistics yz-statistics-bg yz-use-borders">
+				<ul>
+					
+						
+						<li>
+							<div class="yz-snumber" title="0">0</div>
+							<h3 class="yz-sdescription">Posts</h3>
+						</li>
+
+					
+					
+						
+						<li>
+							<div class="yz-snumber" title="0">0</div>
+							<h3 class="yz-sdescription">Comments</h3>
+						</li>
+					
+											
+						
+						<li>
+							<div class="yz-snumber" title="1">1</div>
+							<h3 class="yz-sdescription">Views</h3>
+						</li>
+					
+				</ul>
+			</div>
+				</div>
+
+		
+		</header>
+
+		<div class="yz-profile-content">
+
+			<div class="yz-inner-content">
+
+				<nav id="yz-profile-navmenu" class="yz_effect yz-navbar-inline-icons yz-boxed-navbar" data-effect="fadeInUp"><div class="yz-inner-content"><div class="yz-open-nav"><button class="yz-responsive-menu"><span>toggle menu</span></button></div>
+    <ul class="yz-profile-navmenu">
+
+        
+        <li class="yz-navbar-item "><a href="https://smarty-2020.github.io/Smarty/members/teacher1/activity/"><i class="fas fa-edit"></i>Activity</a>
+    	</li>
+
+        
+        <li class="yz-navbar-item "><a href="https://smarty-2020.github.io/Smarty/members/teacher1/groups/"><i class="fas fa-sitemap"></i>Classes <span class="count">2</span></a>
+    	</li>
+
+        
+        <li class="yz-navbar-item "><a href="https://smarty-2020.github.io/Smarty/members/teacher1/courses/"><i class="fab fa-readme"></i>Courses</a>
+    	</li>
+
+        
+        <li class="yz-navbar-item yz-active-menu"><a href="https://smarty-2020.github.io/Smarty/members/teacher1/friends/"><i class="fas fa-handshake"></i>Friends <span class="no-count">0</span></a>
+    	</li>
+
+        
+        <li class="yz-navbar-item "><a href="https://smarty-2020.github.io/Smarty/members/teacher1/forums/"><i class="far fa-comments"></i>Forums</a>
+    	</li>
+
+        
+        <li class="yz-navbar-item "><a href="https://smarty-2020.github.io/Smarty/members/teacher1/overview/"><i class="fas fa-copy"></i>Portfolio</a>
+    	</li>
+
+        <li class="yz-navbar-item yz-navbar-view-more"><a><i class="fas fa-bars"></i>More</a><ul class="yz-nav-view-more-menu">
+        <li class="yz-navbar-item "><a href="https://smarty-2020.github.io/Smarty/members/teacher1/info/"><i class="fas fa-info"></i>About</a>
+
+        
+        </li><li class="yz-navbar-item "><a href="https://smarty-2020.github.io/Smarty/members/teacher1/media/"><i class="fas fa-photo-video"></i>Media</a>
+
+        
+        </li><li class="yz-navbar-item "><a href="https://smarty-2020.github.io/Smarty/members/teacher1/rla-courses/"><i class="fas fa-globe-asia"></i>Courses</a>
+
+        
+        </li><li class="yz-navbar-item "><a href="https://smarty-2020.github.io/Smarty/members/teacher1/badges/"><i class="fas fa-trophy"></i>Badges</a>
+
+        
+        </li><li class="yz-navbar-item "><a href="https://smarty-2020.github.io/Smarty/members/teacher1/reviews/"><i class="fas fa-star"></i>reviews</a>
+
+        </li></ul></li>
+        
+    </ul>
+    
+    </div></nav>
+				<main class="yz-page-main-content">
+
+					
+					
+    <div id="template-notices" role="alert" aria-atomic="true">
+        
+    </div>
+
+    
+		<div class="yz-main-column">
+			<div class="yz-column-content">
+				
+<div class="item-list-tabs no-ajax" id="subnav" aria-label="Member secondary navigation" role="navigation">
+	<ul>
+		
+		
+			<li id="members-order-select" class="last filter">
+
+				<label for="members-friends">Order By:</label>
+				<select id="members-friends">
+					<option value="active">Last Active</option>
+					<option value="newest">Newest Registered</option>
+					<option value="alphabetical">Alphabetical</option>
+
+					
+				</select>
+			</li>
+
+		
+	</ul>
+</div>
+
+
+					<h2 class="bp-screen-reader-text">Friends</h2>
+		
+		<div class="members friends">
+
+			
+
+	<div id="message" class="info">
+		<p>Sorry, no members were found.</p>
+	</div>
+
+
+
+		</div>
+
+					</div>
+		</div>
+
+		
+			<div class="yz-sidebar-column">
+				<div class="yz-column-content">
+					
+    <a href="https://smarty-2020.github.io/Smarty/login/" data-show-youzer-login="true" class="yz-profile-login yz_effect" data-effect="fadeInDown">
+        <i class="fas fa-user-circle"></i>
+        Sign in to your account    </a>
+
+    <div class="yz-profile-sidebar">
+		<div class="yz-widget yz-user_balance yz_effect yz-white-bg" data-effect="fadeIn">
+
+			<div class="yz-widget-main-content">
+
+								<div class="yz-widget-head">
+					<h2 class="yz-widget-title">
+													<i class="fas fa-gem"></i>												User Balance					</h2>
+									</div>
+				
+				<div class="yz-widget-content">
+										<style type="text/css">.yz-user-balance-box {
+                    background: url(https://smarty-2020.github.io/Smarty/wp-content/plugins/youzer/includes/public/assets/images/geopattern.png),linear-gradient(to right, #38a9ff , #fea633 ) !important;
+                    background: url(https://smarty-2020.github.io/Smarty/wp-content/plugins/youzer/includes/public/assets/images/geopattern.png),-webkit-linear-gradient(left, #38a9ff , #fea633 ) !important;
+                }</style>
+	<div class="yz-user-balance-box">
+
+									<span class="yz-box-head"><i class="far fa-gem"></i>User Balance</span>
+						<span class="yz-user-points">137</span>
+			<span class="yz-user-points-slash">/</span>
+			<span class="yz-user-points-title">Points</span>
+		
+		
+				 
+	</div>
+
+										</div>
+
+			</div>
+
+		</div>
+
+		
+		<div class="yz-widget yz-user_badges yz_effect yz-white-bg" data-effect="fadeIn">
+
+			<div class="yz-widget-main-content">
+
+								<div class="yz-widget-head">
+					<h2 class="yz-widget-title">
+													<i class="fas fa-trophy"></i>												User Badges					</h2>
+									</div>
+				
+				<div class="yz-widget-content">
+										
+
+		
+	<div class="yz-user-badges">
+
+		<div class="yz-badge-item" data-yztooltip="Link Click"><img src="https://smarty-2020.github.io/Smarty/wp-content/uploads/2020/06/badge4.png" class="mycred-badge-image badge-level0" title="Link Click" alt="Link Click" width="100" height="100"></div><div class="yz-badge-item" data-yztooltip="Visitor"><img src="https://smarty-2020.github.io/Smarty/wp-content/uploads/2020/06/01A.png" class="mycred-badge-image badge-level0" title="Visitor" alt="Visitor" width="100" height="100"></div><div class="yz-badge-item" data-yztooltip="Viewing Content"><img src="https://smarty-2020.github.io/Smarty/wp-content/uploads/2020/06/15.png" class="mycred-badge-image badge-level0" title="Viewing Content" alt="Viewing Content" width="100" height="100"></div>
+	
+	</div>
+
+    
+
+    
+										</div>
+
+			</div>
+
+		</div>
+
+		
+		<div class="yz-widget yz-groups yz_effect yz-white-bg" data-effect="fadeIn">
+
+			<div class="yz-widget-main-content">
+
+								<div class="yz-widget-head">
+					<h2 class="yz-widget-title">
+													<i class="fas fa-users"></i>												Classes					</h2>
+									</div>
+				
+				<div class="yz-widget-content">
+										        
+        <div class="yz-items-list-widget yz-profile-list-widget yz-profile-groups-widget yz-list-avatar-circle">
+
+            
+                <div class="yz-list-item">
+
+                    <a href="https://smarty-2020.github.io/Smarty/classes/%d8%b1%d9%8a%d8%a7%d8%b6%d9%8a%d8%a7%d8%aa-%d8%a7%d9%84%d8%b3%d9%86%d8%a9-%d8%a7%d9%84%d8%b1%d8%a7%d8%a8%d8%b9%d8%a9/" class="yz-item-avatar"><img src="https://smarty-2020.github.io/Smarty/wp-content/uploads/group-avatars/5/5eebdb236bc99-bpthumb.jpg" class="avatar group-5-avatar avatar-50 photo" width="50" height="50" alt="Classe logo of رياضيات السنة الرابعة"></a>
+
+                    <div class="yz-item-data">
+                        <a href="https://smarty-2020.github.io/Smarty/classes/%d8%b1%d9%8a%d8%a7%d8%b6%d9%8a%d8%a7%d8%aa-%d8%a7%d9%84%d8%b3%d9%86%d8%a9-%d8%a7%d9%84%d8%b1%d8%a7%d8%a8%d8%b9%d8%a9/" class="yz-item-name">رياضيات السنة الرابعة</a>
+                        <div class="yz-item-meta">
+                            <div class="yz-meta-item"><i class="fas fa-lock"></i><span>Private Classe</span></div>
+                        </div>
+                    </div>
+                </div>
+
+            
+                <div class="yz-list-item">
+
+                    <a href="https://smarty-2020.github.io/Smarty/classes/hiking-route/" class="yz-item-avatar"><img src="https://smarty-2020.github.io/Smarty/wp-content/uploads/group-avatars/1/5eec916239ab0-bpthumb.jpg" class="avatar group-1-avatar avatar-50 photo" width="50" height="50" alt="Classe logo of نادي الإعلامية"></a>
+
+                    <div class="yz-item-data">
+                        <a href="https://smarty-2020.github.io/Smarty/classes/hiking-route/" class="yz-item-name">نادي الإعلامية</a>
+                        <div class="yz-item-meta">
+                            <div class="yz-meta-item"><i class="fas fa-globe-asia"></i><span>Public Classe</span></div>
+                        </div>
+                    </div>
+                </div>
+
+            
+                
+        </div>
+
+        									</div>
+
+			</div>
+
+		</div>
+
+		
+		<div class="yz-widget yz-wall_media yz_effect without-title yz-white-bg" data-effect="fadeIn">
+
+			<div class="yz-widget-main-content">
+
+								<div class="yz-widget-head">
+					<h2 class="yz-widget-title">
+													<i class="fas fa-photo-video"></i>												Media					</h2>
+									</div>
+				
+				<div class="yz-widget-content">
+										
+    <div class="yz-media yz-media-box" style="display: none;">
+                <div class="yz-media-filter">
+                        <div class="yz-filter-item" style="width:25%;">
+                <div class="yz-filter-content yz-current-filter" data-type="photos" data-view_all="1" data-limit="9" data-title="Photos" data-user_id="12"><i class="fas fa-image"></i><span>Photos</span></div>
+            </div>
+                        <div class="yz-filter-item" style="width:25%;">
+                <div class="yz-filter-content" data-type="videos" data-view_all="1" data-limit="9" data-title="Videos" data-user_id="12"><i class="fas fa-film"></i><span>Videos</span></div>
+            </div>
+                        <div class="yz-filter-item" style="width:25%;">
+                <div class="yz-filter-content" data-type="audios" data-view_all="1" data-limit="6" data-title="Audios" data-user_id="12"><i class="fas fa-volume-up"></i><span>Audios</span></div>
+            </div>
+                        <div class="yz-filter-item" style="width:25%;">
+                <div class="yz-filter-content" data-type="files" data-view_all="1" data-limit="6" data-title="Files" data-user_id="12"><i class="fas fa-cloud-download-alt"></i><span>Files</span></div>
+            </div>
+                    </div>
+                <div class="yz-media-widget yz-media-small-box">
+            <div class="yz-media-group-photos" data-active="true">
+            
+                <div class="yz-media-widget-content">
+                        	            <div data-item-id="9" class="yz-media-item"><div class="yz-media-item-img" style="background-image: url(https://smarty-2020.github.io/Smarty/wp-content/uploads/youzer/5ee612be42ebb-bp-cover-image.jpg);"><div class="yz-media-item-tools"><a href="https://smarty-2020.github.io/Smarty/home-2/p/1060/"><i class="fas fa-link yz-media-post-link"></i></a><a data-lightbox="yz-media-lightbox" href="https://smarty-2020.github.io/Smarty/wp-content/uploads/youzer/5ee612be42ebb-bp-cover-image.jpg"><i class="fas fa-search yz-media-zoom-photo"></i></a></div></div></div>
+                        </div>
+                
+                                                </div>
+
+
+        </div>
+
+    </div>
+    
+    									</div>
+
+			</div>
+
+		</div>
+
+		</div>				</div>
+			</div>
+
+		
+		
+		<a class="yz-scrolltotop"><i class="fas fa-chevron-up"></i></a>
+		
+		
+					
+				</main>
+
+			</div>
+
+		</div>
+
+		
+	</div>
+
+	
+</div>
+
+
+</div>
+	</div>
+
+	
+	<section class="footer" id="footer" x-data="{ olympusAtTop: true }">
+	    <div class="container">
+
+			<div class="row footer-content">							<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+					<div class="row">
+											</div>
+				</div>
+				</div>
+							
+				<div class="sub-footer-copyright">
+					<span class="site-copyright-text">
+						Site is built by Amar Mnifi & Mohamed Ali Hamden					</span>
+				</div>
+				
+							    </div>
+	</section>
+	
+<input type="hidden" id="yzpr-post-reaction-nonce" name="yzpr-post-reaction-nonce" value="62c24c3578"><input type="hidden" name="_wp_http_referer" value="/ta3lim/members/teacher1/friends/">		<script>
+		( function ( body ) {
+			'use strict';
+			body.className = body.className.replace( /\btribe-no-js\b/, 'tribe-js' );
+		} )( document.body );
+		</script>
+		</div>
+    <div class="yz-popup-login" style="opacity: 0; visibility: hidden;">
+        <div class="logy-login-shortcode">		
+		<div class="logy-form logy-login-page logy-with-header logy-with-labels logy-fields-icon logy-full-border logy-border-flat logy-icons-left logy-silver-icons">
+
+			
+    	<header class="logy-form-header">
+	    		    		<div class="logy-form-cover logy-custom-cover" style="background-image: url( https://smarty-2020.github.io/Smarty/wp-content/uploads/2020/06/3560436-scaled.jpg )">
+			        <h2 class="form-cover-title">Hi, Welcome Back!</h2>
+	    		</div>
+	    	    	</header>
+
+	    					
+		
+		
+		
+		
+	
+			<form id="logy-form" class="logy-login-form" method="post" action="https://smarty-2020.github.io/Smarty/wp-login.php">
+
+				
+				
+								<div class="logy-form-item">
+		    		<div class="logy-item-content">
+			           				           		<label for="user_login">Username or Email</label>
+			        				           <div class="logy-field-content">
+		           								           <div class="logy-field-icon">
+		           					<i class="fas fa-user"></i>
+		           				</div>
+		        							    		<input type="text" name="log" autocomplete="false" placeholder="" value="" required>
+			            </div>
+		        	</div>
+		       	</div>
+							<div class="logy-form-item">
+		    		<div class="logy-item-content">
+			           				           		<label for="user_pass">Password</label>
+			        				           <div class="logy-field-content">
+		           								           <div class="logy-field-icon">
+		           					<i class="fas fa-lock"></i>
+		           				</div>
+		        							    		<input type="password" name="pwd" autocomplete="false" placeholder="" value="" required>
+			            </div>
+		        	</div>
+		       	</div>
+					    	<div class="logy-form-item logy-remember-me">
+		    		<div class="logy-item-content">
+			        	<label class="logy_checkbox_field"><input name="rememberme" type="checkbox" value="forever"><div class="logy_field_indication"></div>Remember Me</label>
+		    			
+		        	</div>
+					<a class="logy-forgot-password" href="https://smarty-2020.github.io/Smarty/lost-password/">Lost password?</a>		        </div>
+							<div class="logy-form-actions logy-fullwidth-button logy-border-radius">				<div class="logy-action-item logy-submit-item">
+					<div class="logy-item-inner">
+	           			<button type="submit" value="submit" name="signin_submit">
+	            				           				<span class="logy-button-title">Log In</span>
+	           			</button>
+	            	</div>
+	            </div>
+							<div class="logy-action-item logy-link-item">
+					<div class="logy-item-inner">
+	            		<a href="https://smarty-2020.github.io/Smarty/register/" class="logy-link-button">
+	            				           				Create New Account	            		</a>
+	            	</div>
+	            </div>
+										</div>
+				
+						
+		<input type="hidden" name="yz_ajax_login_nonce" value="5f75706ad1">
+
+		
+				<input type="hidden" name="logy-form" value="1">
+
+			</form>
+
+		</div>
+
+		</div>    </div>
+
+    <script> /* <![CDATA[ */var tribe_l10n_datatables = {"aria":{"sort_ascending":": activate to sort column ascending","sort_descending":": activate to sort column descending"},"length_menu":"Show _MENU_ entries","empty_table":"No data available in table","info":"Showing _START_ to _END_ of _TOTAL_ entries","info_empty":"Showing 0 to 0 of 0 entries","info_filtered":"(filtered from _MAX_ total entries)","zero_records":"No matching records found","search":"Search:","all_selected_text":"All items on this page were selected. ","select_all_link":"Select all pages","clear_selection":"Clear Selection.","pagination":{"all":"All","next":"Next","previous":"Previous"},"select":{"rows":{"0":"","_":": Selected %d rows","1":": Selected 1 row"}},"datepicker":{"dayNames":["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"],"dayNamesShort":["Sun","Mon","Tue","Wed","Thu","Fri","Sat"],"dayNamesMin":["S","M","T","W","T","F","S"],"monthNames":["January","February","March","April","May","June","July","August","September","October","November","December"],"monthNamesShort":["January","February","March","April","May","June","July","August","September","October","November","December"],"monthNamesMin":["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],"nextText":"Next","prevText":"Prev","currentText":"Today","closeText":"Done","today":"Today","clear":"Clear"}};/* ]]> */ </script><link rel="stylesheet" id="yz-lato-css" href="https://fonts.googleapis.com/css?family=Lato%3A400&ver=2.5.0" type="text/css" media="all">
+<link rel="stylesheet" id="yz-media-css" href="https://smarty-2020.github.io/Smarty/wp-content/plugins/youzer/includes/public/assets/css/yz-media.min.css" type="text/css" media="all">
+<script type="text/javascript">
+/* <![CDATA[ */
+var ekit_site_url = {"siteurl":"https:\/\/PLACEHOLDER.wpsho"};
+/* ]]> */
+</script>
+<script type="text/javascript" src="https://smarty-2020.github.io/Smarty/wp-content/plugins/elementskit-lite/widgets/mail-chimp/assets/js/mail-chimp.js"></script>
+<script type="text/javascript" src="https://smarty-2020.github.io/Smarty/wp-content/plugins/bbpress/templates/default/js/editor.min.js"></script>
+<script type="text/javascript" src="https://smarty-2020.github.io/Smarty/wp-content/plugins/buddypress/bp-core/js/vendor/moment-js/moment.min.js"></script>
+<script type="text/javascript" src="https://smarty-2020.github.io/Smarty/wp-content/plugins/buddypress/bp-core/js/vendor/livestamp.min.js"></script>
+<script type="text/javascript">
+/* <![CDATA[ */
+var ajaxurl = "https:\/\/smarty-2020.github.io\/Smarty\/wp-admin\/admin-ajax.php";
+var ldVars = {"postID":"0","videoReqMsg":"You must watch the video before accessing this content"};
+/* ]]> */
+</script>
+<script type="text/javascript" src="http://PLACEHOLDER.wpsho/wp-content/plugins/sfwd-lms/themes/ld30/assets/js/learndash.js"></script>
+<script type="text/javascript">
+/* <![CDATA[ */
+var wppreloaderData = {"options_type":"fill_radio_options","effect":"fadeOut","delay":"500","load_type":"window","load_time":"1500","transition":"600"};
+/* ]]> */
+</script>
+<script type="text/javascript" src="https://smarty-2020.github.io/Smarty/wp-content/plugins/wppu-preloader-unlimited/public/js/fill/fill-fadeOut.js"></script>
+<script type="text/javascript" src="https://smarty-2020.github.io/Smarty/wp-includes/js/dist/vendor/wp-polyfill.min.js"></script>
+<script type="text/javascript">
+( 'fetch' in window ) || document.write( '<script src="https://smarty-2020.github.io/Smarty/wp-includes/js/dist/vendor/wp-polyfill-fetch.min.js?ver=3.0.0">' + 'ipt>' );( document.contains ) || document.write( '<script src="https://smarty-2020.github.io/Smarty/wp-includes/js/dist/vendor/wp-polyfill-node-contains.min.js?ver=3.42.0">' + 'ipt>' );( window.DOMRect ) || document.write( '<script src="https://smarty-2020.github.io/Smarty/wp-includes/js/dist/vendor/wp-polyfill-dom-rect.min.js?ver=3.42.0">' + 'ipt>' );( window.URL && window.URL.prototype && window.URLSearchParams ) || document.write( '<script src="https://smarty-2020.github.io/Smarty/wp-includes/js/dist/vendor/wp-polyfill-url.min.js?ver=3.6.4">' + 'ipt>' );( window.FormData && window.FormData.prototype.keys ) || document.write( '<script src="https://smarty-2020.github.io/Smarty/wp-includes/js/dist/vendor/wp-polyfill-formdata.min.js?ver=3.0.12">' + 'ipt>' );( Element.prototype.matches && Element.prototype.closest ) || document.write( '<script src="https://smarty-2020.github.io/Smarty/wp-includes/js/dist/vendor/wp-polyfill-element-closest.min.js?ver=2.0.2">' + 'ipt>' );
+</script>
+<script type="text/javascript" src="https://smarty-2020.github.io/Smarty/wp-includes/js/dist/i18n.min.js"></script>
+<script type="text/javascript">
+/* <![CDATA[ */
+var Youzer = {"unknown_error":"An unknown error occurred. Please try again later.","slideshow_auto":"1","slides_height_type":"fixed","activity_autoloader":"on","authenticating":"Authenticating ...","security_nonce":"23dd0f1d29","displayed_user_id":"12","ajax_url":"https:\/\/smarty-2020.github.io\/Smarty\/wp-admin\/admin-ajax.php","save_changes":"Save Changes","thanks":"OK! Thanks","confirm":"Confirm","cancel":"Cancel","menu_title":"Menu","gotit":"Got it!","done":"Done !","ops":"Oops !","slideshow_speed":"5","assets":"https:\/\/smarty-2020.github.io\/Smarty\/wp-content\/plugins\/youzer\/includes\/public\/assets\/","youzer_url":"https:\/\/smarty-2020.github.io\/Smarty\/wp-content\/plugins\/youzer\/","ajax_enabled":"on","login_popup":"on"};
+/* ]]> */
+</script>
+<script type="text/javascript" src="https://smarty-2020.github.io/Smarty/wp-content/plugins/youzer/includes/public/assets/js/youzer.min.js"></script>
+<script type="text/javascript" src="https://smarty-2020.github.io/Smarty/wp-content/plugins/youzer-activity-reactions/assets/js/yz-posts-reactions.min.js"></script>
+<script type="text/javascript" src="https://smarty-2020.github.io/Smarty/wp-content/themes/olympus/js/plugins/swiper.min.js"></script>
+<script type="text/javascript" src="https://smarty-2020.github.io/Smarty/wp-content/themes/olympus/js/alpine.min.js"></script>
+<script type="text/javascript" src="https://smarty-2020.github.io/Smarty/wp-content/themes/olympus/js/plugins/magnific-popup.min.js"></script>
+<script type="text/javascript" src="https://smarty-2020.github.io/Smarty/wp-content/themes/olympus/js/plugins/perfect-scrollbar.min.js"></script>
+<script type="text/javascript" src="https://smarty-2020.github.io/Smarty/wp-content/themes/olympus/Bootstrap/dist/js/bootstrap.bundle.js"></script>
+<script type="text/javascript" src="https://smarty-2020.github.io/Smarty/wp-content/themes/olympus/js/crum-mega-menu.js"></script>
+<script type="text/javascript" src="https://smarty-2020.github.io/Smarty/wp-content/themes/olympus/js/plugins/jquery.scrollTo.min.js"></script>
+<script type="text/javascript" src="https://smarty-2020.github.io/Smarty/wp-content/themes/olympus/js/plugins/smooth-scroll.js"></script>
+<script type="text/javascript" src="https://smarty-2020.github.io/Smarty/wp-content/themes/olympus/js/plugins/material-forms.js"></script>
+<script type="text/javascript" src="https://smarty-2020.github.io/Smarty/wp-content/themes/olympus/js/plugins/scroll-to-fixed.js"></script>
+<script type="text/javascript">
+/* <![CDATA[ */
+var themeOptions = {"ajaxUrl":"https:\/\/smarty-2020.github.io\/Smarty\/wp-admin\/admin-ajax.php"};
+/* ]]> */
+</script>
+<script type="text/javascript" src="https://smarty-2020.github.io/Smarty/wp-content/themes/olympus/js/theme-main.js"></script>
+<script type="text/javascript" src="https://smarty-2020.github.io/Smarty/wp-content/themes/olympus/js/svg-loader.js"></script>
+<script type="text/javascript">
+/* <![CDATA[ */
+var fwAjaxUrl = "\/ta3lim\/wp-admin\/admin-ajax.php";
+/* ]]> */
+</script>
+<script type="text/javascript" src="https://smarty-2020.github.io/Smarty/wp-content/plugins/unyson/framework/static/js/fw-form-helpers.js"></script>
+<script type="text/javascript">
+/* <![CDATA[ */
+var signFormConfig = {"menuLocation":"menu-vcard","builderComponent":"sign-form","registerLinkSC":"register-link","currentUserSC":"current-user","actions":{"signIn":"crumina-signin-form","signUp":"crumina-signup-form"},"selectors":{"form":"crumina-sign-form","formContainer":"crumina-sign-form-container","formRegister":"crumina-sign-form-register","formLogin":"crumina-sign-form-login"},"ajaxUrl":"https:\/\/smarty-2020.github.io\/Smarty\/wp-admin\/admin-ajax.php"};
+/* ]]> */
+</script>
+<script type="text/javascript" src="https://smarty-2020.github.io/Smarty/wp-content/plugins/unyson/framework/extensions/sign-form/static/js/scripts.js"></script>
+<script type="text/javascript" src="https://smarty-2020.github.io/Smarty/wp-content/plugins/elementskit-lite/libs/framework/assets/js/frontend-script.js"></script>
+<script type="text/javascript">
+        //console.log(window.elementskit);
+
+		var elementskit = {
+            resturl: 'https://smarty-2020.github.io/Smarty/wp-json/elementskit/v1/',
+        }
+
+        //console.log(window.elementskit);
+		
+</script>
+<script type="text/javascript" src="https://smarty-2020.github.io/Smarty/wp-content/plugins/elementskit-lite/widgets/init/assets/js/nav-menu.js"></script>
+<script type="text/javascript" src="https://smarty-2020.github.io/Smarty/wp-content/plugins/elementskit-lite/widgets/init/assets/js/ui-slim.min.js"></script>
+<script type="text/javascript" src="https://smarty-2020.github.io/Smarty/wp-includes/js/jquery/ui/effect.min.js"></script>
+<script type="text/javascript" src="https://smarty-2020.github.io/Smarty/wp-includes/js/jquery/ui/effect-fade.min.js"></script>
+<script type="text/javascript" src="https://smarty-2020.github.io/Smarty/wp-content/plugins/youzer/includes/public/assets/js/yz-profile.min.js"></script>
+<script type="text/javascript" src="https://smarty-2020.github.io/Smarty/wp-content/plugins/youzer/includes/public/assets/js/yz-viewportChecker.min.js"></script>
+<script type="text/javascript" src="https://smarty-2020.github.io/Smarty/wp-content/plugins/youzer/includes/public/assets/js/yz-media.min.js"></script>
+<script type="text/javascript" src="https://smarty-2020.github.io/Smarty/wp-content/plugins/youzer/includes/public/assets/js/yz-scrolltotop.min.js"></script>
+
+
+</body>
+</html>

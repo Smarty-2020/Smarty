@@ -1,0 +1,106 @@
+.ld-dashboard-main-wrapper {display: -webkit-box;display: -ms-flexbox;display: flex;-ms-flex-flow: row wrap;flex-flow: row wrap;margin: 0 -15px;}
+#ld-dashboard-profile {margin-bottom: 20px;}
+.ld-dashboard-sidebar-left {width: 100%;padding: 0 15px;-webkit-box-flex: 0;-ms-flex: 0 0 25%;flex: 0 0 25%;max-width: 25%;}
+.ld-dashboard-sidebar-right {width: 100%;padding: 0 15px;-webkit-box-flex: 0;-ms-flex: 0 0 25%;flex: 0 0 25%;max-width: 25%;}
+.ld-dashboard-content {margin-bottom: 20px;padding: 0 15px;-webkit-box-flex: 0;-ms-flex: 0 0 50%;flex: 0 0 50%;max-width: 50%;}
+.ld-dashboard-landing-cover {position: relative;height: 0;padding-top: 50%;background-size: cover;background-position: center center;margin-bottom: 20px;background-image: url("../img/ld-dashboard-cover.jpg");}
+.ld-dashboard-landing-cover:after {content: "";position: absolute;top: 0;right: 0;bottom: 0;left: 0;background-image: linear-gradient(to bottom right,#466d12,#245f6d);opacity: .5;}
+.ld-dashboard-landing-content {position: absolute;z-index: 10;left: 0;right: 0;top: 0;bottom: 0;display: -webkit-box;display: -ms-flexbox;display: flex;-ms-flex-flow: wrap;flex-flow: wrap;-webkit-box-align: center;-ms-flex-align: center;align-items: center;-webkit-box-pack: center;-ms-flex-pack: center;justify-content: center;padding: 15px;}
+.ld-dashboard-landing-text {color: #fff;font-size: 24px;font-weight: 600;text-align: center;text-transform: capitalize;}
+.ld-dashboard-profile-summary {position: relative;background: #63707e;text-align: center;padding: 50px 0 50px;overflow: hidden;}
+.ld-dashboard-profile-summary:before {content: "";background: rgba(0,0,0,.1);width: 800px;height: 700px;position: absolute;top: -380px;left: -720px;transform: rotate(20deg);border-radius: 20px;}
+.ld-dashboard-profile-summary:after {content: "";background: rgba(0,0,0,.1);width: 200px;height: 400px;position: absolute;top: -125px;left: -180px;transform: rotate(-20deg);border-radius: 10px;}
+.ld-dashboard-profile-avatar {margin-bottom: 40px;}
+.ld-dashboard-profile-avatar img {max-width: 80px;border-radius: 100%;box-shadow: 0 0 10px 0 rgba(0,0,0,.15);}
+.ld-dashboard-profile-name {font-size: 20px;font-weight: 600;color: #fff;margin-bottom: 5px;}
+.ld-profile-edit-link, .ld-dashboard-profile-email {color: #fff;}
+.ld-dashboard-profile-email {white-space: nowrap;overflow: hidden;text-overflow: ellipsis;max-width: 97%;display: block;margin: auto;}
+.ld-dashboard-location {background: #fff;}
+.ld-dashboard-location ul {margin: 0 !important;padding: 0 !important;list-style: none !important;}
+.ld-dashboard-location ul li {margin: 0;padding: 0;}
+.ld-dashboard-location ul li a {display: block;padding: 15px;text-transform: uppercase;border-left: 3px solid transparent;}
+.ld-dashboard-location ul li a:hover {border-left: 3px solid;}
+h3.ld-dashboard-feed-title {margin: 0 0 20px !important;}
+.ld-dashboard-feed .activity-item {display: block;margin: 15px 0;padding: 15px;background: #fff;border-left: 3px solid #84c1be;border-radius: 3px;}
+.ld-dashboard-feed .activity-item.lesson, .ld-dashboard-feed .activity-item.course {border-left: 3px solid #7ccc7b;}
+.ld-dashboard-feed .activity-item p {margin: 0 0 5px;}
+.ld-dashboard-feed .activity-item i {color: #999;}
+.ld-dashboard-seperator {margin: 30px 0;text-align: center;overflow: hidden;}
+.ld-dashboard-seperator span {display: inline-block;position: relative;font-size: 16px;line-height: 1.5;text-transform: uppercase;}
+.ld-dashboard-seperator span:before, .ld-dashboard-seperator span:after {content: "";position: absolute;height: 5px;border-bottom: 1px solid #bbb;border-top: 1px solid #bbb;top: 0;bottom: 0;margin: auto;width: 500px;}
+.ld-dashboard-seperator span:before {right: 100%;margin-right: 15px;}
+.ld-dashboard-seperator span:after {left: 100%;margin-left: 15px;}
+@media (max-width: 1023px) {.ld-dashboard-sidebar-left {-webkit-box-flex: 0;-ms-flex: 0 0 30%;flex: 0 0 30%;max-width: 30%;}
+	.ld-dashboard-content {-webkit-box-flex: 0;-ms-flex: 0 0 70%;flex: 0 0 70%;max-width: 70%;}
+	.ld-dashboard-sidebar-right {-webkit-box-flex: 0;-ms-flex: 0 0 100%;flex: 0 0 100%;max-width: 100%;}}
+@media (max-width: 767px) {.ld-dashboard-sidebar-left {-webkit-box-flex: 0;-ms-flex: 0 0 100%;flex: 0 0 100%;max-width: 100%;}
+	.ld-dashboard-content {-webkit-box-flex: 0;-ms-flex: 0 0 100%;flex: 0 0 100%;max-width: 100%;}}
+.ld-dashboard-statistics-container {display: -webkit-box;display: -ms-flexbox;display: flex;-ms-flex-flow: row wrap;flex-flow: row wrap;-webkit-box-align: center;-ms-flex-align: center;align-items: center;margin-bottom: 20px;padding: 10px;background: #fff;-webkit-box-shadow: 0 1px 3px 0 rgba(0,0,0,.1);-moz-box-shadow: 0 1px 3px 0 rgba(0,0,0,.1);-ms-box-shadow: 0 1px 3px 0 rgba(0,0,0,.1);-o-box-shadow: 0 1px 3px 0 rgba(0,0,0,.1);box-shadow: 0 1px 3px 0 rgba(0,0,0,.1);}
+.ld-dashboard-statistics {margin: 5px;padding: 5px 15px;border-radius: 3px;-webkit-box-flex: 1;-ms-flex: 1 1 auto;flex: 1 1 auto;}
+.ld-dashboard-statistics:nth-child(even) {background: #93b5b3;}
+.ld-dashboard-statistics:nth-child(odd) {background: #63707e;}
+.statistics-inner {display: -webkit-box;display: -ms-flexbox;display: flex;flex-direction: row-reverse;-webkit-box-pack: center;-ms-flex-pack: center;justify-content: center;-webkit-box-align: center;-ms-flex-align: center;align-items: center;padding: 15px;}
+h2.statistics-label {margin: 0;font-size: 11px !important;font-weight: normal !important;line-height: 1.5 !important;text-transform: uppercase;max-width: 50%;display: inline-block;color: #fff !important;}
+.statistics-inner .learndash-statistics, .statistics-inner .statistics {font-size: 48px;font-weight: 600;line-height: 1.5;margin: 0;margin-right: 10px;color: #fff;}
+@media (max-width: 767px) {.ld-dashboard-statistics {width: calc(50% - 20px);}}
+@media (max-width: 543px) {.ld-dashboard-statistics {width: 100%;}
+	.statistics-inner {-webkit-box-pack: end;-ms-flex-pack: end;justify-content: flex-end;}
+	.statistics-inner .learndash-statistics, .statistics-inner .statistics {margin-left: 35%;}}
+select#ld-dashboard-courses-id, .ld-dashboard-student-lists, select#ld-dashboard-student-courses-id {margin-bottom: 20px;}
+select#ld-dashboard-student-courses-id {width: 100%;}
+.ld-dashboard-course-chart {margin-bottom: 20px;}
+.ld-dashboard-overview-course-students {background: #fff;padding: 15px;overflow-y: scroll;scrollbar-width: none;-ms-overflow-style: none;}
+.ld-dashboard-overview-course-students::-webkit-scrollbar {display: none;}
+.ld-dashboard-overview-course-students h3 {font-size: 18px;}
+.ld-dashboard-info {background: #fff;text-align: center;margin-bottom: 20px;padding: 10px;}
+.ld-dashboard-info p {margin: 0 !important;}
+.ld-dashboard-student-course-wrapper {display: -webkit-box;display: -ms-flexbox;display: flex;-ms-flex-flow: wrap;flex-flow: wrap;}
+@media (min-width: 992px) {#ld-dashboard-student-course-progress-highchart {-webkit-box-flex: 0;-ms-flex: 0 0 31%;flex: 0 0 31%;max-width: 31%;margin-right: 2%;}
+	#ld-dashboard-student-course-assignment-progress-highchart {-webkit-box-flex: 0;-ms-flex: 0 0 31%;flex: 0 0 31%;max-width: 31%;margin-right: 1.5%;margin-left: 1.5%;}
+	#ld-dashboard-student-course-quizze-progress-highchart {-webkit-box-flex: 0;-ms-flex: 0 0 31%;flex: 0 0 31%;max-width: 31%;margin-left: 2%;}
+	.ins-cw-earning-wrap {display: -webkit-box;display: -ms-flexbox;display: flex;-ms-flex-flow: wrap;flex-flow: wrap;margin-top: 20px;}
+	.ins-cw-earning-table {-webkit-box-flex: 0;-ms-flex: 0 0 48%;flex: 0 0 48%;max-width: 48%;margin-right: 2%;}
+	#ins-cw-earning-chart {-webkit-box-flex: 0;-ms-flex: 0 0 48%;flex: 0 0 48%;max-width: 48%;margin-left: 2%;}}
+.ins-cw-earning-table {min-height: 300px;max-height: 300px;overflow: hidden;overflow-y: scroll;}
+ul.ld-dashboard-student-courses {margin: 0 !important;padding: 15px !important;list-style: none !important;background: #fff;}
+ul.ld-dashboard-student-courses li {margin: 0;padding: 0;}
+ul.ld-dashboard-student-courses li+li {margin-top: 15px;}
+.ld-dashboard-course-quizzes-assignment-progress, .ld-dashboard-course-progress {margin-bottom: 20px;}
+.ld-dashboard-course-progress {background: #fff;padding: 15px;}
+.ld-dashboard-course-progress ul {margin: 0 !important;padding: 0 !important;list-style: none !important;}
+.ld-dashboard-course-progress ul li {margin: 0;padding: 0;}
+.ld-dashboard-course-progress ul li+li {margin-top: 20px;}
+.ld-dashboard-course-progress ul li strong {width: 100%;display: block;}
+.ld-dashboard-course-progress ul li strong span, .ld-dashboard-student-courses li strong span {float: right;margin-left: 10px;font-size: 13px;font-weight: normal;}
+.ld-dashboard-progress.progress_bar_wrap {background-color: rgba(191,191,191,.26);border-radius: 25px;}
+.ld-dashboard-progressbar {height: 6px;border-radius: inherit;}
+.ld-dashboard-loader, .ld-dashboard-student-loader {width: 100%;height: 60px;background: #fff;margin-bottom: 20px;padding: 9px;}
+.ld-dashboard-loader img, .ld-dashboard-student-loader img {float: left;margin-right: 15px;}
+.ld-dashboard-loader p, .ld-dashboard-student-loader p {margin: 0;padding-top: 8px;font-style: italic;}
+#ld-dashboard-profile, .ld-dashboard-feed .activity-item, #ld-dashboard-instructor-highchart-student-progress, .ld-dashboard-overview-course-students, #ld-dashboard-student-course-progress-highchart, #ld-dashboard-student-course-assignment-progress-highchart, #ld-dashboard-student-course-quizze-progress-highchart, ul.ld-dashboard-student-courses, .ld-dashboard-course-quizzes-assignment-progress #course_container, .ld-dashboard-course-progress, .ld-dashboard-loader, .ld-dashboard-student-loader, .ld-dashboard-info, .ld-dashboard-email-content, .ld-dashboard-buddypress-message-content {-webkit-box-shadow: 0 1px 3px 0 rgba(0,0,0,.1);-moz-box-shadow: 0 1px 3px 0 rgba(0,0,0,.1);-ms-box-shadow: 0 1px 3px 0 rgba(0,0,0,.1);-o-box-shadow: 0 1px 3px 0 rgba(0,0,0,.1);box-shadow: 0 1px 3px 0 rgba(0,0,0,.1);}
+.ins-earning-available {width: 100%;height: 400px;}
+.ld-dashboard-instructor-earning {background: #fff;padding: 15px;}
+#ldid-show-course-todo {width: 100%;}
+.render-course-group-to-do-list {background: #fff;}
+.render-course-group-to-do-list .fa-spin {width: 100%;text-align: center;margin-bottom: 10px;}
+.render-course-group-to-do-list .bp-to-do-actions .fa-spin {margin-bottom: 0;}
+.ld-dashboard-email-content, .ld-dashboard-buddypress-message-content {background: #fff;padding: 15px;position: relative;z-index: 1;}
+.ld-dashboard-email-content .select2-container, .ld-dashboard-buddypress-message-content .select2-container {width: 100% !important;}
+.ld-dashboard-email-content fieldset, .ld-dashboard-buddypress-message-content fieldset {margin: 0;padding: 10px;border: 1px solid #e3e3e3;border-bottom: 0;}
+.ld-dashboard-email-content fieldset:last-child, .ld-dashboard-buddypress-message-content fieldset:last-child {border-bottom: 1px solid #e3e3e3;}
+input#ld-email-subject, input#ld-buddypress-message-subject {width: 100%;}
+.select2-dropdown.select2-dropdown {border: 1px solid #aaa;}
+.select2-container.select2-container {z-index: 99;}
+.ld-dashboard-email-content .wp-core-ui input[type=button]:hover, .ld-dashboard-buddypress-message-content .wp-core-ui input[type=button]:hover {border: 1px solid #999 !important;}
+@media (max-width: 475px) {.select2-container--default .select2-selection--multiple .select2-selection__rendered li {width: 100%;}
+	.select2-container .select2-search--inline .select2-search__field {width: 100% !important;}
+	select#ld-dashboard-courses-id {width: 100%;}}
+form#ld-instructor-reg-form {width: 100%;margin: 0 15px;padding: 15px;background: #fff;border: 1px solid #e3e3e3;border-radius: 4px;}
+.ld-dashboard-alert-warning {width: 100%;margin: 0;padding: 15px;background: #fff;border: 1px solid #e3e3e3;border-radius: 4px;}
+#ld-instructor-reg-form .ld-dashboard-form-group:not(.ld-dashboard-reg-form-btn-wrap) {margin: 0 0 15px;}
+#ld-instructor-reg-form .ld-dashboard-form-group label {display: inline-block;width: 200px;float: left;}
+#ld-instructor-reg-form .ld-dashboard-form-group input {width: calc(100% - 200px);}
+#ld-instructor-reg-form .ld-dashboard-form-group button.ld-dashboard-button {margin-top: 15px;}
+@media (max-width: 767px) {#ld-instructor-reg-form .ld-dashboard-form-group label {float: none;margin-bottom: 3px;}
+	#ld-instructor-reg-form .ld-dashboard-form-group input {width: 100%;}
+	.ld-dashboard-form-group .ld-dashboard-form-group input {display: inline-block;width: 200px;}}

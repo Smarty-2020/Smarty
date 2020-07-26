@@ -1,0 +1,60 @@
+.youzer .activity-meta a.yz-share-button:before {content: "";font-weight: 700;}
+.not-logged-in .youzer .activity-meta a.yz-share-button {margin-left: 15px;}
+.rtl.not-logged-in .youzer .activity-meta a.yz-share-button {margin-left: 0;margin-right: 15px;}
+.youzer .activity-meta a.yz-share-button.yz-loading-share-btns:before {-webkit-animation: fa-spin 2s infinite linear;animation: fa-spin 2s infinite linear;content: "";}
+.yz-share-buttons {padding: 8px 20px;}
+.activity-item .yz-share-buttons {border-bottom: 1px solid #f5f5f5;}
+.yz-share-buttons:after {content: "";clear: both;display: table;}
+.yz-share-btn {margin: 7px;float: left;color: #fff;width: 40px;height: 40px;cursor: pointer;line-height: 40px;text-align: center;-webkit-transition: all .5s ease-in-out;-moz-transition: all .5s ease-in-out;-o-transition: all .5s ease-in-out;transition: all .5s ease-in-out;}
+.yz-share-btn svg {height: 40px;width: 18px;display: block;margin: auto;}
+.yz-share-btn:hover {opacity: .9;}
+.yz-share-btn:hover i {line-height: 33px;margin-top: -2px;}
+.yz-share-btn.yz-flattr-sbtn svg {width: 32px;}
+.yz-share-btn path {fill: #fff;color: #fff;}
+.yz-share-btns-radius .yz-share-btn {border-radius: 3px;-webkit-border-radius: 3px;-moz-border-radius: 3px;-ms-border-radius: 3px;-o-border-radius: 3px;}
+.yz-share-btns-flat .yz-share-btn {border-radius: 0;-webkit-border-radius: 0;-moz-border-radius: 0;-ms-border-radius: 0;-o-border-radius: 0;}
+.yz-share-btns-circle .yz-share-btn {border-radius: 100%;-webkit-border-radius: 100%;-moz-border-radius: 100%;-ms-border-radius: 100%;-o-border-radius: 100%;}
+.yz-share-btns-silver .yz-share-btn {color: #909194;background-color: #eee;}
+.yz-share-btns-silver .yz-share-btn i, .yz-share-btns-silver .yz-share-btn path {fill: #909194;color: #909194;}
+.yz-share-btns-gray .yz-share-btn {color: #fff;background-color: #7c7c7c;}
+.yz-share-btns-gray .yz-share-btn i, .yz-share-btns-gray .yz-share-btn path {fill: #fff;color: #fff;}
+.yz-share-btns-no-bg .yz-share-btn {color: #a4a4a4;background-color: #fff;border: 1px solid #eaeaea;}
+.yz-share-btns-no-bg .yz-share-btn path {fill: #a4a4a4;color: #a4a4a4;}
+.yz-share-btns-colorful .yz-share-btn i {color: #fff;}
+.yz-share-btns-colorful .yz-getpocket-sbtn {background-color: #ee4055;}
+.yz-share-btns-colorful .yz-buffer-sbtn {background-color: #111;}
+.yz-share-btns-colorful .yz-flattr-sbtn {background-color: #8cb55b;}
+.yz-share-btns-colorful .yz-flipboard-sbtn {background-color: #f52928;}
+.yz-share-btns-colorful .yz-livejournal-sbtn {background-color: #0ca8ec;}
+.yz-share-btns-colorful .yz-facebook-sbtn {background-color: #4987bd;}
+.yz-share-btns-colorful .yz-instagram-sbtn {background-color: #ffcd21;}
+.yz-share-btns-colorful .yz-twitter-sbtn {background-color: #63cdf1;}
+.yz-share-btns-colorful .yz-gmail-sbtn {background-color: #ed4242;}
+.yz-share-btns-colorful .yz-email-sbtn {background-color: #7d539d;}
+.yz-share-btns-colorful .yz-googleplus-sbtn {background-color: #ed4242;}
+.yz-share-btns-colorful .yz-linkedin-sbtn {background-color: #1783bc;}
+.yz-share-btns-colorful .yz-whatsapp-sbtn {background-color: #74c321;}
+.yz-share-btns-colorful .yz-line-sbtn {background-color: #74c321;}
+.yz-share-btns-colorful .yz-evernote-sbtn {background-color: #74c321;}
+.yz-share-btns-colorful .yz-pinterest-sbtn {background-color: #cb2027;}
+.yz-share-btns-colorful .yz-tumblr-sbtn {background-color: #32506d;}
+.yz-share-btns-colorful .yz-blogger-sbtn {background-color: #ff8000;}
+.yz-share-btns-colorful .yz-reddit-sbtn {background-color: #ff4500;}
+.yz-share-btns-colorful .yz-stumbleupon-sbtn {background-color: #ed4242;}
+.yz-share-btns-colorful .yz-digg-sbtn {background-color: #262626;}
+.yz-share-btns-colorful .yz-vk-sbtn {background-color: #4c6c91;}
+.yz-share-btns-colorful .yz-weibo-sbtn {background-color: #f93;}
+.yz-share-btns-colorful .yz-xing-sbtn {background-color: #b0d400;}
+.yz-share-btns-colorful .yz-renren-sbtn {background-color: #1783bc;}
+.yz-share-btns-colorful .yz-skype-sbtn {background-color: #55acee;}
+.yz-share-btns-colorful .yz-telegram-sbtn {background-color: #37aee2;}
+.yz-share-btns-colorful .yz-odnoklassniki-sbtn {background-color: #f4731c;}
+.yz-share-btns-colorful .yz-delicious-sbtn {background-color: #3398fc;}
+.yz-share-btns-colorful .yz-yahoo-sbtn {background-color: #511295;}
+.yz-tool-btn.yz-social-share-btn {background-color: #8bc34a;}
+.yz-social-share-modal .yz-dialog-header {color: #fff;font-size: 13px;font-weight: 600;background: url("../images/geopattern.png"),linear-gradient(to left,#009688,#4caf50);background: url("../images/geopattern.png"),-webkit-linear-gradient(right,#009688,#4caf50);}
+.yz-social-share-modal .youzer-dialog-desc {text-align: center;}
+.yz-social-share-modal .youzer-dialog-desc .yz-share-btn {float: none;display: inline-block;vertical-align: middle;}
+.yz-social-share-modal .youzer-dialog-desc .yz-share-btn i {width: 40px;height: 40px;line-height: 40px;font-size: 16px;}
+.yz-enabled-social-share .youzer .activity-meta, .yz-enabled-social-share .youzer .activity-meta.yz-empty-wall-post-meta {padding: 25px;}
+@media screen and (max-width:475px) {.yz-enabled-social-share .youzer .activity-meta .yz-post-comments-nbr {margin-top: 0;padding-top: 0;border: none;}}

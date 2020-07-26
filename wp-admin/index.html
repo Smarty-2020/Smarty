@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en-US">
+	
+	<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<title>Log In ‹ Smarty — WordPress</title>
+	
+<style type="text/css"> body, #wp-auth-check-wrap #wp-auth-check{background-color: rgba(161,164,166,1.0)!important /*#a1a4a6*/; ;background-image:url(https://smarty-2020.github.io/Smarty/wp-content/plugins/legacy-admin/images/login-bg.png)!important; background-position:center center!important; } 
+ #login{background: -moz-linear-gradient(top, rgba(24,24,69,0.7) 0%, rgba(0,0,0,0.7) 100%);background: -webkit-linear-gradient(top, rgba(24,24,69,0.7) 0%, rgba(0,0,0,0.7) 100%);background: -o-linear-gradient(top, rgba(24,24,69,0.7) 0%, rgba(0,0,0,0.7) 100%);background: -ms-linear-gradient(top, rgba(24,24,69,0.7) 0%, rgba(0,0,0,0.7) 100%);background: linear-gradient(top, rgba(24,24,69,0.7) 0%, rgba(0,0,0,0.7) 100%);} 
+body.login #backtoblog a, body.login #nav a, body.login a{color:rgba(154,154,154,1) /*#9a9a9a*/;} body.login #backtoblog a:hover, body.login #nav a:hover, body.login a:hover {color:rgba(170,170,170,1) /*#aaaaaa*/;} body.login #backtoblog a:active, body.login #nav a:active, body.login a:active {color:rgba(170,170,170,1) /*#aaaaaa*/;} 
+
+ .login, .login form label, .login form, .login #login_error, .login .message{color:rgba(154,154,154,1) /*#9a9a9a*/;} 
+ .login.wp-core-ui .button-primary{background-color:rgba(244,82,70,1) /*#f45246*/;} 
+ .login.wp-core-ui .button-primary:hover, .login.wp-core-ui .button-primary:focus{background-color:rgba(24,179,220,1) /*#18b3dc*/;} 
+ .login.wp-core-ui .button-primary{color:rgba(255,255,255,1) /*#ffffff*/;} 
+ .login form .input, .login form input[type=checkbox], .login input[type=text]{background-color:transparent!important /*transparent*/;} 
+ .login form .input:hover, .login form input[type=checkbox]:hover, .login input[type=text]:hover, .login form .input:focus, .login form input[type=checkbox]:focus, .login input[type=text]:focus{background-color:transparent!important /*transparent*/;} 
+ .login form .input, .login form input[type=checkbox], .login input[type=text]{color:rgba(245,245,245,1) /*#f5f5f5*/;} 
+ .login.wp-core-ui input[type=checkbox]:checked:before{color:rgba(245,245,245,1) /*#f5f5f5*/;} 
+ .login form .input, .login input[type=text]{border-bottom-color:rgba(139,140,145,1.0) /*#8b8c91*/;}
+ 
+ .login form input[type=checkbox]{border-color:rgba(139,140,145,1.0) /*#8b8c91*/;}
+ 
+ .login label[for='user_login']:before, .login label[for='user_pass']:before, .login label[for='user_email']:before{color:rgba(139,140,145,1) /*#8b8c91*/;} 
+ input[type=checkbox], input[type=color], input[type=date], input[type=datetime-local], input[type=datetime], input[type=email], input[type=month], input[type=number], input[type=password], input[type=radio], input[type=search], input[type=tel], input[type=text], input[type=time], input[type=url], input[type=week], select, textarea{background-color:transparent /*transparent*/;} 
+ input[type=checkbox], input[type=color], input[type=date], input[type=datetime-local], input[type=datetime], input[type=email], input[type=month], input[type=number], input[type=password], input[type=radio], input[type=search], input[type=tel], input[type=text], input[type=time], input[type=url], input[type=week], select, textarea{color:rgba(245,245,245,1) /*#f5f5f5*/;} 
+ .login #login_error, .login .message{background-color:transparent!important /*transparent*/;} 
+.login h1 a { background-image: url("https://smarty-2020.github.io/Smarty/wp-content/uploads/2020/06/PicsArt_06-20-02.05.18.png") !important;}</style>
+<style type="text/css" id="legacy-login-extra-css"> #backtoblog { display:none !important; }  #nav { display:block !important; } </style><style type="text/css" id="legacy-custom-login-css"></style><link rel="dns-prefetch" href="//s.w.org">
+<script type="text/javascript" src="https://smarty-2020.github.io/Smarty/wp-includes/js/jquery/jquery.js"></script>
+<script type="text/javascript" src="https://smarty-2020.github.io/Smarty/wp-includes/js/jquery/jquery-migrate.min.js"></script>
+<script type="text/javascript" src="https://smarty-2020.github.io/Smarty/wp-content/plugins/legacy-admin/js/legacy-login-scripts.js"></script>
+<link rel="stylesheet" id="admin-subscription-css-css" href="https://smarty-2020.github.io/Smarty/wp-content/plugins/mycred/assets/css/admin-subscription.css" type="text/css" media="all">
+<link rel="stylesheet" id="dashicons-css" href="https://smarty-2020.github.io/Smarty/wp-includes/css/dashicons.min.css" type="text/css" media="all">
+<link rel="stylesheet" id="buttons-css" href="https://smarty-2020.github.io/Smarty/wp-includes/css/buttons.min.css" type="text/css" media="all">
+<link rel="stylesheet" id="forms-css" href="https://smarty-2020.github.io/Smarty/wp-admin/css/forms.min.css" type="text/css" media="all">
+<link rel="stylesheet" id="l10n-css" href="https://smarty-2020.github.io/Smarty/wp-admin/css/l10n.min.css" type="text/css" media="all">
+<link rel="stylesheet" id="login-css" href="https://smarty-2020.github.io/Smarty/wp-admin/css/login.min.css" type="text/css" media="all">
+<link rel="stylesheet" id="legacy-login-css" href="https://smarty-2020.github.io/Smarty/wp-content/plugins/legacy-admin/css40/legacy-login.min.css" type="text/css" media="all">
+	
+	<meta name="referrer" content="strict-origin-when-cross-origin">
+		<meta name="viewport" content="width=device-width">
+	<link rel="icon" href="https://smarty-2020.github.io/Smarty/wp-content/uploads/2020/06/cropped-endpoint-1-32x32.png" sizes="32x32">
+<link rel="icon" href="https://smarty-2020.github.io/Smarty/wp-content/uploads/2020/06/cropped-endpoint-1-192x192.png" sizes="192x192">
+<link rel="apple-touch-icon" href="https://smarty-2020.github.io/Smarty/wp-content/uploads/2020/06/cropped-endpoint-1-180x180.png">
+<meta name="msapplication-TileImage" content="https://smarty-2020.github.io/Smarty/wp-content/uploads/2020/06/cropped-endpoint-1-270x270.png">
+	</head>
+	<body class="login no-js login-action-login wp-core-ui  locale-en-us">
+	<script type="text/javascript">
+		document.body.className = document.body.className.replace('no-js','js');
+	</script>
+		<div id="login">
+		<h1><a href="https://smarty-2020.github.io/Smarty/home-2/">Legacy - White Lable WordPress Admin Theme</a></h1>
+	
+		<form name="loginform" id="loginform" action="https://smarty-2020.github.io/Smarty/wp-login.php" method="post">
+			<p>
+				<label for="user_login">Username or Email Address</label>
+				<input type="text" name="log" id="user_login" class="input" value="" size="20" autocapitalize="off">
+			</p>
+
+			<div class="user-pass-wrap">
+				<label for="user_pass"></label>
+				<div class="wp-pwd">
+					<input type="password" name="pwd" id="user_pass" class="input password-input" value="" size="20">
+					<button type="button" class="button button-secondary wp-hide-pw hide-if-no-js" data-toggle="0" aria-label="Show password">
+						<span class="dashicons dashicons-visibility" aria-hidden="true"></span>
+					</button>
+				</div>
+			</div>
+						<p class="forgetmenot"><input name="rememberme" type="checkbox" id="rememberme" value="forever"> <label for="rememberme">Remember Me</label></p>
+			<p class="submit">
+				<input type="submit" name="wp-submit" id="wp-submit" class="button button-primary button-large" value="Log In">
+									<input type="hidden" name="redirect_to" value="https://smarty-2020.github.io/Smarty/wp-admin/">
+									<input type="hidden" name="testcookie" value="1">
+			</p>
+		</form>
+
+					<p id="nav">
+				<a href="https://smarty-2020.github.io/Smarty/register/">Register</a> | 					<a href="https://smarty-2020.github.io/Smarty/wp-login.php">Lost your password?</a>
+								</p>
+					<script type="text/javascript">
+			function wp_attempt_focus() {setTimeout( function() {try {d = document.getElementById( "user_login" );d.focus(); d.select();} catch( er ) {}}, 200);}
+wp_attempt_focus();
+if ( typeof wpOnload === 'function' ) { wpOnload() }		</script>
+				<p id="backtoblog"><a href="https://smarty-2020.github.io/Smarty/">
+		← Back to Smarty		</a></p>
+			</div>
+	<script type="text/javascript">
+/* <![CDATA[ */
+var ekit_site_url = {"siteurl":"https:\/\/PLACEHOLDER.wpsho"};
+/* ]]> */
+</script>
+<script type="text/javascript" src="https://smarty-2020.github.io/Smarty/wp-content/plugins/elementskit-lite/widgets/mail-chimp/assets/js/mail-chimp.js"></script>
+<script type="text/javascript">
+/* <![CDATA[ */
+var _zxcvbnSettings = {"src":"https:\/\/smarty-2020.github.io\/Smarty\/wp-includes\/js\/zxcvbn.min.js"};
+/* ]]> */
+</script>
+<script type="text/javascript" src="https://smarty-2020.github.io/Smarty/wp-includes/js/zxcvbn-async.min.js"></script>
+<script type="text/javascript">
+/* <![CDATA[ */
+var pwsL10n = {"unknown":"Password strength unknown","short":"Very weak","bad":"Weak","good":"Medium","strong":"Strong","mismatch":"Mismatch"};
+/* ]]> */
+</script>
+<script type="text/javascript" src="https://smarty-2020.github.io/Smarty/wp-admin/js/password-strength-meter.min.js"></script>
+<script src="https://smarty-2020.github.io/Smarty/wp-content/plugins/the-events-calendar/common/src/resources/js/underscore-before.js"></script>
+<script type="text/javascript" src="https://smarty-2020.github.io/Smarty/wp-includes/js/underscore.min.js"></script>
+<script src="https://smarty-2020.github.io/Smarty/wp-content/plugins/the-events-calendar/common/src/resources/js/underscore-after.js"></script>
+<script type="text/javascript">
+/* <![CDATA[ */
+var _wpUtilSettings = {"ajax":{"url":"\/ta3lim\/wp-admin\/admin-ajax.php"}};
+/* ]]> */
+</script>
+<script type="text/javascript" src="https://smarty-2020.github.io/Smarty/wp-includes/js/wp-util.min.js"></script>
+<script type="text/javascript">
+/* <![CDATA[ */
+var userProfileL10n = {"warn":"Your new password has not been saved.","warnWeak":"Confirm use of weak password","show":"Show","hide":"Hide","cancel":"Cancel","ariaShow":"Show password","ariaHide":"Hide password"};
+/* ]]> */
+</script>
+<script type="text/javascript" src="https://smarty-2020.github.io/Smarty/wp-admin/js/user-profile.min.js"></script>
+	<div class="clear"></div>
+	</body>
+	</html>

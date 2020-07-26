@@ -1,0 +1,807 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset="UTF-8">
+    
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<title>test map – Smarty</title>
+<style type="text/css">#wp-admin-bar-wp-logo{display:none;}#wp-admin-bar-comments{display:none;}#wp-admin-bar-new-content{display:none;}#wp-admin-bar-_legacyoptions{display:none;}</style>                        <script>
+                            /* You can add more configuration options to webfontloader by previously defining the WebFontConfig with your options */
+                            if ( typeof WebFontConfig === "undefined" ) {
+                                WebFontConfig = new Object();
+                            }
+                            WebFontConfig['google'] = {families: ['Open+Sans:400', 'Roboto+Condensed:300,400']};
+
+                            (function() {
+                                var wf = document.createElement( 'script' );
+                                wf.src = 'https://ajax.googleapis.com/ajax/libs/webfont/1.5.3/webfont.js';
+                                wf.type = 'text/javascript';
+                                wf.async = 'true';
+                                var s = document.getElementsByTagName( 'script' )[0];
+                                s.parentNode.insertBefore( wf, s );
+                            })();
+                        </script>
+                    
+<link rel="dns-prefetch" href="//fonts.googleapis.com">
+<link rel="dns-prefetch" href="//s.w.org">
+
+
+
+<link rel="stylesheet" id="admin-subscription-css-css" href="https://smarty-2020.github.io/Smarty/wp-content/plugins/mycred/assets/css/admin-subscription.css" type="text/css" media="all">
+<link rel="stylesheet" id="tribe-common-skeleton-style-css" href="https://smarty-2020.github.io/Smarty/wp-content/plugins/the-events-calendar/common/src/resources/css/common-skeleton.min.css" type="text/css" media="all">
+<link rel="stylesheet" id="tribe-tooltip-css" href="https://smarty-2020.github.io/Smarty/wp-content/plugins/the-events-calendar/common/src/resources/css/tooltip.min.css" type="text/css" media="all">
+<link rel="stylesheet" id="wp-block-library-css" href="https://smarty-2020.github.io/Smarty/wp-includes/css/dist/block-library/style.min.css" type="text/css" media="all">
+<link rel="stylesheet" id="bp-member-block-css" href="https://smarty-2020.github.io/Smarty/wp-content/plugins/buddypress/bp-members/css/blocks/member.min.css" type="text/css" media="all">
+<link rel="stylesheet" id="bp-group-block-css" href="https://smarty-2020.github.io/Smarty/wp-content/plugins/buddypress/bp-groups/css/blocks/group.min.css" type="text/css" media="all">
+<link rel="stylesheet" id="learndash-blocks-css" href="https://smarty-2020.github.io/Smarty/wp-content/plugins/sfwd-lms/includes/gutenberg/assets/css/blocks.style.css" type="text/css" media="all">
+<link rel="stylesheet" id="buddymeet-css-css" href="https://smarty-2020.github.io/Smarty/wp-content/plugins/buddymeet/assets/css/buddymeet.css" type="text/css" media="screen">
+<link rel="stylesheet" id="learndash-notes-css" href="https://smarty-2020.github.io/Smarty/wp-content/plugins/learndash-notes/css/note.css" type="text/css" media="all">
+<link rel="stylesheet" id="leaderboard-style-css" href="https://smarty-2020.github.io/Smarty/wp-content/plugins/mycred-learndash/inc/assets/css/mycred-leaderboard-style.css" type="text/css" media="all">
+<link rel="stylesheet" id="learndash_quiz_front_css-css" href="http://PLACEHOLDER.wpsho/wp-content/plugins/sfwd-lms/themes/legacy/templates/learndash_quiz_front.min.css" type="text/css" media="all">
+<link rel="stylesheet" id="jquery-dropdown-css-css" href="http://PLACEHOLDER.wpsho/wp-content/plugins/sfwd-lms/assets/css/jquery.dropdown.min.css" type="text/css" media="all">
+<link rel="stylesheet" id="learndash_lesson_video-css" href="http://PLACEHOLDER.wpsho/wp-content/plugins/sfwd-lms/themes/legacy/templates/learndash_lesson_video.min.css" type="text/css" media="all">
+<link rel="stylesheet" id="learndash-front-css" href="http://PLACEHOLDER.wpsho/wp-content/plugins/sfwd-lms/themes/ld30/assets/css/learndash.min.css" type="text/css" media="all">
+<link rel="stylesheet" id="wppu-css" href="https://smarty-2020.github.io/Smarty/wp-content/plugins/wppu-preloader-unlimited/public/css/wppu-public.css" type="text/css" media="all">
+<link rel="stylesheet" id="youzer-customStyle-css" href="https://smarty-2020.github.io/Smarty/wp-content/plugins/youzer/includes/admin/assets/css/custom-script.css" type="text/css" media="all">
+<style id="youzer-customStyle-inline-css" type="text/css">
+
+.youzer div.item-list-tabs li.yz-activity-show-search .yz-activity-show-search-form i,
+#yz-wall-nav .item-list-tabs li#activity-filter-select label,
+.yz-media-filter .yz-filter-item .yz-current-filter,
+.yz-community-hashtags .yz-hashtag-item:hover,
+.youzer table tfoot tr,
+.youzer table thead tr,
+#yz-group-body h1:before,
+.yz-product-actions .yz-addtocart,
+.youzer .checkout_coupon,
+.youzer .yzwc-box-title h3,
+.youzer .woocommerce-customer-details h2,
+.youzer .yzwc-main-content .track_order .form-row button,
+.yz-view-order .yzwc-main-content > p mark.order-status,
+.youzer .yzwc-main-content button[type='submit'],
+.youzer .yzwc-main-content #payment #place_order,
+.youzer .yzwc-main-content h3,
+.youzer .wc-proceed-to-checkout a.checkout-button,
+.youzer .wc-proceed-to-checkout a.checkout-button:hover,
+.youzer .yzwc-main-content .woocommerce-checkout-review-order table.shop_table tfoot .order-total,
+.youzer .yzwc-main-content .woocommerce-checkout-review-order table.shop_table thead,
+.youzer .yzwc-main-content table.shop_table td a.woocommerce-MyAccount-downloads-file:before,
+.youzer .yzwc-main-content table.shop_table td a.view:before,
+.youzer table.shop_table.order_details tfoot tr:last-child,
+.youzer .yzwc-main-content table.shop_table td.actions .coupon button,
+.youzer .yzwc-main-content table.shop_table td.woocommerce-orders-table__cell-order-number a,
+.youzer .yzwc-main-content table.shop_table thead,
+.yz-forums-topic-item .yz-forums-topic-icon i,
+.yz-forums-forum-item .yz-forums-forum-icon i,
+div.bbp-submit-wrapper button,
+#bbpress-forums li.bbp-header,
+#bbpress-forums .bbp-search-form #bbp_search_submit,
+#bbpress-forums #bbp-search-form #bbp_search_submit,
+.widget_display_search #bbp_search_submit,
+.widget_display_forums li a:before,
+.widget_display_views li .bbp-view-title:before,
+.widget_display_topics li:before,
+#bbpress-forums li.bbp-footer,
+.bbp-pagination .page-numbers.current,
+.yz-items-list-widget .yz-list-item .yz-item-action .yz-add-button i,
+#yz-members-list .yzm-user-actions .friendship-button .requested,
+.yz-wall-embed .yz-embed-action .friendship-button a.requested,
+.yz-widget .yz-user-tags .yz-utag-values .yz-utag-value-item,
+.item-list-tabs #search-message-form #messages_search_submit,
+#yz-groups-list .action .group-button .membership-requested,
+#yz-members-list .yzm-user-actions .friendship-button a,
+#yz-groups-list .action .group-button .request-membership,
+.yz-wall-embed .yz-embed-action .friendship-button a,
+.yz-group-manage-members-search #members_search_submit,
+#yz-groups-list .action .group-button .accept-invite,
+.notifications-options-nav #notification-bulk-manage,
+.notifications .notification-actions .mark-read span,
+.sitewide-notices .thread-options .activate-notice,
+#yz-groups-list .action .group-button .join-group,
+.yz-social-buttons .friendship-button a.requested,
+#yz-directory-search-box form input[type=submit],
+.yzm-user-actions .friendship-button a.requested,
+.yz-wall-embed .yz-embed-action .group-button a,
+#yz-group-buttons .group-button a.join-group,
+.messages-notices .thread-options .read span,
+.yz-social-buttons .friendship-button a,
+#search-members-form #members_search_submit,
+.messages-options-nav #messages-bulk-manage,
+.yz-group-settings-tab input[type='submit'],
+.yzm-user-actions .friendship-button a.add,
+#group-settings-form input[type='submit'],
+.yz-product-content .yz-featured-product,
+.my-friends #friend-list .action a.accept,
+.yz-wall-new-post .yz-post-more-button,
+.group-request-list .action .accept a,
+#message-recipients .highlight-icon i,
+.yz-pagination .page-numbers.current,
+.yz-project-content .yz-project-type,
+.yzb-author .yzb-account-settings,
+.yz-product-actions .yz-addtocart,
+.group-button.request-membership,
+#send_message_form .submit #send,
+#send-invite-form .submit input,
+#send-reply #send_reply_button,
+.yz-wall-actions .yz-wall-post,
+.yz-post-content .yz-post-type,
+.yz-nav-effect .yz-menu-border,
+#group-create-tabs li.current,
+.group-button.accept-invite,
+.yz-tab-post .yz-read-more,
+.group-button.join-group,
+.yz-service-icon i:hover,
+.yz-loading .youzer_msg,
+.yz-scrolltotop i:hover,
+.yz-post .yz-read-more,
+.yzb-author .yzb-login,
+.pagination .current,
+.yz-tab-title-box,
+.yzw-file-post,
+.button.accept {
+            background-color: #fea633 !important;
+        }
+
+@media screen and ( max-width: 768px ) {
+#youzer .yz-group div.item-list-tabs li.last label,
+#youzer .yz-profile div.item-list-tabs li.last label,
+#youzer .yz-directory-filter .item-list-tabs li#groups-order-select label,
+#youzer .yz-directory-filter .item-list-tabs li#members-order-select label {
+    background-color: #fea633 !important;
+    color: #fff;
+}
+}
+        .yz-bbp-topic-head-meta .yz-bbp-head-meta-last-updated a:not(.bbp-author-name),
+        .widget_display_topics li .topic-author a.bbp-author-name,
+        .activity-header .activity-head p a:not(:first-child),
+        #message-recipients .highlight .highlight-meta a,
+        .thread-sender .thread-from .from .thread-count,
+        .yz-profile-navmenu .yz-navbar-item a:hover i,
+        .widget_display_replies li a.bbp-author-name,
+        .yz-profile-navmenu .yz-navbar-item a:hover,
+        .yz-link-main-content .yz-link-url:hover,
+        .yz-wall-new-post .yz-post-title a:hover,
+        .yz-recent-posts .yz-post-title a:hover,
+        .yz-post-content .yz-post-title a:hover,
+        .yz-group-settings-tab fieldset legend,
+        .yz-wall-link-data .yz-wall-link-url,
+        .yz-tab-post .yz-post-title a:hover,
+        .yz-project-tags .yz-tag-symbole,
+        .yz-post-tags .yz-tag-symbole,
+        .yz-group-navmenu li a:hover {
+            color: #fea633 !important;
+        }
+        
+        .yz-bbp-topic-head,
+        .youzer .yzwc-main-content address .yz-bullet,
+        .yz-profile-navmenu .yz-navbar-item.yz-active-menu,
+        .yz-group-navmenu li.current {
+            border-color: #fea633 !important;
+        }
+
+        body .quote-with-img:before,body .yz-link-content,body .yz-no-thumbnail,body a.yz-settings-widget {
+            background: #fea633 url(https://smarty-2020.github.io/Smarty/wp-content/plugins/youzer/includes/public/assets/images/dotted-bg.png) !important;
+        }
+    
+
+                    .yz-hdr-v1 .yz-cover-content .yz-inner-content,
+                                #yz-profile-navmenu .yz-inner-content,
+                                .yz-vertical-layout .yz-content,
+                                .youzer .yz-boxed-navbar,
+                                .youzer .wild-content,
+                                #yz-members-directory,
+                                #yz-groups-list,
+                                .yz-page-main-content,
+                                .yz-header-content,
+                                .yz-cover-content {
+                	max-width: 1300px !important;
+                    }
+
+                    .yz-page {
+                	background-color: #fafbfd !important;
+                    }
+</style>
+<link rel="stylesheet" id="youzer-css" href="https://smarty-2020.github.io/Smarty/wp-content/plugins/youzer/includes/public/assets/css/youzer.min.css" type="text/css" media="all">
+<link rel="stylesheet" id="yz-headers-css" href="https://smarty-2020.github.io/Smarty/wp-content/plugins/youzer/includes/public/assets/css/yz-headers.min.css" type="text/css" media="all">
+<link rel="stylesheet" id="yz-scheme-css" href="https://smarty-2020.github.io/Smarty/wp-content/plugins/youzer/includes/public/assets/css/schemes/yz-yellow-scheme.min.css" type="text/css" media="all">
+<link rel="stylesheet" id="dashicons-css" href="https://smarty-2020.github.io/Smarty/wp-includes/css/dashicons.min.css" type="text/css" media="all">
+<link rel="stylesheet" id="yz-social-css" href="https://smarty-2020.github.io/Smarty/wp-content/plugins/youzer/includes/public/assets/css/yz-social.min.css" type="text/css" media="all">
+<link rel="stylesheet" id="yz-icons-css" href="https://smarty-2020.github.io/Smarty/wp-content/plugins/youzer/includes/admin/assets/css/all.min.css" type="text/css" media="all">
+<link rel="stylesheet" id="yz-mycred-css" href="https://smarty-2020.github.io/Smarty/wp-content/plugins/youzer/includes/public/assets/css/yz-mycred.min.css" type="text/css" media="all">
+<link rel="stylesheet" id="yz-posts-reactions-css" href="https://smarty-2020.github.io/Smarty/wp-content/plugins/youzer-activity-reactions/assets/css/yz-posts-reactions.min.css" type="text/css" media="all">
+<link rel="stylesheet" id="select2-css-css" href="https://smarty-2020.github.io/Smarty/wp-content/plugins/ld-dashboard/public/css/select2.min.css" type="text/css" media="all">
+<link rel="stylesheet" id="ld-dashboard-css" href="https://smarty-2020.github.io/Smarty/wp-content/plugins/ld-dashboard/public/css/ld-dashboard-public.css" type="text/css" media="all">
+<link rel="stylesheet" id="yz-reviews-css" href="https://smarty-2020.github.io/Smarty/wp-content/plugins/youzer/includes/public/assets/css/yz-reviews.min.css" type="text/css" media="all">
+<link rel="stylesheet" id="magnific-popup-css-css" href="https://smarty-2020.github.io/Smarty/wp-content/themes/olympus/css/magnific-popup.css" type="text/css" media="all">
+<link rel="stylesheet" id="fw-option-type-icon-v2-pack-linecons-css" href="https://smarty-2020.github.io/Smarty/wp-content/plugins/unyson/framework/static/libs/linecons/css/linecons.css" type="text/css" media="all">
+<link rel="stylesheet" id="fw-option-type-icon-v2-pack-entypo-css" href="https://smarty-2020.github.io/Smarty/wp-content/plugins/unyson/framework/static/libs/entypo/css/entypo.css" type="text/css" media="all">
+<link rel="stylesheet" id="fw-option-type-icon-v2-pack-linearicons-css" href="https://smarty-2020.github.io/Smarty/wp-content/plugins/unyson/framework/static/libs/lnr/css/lnr.css" type="text/css" media="all">
+<link rel="stylesheet" id="fw-option-type-icon-v2-pack-typicons-css" href="https://smarty-2020.github.io/Smarty/wp-content/plugins/unyson/framework/static/libs/typcn/css/typcn.css" type="text/css" media="all">
+<link rel="stylesheet" id="fw-option-type-icon-v2-pack-unycon-css" href="https://smarty-2020.github.io/Smarty/wp-content/plugins/unyson/framework/static/libs/unycon/unycon.css" type="text/css" media="all">
+<link rel="stylesheet" id="fw-option-type-icon-v2-pack-olympus-css" href="https://smarty-2020.github.io/Smarty/wp-content/themes/olympus/css/olympus-icons-font.css" type="text/css" media="all">
+<link rel="stylesheet" id="olympus-theme-font-css" href="https://fonts.googleapis.com/css?family=Roboto%3A300%2C400%2C500%2C700&subset=latin&display=swap&ver=3.1" type="text/css" media="all">
+<link rel="stylesheet" id="bootstrap-css" href="https://smarty-2020.github.io/Smarty/wp-content/themes/olympus/Bootstrap/dist/css/bootstrap.css" type="text/css" media="all">
+<link rel="stylesheet" id="olympus-widgets-css" href="https://smarty-2020.github.io/Smarty/wp-content/themes/olympus/css/widgets.css" type="text/css" media="all">
+<link rel="stylesheet" id="olympus-js-plugins-css" href="https://smarty-2020.github.io/Smarty/wp-content/themes/olympus/css/theme-js-plugins.css" type="text/css" media="all">
+<link rel="stylesheet" id="olympus-main-css" href="https://smarty-2020.github.io/Smarty/wp-content/themes/olympus/css/main.css" type="text/css" media="all">
+<style id="olympus-main-inline-css" type="text/css">
+html:root {
+--primary-accent-color: #fea633;
+--primary-color-darken: #e65535;
+--secondary-accent-color: #38a9ff;
+--secondary-color-darken: #3399e6;
+--third-accent-color: #7c5ac2;
+--icon-color: #9a9fbf;
+}.header--standard .logo .img-wrap img {max-height:60px;}#site-header {background-color:#3f4257;}#site-header .search-bar .form-group.with-button button {background-color:#494c62;}#site-header .search-bar.w-search {background-color:#494c62;}#site-header .page-title > * {color:#ffffff;}#site-header .control-icon {fill:#ffffff;}#site-header .control-block .author-title {color:#ffffff;}#site-header .search-bar .form-group.with-button input {color:#9a9fbf;}#site-header .search-bar .form-group.with-button input::placeholder {color:#9a9fbf;}#site-header .search-bar .form-group.with-button button {color:#9a9fbf;}#site-header .control-block .author-subtitle {color:#9a9fbf;}#header--standard {background-color:#ffffff;}#header--standard .primary-menu {background-color:#ffffff;}#header--standard .logo {color:#3f4257;}#header--standard li.cart-menulocation > a {color:#9a9fbf;}h1, .h1{} h2, .h2{} h3, .h3{} h4, .h4{} h5, .h5{} h6, .h6{} body, article p{} .primary-menu-menu .menu-item > a,.primary-menu-responsive.primary-menu .showhide,.primary-menu-menu ul.sub-menu li a,.primary-menu-menu > li.menu-item-has-mega-menu .megamenu ul > li a,.primary-menu-menu > li.menu-item-has-mega-menu .megamenu .column-tittle {} .may-contain-custom-bg .ui-block {background-color: #ffffff}.fixed-sidebar-left {background-color: #ffffff}
+</style>
+<link rel="stylesheet" id="olympus-icons-font-css" href="https://smarty-2020.github.io/Smarty/wp-content/themes/olympus/css/olympus-icons-font.css" type="text/css" media="all">
+<link rel="stylesheet" id="fw-ext-forms-default-styles-css" href="https://smarty-2020.github.io/Smarty/wp-content/plugins/unyson/framework/extensions/forms/static/css/frontend.css" type="text/css" media="all">
+<link rel="stylesheet" id="font-awesome-css" href="https://smarty-2020.github.io/Smarty/wp-content/plugins/elementor/assets/lib/font-awesome/css/font-awesome.min.css" type="text/css" media="all">
+<link rel="stylesheet" id="crumina-ext-contact-form-css" href="https://smarty-2020.github.io/Smarty/wp-content/plugins/unyson/framework/extensions/contact-form/static/css/contact-form.css" type="text/css" media="all">
+<link rel="stylesheet" id="sign-form-css" href="https://smarty-2020.github.io/Smarty/wp-content/plugins/unyson/framework/extensions/sign-form/static/css/styles.css" type="text/css" media="all">
+<link rel="stylesheet" id="crumina-stunning-header-css" href="https://smarty-2020.github.io/Smarty/wp-content/plugins/unyson/framework/extensions/stunning-header/static/css/stunning-header.css" type="text/css" media="all">
+<style id="crumina-stunning-header-inline-css" type="text/css">
+#stunning-header {color:#ffffff;}#stunning-header .stunning-header-content-wrap {color:#ffffff;}#stunning-header .stunning-header-content-wrap * {color:#ffffff;}#stunning-header {padding-top:125px;}#stunning-header {padding-bottom:125px;}#stunning-header .crumina-heading-background {background-image: url("https://smarty-2020.github.io/Smarty/wp-content/uploads/2018/09/landing-bg.jpg");}#stunning-header {background-color:#eeeeee;}
+</style>
+<link rel="stylesheet" id="crumina-reaction-styles-css" href="https://smarty-2020.github.io/Smarty/wp-content/plugins/unyson/framework/extensions/post-reaction/static/css/styles.css" type="text/css" media="all">
+<link rel="stylesheet" id="yz-bbpress-css" href="https://smarty-2020.github.io/Smarty/wp-content/plugins/youzer/includes/public/assets/css/yz-bbpress.min.css" type="text/css" media="all">
+<link rel="stylesheet" id="elementskit-framework-css-frontend-css" href="https://smarty-2020.github.io/Smarty/wp-content/plugins/elementskit-lite/libs/framework/assets/css/frontend-style.min.css" type="text/css" media="all">
+<link rel="stylesheet" id="mycred-front-css" href="https://smarty-2020.github.io/Smarty/wp-content/plugins/mycred/assets/css/mycred-front.css" type="text/css" media="all">
+<link rel="stylesheet" id="yz-opensans-css" href="https://fonts.googleapis.com/css?family=Open+Sans%3A400%2C600&ver=2.5.0" type="text/css" media="all">
+<link rel="stylesheet" id="logy-style-css" href="https://smarty-2020.github.io/Smarty/wp-content/plugins/youzer/includes/logy/includes/public/assets/css/logy.min.css" type="text/css" media="all">
+<link rel="stylesheet" id="logy-customStyle-css" href="https://smarty-2020.github.io/Smarty/wp-content/plugins/youzer/includes/admin/assets/css/custom-script.css" type="text/css" media="all">
+<style id="logy-customStyle-inline-css" type="text/css">
+
+                    .logy-login-page .logy-action-item button {
+                	background-color: #007eff !important;
+                    }
+
+                    .logy-login-page .logy-action-item button {
+                	color: #ffffff !important;
+                    }
+
+                    .logy-login-page .logy-link-button {
+                	background-color: #fea633 !important;
+                    }
+
+                    .logy-login-page .logy-link-button {
+                	color: #ffffff !important;
+                    }
+
+                    .logy-login-widget {
+                	margin-top: 40px !important;
+                    }
+
+                    .logy-login-widget {
+                	margin-bottom: 40px !important;
+                    }
+</style>
+<link rel="stylesheet" id="yz-social-share-css" href="https://smarty-2020.github.io/Smarty/wp-content/plugins/youzer-social-share/assets/css/yz-social-share.min.css" type="text/css" media="all">
+<link rel="stylesheet" id="buddypress-learndash-css" href="https://smarty-2020.github.io/Smarty/wp-content/plugins/buddypress-learndash/assets/css/buddypress-learndash.min.css" type="text/css" media="all">
+<link rel="stylesheet" id="child-style-css" href="https://smarty-2020.github.io/Smarty/wp-content/themes/olympus-child/style.css" type="text/css" media="all">
+<link rel="stylesheet" id="elementskit-vendors-css" href="https://smarty-2020.github.io/Smarty/wp-content/plugins/elementskit-lite/widgets/init/assets/css/vendors.css" type="text/css" media="all">
+<link rel="stylesheet" id="elementskit-style-css" href="https://smarty-2020.github.io/Smarty/wp-content/plugins/elementskit-lite/widgets/init/assets/css/style.css" type="text/css" media="all">
+<link rel="stylesheet" id="elementskit-responsive-css" href="https://smarty-2020.github.io/Smarty/wp-content/plugins/elementskit-lite/widgets/init/assets/css/responsive.css" type="text/css" media="all">
+<link rel="stylesheet" id="olympus-youzer-css" href="https://smarty-2020.github.io/Smarty/wp-content/themes/olympus/css/youzer/youzer.css" type="text/css" media="all">
+<link rel="stylesheet" id="olympus-youzer-icons-customization-css" href="https://smarty-2020.github.io/Smarty/wp-content/themes/olympus/css/youzer/yz-icons-customization.css" type="text/css" media="all">
+<link rel="stylesheet" id="youzer-customization-css" href="https://smarty-2020.github.io/Smarty/wp-content/themes/olympus/css/youzer-customization.css" type="text/css" media="all">
+<link rel="stylesheet" id="olympus-yz-headers-css" href="https://smarty-2020.github.io/Smarty/wp-content/themes/olympus/css/youzer/yz-headers.css" type="text/css" media="all">
+<link rel="stylesheet" id="olympus-yz-social-css" href="https://smarty-2020.github.io/Smarty/wp-content/themes/olympus/css/youzer/yz-social.css" type="text/css" media="all">
+<link rel="stylesheet" id="olympus-yz-reviews-css" href="https://smarty-2020.github.io/Smarty/wp-content/themes/olympus/css/youzer/yz-reviews.css" type="text/css" media="all">
+<link rel="stylesheet" id="olympus-yz-mycred-css" href="https://smarty-2020.github.io/Smarty/wp-content/themes/olympus/css/youzer/yz-mycred.css" type="text/css" media="all">
+<link rel="stylesheet" id="olympus-yz-bbpress-css" href="https://smarty-2020.github.io/Smarty/wp-content/themes/olympus/css/youzer/yz-bbpress.css" type="text/css" media="all">
+<link rel="stylesheet" id="olympus-logy-style-css" href="https://smarty-2020.github.io/Smarty/wp-content/themes/olympus/css/youzer/logy.css" type="text/css" media="all">
+<link rel="stylesheet" id="wp-add-custom-css-css" href="https://smarty-2020.github.io/Smarty" type="text/css" media="all">
+<link rel="stylesheet" id="the-event-calendar-customization-css" href="https://smarty-2020.github.io/Smarty/wp-content/themes/olympus/css/the-event-calendar-customization.css" type="text/css" media="all">
+<script type="text/javascript">
+/* <![CDATA[ */
+var uael_script = {"post_loader":"https:\/\/smarty-2020.github.io\/Smarty\/wp-content\/plugins\/ultimate-elementor\/assets\/img\/post-loader.gif","url":"https:\/\/smarty-2020.github.io\/Smarty\/wp-admin\/admin-ajax.php","search_str":"Search:","table_not_found_str":"No matching records found","table_length_string":"Show _MENU_ Entries","uael_particles_url":"https:\/\/smarty-2020.github.io\/Smarty\/wp-content\/plugins\/ultimate-elementor\/assets\/min-js\/uael-particles.min.js","particles_url":"https:\/\/smarty-2020.github.io\/Smarty\/wp-content\/plugins\/ultimate-elementor\/assets\/lib\/particles\/particles.min.js"};
+var uael = {"ajax_url":"https:\/\/smarty-2020.github.io\/Smarty\/wp-admin\/admin-ajax.php"};
+var uaelRegistration = {"invalid_mail":"Enter valid Email!","pass_unmatch":"The specified password do not match!","required":"This Field is required!","form_nonce":"cec7b53b6e","incorrect_password":"Error: The Password you have entered is incorrect.","invalid_username":"Unknown username. Check again or try your email address.","invalid_email":"Unknown email address. Check again or try your username."};
+/* ]]> */
+</script>
+<script type="text/javascript" src="https://smarty-2020.github.io/Smarty/wp-includes/js/jquery/jquery.js"></script>
+<script type="text/javascript" src="https://smarty-2020.github.io/Smarty/wp-includes/js/jquery/jquery-migrate.min.js"></script>
+<script type="text/javascript" src="https://smarty-2020.github.io/Smarty/wp-content/plugins/sfwd-lms/includes/gutenberg/assets/js/frontend.blocks.js"></script>
+<script type="text/javascript">
+/* <![CDATA[ */
+var BP_Confirm = {"are_you_sure":"Are you sure?"};
+/* ]]> */
+</script>
+<script type="text/javascript" src="https://smarty-2020.github.io/Smarty/wp-content/plugins/buddypress/bp-core/js/confirm.min.js"></script>
+<script type="text/javascript" src="https://smarty-2020.github.io/Smarty/wp-content/plugins/buddypress/bp-core/js/widget-members.min.js"></script>
+<script type="text/javascript" src="https://smarty-2020.github.io/Smarty/wp-content/plugins/buddypress/bp-core/js/jquery-query.min.js"></script>
+<script type="text/javascript" src="https://smarty-2020.github.io/Smarty/wp-content/plugins/buddypress/bp-core/js/vendor/jquery-cookie.min.js"></script>
+<script type="text/javascript" src="https://smarty-2020.github.io/Smarty/wp-content/plugins/buddypress/bp-core/js/vendor/jquery-scroll-to.min.js"></script>
+<script type="text/javascript">
+/* <![CDATA[ */
+var BP_DTheme = {"accepted":"Accepted","close":"Close","comments":"comments","leave_group_confirm":"Are you sure you want to leave this group?","mark_as_fav":"Like","my_favs":"My Favorites","rejected":"Rejected","remove_fav":"Unlike","show_all":"Show all","show_all_comments":"Show all comments for this thread","show_x_comments":"Show all comments (%d)","unsaved_changes":"Your profile has unsaved changes. If you leave the page, the changes will be lost.","view":"View","store_filter_settings":""};
+/* ]]> */
+</script>
+<script type="text/javascript" src="https://smarty-2020.github.io/Smarty/wp-content/plugins/youzer/includes/public/assets/js/buddypress.min.js"></script>
+<script type="text/javascript" src="https://smarty-2020.github.io/Smarty/wp-content/plugins/buddypress/bp-groups/js/widget-groups.min.js"></script>
+<script type="text/javascript">
+/* <![CDATA[ */
+var LD_MYCRED_Handler = {"ajax_url":"https:\/\/smarty-2020.github.io\/Smarty\/wp-admin\/admin-ajax.php"};
+/* ]]> */
+</script>
+<script type="text/javascript" src="https://smarty-2020.github.io/Smarty/wp-content/plugins/mycred-learndash/inc/assets/js/learndash-mycred-pts-handler.js"></script>
+<script type="text/javascript" src="https://smarty-2020.github.io/Smarty/wp-content/plugins/youzer-moderation/assets/js/yz-moderation.js"></script>
+<script type="text/javascript" src="https://smarty-2020.github.io/Smarty/wp-content/plugins/unyson/framework/extensions/stunning-header/static/js/stunning-header.js"></script>
+<script type="text/javascript" src="https://smarty-2020.github.io/Smarty/wp-content/plugins/unyson/framework/extensions/post-reaction/static/js/sweetalert2.js"></script>
+<script type="text/javascript">
+/* <![CDATA[ */
+var crumina_reaction = {"ajax":"https:\/\/smarty-2020.github.io\/Smarty\/wp-admin\/admin-ajax.php"};
+/* ]]> */
+</script>
+<script type="text/javascript" src="https://smarty-2020.github.io/Smarty/wp-content/plugins/unyson/framework/extensions/post-reaction/static/js/scripts.js"></script>
+<script type="text/javascript" src="https://smarty-2020.github.io/Smarty/wp-includes/js/imagesloaded.min.js"></script>
+<script type="text/javascript">
+/* <![CDATA[ */
+var crumina_ajax_blog = {"ajax":"https:\/\/smarty-2020.github.io\/Smarty\/wp-admin\/admin-ajax.php","filter_id":"ajax-filter-panel","grid_id":"ajax-grid","masonry_sel":"sorting-item","nav_type":"nav","type":"classic","preloader":"https:\/\/smarty-2020.github.io\/Smarty\/wp-content\/plugins\/unyson\/framework\/extensions\/ajax-blog\/static\/img\/spinner.gif","obj_id":"1631","template_part":"templates\/post\/classic\/content","categories":"0","cat_exclude":"0","posts_per_page":"12","paginate_base":"https:\/\/smarty-2020.github.io\/Smarty\/test-map\/page\/%#%\/","sidebar_conf":{"content-classes":"col-md-12 col-sm-12 col-lg-12","sidebar-classes":"col-md-12 col-sm-12 youzer-sidebar olympus-theme-sidebar col-lg-12","position":"full"}};
+/* ]]> */
+</script>
+<script type="text/javascript" src="https://smarty-2020.github.io/Smarty/wp-content/plugins/unyson/framework/extensions/ajax-blog/static/js/scripts.js"></script>
+<script type="text/javascript" src="https://smarty-2020.github.io/Smarty/wp-content/plugins/youzer-social-share/assets/js/yz-social-share.min.js"></script>
+
+
+
+
+
+
+
+
+	<script type="text/javascript">var ajaxurl = 'https://smarty-2020.github.io/Smarty/wp-admin/admin-ajax.php';</script>
+
+
+	<style>
+		#wppu-fill-loader-text {
+		  display: inline-block;
+		  margin: auto;
+		  position: relative;
+		  text-align: center;
+		  width: auto;
+		}
+		#wppu-fill-loader-text h2 {
+		  color: rgba(0, 0, 0, 0.1);
+		  display: inline-block;
+		  font-size: 5.75em;
+		  letter-spacing: 0;
+		  line-height: 1.5;
+		  overflow: hidden;
+		  position: relative;
+		  text-transform: none;
+		}
+		#wppu-fill-loader-text h2.wppu_fill_h2_attr {
+		  color: #000;
+		  display: block;
+		  left: 0;
+		  position: absolute;
+		  top: 0;
+		  width: 0%;
+		}
+		.wppu-fill-loader-thumb {
+		  width: 100px;
+		  position: relative;
+		}
+		.wppu-fill-loader-thumb img {
+		  display: block;
+		  height: auto;
+		  opacity: 0.3;
+		  position: relative;
+		  width: 100%;
+		  z-index: 1;
+		}
+
+		.wppu-fill-thumbnail-fill {
+		  background-position: center bottom;
+		  background-repeat: no-repeat;
+		  background-size: cover;
+		  bottom: 0;
+		  display: block;
+		  height: 0;
+		  left: 0;
+		  position: absolute;
+		  transition: all 0s ease 0s;
+		  width: 100%;
+		  z-index: 3;
+		}
+		#run_animation_fill {
+		  background-color: #000;
+		  color: #fff;
+		  cursor: pointer;
+		  line-height: 1em;
+		  padding: 6px 10px 8px;
+		  position: absolute;
+		  right: 0;
+		  top: 0;
+		  z-index: 991;
+		}
+		.wppu_fill_progress_bar {
+		  height: 2px;
+		  left: 0;
+		  position: absolute;
+		  top: 0;
+		  display: none;
+		  width: 0%;
+		  z-index: 140;
+		  background-color: #ed4e6e;
+		}
+		.wppu_fill_progress_pos-top.wppu_fill_progress_bar {
+		  display: block;
+		  top: 0;
+		  left: 0;
+		}
+		.wppu_fill_progress_pos-bottom.wppu_fill_progress_bar {
+		  display: block;
+		  top: inherit;
+		  bottom: 0;
+		  left: 0;
+		}
+		.wppu_fill_counter {
+		  line-height: 1;
+		  margin-top: 20px;
+		}
+		#wppu-fill-loader-thunb {
+		  width: 100px;
+		  position: relative;
+		  margin: auto;
+		}
+		#wppu-fill-loader-thunb img {
+		  display: block;
+		  height: auto;
+		  opacity: 0.3;
+		  position: relative;
+		  width: 100%;
+		  z-index: 1;
+		}
+		.wppu-fill-thumbnail-fill {
+		  background-position: center bottom;
+		  background-repeat: no-repeat;
+		  background-size: cover;
+		  bottom: 0;
+		  display: block;
+		  height: 0;
+		  left: 0;
+		  position: absolute;
+		  transition: all 0s ease 0s;
+		  width: 100%;
+		  z-index: 3;
+		}
+
+		.wppu-preloader-loaded .wppu_fill_progress_bar,
+		.wppu-preloader-loaded h2.wppu_fill_h2_attr {
+		    transition: width 0.9s ease 0s;
+		    -webkit-transition: width 0.9s ease 0s;
+		    -moz-transition: width 0.9s ease 0s;
+		    -o-transition: width 0.9s ease 0s;
+		    -ms-transition: width 0.9s ease 0s;
+		    width: 100% !important;
+		}
+		.wppu-preloader-loaded .wppu-fill-thumbnail-fill {
+			transition: height 0.9s ease 0s;
+		    -webkit-transition: height 0.9s ease 0s;
+		    -moz-transition: height 0.9s ease 0s;
+		    -o-transition: height 0.9s ease 0s;
+		    -ms-transition: height 0.9s ease 0s;
+		    height: 100% !important;
+		}
+	</style>
+	
+	
+	<section class="wppu-preloader loading not-loaded" style="background-color:#FFF;">
+
+			    <div class="wppu-logo-loader wppu_frameT">
+	    	<div class="wppu_frameTC">
+		        <div class="wppu_special_preloader">
+		            <div id="wppu_fill_main_loader">
+		                
+													<div id="wppu-fill-loader-thunb" style="width:174px;">
+					        	<div class="wppu-fill-thumbnail-fill" style="background-image:url(https://smarty-2020.github.io/Smarty/wp-content/uploads/2020/06/endpoint-1.png);"></div>
+								<img src="https://smarty-2020.github.io/Smarty/wp-content/uploads/2020/06/endpoint-1.png" alt="">
+					        </div>
+						
+		            </div>
+		        </div>
+	        </div>
+	    </div>
+	</section>
+	
+
+		<script>
+		var ajaxurl = 'https://smarty-2020.github.io/Smarty/wp-admin/admin-ajax.php';
+	</script>
+<meta name="tec-api-version" content="v1"><meta name="tec-api-origin" content="https://smarty-2020.github.io/Smarty"><link rel="https://theeventscalendar.com/" href="https://smarty-2020.github.io/Smarty/wp-json/tribe/events/v1/">
+<script>
+		function olympusModal() {
+			return {
+				show: false,
+				modalOpen() { this.show = true; document.querySelector('body').classList.add('overlay-enable') },
+				modalClose() { this.show = false; document.querySelector('body').classList.remove('overlay-enable') },
+				isModalOpen() { return this.show === true },
+			}
+		}
+		</script><link rel="icon" href="https://smarty-2020.github.io/Smarty/wp-content/uploads/2020/06/cropped-endpoint-1-32x32.png" sizes="32x32">
+<link rel="icon" href="https://smarty-2020.github.io/Smarty/wp-content/uploads/2020/06/cropped-endpoint-1-192x192.png" sizes="192x192">
+<link rel="apple-touch-icon" href="https://smarty-2020.github.io/Smarty/wp-content/uploads/2020/06/cropped-endpoint-1-180x180.png">
+<meta name="msapplication-TileImage" content="https://smarty-2020.github.io/Smarty/wp-content/uploads/2020/06/cropped-endpoint-1-270x270.png">
+		<style type="text/css" id="wp-custom-css">
+			.olympus-theme #buddypress div.item-list-tabs ul li#members-all a span {display:none !important;}
+		</style>
+		<noscript><style> .wpb_animate_when_almost_visible { opacity: 1; }</style></noscript></head>
+	<body class="bp-legacy page-template-default page page-id-1631 yz-yellow-scheme not-logged-in tribe-no-js page-template-cxampphtdocsta3lim-wp-content-themes-olympus-page-php elementor-dce yz-share-btns-colorful yz-share-btns-radius wpb-js-composer js-comp-ver-6.1 vc_responsive elementor-default no-js enable-sticky-standard-header bg-white singular page-has-header-social page-has-not-panels olympus-theme" itemscope="itemscope" itemtype="https://schema.org/WebPage">
+		<div id="overflow-x-wrapper" x-data="olympusModal()">
+	<a class="skip-link screen-reader-text" href="#content">Skip to content</a>
+	
+<header class="header header--logout" id="site-header">
+	<div class="header-content-wrapper">
+
+					<form id="top-search-form" action="https://smarty-2020.github.io/Smarty/" method="GET" class="search-bar w-search notification-list friend-requests">
+				<div class="form-group with-button">
+					<div class="selectize-control form-control js-user-search multi">
+						<div class="selectize-input items not-full has-options">
+							<input type="text" autocomplete="off" name="s" id="s" value="" placeholder="Search here people or pages...">
+						</div>
+						<div class="selectize-dropdown multi form-control js-user-search mCustomScrollbar">
+							<div class="selectize-dropdown-content"></div>
+						</div>
+					</div>
+					<button>
+						<i class="olympus-icon olympus-icon-Magnifying-Glass-Icon"></i>
+						<svg class="olymp-search-spinner" width="135" height="135" viewbox="0 0 135 135" xmlns="http://www.w3.org/2000/svg">
+							<path d="M67.447 58c5.523 0 10-4.477 10-10s-4.477-10-10-10-10 4.477-10 10 4.477 10 10 10zm9.448 9.447c0 5.523 4.477 10 10 10 5.522 0 10-4.477 10-10s-4.478-10-10-10c-5.523 0-10 4.477-10 10zm-9.448 9.448c-5.523 0-10 4.477-10 10 0 5.522 4.477 10 10 10s10-4.478 10-10c0-5.523-4.477-10-10-10zM58 67.447c0-5.523-4.477-10-10-10s-10 4.477-10 10 4.477 10 10 10 10-4.477 10-10z">
+								<animatetransform attributename="transform" type="rotate" from="0 67 67" to="-360 67 67" dur="2.5s" repeatcount="indefinite"></animatetransform>
+							</path>
+							<path d="M28.19 40.31c6.627 0 12-5.374 12-12 0-6.628-5.373-12-12-12-6.628 0-12 5.372-12 12 0 6.626 5.372 12 12 12zm30.72-19.825c4.686 4.687 12.284 4.687 16.97 0 4.686-4.686 4.686-12.284 0-16.97-4.686-4.687-12.284-4.687-16.97 0-4.687 4.686-4.687 12.284 0 16.97zm35.74 7.705c0 6.627 5.37 12 12 12 6.626 0 12-5.373 12-12 0-6.628-5.374-12-12-12-6.63 0-12 5.372-12 12zm19.822 30.72c-4.686 4.686-4.686 12.284 0 16.97 4.687 4.686 12.285 4.686 16.97 0 4.687-4.686 4.687-12.284 0-16.97-4.685-4.687-12.283-4.687-16.97 0zm-7.704 35.74c-6.627 0-12 5.37-12 12 0 6.626 5.373 12 12 12s12-5.374 12-12c0-6.63-5.373-12-12-12zm-30.72 19.822c-4.686-4.686-12.284-4.686-16.97 0-4.686 4.687-4.686 12.285 0 16.97 4.686 4.687 12.284 4.687 16.97 0 4.687-4.685 4.687-12.283 0-16.97zm-35.74-7.704c0-6.627-5.372-12-12-12-6.626 0-12 5.373-12 12s5.374 12 12 12c6.628 0 12-5.373 12-12zm-19.823-30.72c4.687-4.686 4.687-12.284 0-16.97-4.686-4.686-12.284-4.686-16.97 0-4.687 4.686-4.687 12.284 0 16.97 4.686 4.687 12.284 4.687 16.97 0z">
+								<animatetransform attributename="transform" type="rotate" from="0 67 67" to="360 67 67" dur="8s" repeatcount="indefinite"></animatetransform>
+							</path>
+						</svg>
+					</button>
+				</div>
+			</form>
+		
+					<a href="https://smarty-2020.github.io/Smarty/login/" data-show-youzer-login="true" class="side-menu-open" data-toggle="tooltip" data-placement="left" data-original-title="Login / Register">
+				<i class="olymp-login-icon olymp-menu-icon olympus-icon-Login-Icon"></i>			</a>
+			</div>
+	</header>
+
+
+
+<section id="stunning-header" class="crumina-stunning-header crumina-stunning-header--with-animation stunning-header--content-center" data-animate-type="left-to-right">
+    
+        <div class="crumina-heading-background"></div>
+    
+    <div class="container">
+
+        <div class="stunning-header-content-wrap">
+
+            <div class="stunning-content-item">
+                <h1 class="stunning-header-title">test map</h1>            </div>
+
+            <div class="stunning-content-item">
+                <div class="stunning-header-text">
+                                    </div>
+            </div>
+
+            <div class="stunning-content-item">
+                    <ul class="breadcrumbs" itemscope itemtype="http://schema.org/BreadcrumbList">
+					                <li class="breadcrumbs-item first-item" itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
+				                    <a href="https://smarty-2020.github.io/Smarty/" itemprop="item"><span itemprop="name">
+                            Home                        </span></a>
+                    <meta itemprop="position" content="0">
+                    </li>
+																	    </ul>
+            </div>
+
+        </div>
+
+        <div class="stunning-header-img-bottom">
+                    </div>
+
+    </div>
+
+</section>
+
+
+
+
+
+<div id="content" class="site-content hfeed site"><div id="primary" class="container">
+    <div class="row primary-content-wrapper">
+        <main id="main" class="col-md-12 col-sm-12 col-lg-12">
+            
+<article id="post-1631" class="post-1631 page type-page status-publish hentry">
+
+	
+    <div class="page-content">
+        
+<svg class="hs-poly-svg" viewbox="0 0 3840 2558" preserveaspectratio="none"><polygon class="imp-shape  imp-shape-poly" style="fill: rgba(0, 0, 0, 0);stroke: rgba(255, 255, 255, 0.75);stroke-width: 0px;stroke-dasharray: 0;stroke-linecap: round;opacity: 1;" data-index="0" id="poly-1594" data-shape-title="south america 1" points="736.1552736401674,1331.2304394371326 725.8927933054395,1334.2440631307777 718.6486895397491,1340.271310518068 712.6119364016738,1349.9149063377329 708.386209205021,1357.7503279412103 696.916378242678,1360.1612268961267 687.861248535565,1356.5448784637522 682.4281707112972,1354.133979508836 681.8244953974897,1365.585749544688 684.8428719665274,1383.6674917065593 687.861248535565,1401.1465091297016 689.06859916318,1416.2146275979276 685.4465472803348,1430.0772965886956 671.5620150627616,1452.3781119216703 651.6407297071131,1478.295275687019 643.7929506276151,1496.3770178488903 645.0003012552302,1507.8287878847423 654.6591062761507,1514.4587600107616 650.4333790794981,1524.1023558304264 642.5856000000001,1543.9922722084848 645.0003012552302,1557.2522164605239 660.0921841004185,1569.9094359738338 672.7693656903766,1597.6347739553698 685.4465472803348,1627.771010891822 699.9347548117156,1644.0445788375064 709.5935598326362,1662.7290457381066 721.0633907949792,1682.016237377436 747.021429288703,1698.8931327865878 774.7904937238494,1715.7694254710013 797.1264803347282,1751.3301850560147 796.5228050209206,1802.5617878479836 799.5411815899582,1855.6015648561392 810.4073372384938,1932.750331413457 807.3889606694562,1980.967707787041 813.4257138075315,2017.131192110784 827.3102460251047,2043.651080614862 839.3837523012554,2058.719199083088 844.8168301255231,2077.4036659836884 838.7800769874478,2094.882683406831 833.0397991631801,2104.527906055392 843.2915548117157,2110.2513829201403 856.2866610878662,2126.224369820741 871.9714945606696,2161.796324667026 896.4471564853559,2183.7949963063547 916.6649171548119,2186.50166 929.9243246861927,2179.2689631352514 931.7460753138075,2167.812376793045 927.5203481171549,2157.566056234651 932.3497506276151,2141.2924882889674 938.3865037656905,2122.0052966496373 935.9718025104604,2111.758976091244 917.257867782427,2093.6772339293725 925.1056468619247,2076.1982165062304 934.1607765690378,2048.4728785246944 924.5019715481174,2041.8429063986748 917.8615430962345,2027.3775126691776 922.7016702928871,2027.3855184529907 937.782828451883,2033.7053411015524 946.2173322175732,2026.4790231917195 948.045308786611,2012.9121189396806 946.2342828451884,2008.0903210298482 953.1926359832637,2002.9743852101838 964.6347916317992,2002.3636546876412 979.7481238493724,1998.7441167778093 990.3025807531383,1986.994955174332 995.735658577406,1972.529561444835 991.5099313807532,1958.6668924540668 981.8573523012553,1950.5213213731315 976.418048535565,1943.5987739858408 977.9156485355651,1939.9904313372797 983.6728769874477,1941.4772608147373 992.1136066945609,1944.7978445083832 999.6434610878663,1948.1184282020276 1011.7384167364019,1949.320688202028 1021.708920502092,1940.5819608147372 1056.7068652719665,1880.9160038827592 1070.5913974895398,1842.9443453428291 1068.1766962343097,1820.6435300098547 1083.8722543933054,1804.9726868028995 1111.0376435146445,1788.0963941184864 1131.5456535564854,1791.7063635959441 1147.8493857740586,1782.07654979027 1165.9720970711298,1730.2342164757595 1170.1978242677826,1697.084355845662 1168.9904736401677,1660.9208715219195 1178.649278661088,1645.250631039703 1199.1742393305442,1612.1007704096055 1214.86979748954,1591.6081292928181 1219.6992,1565.0882407887402 1208.8330443514647,1549.417397581785 1187.704408368201,1545.1983244106818 1162.3500451882846,1524.7056832938943 1131.5626041841006,1513.2539132580425 1107.4155916317993,1513.2539132580425 1094.7384100418412,1517.4729864291457 1091.7200334728036,1500.5966937447324 1067.5730209205021,1489.1449237088807 1053.0848133891213,1490.9530979250678 1041.0113071129708,1504.213042177107 1031.3525020920504,1501.8021432221906 1041.0113071129708,1494.569446357442 1044.0296836820085,1484.9258505377775 1037.3892552301256,1477.693153673029 1027.7304502092052,1478.2958784117582 1017.4679698744769,1485.5285752765064 1007.2054895397491,1494.569446357442 1001.7724117154814,1492.158547402526 1006.6018142259416,1483.1176763215904 1018.6753205020921,1475.2822547181129 1023.5047230125523,1463.830484682261 1019.8826711297072,1442.1323940880154 1010.2238661087868,1420.43430349377 979.4364251046027,1401.1471118544405 952.8747112970713,1400.5443871157113 938.990179079498,1398.1334881607952 924.5019715481174,1386.0789933862143 909.410088702929,1365.586352269427 885.8667514644352,1351.12095853993 868.9638426778243,1340.874637981536 855.0793104602511,1339.066463765349 839.3837523012554,1341.477362720265 819.4624669456067,1334.8473905942456 802.5595581589959,1326.409244252039 792.9007531380755,1317.9710979098325 778.4125456066947,1323.9983452971228 768.7537405857742,1332.4364916393295 769.3574158995817,1343.2855369364522 759.6986108786612,1349.9155090624718 762.1133121338912,1330.6283174231423 770.5647665271968,1316.1629236936453 762.7169874476989,1313.1493 750.6434811715483,1320.9847216034777 745.8140786610879,1325.80651951331 "></polygon><polygon class="imp-shape  imp-shape-poly" style="fill: rgba(0, 0, 0, 0);stroke: rgba(255, 255, 255, 0.75);stroke-width: 0px;stroke-dasharray: 0;stroke-linecap: round;opacity: 1;" data-index="1" id="poly-3771" data-shape-title="north america 1" points="680.1789811965813,1360.8944539606123 668.7090871794873,1359.6890034573303 660.2575863247864,1365.1135307221007 654.2100786324788,1378.3782999999999 639.7512205128206,1374.7571347483586 615.5853675213675,1363.3053549671772 589.6271863247864,1337.3881691466083 569.102112820513,1299.4164782932164 556.4248615384615,1301.22465404814 533.4850735042735,1293.3892257768052 512.96,1278.3210944857767 499.07539145299154,1261.4447874398247 482.18311111111126,1265.0547579431072 462.25099487179494,1271.6975536980303 423.6048410256412,1249.9930076586431 392.495212803592,1237.2888805655664 372.90655726495726,1219.8567450765863 365.6624136752137,1208.4049652954045 369.8881641025641,1178.268702713348 337.8931965811966,1125.2288805689277 322.2182809400119,1101.3670737123168 313.7460512820513,1071.5863331728663 307.70926495726496,1055.9154766301967 291.4099418803419,1061.9427291466081 301.0688,1088.462640218818 312.5386940170941,1127.6397815754917 324.0085880341883,1165.611472428884 305.2945504273505,1155.3651431509845 298.05040683760683,1125.2288805689277 282.3547623931624,1109.558024026258 287.1841914529915,1092.0789917286652 271.4885470085471,1059.5318281400437 274.5069401709402,1031.8064665645513 255.18922393162399,1014.9301595185993 241.3046153846154,984.7938969365425 238.28622222222228,947.424931334792 264.2444034188034,899.2069112035008 292.0136205128205,862.4406708533915 304.6908717948718,838.9343860393872 310.7276581196582,837.1262102844639 320.3865162393162,844.9616385557986 325.81962393162405,841.9480122975931 331.2527316239317,825.0717052516411 328.8380170940171,807.592672954048 312.5386940170941,796.1408931728664 305.8982290598291,788.3054649015316 311.33133675213685,772.0318831072209 311.33133675213685,755.7583013129101 319.7828376068377,745.5119720350108 301.0688,708.7457316849014 278.7326905982906,689.458523632385 252.77450940170937,683.4312711159737 220.77954188034195,674.9931175929978 200.25446837606844,682.2258206126915 180.93675213675215,687.0476226258204 161.01535726495732,684.0339963676147 138.07556923076925,695.4857761487964 90.38495726495725,715.9784347045951 58.99366837606837,728.0329397374178 35.45020170940171,735.2656427571116 18.5472,735.2656427571116 45.10905982905983,725.6220387308533 80.72609914529914,708.1430064332603 82.53713504273504,698.4994024070021 70.46356239316239,700.9103034135667 57.18263247863247,693.677600393873 72.27459829059829,682.8285458643326 75.89667008547009,659.9249863019693 90.98863589743591,651.4868327789934 121.77624615384619,646.0623055142231 151.9601777777778,633.4050752297592 145.92339145299147,627.3778227133478 137.47189059829057,632.1996247264769 108.49531623931625,624.9669217067833 138.07556923076925,608.6933399124727 150.75282051282053,609.8987904157549 166.44846495726497,611.1042409190372 178.52203760683764,605.0769884026258 172.4852512820513,588.200681356674 185.16250256410257,582.7761540919038 238.28622222222228,565.2971217943107 298.05040683760683,558.0644187746171 363.8513777777778,565.8998470459519 444.74431452991456,578.5570773304157 479.1539965811966,579.159802582057 545.562365811966,563.4841322975931 561.8517333333334,568.919854310722 599.2860444444444,572.5298248140044 638.5251555555556,583.981604595186 637.921476923077,591.8170328665208 672.9348376068376,592.419758118162 685.0084102564102,602.0633621444201 701.9114119658118,591.8170328665208 727.2659145299145,587.5979561050328 749.6020239316242,593.022483369803 775.5602051282052,589.4061318599563 795.4816000000002,600.2551863894967 832.3059965811966,580.3652530853392 824.4581743589744,566.502572297593 858.8678564102565,549.02354 866.7156786324786,557.461693522976 861.2825709401711,571.3243743107221 881.8076444444446,578.5570773304157 878.7892512820512,593.022483369803 886.0333948717949,596.0361096280087 915.0099692307693,574.9407258205689 934.914406837607,571.9190953172866 945.7975794871796,580.360439343545 933.7347282051282,595.4270033698031 919.2357196581197,607.4927031509848 893.2775384615385,610.5015156673961 863.0936068376069,615.3233176805252 854.6421059829062,620.1451196936542 844.9832478632478,615.9260429321663 849.2089982905983,629.1859984682712 820.8361025641028,640.6377782494528 804.5367794871796,640.0350529978117 796.6889572649573,650.8841075273523 758.6572034188035,667.760414573304 732.095343589744,684.6367216192559 727.2659145299145,696.6912266520786 734.5100581196582,715.375709452954 748.9983452991456,722.6084124726476 762.8829538461538,727.4302144857767 783.4080273504277,735.8683680087527 800.9147076923081,744.9092467833698 810.573565811966,746.717422538293 812.3998085470087,759.3794665645513 802.1220649572651,777.4564103719911 805.744136752137,790.7163659080961 816.0066735042735,794.9354426695842 825.6655316239318,790.7163659080961 835.3243897435899,767.812806345733 848.0016410256413,753.3474003063457 871.5451076923077,737.6765437636761 886.0333948717949,725.0193134792122 887.240752136752,700.3075781619256 907.1621470085472,680.417644857768 918.0283623931625,659.3222610503282 947.6086153846155,656.9113600437636 969.9447247863245,664.1440630634572 983.0538338128891,671.3671118512668 987.466611965812,683.4312711159737 981.4146188034189,697.896677155361 992.2808341880343,707.5402811816192 1013.4095863247866,694.2803256455142 1035.1572239316242,684.0228016192559 1041.183288888889,696.6912266520786 1039.3677675213678,722.0056872210064 1049.0266256410257,746.717422538293 1039.3677675213678,758.1692023194747 1041.7824820512822,760.5801033260393 1063.514912820513,756.3610265645514 1075.5822495726497,759.3810338293216 1080.4224,775.0423188621444 1065.9483350427352,787.7011723851202 1014.6169435897435,806.3872224507659 989.8661196581198,810.0035739606126 962.0969025641026,806.3872224507659 934.9313641025642,814.8253759737416 910.1805401709403,828.0853315098467 911.3878974358976,835.9207597811815 935.5350427350427,824.4689799999999 962.0969025641026,823.8662547483589 961.493223931624,832.9071335229758 950.6270085470086,840.1398365426694 950.0233299145299,854.0025173304156 963.9079384615386,866.0570223632385 989.8474119658121,865.4511066083151 977.1781470085468,875.105905382932 934.3276854700856,891.3714829321661 921.0467555555556,890.7687576805249 929.4982564102564,879.9197031509844 943.9865435897436,875.0979011378555 934.3276854700856,870.2760991247264 878.2007794871795,894.9846439387309 868.5097572649573,903.4196069584244 858.8571350427351,919.0872729978116 826.2692102564102,928.7404485339166 792.4632068376069,954.0549091028445 782.804348717949,968.5203151422319 771.3344547008547,969.123040393873 771.9318974358974,995.6557694529538 756.2424888888888,1015.5457027571113 712.7776273504275,1038.4364443326035 686.2157675213675,1071.5863331728663 689.8378393162394,1102.9280462582055 691.0389606837608,1132.4552025820567 679.5583452991452,1142.1131918599563 669.3127658119658,1134.2697593435446 660.8612649572651,1110.160749277899 664.4833367521369,1090.8735412253827 653.6171213675215,1079.4217614442014 637.3177982905983,1078.81903619256 611.9632957264957,1070.380882669584 596.2676512820512,1072.7917836761485 580.5720068376069,1090.2708159737415 569.102112820513,1086.0517392122536 543.1439316239317,1080.6272119474834 514.1673572649573,1086.6544644638948 485.1907829059829,1116.1880017943104 470.0988170940172,1165.0087471772429 472.5135316239316,1204.1858885339168 489.41653333333335,1227.692173347921 511.7526427350428,1231.9112501094091 534.6924307692309,1225.2812723413565 549.7843965811966,1208.4049652954045 555.2175042735043,1196.3504602625817 579.9683282051283,1187.9123067396058 593.2492581196582,1198.1586360175054 583.5904,1221.6649208315096 564.8763623931624,1258.431161181619 570.9131487179488,1265.6638642013127 598.6823658119658,1263.2529631947484 613.170652991453,1263.8556884463892 625.8479042735044,1276.512918730853 620.4147965811964,1306.046456061269 619.2074393162392,1337.990894398249 634.2994051282052,1353.6617509409189 656.0318358974359,1354.26447619256 675.3495521367522,1350.6481246827132 683.8010529914532,1354.867201444201 "></polygon><polygon class="imp-shape  imp-shape-poly" style="fill: rgba(0, 0, 0, 0);stroke: rgba(255, 255, 255, 0.75);stroke-width: 0px;stroke-dasharray: 0;stroke-linecap: round;opacity: 1;" data-index="2" id="poly-5460" data-shape-title="poly-5460" points="302.846976,801.83068 295.6032,806.6543371428571 302.846976,821.7282657142857 318.541824,831.37558 325.78560000000004,828.9637514285714 322.76736,816.9046085714286 313.10899200000006,806.05138 "></polygon><polygon class="imp-shape  imp-shape-poly" style="fill: rgba(0, 0, 0, 0);stroke: rgba(255, 255, 255, 0.75);stroke-width: 0px;stroke-dasharray: 0;stroke-linecap: round;opacity: 1;" data-index="3" id="poly-3033" data-shape-title="poly-3033" points="626.4192,1184.564679722222 651.1675270935962,1169.49202 678.3303251231528,1171.9036455555554 703.6822699507389,1182.1530541666666 734.4667743842365,1199.0344330555554 748.9536,1205.0634969444443 733.8631566502463,1212.9012799999998 699.4569458128079,1212.9012799999998 680.7447960591134,1192.4024627777776 659.014557635468,1181.5501477777777 "></polygon><polygon class="imp-shape  imp-shape-poly" style="fill: rgba(0, 0, 0, 0);stroke: rgba(255, 255, 255, 0.75);stroke-width: 0px;stroke-dasharray: 0;stroke-linecap: round;opacity: 1;" data-index="4" id="poly-3555" data-shape-title="poly-3555" points="691.008,1232.7732857142857 702.4809600000001,1229.7585000000001 715.1616,1236.9939857142858 704.2924800000001,1242.4206000000001 "></polygon><polygon class="imp-shape  imp-shape-poly" style="fill: rgba(0, 0, 0, 0);stroke: rgba(255, 255, 255, 0.75);stroke-width: 0px;stroke-dasharray: 0;stroke-linecap: round;opacity: 1;" data-index="5" id="poly-7445" data-shape-title="poly-7445" points="735.6672,1233.3794911111113 756.7961302325581,1229.7641844444445 760.4182325581395,1216.5080600000001 794.2245209302325,1217.7131622222223 813.5423999999999,1228.5590822222223 783.9618976744185,1235.7896955555557 748.3445581395349,1238.1999 "></polygon><polygon class="imp-shape  imp-shape-poly" style="fill: rgba(0, 0, 0, 0);stroke: rgba(255, 255, 255, 0.75);stroke-width: 0px;stroke-dasharray: 0;stroke-linecap: round;opacity: 1;" data-index="6" id="poly-2716" data-shape-title="poly-2716" points="835.878,1240.60442 843.7248000000001,1232.1766626666665 828.0312,1231.57468 824.4096000000001,1239.4004546666665 "></polygon><polygon class="imp-shape  imp-shape-poly" style="fill: rgba(0, 0, 0, 0);stroke: rgba(255, 255, 255, 0.75);stroke-width: 0px;stroke-dasharray: 0;stroke-linecap: round;opacity: 1;" data-index="7" id="poly-2755" data-shape-title="poly-2755" points="1016.9856000000001,841.6303177777777 1062.8749241379312,798.2239 1067.7053793103448,802.4439683950617 1062.2711172413794,809.6783713580246 1065.8939586206898,818.7213750617284 1079.7815172413793,824.1471772839506 1087.0272,831.9844471604938 1082.1967448275864,839.821717037037 1063.478731034483,847.05612 "></polygon><polygon class="imp-shape  imp-shape-poly" style="fill: rgba(0, 0, 0, 0);stroke: rgba(255, 255, 255, 0.75);stroke-width: 0px;stroke-dasharray: 0;stroke-linecap: round;opacity: 1;" data-index="8" id="poly-8181" data-shape-title="poly-8181" points="857.3184000000001,640.1481293975904 875.1292915662651,621.1591400000001 894.4495807228917,624.1732653012049 907.4304000000001,635.9283539759037 900.1852915662652,646.1763800000001 882.6762795180724,638.3396542168675 866.3747855421688,644.3679048192772 "></polygon><polygon class="imp-shape  imp-shape-poly" style="fill: rgba(0, 0, 0, 0);stroke: rgba(255, 255, 255, 0.75);stroke-width: 0px;stroke-dasharray: 0;stroke-linecap: round;opacity: 1;" data-index="9" id="poly-6475" data-shape-title="poly-6475" points="941.2138534775889,628.3857767713005 949.3640309119012,635.3165802690582 970.4941205564144,628.9884553363229 981.3610238021639,632.6045267264574 1000.0762460587327,654.6022943497758 1022.111910973725,660.6290799999999 1037.8085489953633,657.6156871748879 1026.6397873261205,644.6580980269058 1035.695540030912,642.5487230493274 1046.8643017001546,648.5755086995515 1056.8256296754253,633.2072052914798 1051.0903196290574,615.7295269058296 1066.4850992272027,615.7295269058296 1082.1817372488408,622.3589911210762 1096.9728,607.2920269955157 1091.5393483771254,597.3478306726457 1075.842710355487,588.3076521973094 1073.4278429675426,565.1045274439462 1050.1847443585782,557.2697060986548 1031.1676636785164,539.7920277130045 1013.0561582689336,543.7094383856502 979.8517316846987,529.8478313901345 962.9476599690881,532.2585456502243 945.4398714064915,546.12015264574 945.1380129829986,537.9839920179372 954.1937656877899,526.23176 936.0822602782072,527.738456412556 908.6131437403401,544.9147955156951 901.6704000000001,555.4616704035874 914.650312210201,565.4058667264574 933.0636760432767,564.803188161435 967.1736778979908,569.3232773991032 984.6814664605874,562.9951524663677 1003.0948302936631,571.4326523766816 1016.3766009273571,589.211670044843 1034.4881063369398,604.881312735426 1024.5267783616694,611.5107769506726 1004.0004055641423,605.4839913004485 992.8316438948996,611.2094376681614 981.662882225657,621.7563125560538 966.8718194744978,621.4549732735426 954.797482534776,619.9482768609865 "></polygon><polygon class="imp-shape  imp-shape-poly" style="fill: rgba(0, 0, 0, 0);stroke: rgba(255, 255, 255, 0.75);stroke-width: 0px;stroke-dasharray: 0;stroke-linecap: round;opacity: 1;" data-index="10" id="poly-3059" data-shape-title="poly-3059" points="598.9248,546.7273588235294 611.6032530934659,556.673696199095 641.1863103115533,544.6175296832579 659.9021220209554,550.3442087782805 651.147952027848,559.3863336651584 671.9768392528277,560.2905461538462 675.9011223531863,566.3186294117647 640.2807065191629,567.8256502262443 659.2983861593618,580.4846250678733 691.5982547546203,585.9099 722.086915765098,577.77198760181 743.8214067824682,581.388837556561 771.8954262145021,572.9495209954752 781.5552,565.7158210859728 767.36740725255,556.673696199095 777.0271810380478,535.5754047963801 767.6692751833468,529.8487257013575 748.3497276123511,543.7133171945701 741.7086331348213,532.8627673303167 728.4264441797617,539.1922547511313 695.2209717921128,531.0543423529411 698.8433869616745,527.1360882352941 671.6752731899617,519.29958 648.1295745878106,521.7108133031675 622.4708004700818,531.9585548416289 "></polygon><polygon class="imp-shape  imp-shape-poly" style="fill: rgba(0, 0, 0, 0);stroke: rgba(255, 255, 255, 0.75);stroke-width: 0px;stroke-dasharray: 0;stroke-linecap: round;opacity: 1;" data-index="11" id="poly-384" data-shape-title="poly-384" points="792.7295999999999,578.6654308333334 811.4459881188118,571.1246600000001 823.2191999999999,576.554015 806.9178297029702,585.6029400000001 "></polygon><polygon class="imp-shape  imp-shape-poly" style="fill: rgba(0, 0, 0, 0);stroke: rgba(255, 255, 255, 0.75);stroke-width: 0px;stroke-dasharray: 0;stroke-linecap: round;opacity: 1;" data-index="12" id="poly-8414" data-shape-title="poly-8414" points="805.7088,536.1689307216494 826.2274909090909,552.1442999999999 847.6514181818181,542.4987940206186 858.816,523.5092041237112 842.8234909090909,522.90636 822.6065454545454,534.9632424742267 "></polygon><polygon class="imp-shape  imp-shape-poly" style="fill: rgba(0, 0, 0, 0);stroke: rgba(255, 255, 255, 0.75);stroke-width: 0px;stroke-dasharray: 0;stroke-linecap: round;opacity: 1;" data-index="13" id="poly-8756" data-shape-title="poly-8756" points="865.1638736842106,541.6053400000001 881.4661894736843,537.9894552542373 903.2026105263158,533.469599322034 909.5424,527.7444484745763 890.5230315789474,523.8272400000001 869.3904,528.0457722033899 863.6544,533.469599322034 "></polygon><polygon class="imp-shape  imp-shape-poly" style="fill: rgba(0, 0, 0, 0);stroke: rgba(255, 255, 255, 0.75);stroke-width: 0px;stroke-dasharray: 0;stroke-linecap: round;opacity: 1;" data-index="14" id="poly-9201" data-shape-title="poly-9201" points="921.9072,512.0745531034482 928.2459347181009,502.12922551724137 942.4326267062314,494.89626 961.7506753709199,504.2388404597701 985.2945471810089,505.1429611494253 1010.045797032641,504.2388404597701 1023.6288,508.75944390804597 1009.7439525222552,519.0061450574713 984.9927026706231,521.11576 957.5248522255192,515.6910358620689 932.1699133531157,517.1979036781609 "></polygon><polygon class="imp-shape  imp-shape-poly" style="fill: rgba(0, 0, 0, 0);stroke: rgba(255, 255, 255, 0.75);stroke-width: 0px;stroke-dasharray: 0;stroke-linecap: round;opacity: 1;" data-index="15" id="poly-9620" data-shape-title="poly-9620" points="953.3184,465.66020088235297 986.8120131147541,452.10092000000003 1008.5376,457.5246323529412 995.2608524590164,470.1799611764706 970.8195672131147,472.5905 "></polygon><polygon class="imp-shape  imp-shape-poly" style="fill: rgba(0, 0, 0, 0);stroke: rgba(255, 255, 255, 0.75);stroke-width: 0px;stroke-dasharray: 0;stroke-linecap: round;opacity: 1;" data-index="16" id="poly-8123" data-shape-title="poly-8123" points="974.9760000000001,489.246205158371 993.6887272727274,498.8911383710407 1018.1360000000001,495.5756925791855 1038.056,501.90518 1066.7287272727274,488.6433968325792 1120.754181818182,467.54510542986424 1167.234181818182,459.10578886877823 1214.016,435.29485999999997 1073.9723636363638,444.03558072398187 1041.6778181818183,451.26928063348413 1075.1796363636365,456.3931514027149 1090.874181818182,453.9819180995475 1096.6087272727275,457.2973638914027 1089.0632727272728,463.6268513122172 1069.445090909091,463.6268513122172 1037.1505454545456,459.4071930316742 1029.605090909091,464.229659638009 1031.7178181818183,474.47740117647055 1018.4378181818183,473.27178452488687 1009.6850909090911,475.9844219909502 1011.7978181818183,480.806888597285 999.725090909091,489.246205158371 "></polygon><polygon class="imp-shape  imp-shape-poly" style="fill: rgba(0, 0, 0, 0);stroke: rgba(255, 255, 255, 0.75);stroke-width: 0px;stroke-dasharray: 0;stroke-linecap: round;opacity: 1;" data-index="17" id="poly-8247" data-shape-title="poly-8247" points="1124.6814823984528,478.39186866585067 1123.776,495.26778053855566 1152.1477818181818,500.6921807833537 1180.8213911025146,498.884047368421 1203.45845106383,510.9382701346389 1214.9278947775629,543.7860271725826 1227.6046483558996,554.0321165238678 1229.113785686654,573.6202285189719 1198.0255566731141,597.4273184822521 1190.4798700193423,611.5910302325581 1192.8944897485494,628.1655865361076 1189.272560154739,641.123876009792 1198.3273841392652,665.5336771113831 1230.0192680851064,680.3000999999999 1247.223433655706,679.6973888616891 1288.5737965183753,629.9737199510404 1314.5309586073502,616.7140749082007 1348.0338073500968,611.2896746634027 1386.0640680851066,587.4825847001224 1428.0180858800775,587.1812291309669 1474.8013431334625,572.1134506731946 1463.0300719535785,563.6754947368421 1453.0697655705997,566.3876948592412 1454.2770754352032,551.3199164014687 1479.9324100580272,561.8673613219094 1492.6091636363637,555.8402499388005 1465.7465191489362,534.1426489596083 1494.420128433269,526.0060485924113 1532.1485617021278,492.55558041615666 1538.486938491296,471.7620461444308 1553.5783117988394,461.81731236230104 1578.328164023211,458.20104553243567 1591.9104000000002,445.24275605875147 1561.4258259187623,449.46173402692773 1527.6211497098648,439.517000244798 1479.3287551257254,434.09259999999995 1402.3627512572534,437.7088668298653 1321.472688501354,452.4752897184822 1258.692575541973,444.0373337821297 1220.0586598746618,452.4752897184822 1185.0466738011608,468.4471348837209 1154.5620997199228,475.3783129742962 1135.245141886267,474.17289069767435 "></polygon><polygon class="imp-shape  imp-shape-poly" style="fill: rgba(0, 0, 0, 0);stroke: rgba(255, 255, 255, 0.75);stroke-width: 0px;stroke-dasharray: 0;stroke-linecap: round;opacity: 1;" data-index="18" id="poly-1722" data-shape-title="poly-1722" points="1465.4591999999998,636.9208686956522 1469.0814593406592,623.0565086956522 1500.1725186813185,612.8089382608696 1511.9448615384613,617.3299252173913 1532.7728527472525,612.20614 1547.8655999999999,621.5495130434782 1532.7728527472525,634.8110747826087 1494.7391296703295,646.86704 1477.8352527472525,637.222267826087 "></polygon><polygon class="imp-shape  imp-shape-poly" style="fill: rgba(0, 0, 0, 0);stroke: rgba(255, 255, 255, 0.75);stroke-width: 0px;stroke-dasharray: 0;stroke-linecap: round;opacity: 1;" data-index="19" id="poly-4839" data-shape-title="poly-4839" points="935.9797132075472,2185.2994000000003 926.3232,2192.5313776000003 926.9267320754717,2204.5846736000003 941.4115018867925,2214.8299752000003 990.2976,2215.4326400000004 966.1563169811321,2201.5713496000003 946.8432905660378,2188.3127240000003 "></polygon><polygon class="imp-shape  imp-shape-poly" style="fill: rgba(0, 0, 0, 0);stroke: rgba(255, 255, 255, 0.75);stroke-width: 0px;stroke-dasharray: 0;stroke-linecap: round;opacity: 1;" data-index="20" id="poly-5666" data-shape-title="poly-5666" points="1011.43488,2164.813474285714 1006.0032,2174.4607885714286 1023.50528,2180.49036 1042.2144,2167.2253028571427 1024.71232,2163.60756 "></polygon><polygon class="imp-shape  imp-shape-poly" style="fill: rgba(0, 0, 0, 0);stroke: rgba(255, 255, 255, 0.75);stroke-width: 0px;stroke-dasharray: 0;stroke-linecap: round;opacity: 1;" data-index="21" id="poly-2508" data-shape-title="africa" points="1898.7503649154548,1039.2690482706766 1892.1100907161494,1042.880925037594 1882.4515100626143,1072.3779186340853 1852.8721068111631,1069.9700007894735 1827.5183325956332,1047.696760726817 1790.091332563185,1035.0551920426064 1779.829090618804,1022.4136233583959 1778.6217680371121,998.3344449122807 1768.359526092731,981.47902 1729.7252034785906,990.5087119172932 1690.487219573604,986.896835150376 1654.8712034136936,995.9265270676692 1622.2734937080124,1010.9760135964912 1591.4867678748694,1001.946321679198 1579.5522325466382,1007.8435433330294 1567.9439775318776,1025.4235206641604 1537.1572516987346,1048.9007196491227 1527.4986710451994,1083.81552839599 1506.3705258655914,1101.2729327694235 1485.8460419768292,1116.9243987593984 1457.4739613070699,1165.684735112782 1444.1934129084589,1188.5599546365913 1442.3824290359214,1199.9975643984963 1449.6263645260728,1218.0569482330827 1452.0410096894564,1236.7183115288221 1446.004396780997,1256.5836337468672 1438.1567999999997,1279.4588532706766 1444.7970741993054,1298.1202165664158 1439.3641225816914,1314.9756414786966 1459.2849451796078,1331.8310663909774 1477.9984451958321,1356.5122242982457 1488.2606871402131,1381.7953616666668 1537.7609129895804,1417.3121498746866 1562.5110259142643,1419.7200677192982 1588.4684614206399,1409.4864168796994 1616.2368807995533,1410.6903758020048 1672.377380848226,1396.8448481954886 1694.712848609526,1396.2428687343358 1708.5970582989826,1405.272560651629 1718.2556389525175,1420.9240266416039 1740.5911067138172,1419.1180882581452 1759.9082680208878,1429.3517390977443 1764.1338970568095,1448.0131023934837 1756.286300275812,1492.559582518797 1762.3229131842716,1513.628863659148 1785.2620422364175,1535.9021037218045 1808.2011712885633,1588.8762963032582 1806.9938487068714,1607.5376595989974 1813.0304616153308,1629.2089202005013 1794.3169615991064,1674.9593592481203 1789.487671272339,1706.2622912280701 1796.7316067624902,1735.7592848245613 1814.8414454878684,1765.8582578822052 1823.8963648505578,1805.5889023182958 1826.9146713047874,1845.319546754386 1860.1160423013143,1897.0897804135338 1867.3599777914656,1915.751143709273 1866.7563165006197,1932.6065686215536 1875.8112358633089,1942.23824 1894.5247358795334,1941.6362605388474 1917.4638649316792,1938.02438377193 1941.6103165655168,1941.6362605388474 1975.4153488528898,1923.5768767042605 2006.8057359768789,1895.283842030075 2027.330219865641,1866.9908073558895 2044.8363973001733,1853.7472592105264 2040.0071069734056,1833.8819369924813 2047.251042463557,1820.6383888471178 2076.8304457150084,1801.3750460902254 2078.641429587546,1786.3255595614037 2069.5865102248567,1761.6444016541354 2090.110994113619,1726.729592907268 2117.2757522016864,1706.864270689223 2134.178268345373,1696.630619849624 2146.251494162292,1670.143523558897 2143.836848998908,1634.024755889724 2127.537994146068,1584.662440075188 2126.9343328552222,1554.5634670175436 2137.800236090449,1528.67835018797 2175.8308974137435,1481.121972756892 2206.01396195604,1452.8289380827066 2224.7274619722643,1435.973513170426 2248.270252315256,1395.640889273183 2269.3983974948646,1359.52212160401 2274.1632,1342.1400632649568 2270.6057200765563,1323.403353934837 2205.4103006651944,1339.6567993859649 2186.093139358124,1336.6469020802006 2175.8308974137435,1320.3934566290727 2167.9833006327462,1302.936052255639 2150.477123198213,1287.886565726817 2135.9892522179107,1271.0311408145362 2114.8611070383026,1235.5143526065162 2091.921977986157,1184.9480778696743 2066.5682037706274,1135.5857620551378 2036.988800519176,1087.4274051629072 2033.3668327741007,1088.631364085213 2035.177816646638,1100.0689738471178 2030.9521876107165,1107.8947068421053 2021.8972682480276,1104.884809536341 2032.159510192408,1067.5620829448621 2018.8789617937975,1060.9403088721806 1995.3361714508058,1066.9601034837092 1957.9091714183571,1058.5323910275688 1908.40894556899,1038.6670688095237 "></polygon><polygon class="imp-shape  imp-shape-poly" style="fill: rgba(0, 0, 0, 0);stroke: rgba(255, 255, 255, 0.75);stroke-width: 0px;stroke-dasharray: 0;stroke-linecap: round;opacity: 1;" data-index="22" id="poly-1825" data-shape-title="poly-1825" points="2192.1636874172186,1824.72372 2176.4669880794704,1819.2989140206187 2167.4112,1797.5996901030928 2169.222357615894,1774.6949537457044 2182.5041801324505,1756.6122671477665 2183.107899337748,1742.748874089347 2181.2967417218542,1720.4468939518902 2188.5413721854306,1705.9807446735397 2211.482701986755,1690.9118391752577 2232.6128741721855,1675.2401774570446 2247.102135099338,1649.32166 2250.724450331126,1649.9244162199313 2258.5728,1671.020883917526 2256.761642384106,1699.9531824742269 2242.8761006622517,1737.3240681099658 2232.0091549668873,1763.2425855670103 2225.971962913907,1789.7638592439864 2221.1422092715234,1808.4493020618556 2209.067825165563,1819.90167024055 "></polygon><polygon class="imp-shape  imp-shape-poly" style="fill: rgba(0, 0, 0, 0);stroke: rgba(255, 255, 255, 0.75);stroke-width: 0px;stroke-dasharray: 0;stroke-linecap: round;opacity: 1;" data-index="23" id="poly-4789" data-shape-title="europe" points="1655.3510592964826,821.3258375 1628.2284060301508,830.9694975 1619.7902472361811,828.5585825 1609.543911557789,832.77768375 1611.3520884422112,840.0104287500001 1625.2147778894473,846.0377162500001 1637.872016080402,858.09229125 1639.6801929648243,885.215085 1620.3929728643218,898.4751175000001 1592.0648683417087,894.858745 1570.3667457286433,894.25601625 1555.2986050251259,899.07784625 1550.4768000000001,929.8170125 1580.6130814070352,922.5842675 1659.5701386934675,938.2552150000001 1678.2546331658293,923.7897250000001 1689.103694472362,914.74879375 1695.130950753769,899.6805750000001 1706.5827376884424,899.07784625 1721.6508783919598,901.48876125 1751.1844341708545,885.215085 1758.4171417085429,886.4205425 1777.1016361809047,914.146065 1796.3888562814072,924.9951825 1819.292430150754,938.2552150000001 1827.127863316583,950.30979 1831.9496683417087,970.19983875 1845.8123577889448,957.542535 1843.401455276382,945.48796 1861.4832241206032,939.4606725000001 1854.2505165829148,932.8306562500001 1833.757845226131,924.9951825 1814.4706251256282,909.92696375 1790.3616000000002,884.0096275000001 1797.5943075376886,874.96869625 1825.319686432161,891.2423725000001 1838.5796502512562,902.09149 1858.4695959798996,909.92696375 1868.1132060301509,921.37881 1872.9350110552766,944.8852312500001 1880.167718592965,955.1316200000001 1900.0576643216082,961.1589075 1898.8522130653269,967.7889237500001 1894.030408040201,971.40529625 1897.6467618090453,981.0489562500001 1914.5230793969852,984.0626 1921.153061306533,967.186195 1909.0985487437188,944.8852312500001 1926.577591959799,935.8443 1946.4675376884425,932.2279275000001 1959.124775879397,936.4470287500001 1978.4119959798995,926.8033687500001 1967.562934673367,917.7624375 1968.1656603015076,904.502405 1981.425624120603,876.7768825 1995.89103919598,858.09229125 2008.5482773869348,858.09229125 2019.3973386934674,867.1332225000001 2018.7946130653268,878.5850687500001 2033.2600281407035,882.20144125 2054.3554251256282,871.9550525000001 2042.3009125628141,865.32503625 2043.5063638190957,860.5032062500001 2068.820840201005,849.05136 2074.848096482412,850.85954625 2071.834468341709,870.749595 2069.423565829146,877.98234 2076.053547738694,884.6123562500001 2087.5053346733666,881.5987125 2104.9843778894474,882.20144125 2127.8879517587943,888.8314575 2179.722355778895,917.1597087499999 2211.666814070352,931.62519875 2187.5577889447236,898.4751175000001 2177.3114532663317,885.8178137500001 2178.516904522613,877.37961125 2201.42047839196,856.88683375 2217.694070351759,850.85954625 2199.6123015075377,805.65489 2200.2150271356786,797.2166875 2209.255911557789,795.4085012500001 2226.7349547738695,805.65489 2247.830351758794,820.72310875 2252.65215678392,818.9149225000001 2259.2821386934675,797.8194162500001 2256.268510552764,772.50480875 2253.8576080402013,761.0529625000001 2260.487589949749,754.4229462500001 2259.884864321608,745.9847437500001 2247.2276261306533,727.3001525000001 2234.570387939699,665.8218200000001 2230.351308542714,628.4526375000002 2233.364936683417,617.6035200000001 2242.405821105528,613.38441875 2262.295766834171,618.2062487500001 2270.1312000000003,618.2062487500001 2267.720297487437,608.56258875 2242.405821105528,576.01523625 2216.4886190954776,572.39886375 2203.228655276382,565.7688475 2190.571417085427,569.38522 2202.023204020101,576.617965 2209.255911557789,574.8097787500001 2210.4613628140705,582.0425237500001 2190.571417085427,585.65889625 2176.1060020100504,589.27526875 2164.0514894472362,588.67254 2158.62695879397,583.2479812500001 2139.3397386934676,585.0561675 2113.422536683417,597.71347125 2106.7925547738696,601.9325725 2095.340767839196,598.3162000000001 2088.108060301508,588.67254 2073.03991959799,589.27526875 2074.848096482412,603.74075875 2068.2181145728646,610.3707750000001 2051.9445226130656,613.9871475 2044.7118150753772,624.8362650000001 2019.3973386934674,624.8362650000001 2024.8218693467338,635.6853825000001 2004.9319236180907,635.6853825000001 1988.055606030151,614.5898762500001 1977.809270351759,608.56258875 1988.055606030151,603.74075875 2013.9728080402012,608.56258875 2031.4518512562818,610.9735037500001 2046.5199919597992,605.548945 2049.5336201005025,596.50801375 2035.0682050251257,590.4807262500001 1992.2746854271359,576.617965 1978.4119959798995,579.63160875 1951.289342713568,566.9743050000001 1912.714902512563,559.74156 1880.7704442211057,560.34428875 1859.0723216080403,568.1797625 1825.9224120603017,580.2343375 1811.4569969849247,591.68618375 1783.7316180904525,623.0280787500001 1763.8416723618093,639.90448375 1739.1299216080404,652.5617875000002 1726.4726834170856,658.5890750000001 1717.431798994975,677.8763950000001 1723.459055276382,697.7664437500001 1736.7190190954775,707.4101037500001 1753.5953366834171,707.4101037500001 1764.44439798995,700.7800875 1775.2934592964825,704.39646 1786.745246231156,723.6837800000001 1787.9506974874373,730.3137962500001 1779.5125386934674,733.9301687500001 1766.8553005025128,733.3274400000001 1766.8553005025128,718.2592212500001 1751.7871597989952,726.0946950000001 1744.5544522613068,739.9574562500001 1751.7871597989952,756.2311325000001 1754.8007879396987,770.6966225000001 1776.498910552764,765.27206375 1772.8825567839197,748.9983875 1786.142520603015,748.39565875 1792.772502512563,739.3547275000001 1806.6351919597992,739.9574562500001 1819.8951557788946,733.9301687500001 1830.7442170854274,715.8483062500001 1840.9905527638193,701.3828162500001 1853.6477909547739,692.341885 1853.6477909547739,685.1091400000001 1838.5796502512562,672.45183625 1834.9632964824123,660.99999 1850.0314371859297,647.1372287500001 1870.5241085427137,630.8635525000001 1883.1813467336685,618.8089775000001 1894.6331336683418,620.0144350000002 1895.8385849246233,630.8635525000001 1881.3731698492463,650.1508725000001 1874.140462311558,664.01363375 1881.3731698492463,676.6709375 1894.030408040201,683.9036825000001 1913.3176281407036,684.5064112500002 1932.0021226130655,679.6845812500001 1950.0838914572867,683.3009537500001 1945.8648120603016,691.1364275000001 1933.2075738693468,694.1500712500001 1916.3312562814071,691.1364275000001 1901.2631155778895,695.9582575000001 1899.4549386934675,704.9991887500001 1907.8930974874374,714.6428487500001 1903.0712924623117,720.0674075000001 1885.5922492462314,716.451035 1876.5513648241208,726.6974237500001 1873.5377366834173,747.7929300000001 1865.702303517588,755.6284037500001 1845.2096321608042,752.0120312500001 1819.292430150754,760.45023375 1798.1970331658292,756.2311325000001 1777.7043618090454,757.43659 1745.759903517588,762.8611487500001 1730.0890371859298,765.8747925000001 1710.1990914572866,778.5320962500001 1693.9254994974876,794.8057725000001 1672.2273768844223,810.4767200000001 "></polygon><polygon class="imp-shape  imp-shape-poly" style="fill: rgba(0, 0, 0, 0);stroke: rgba(255, 255, 255, 0.75);stroke-width: 0px;stroke-dasharray: 0;stroke-linecap: round;opacity: 1;" data-index="24" id="poly-6232" data-shape-title="poly-6232" points="1580.2647703703706,748.2979790243903 1557.9704888888891,759.749084390244 1560.98322962963,771.8028795121952 1554.3552000000002,783.2539848780489 1561.585777777778,795.3077800000001 1591.1106370370371,782.6512951219513 1597.7386666666669,769.9948102439025 1600.1488592592596,758.5437048780489 1603.1616000000001,747.6952892682928 1592.3157333333336,745.8872200000001 "></polygon><polygon class="imp-shape  imp-shape-poly" style="fill: rgba(0, 0, 0, 0);stroke: rgba(255, 255, 255, 0.75);stroke-width: 0px;stroke-dasharray: 0;stroke-linecap: round;opacity: 1;" data-index="25" id="poly-6928" data-shape-title="poly-6928" points="1609.7856,712.741935 1608.3604998145395,735.9432675860248 1615.21152,750.71384625 1626.66624,750.71384625 1632.09216,765.1793362499999 1619.43168,774.82299625 1610.38848,786.2748425 1619.43168,795.31577375 1600.7424,806.76762 1665.25056,800.1376037499999 1679.1168,777.23391125 1663.44192,772.41208125 1648.9728,743.48110125 1633.29792,735.04289875 1640.53248,718.16649375 1623.65184,710.33102 "></polygon><polygon class="imp-shape  imp-shape-poly" style="fill: rgba(0, 0, 0, 0);stroke: rgba(255, 255, 255, 0.75);stroke-width: 0px;stroke-dasharray: 0;stroke-linecap: round;opacity: 1;" data-index="26" id="poly-608" data-shape-title="poly-608" points="1773.7344000000003,473.4663721518987 1773.7344000000003,486.12070101265823 1801.7332606320049,490.70901337144574 1793.623405714286,498.1724427848102 1820.1420800000003,513.23712 1830.3879314285718,508.4164232911393 1846.6607542857146,489.13363645569626 1857.5093028571432,502.3905524050633 1881.0144914285718,503.59572658227853 1881.3247645246893,493.4540280242048 1862.4261337760956,481.5043405696268 1892.2433921281552,483.29321657910936 1900.3008000000002,470.4534367088608 1852.687725714286,465.63274 1840.7989337803056,474.0587863800661 1834.6068114285717,467.44050126582283 1818.4251629465057,473.32284540008965 "></polygon><polygon class="imp-shape  imp-shape-poly" style="fill: rgba(0, 0, 0, 0);stroke: rgba(255, 255, 255, 0.75);stroke-width: 0px;stroke-dasharray: 0;stroke-linecap: round;opacity: 1;" data-index="27" id="poly-9987" data-shape-title="poly-9987" points="2137.1904,554.8295208849557 2169.1323284210525,568.69456 2182.99392,566.2832488495575 2173.3510736842104,548.8012430088495 2186.007309473684,528.9079260176991 2233.0161852631577,514.4400591150443 2251.6992,509.01460902654867 2240.850997894737,500.57502 2210.114425263158,507.2061256637168 2177.5698189473683,506.6032978761062 2150.4493136842107,530.716409380531 "></polygon><polygon class="imp-shape  imp-shape-poly" style="fill: rgba(0, 0, 0, 0);stroke: rgba(255, 255, 255, 0.75);stroke-width: 0px;stroke-dasharray: 0;stroke-linecap: round;opacity: 1;" data-index="28" id="poly-772" data-shape-title="poly-772" points="1742.976,936.3733409090908 1748.4052645161291,953.8566895454544 1758.660541935484,956.8710599999999 1761.6768000000002,949.0336968181817 1761.073548387097,934.5647186363635 1752.0247741935484,930.3445999999999 "></polygon><polygon class="imp-shape  imp-shape-poly" style="fill: rgba(0, 0, 0, 0);stroke: rgba(255, 255, 255, 0.75);stroke-width: 0px;stroke-dasharray: 0;stroke-linecap: round;opacity: 1;" data-index="29" id="poly-1171" data-shape-title="poly-1171" points="1796.6208000000001,974.3421999999999 1806.8616000000002,970.1215 1825.536,971.9303714285714 1823.1264,987.0043 "></polygon><polygon class="imp-shape  imp-shape-poly" style="fill: rgba(0, 0, 0, 0);stroke: rgba(255, 255, 255, 0.75);stroke-width: 0px;stroke-dasharray: 0;stroke-linecap: round;opacity: 1;" data-index="30" id="poly-5035" data-shape-title="poly-5035" points="1921.9968,1006.8809831999998 1938.87744,1001.4569999999999 1958.1696,1010.4969719999999 1941.89184,1016.5236199999998 "></polygon><polygon class="imp-shape  imp-shape-poly" style="fill: rgba(0, 0, 0, 0);stroke: rgba(255, 255, 255, 0.75);stroke-width: 0px;stroke-dasharray: 0;stroke-linecap: round;opacity: 1;" data-index="31" id="poly-1875" data-shape-title="asia" points="2038.6993503050019,920.2168711471472 1982.0422819032126,931.0661096336337 1973.0012603497355,939.5044062342344 1955.5219520130133,942.5180835915917 1947.6863999999998,949.148173777778 1956.1246867832451,961.8056186786788 1964.5629735664902,984.7095665945948 1984.4532209841398,992.5451277237238 2001.932529320862,989.5314503663666 2025.4391853599022,995.5588050810812 2057.9868629524194,989.5314503663666 2064.0142106547373,995.5588050810812 2056.781393411956,1045.5858492132134 2040.5075546156972,1063.6679133573575 2038.09661553477,1089.5855386306307 2051.9595152501015,1103.4484544744746 2064.6169454249693,1104.6539254174177 2076.0689060593736,1126.9551378618619 2098.37009255795,1156.489175963964 2112.2329922732815,1177.5849174654654 2121.8767485969906,1210.132632924925 2144.177935095567,1236.6529936696697 2161.6572434322893,1263.1733544144145 2168.2873259048392,1292.7073925165166 2177.931082228548,1308.9812502462464 2199.629533956893,1307.7757793033034 2246.6428460349734,1286.0773023303304 2273.7659106954043,1272.2143864864865 2288.2315451809677,1257.7487351711711 2315.354609841399,1246.899496684685 2343.6831440422934,1212.543574810811 2363.573391459943,1187.8314204804806 2361.7651871492476,1177.5849174654654 2321.9846923139485,1151.6672921921922 2320.1764880032533,1135.3934344624624 2313.5464055307034,1129.9688152192193 2296.067097193981,1150.4618212492494 2281.601462708418,1158.90011784985 2268.94403253355,1149.8590857777779 2265.327623912159,1137.8043763483483 2256.889337128914,1135.3934344624624 2247.848315575437,1142.0235246486486 2234.5881506303376,1116.708634846847 2221.3279856852378,1092.599215987988 2221.3279856852378,1082.352712972973 2236.3963549410328,1079.3390356156158 2244.834641724278,1085.3663903303304 2261.1084805205364,1111.2840156036036 2293.656158113054,1122.7359895615618 2315.354609841399,1120.3250476756757 2324.3956313948756,1126.3524023903906 2346.0940831232206,1142.6262601201202 2374.4226173241154,1144.4344665345347 2390.696456120374,1141.4207891771773 2412.9976426189505,1146.242672948949 2432.8878900366,1140.818053705706 2444.339850671004,1143.8317310630632 2463.627363318422,1166.7356789789792 2475.682058723058,1175.1739755795797 2486.5312845872304,1173.9685046366367 2478.092997803985,1186.023214066066 2487.736754127694,1199.8861299099099 2507.0242667751118,1201.091600852853 2513.6543492476612,1195.6669816096096 2514.8598187881253,1189.0368914234236 2519.0789621797476,1191.4478333093093 2521.4899012606747,1196.2697170810811 2521.4899012606747,1208.9271619819822 2521.4899012606747,1224.5982842402404 2531.7363923546154,1248.707703099099 2564.8868047173646,1325.8578434474475 2576.338765351769,1356.5973524924927 2583.5715825945504,1369.8575328648649 2595.6262779991866,1369.8575328648649 2609.489177714518,1356.5973524924927 2617.324729727531,1340.9262302342345 2624.557546970313,1298.1320117597597 2620.3384035786903,1277.6390057297297 2657.1052245628302,1240.2694064984985 2685.4337587637247,1213.1463102822822 2696.2829846278973,1207.7216910390391 2696.8857193981294,1200.4888653813816 2697.488454168361,1191.4478333093093 2736.063479463196,1180.598594822823 2745.1045010166736,1183.6122721801803 2755.350992110614,1202.297071795796 2775.2412395282636,1219.173664996997 2787.898669703131,1237.8584646126128 2792.7205478649857,1264.981560828829 2803.569773729158,1269.2007091291293 2819.8436125254166,1259.5569415855857 2826.4736949979665,1260.1596770570573 2837.9256556323708,1289.0909796876876 2849.9803510370066,1319.8304887327329 2847.5694119560794,1332.4879336336337 2842.747533794225,1366.2411200360361 2863.2405159821064,1380.10403587988 2874.6924766165107,1413.254486810811 2885.541702480683,1439.7748475555557 2909.0483585197235,1460.2678535855857 2920.5003191541273,1462.07606 2925.9249320862136,1452.4322924564565 2916.883910532737,1426.514667183183 2901.21280650671,1401.802512852853 2872.2815375355835,1374.0766811651652 2862.6377812118744,1349.364526834835 2864.44598552257,1327.0633143903904 2865.6514550630336,1317.419546846847 2862.6377812118744,1308.9812502462464 2868.665128914193,1301.7484245885887 2891.5690501830013,1318.6250177897896 2912.062032370882,1343.3371721201202 2927.130401626677,1341.5289657057058 2928.938605937373,1347.5563204204204 2927.130401626677,1360.2137653213213 2934.3632188694587,1364.4329136216218 2954.2534662871085,1343.3371721201202 2977.7601223261486,1327.6660498618621 2981.9792657177713,1316.8168113753754 2971.7327746238307,1281.2554185585586 2959.678079219195,1263.776089885886 2939.1850970313135,1243.8858193273275 2927.7331363969092,1226.4064906546548 2933.1577493289956,1203.5025427387388 2948.22611858479,1192.0505687807808 2962.089018300122,1192.0505687807808 2972.9382441642947,1206.516220096096 2987.4038786498577,1194.4615106666668 3010.307799918666,1185.4204785945947 3039.239068889792,1176.9821819939941 3062.7457249288327,1161.3110597357359 3077.8140941846277,1135.3934344624624 3087.4578505083364,1105.2566608888887 3089.8687895892635,1082.352712972973 3077.2113594143957,1076.9280937297299 3079.622298495323,1060.6542360000003 3062.1429901586007,1049.8049975135136 3050.088294753965,1026.2983141261263 3035.01992549817,1016.6545465825827 3035.622660268402,1003.9971016816818 3059.7320510776735,983.5040956516517 3037.430864579097,975.6685345225227 3022.362495323302,978.68221187988 3004.88318698658,970.2439152792795 2997.650369743798,960.6001477357358 3006.0886565270434,952.1618511351353 3022.362495323302,935.2852579339341 3028.38984302562,935.8879934054056 3038.6363341195606,956.3809994354356 3044.0609470516465,956.9837349069071 3063.9511944692963,950.3536447207209 3072.9922160227734,954.5727930210212 3078.4168289548597,961.8056186786788 3080.827768035787,974.4630635795797 3095.29340252135,976.8740054654655 3108.5535674664497,988.3259794234235 3115.7863847092312,1007.0107790390392 3123.0192019520127,1018.4627529969971 3133.8684278161854,1015.4490756396398 3151.3477361529076,1006.4080435675677 3150.142266612444,993.1478631951953 3131.4574887352583,974.4630635795797 3104.9371588450585,954.5727930210212 3104.9371588450585,946.7372318918922 3119.402793330622,938.9016707627629 3115.7863847092312,921.4223420900903 3126.635610573404,903.3402779459461 3142.3067145994305,907.5594262462464 3157.977818625457,894.9019813453455 3167.621574949166,864.7652077717719 3168.8270444896298,829.8065504264266 3157.977818625457,805.6971315675678 3141.101245058967,783.3959191231232 3110.361771777145,758.683764792793 3085.6496461976412,761.6974421501502 3062.7457249288327,752.0536746066067 3060.9375206181376,743.6153780060062 3067.567603090687,732.1634040480483 3073.5949507930054,711.6703980180182 3085.6496461976412,697.8074821741743 3100.7180154534362,694.1910693453455 3115.7863847092312,698.4102176456457 3141.101245058967,694.7938048168169 3162.19696201708,697.2047467027028 3174.854392191948,702.0266304744746 3185.1008832858884,696.6020112312314 3189.320026677511,674.9035342582583 3197.758313460756,667.0679731291293 3225.484112891419,674.9035342582583 3233.9223996746646,677.9172116156158 3238.1415430662873,674.9035342582583 3239.3470126067505,666.4652376576578 3250.196238470923,662.2460893573575 3260.442729564864,674.9035342582583 3245.9770950793004,716.4922817897899 3250.196238470923,736.3825523483486 3268.8810163481094,757.4782938498499 3294.798611468076,779.7795062942944 3314.688858885726,799.6697768528529 3329.154493371289,791.8342157237239 3324.935349979666,774.9576225225226 3327.3462890605933,754.4646164924926 3309.866980723871,721.3141655615617 3292.990407157381,714.6840753753755 3285.1548551443675,706.8485142462464 3282.7439160634403,694.1910693453455 3312.8806545750303,680.9308889729731 3333.9763715331437,682.7390953873875 3345.4283321675475,679.7254180300301 3359.2912318828794,661.643353885886 3375.5650706791375,658.6296765285286 3379.1814793005283,662.2460893573575 3388.2225008540054,656.8214701141143 3378.5787445302967,649.5886444564566 3336.9900453843024,633.9175221981983 3335.784575843839,627.8901674834837 3352.661149410329,627.8901674834837 3351.455679869866,617.0409289969971 3390.030705164701,624.2737546546548 3413.5373612037415,632.1093157837839 3429.8112,626.6846965405407 3402.688135339569,606.794425981982 3375.5650706791375,608.6026323963965 3348.4420060187067,596.547922966967 3309.866980723871,588.7123618378379 3256.8263209434726,576.054916936937 3192.3337005286703,568.8220912792793 3195.9501091500606,580.2740652372373 3183.2926789751928,579.6713297657659 3158.580553395689,571.8357686366367 3138.0875712078077,571.2330331651652 3121.8137324115496,573.6439750510511 3091.0742591297276,569.4248267507508 3068.7730726311506,559.1783237357358 3046.4718861325737,562.7947365645646 2992.828491581944,559.7810592072072 2963.897222610817,548.3290852492494 2905.4319498983327,539.2880531771773 2888.555376331842,542.3017305345346 2877.7061504676694,557.3701173213213 2862.035046441643,557.9728527927929 2846.363942415616,554.356439963964 2818.0354082147214,559.7810592072072 2797.54242602684,554.356439963964 2766.200217974786,535.6716403483484 2736.666214233428,533.2606984624625 2714.3650277348515,539.2880531771773 2690.858371695811,535.6716403483484 2670.3653895079296,531.4524920480482 2654.694285481903,535.6716403483484 2627.571220821472,529.0415501621623 2600.448156161041,533.863433933934 2595.6262779991866,526.0278728048049 2615.516525416836,515.1786343183184 2610.0919124847496,504.9321313033034 2576.338765351769,497.6993056456457 2550.4211702318016,499.5075120600601 2507.0242667751118,483.8363898018019 2452.7781374542496,473.58988678678685 2405.162090605937,458.52150000000006 2388.285517039447,469.3707384864866 2391.2991908906056,476.00082867267275 2436.504298657991,482.63091885885893 2464.230098088654,482.63091885885893 2467.8465067100447,486.8500671591592 2467.8465067100447,495.8910992312313 2485.9285498169984,488.05553810210216 2497.9832452216347,491.06921545945954 2491.3531627490847,500.11024753153157 2476.8875282635217,504.9321313033034 2452.1754026840176,505.53486677477486 2407.5730296868646,514.5758988468469 2406.9702949166326,527.2333437477478 2401.5456819845463,530.2470211051052 2382.258169337129,528.4388146906907 2362.367921919479,538.6853177057058 2348.5050222041477,547.7263497777778 2324.9983661651077,550.7400271351352 2320.1764880032533,561.5892656216217 2328.0120400162664,572.4385041081082 2343.6831440422934,582.0822716516517 2349.1077569743798,591.7260391951952 2345.491348352989,604.3834840960961 2327.409305246035,604.3834840960961 2337.0530615697435,592.3287746666667 2323.792896624644,575.4521814654655 2305.71085351769,552.5482335495496 2288.2315451809677,539.8907886486487 2267.135828222855,545.3154078918919 2261.1084805205364,560.3837946786788 2267.7385629930864,570.6302976936937 2284.012401789345,579.0685942942944 2292.4506885725905,585.6986844804806 2290.0397494916633,590.5205682522524 2263.519419601464,583.8904780660662 2241.218233102887,578.4658588228228 2259.903010980073,601.3698067387388 2270.1495020740135,614.6299871111112 2268.94403253355,621.2600772972974 2254.478398047987,617.6436644684685 2239.410028792192,615.8354580540541 2229.1635376982513,620.6573418258259 2229.1635376982513,639.3421414414415 2242.4237026433507,710.4649270750753 2249.6565198861326,733.3688749909911 2261.1084805205364,751.4509391351353 2259.3002762098413,757.4782938498499 2252.06745896706,762.3001776216217 2254.478398047987,781.5877127087088 2258.0948066693777,805.6971315675678 2251.464724196828,823.1764602402404 2240.0127635624235,819.5600474114116 2218.3143118340786,800.8752477957959 2202.04047303782,796.6560994954956 2198.4240644164292,804.4916606246247 2211.081494591297,835.2311696696698 2217.711577063847,854.518704756757 2232.779946319642,861.7515304144146 2241.820967873119,871.3952979579581 2235.7936201708008,875.6144462582583 2224.9443943066285,874.4089753153155 2216.5061075233834,884.0527428588589 2214.697903212688,895.5047168168169 2224.9443943066285,906.9566907747749 2235.7936201708008,910.5731036036037 2241.820967873119,918.4086647327329 2258.6975414396093,918.4086647327329 2263.519419601464,936.490728876877 2250.259254656364,938.2989352912914 2260.505745750305,959.9974122642644 2265.327623912159,982.2986247087089 2251.464724196828,992.5451277237238 2229.766272468483,986.5177730090091 2208.67055551037,964.2165605645647 2210.478759821065,934.0797869909911 2156.2326305002034,905.1484843603605 2105.0001750305,883.4500073873876 2085.7126623830823,882.2445364444445 2076.671640829605,889.4773621021022 2120.671279056527,915.3949873753756 2107.411114111427,933.4770515195196 2077.274375599837,935.8879934054056 2059.795067263115,922.6278130330331 "></polygon><polygon class="imp-shape  imp-shape-poly" style="fill: rgba(0, 0, 0, 0);stroke: rgba(255, 255, 255, 0.75);stroke-width: 0px;stroke-dasharray: 0;stroke-linecap: round;opacity: 1;" data-index="32" id="poly-3151" data-shape-title="poly-3151" points="2025.4464000000003,1012.9972342857143 2033.8837333333336,1016.01202 2046.5397333333335,1007.5706200000001 2047.1424000000002,999.12922 2032.6784000000002,1004.5558342857144 "></polygon><polygon class="imp-shape  imp-shape-poly" style="fill: rgba(0, 0, 0, 0);stroke: rgba(255, 255, 255, 0.75);stroke-width: 0px;stroke-dasharray: 0;stroke-linecap: round;opacity: 1;" data-index="33" id="poly-2667" data-shape-title="poly-2667" points="2629.3772487804877,1354.1284600000001 2623.9487999999997,1368.5970610810812 2629.9804097560973,1398.73998 2646.8689170731705,1393.3142545945948 2648.6784,1381.2570870270272 2637.8215024390242,1362.5684772972975 "></polygon><polygon class="imp-shape  imp-shape-poly" style="fill: rgba(0, 0, 0, 0);stroke: rgba(255, 255, 255, 0.75);stroke-width: 0px;stroke-dasharray: 0;stroke-linecap: round;opacity: 1;" data-index="34" id="poly-3657" data-shape-title="poly-3657" points="2816.2176,1405.3652 2831.28787027027,1434.2967842519686 2848.7693837837837,1449.3653177165354 2863.839654054054,1472.2694885826772 2887.952086486486,1510.8449342519684 2910.2560864864863,1546.4066732283463 2931.354464864865,1558.4615 2946.424735135135,1547.6121559055118 2950.0416,1530.1326570866142 2933.162897297297,1507.2284862204724 2916.8870054054055,1483.721574015748 2910.2560864864863,1469.8585232283465 2879.5127351351352,1451.7762830708662 2859.619978378378,1425.2556641732283 2834.3019243243243,1409.5843893700787 "></polygon><polygon class="imp-shape  imp-shape-poly" style="fill: rgba(0, 0, 0, 0);stroke: rgba(255, 255, 255, 0.75);stroke-width: 0px;stroke-dasharray: 0;stroke-linecap: round;opacity: 1;" data-index="35" id="poly-4508" data-shape-title="poly-4508" points="2941.5935999999997,1573.534829508197 2949.4302874371856,1581.3685996721313 2978.365748743718,1584.3815881967214 3013.3294311557784,1591.612760655738 3039.2507819095476,1595.228346885246 3052.5128683417083,1597.0361400000002 3061.5552,1590.4075652459019 3017.549185929648,1567.5088524590165 2993.4363015075373,1572.932231803279 2964.500840201005,1560.2776800000001 2944.6077105527634,1565.0984616393444 "></polygon><polygon class="imp-shape  imp-shape-poly" style="fill: rgba(0, 0, 0, 0);stroke: rgba(255, 255, 255, 0.75);stroke-width: 0px;stroke-dasharray: 0;stroke-linecap: round;opacity: 1;" data-index="36" id="poly-1439" data-shape-title="poly-1439" points="3074.8032,1597.65006 3085.659105882353,1603.0730199999998 3105.5616,1597.65006 3089.8808470588233,1592.2270999999998 "></polygon><polygon class="imp-shape  imp-shape-poly" style="fill: rgba(0, 0, 0, 0);stroke: rgba(255, 255, 255, 0.75);stroke-width: 0px;stroke-dasharray: 0;stroke-linecap: round;opacity: 1;" data-index="37" id="poly-354" data-shape-title="poly-354" points="3118.8096,1595.8253533333334 3128.45568,1604.86362 3148.9536,1599.44066 3142.32192,1592.8125977777777 3127.24992,1588.59474 "></polygon><polygon class="imp-shape  imp-shape-poly" style="fill: rgba(0, 0, 0, 0);stroke: rgba(255, 255, 255, 0.75);stroke-width: 0px;stroke-dasharray: 0;stroke-linecap: round;opacity: 1;" data-index="38" id="poly-5016" data-shape-title="poly-5016" points="3159.2064,1619.9558200000001 3168.248810958904,1602.4724713636365 3180.3053589041097,1593.42936 3203.2128000000002,1598.2523527272729 3187.539287671233,1603.6782195454546 3170.660120547945,1617.5443236363637 "></polygon><polygon class="imp-shape  imp-shape-poly" style="fill: rgba(0, 0, 0, 0);stroke: rgba(255, 255, 255, 0.75);stroke-width: 0px;stroke-dasharray: 0;stroke-linecap: round;opacity: 1;" data-index="39" id="poly-8086" data-shape-title="poly-8086" points="3343.6235755102043,1556.0569799999998 3369.537306122449,1539.1786286956522 3376.1664,1515.6694965217391 3346.6368,1503.0107330434782 3325.544228571429,1509.0387156521738 3308.0675265306127,1525.3142686956521 3297.822563265306,1510.8471104347825 3288.7828897959184,1489.7491713043478 3274.9220571428573,1486.73518 3258.0480000000002,1496.379952173913 3280.34586122449,1510.8471104347825 3274.9220571428573,1521.094680869565 3278.5379265306124,1532.5478478260868 3312.888685714286,1540.9870234782607 "></polygon><polygon class="imp-shape  imp-shape-poly" style="fill: rgba(0, 0, 0, 0);stroke: rgba(255, 255, 255, 0.75);stroke-width: 0px;stroke-dasharray: 0;stroke-linecap: round;opacity: 1;" data-index="40" id="poly-1677" data-shape-title="poly-1677" points="3218.88,1523.4966494117646 3229.1261217391307,1519.2729399999998 3246.6048,1521.686488235294 3232.139686956522,1529.5305199999998 "></polygon><polygon class="imp-shape  imp-shape-poly" style="fill: rgba(0, 0, 0, 0);stroke: rgba(255, 255, 255, 0.75);stroke-width: 0px;stroke-dasharray: 0;stroke-linecap: round;opacity: 1;" data-index="41" id="poly-770" data-shape-title="poly-770" points="3230.9376,1447.5722 3219.4785882352944,1448.7773954098361 3212.844423529412,1461.4319472131149 3215.256847058824,1468.6631196721312 3210.4320000000002,1476.4968898360657 3214.6537411764707,1484.33066 3223.700329411765,1482.522866885246 3227.9220705882353,1475.8942921311475 3224.906541176471,1463.842338032787 3224.906541176471,1456.6111655737704 "></polygon><polygon class="imp-shape  imp-shape-poly" style="fill: rgba(0, 0, 0, 0);stroke: rgba(255, 255, 255, 0.75);stroke-width: 0px;stroke-dasharray: 0;stroke-linecap: round;opacity: 1;" data-index="42" id="poly-5161" data-shape-title="poly-5161" points="3116.9878325581394,1556.05698 3128.4408558139535,1549.426199130435 3124.2213209302327,1531.3422513043479 3130.852018604651,1522.903075652174 3139.8938790697675,1536.767435652174 3154.9636465116278,1543.3982165217392 3153.758065116279,1524.1086721739132 3147.730158139535,1513.258303478261 3159.183181395349,1493.9687591304348 3132.6603906976743,1495.174355652174 3126.6324837209304,1484.9267852173914 3139.291088372093,1477.6932060869565 3155.5664372093024,1477.0904078260871 3167.0194604651165,1481.309995652174 3178.47248372093,1474.6792147826088 3183.8976000000002,1459.00646 3159.183181395349,1465.0344426086958 3136.277134883721,1465.6372408695652 3118.1934139534883,1474.0764165217392 3115.1794604651163,1499.393943478261 3109.151553488372,1518.683487826087 3106.1376,1537.3702339130436 3108.5487627906978,1551.837392173913 "></polygon><polygon class="imp-shape  imp-shape-poly" style="fill: rgba(0, 0, 0, 0);stroke: rgba(255, 255, 255, 0.75);stroke-width: 0px;stroke-dasharray: 0;stroke-linecap: round;opacity: 1;" data-index="43" id="poly-8766" data-shape-title="poly-8766" points="2997.6420479999992,1455.3992389655173 2984.9855999999995,1466.8521326724137 2988.6017279999996,1488.552352327586 2995.833984,1508.4442203448275 3007.8877439999997,1521.705465689655 3042.843647999999,1525.322168965517 3064.540416,1530.1444399999998 3075.991487999999,1521.705465689655 3087.442559999999,1490.3607039655171 3104.3178239999993,1464.4409971551722 3092.8667519999995,1440.9324258620688 3094.0721279999993,1430.0823160344826 3105.5231999999996,1411.396015775862 3097.31469207418,1397.1893576665905 3083.2237439999994,1390.29858 3065.7457919999993,1405.9709608620688 3041.6382719999992,1420.437773965517 3028.9818239999995,1440.3296419827584 3016.325376,1443.3435613793101 3006.6823679999993,1457.8103744827586 "></polygon><polygon class="imp-shape  imp-shape-poly" style="fill: rgba(0, 0, 0, 0);stroke: rgba(255, 255, 255, 0.75);stroke-width: 0px;stroke-dasharray: 0;stroke-linecap: round;opacity: 1;" data-index="44" id="poly-7588" data-shape-title="poly-7588" points="3147.1487999999995,1381.2469142857142 3151.3686709677413,1369.1933934065933 3173.673703225806,1367.385365274725 3186.936154838709,1349.9077599999998 3201.4042838709674,1375.2201538461536 3203.2127999999993,1389.0817028571428 3195.9787354838704,1392.095083076923 3188.141832258064,1389.0817028571428 3189.9503483870963,1399.9298716483515 3174.2765419354832,1404.7512799999997 3165.233961290322,1381.2469142857142 3156.7942193548383,1379.438886153846 "></polygon><polygon class="imp-shape  imp-shape-poly" style="fill: rgba(0, 0, 0, 0);stroke: rgba(255, 255, 255, 0.75);stroke-width: 0px;stroke-dasharray: 0;stroke-linecap: round;opacity: 1;" data-index="45" id="poly-7553" data-shape-title="poly-7553" points="3082.6367999999998,1367.99282 3104.9255999999996,1355.3349058181818 3111.5519999999997,1334.84114 3094.6848,1345.0880229090908 "></polygon><polygon class="imp-shape  imp-shape-poly" style="fill: rgba(0, 0, 0, 0);stroke: rgba(255, 255, 255, 0.75);stroke-width: 0px;stroke-dasharray: 0;stroke-linecap: round;opacity: 1;" data-index="46" id="poly-4350" data-shape-title="poly-4350" points="3166.4256,1316.7560799999999 3176.6709333333333,1333.0223137931034 3188.1216,1334.22722 3181.4922666666666,1319.165892413793 "></polygon><polygon class="imp-shape  imp-shape-poly" style="fill: rgba(0, 0, 0, 0);stroke: rgba(255, 255, 255, 0.75);stroke-width: 0px;stroke-dasharray: 0;stroke-linecap: round;opacity: 1;" data-index="47" id="poly-1410" data-shape-title="poly-1410" points="3110.371301052632,1234.7842650393698 3107.357911578948,1253.4661245669288 3104.9472000000005,1264.3136559055115 3117.0007578947375,1289.6245623622046 3135.6837726315794,1305.2932187401573 3148.340008421053,1302.8826562204722 3162.2016000000003,1306.4985 3159.188210526316,1292.6377655118108 3139.2998400000006,1287.8166404724407 3130.862349473685,1279.379671653543 3135.0810947368427,1255.8766870866139 3126.04092631579,1236.5921869291335 3117.0007578947375,1229.9631399999998 "></polygon><polygon class="imp-shape  imp-shape-poly" style="fill: rgba(0, 0, 0, 0);stroke: rgba(255, 255, 255, 0.75);stroke-width: 0px;stroke-dasharray: 0;stroke-linecap: round;opacity: 1;" data-index="48" id="poly-7527" data-shape-title="poly-7527" points="2975.3550545454545,1213.69426 2962.6909090909094,1220.3214994736843 2961.4848,1229.9611205263159 2969.9275636363636,1236.58836 2981.3856,1230.5635968421054 2988.0192,1213.69426 "></polygon><polygon class="imp-shape  imp-shape-poly" style="fill: rgba(0, 0, 0, 0);stroke: rgba(255, 255, 255, 0.75);stroke-width: 0px;stroke-dasharray: 0;stroke-linecap: round;opacity: 1;" data-index="49" id="poly-310" data-shape-title="poly-310" points="3089.2799999999997,1171.5231545161291 3104.336842105263,1181.77042 3109.1550315789473,1167.9064725806452 3112.1663999999996,1152.836964516129 3105.541389473684,1144.39804 3092.893642105263,1151.028623548387 "></polygon><polygon class="imp-shape  imp-shape-poly" style="fill: rgba(0, 0, 0, 0);stroke: rgba(255, 255, 255, 0.75);stroke-width: 0px;stroke-dasharray: 0;stroke-linecap: round;opacity: 1;" data-index="50" id="poly-5107" data-shape-title="poly-5107" points="3174.2409142857146,1028.0602 3169.4208000000003,1039.5095563934426 3178.4585142857145,1047.945924262295 3187.496228571429,1064.81866 3194.7264000000005,1051.5615104918031 3190.5088000000005,1037.0991655737703 3180.8685714285716,1028.662797704918 "></polygon><polygon class="imp-shape  imp-shape-poly" style="fill: rgba(0, 0, 0, 0);stroke: rgba(255, 255, 255, 0.75);stroke-width: 0px;stroke-dasharray: 0;stroke-linecap: round;opacity: 1;" data-index="51" id="poly-4097" data-shape-title="poly-4097" points="3198.9888,1031.6698222222224 3205.6220444444443,1041.3106400000001 3215.2704,1034.6825777777779 3215.2704,1025.04176 3206.225066666667,1025.04176 "></polygon><polygon class="imp-shape  imp-shape-poly" style="fill: rgba(0, 0, 0, 0);stroke: rgba(255, 255, 255, 0.75);stroke-width: 0px;stroke-dasharray: 0;stroke-linecap: round;opacity: 1;" data-index="52" id="poly-1353" data-shape-title="poly-1353" points="3201.3817263157894,1002.1424572881356 3174.2592,1017.2122567231638 3182.094596491228,1022.0345925423728 3208.6144,1018.4178406779661 3222.4770245614036,1019.0206326553672 3233.3260350877194,1036.5016 3242.3668771929824,1020.2262166101694 3256.229501754386,1013.5955048587571 3270.0921263157893,1009.3759610169492 3276.7220771929824,997.3201214689266 3277.3248,984.0586979661017 3271.2975719298247,972.6056503954802 3270.6948491228068,950.9051392090395 3256.229501754386,936.4381317514124 3247.79138245614,929.80742 3235.7369263157893,935.2325477966101 3242.3668771929824,954.5218910734463 3248.9968280701755,968.3861065536723 3238.1478175438597,985.264281920904 3220.6688561403507,997.9229134463277 "></polygon><polygon class="imp-shape  imp-shape-poly" style="fill: rgba(0, 0, 0, 0);stroke: rgba(255, 255, 255, 0.75);stroke-width: 0px;stroke-dasharray: 0;stroke-linecap: round;opacity: 1;" data-index="53" id="poly-2428" data-shape-title="poly-2428" points="3220.6848,878.5706799999999 3226.7119304347825,897.2508797468354 3223.095652173913,912.9181440506328 3236.355339130435,926.1750599999999 3237.5607652173912,911.7129698734177 3258.0530086956524,915.9310794936708 3276.1344,901.4689893670885 "></polygon><polygon class="imp-shape  imp-shape-poly" style="fill: rgba(0, 0, 0, 0);stroke: rgba(255, 255, 255, 0.75);stroke-width: 0px;stroke-dasharray: 0;stroke-linecap: round;opacity: 1;" data-index="54" id="poly-7621" data-shape-title="poly-7621" points="3173.0688,799.6308 3204.4208551724137,857.4912982857143 3214.0676413793103,862.9157200000001 3225.5232,861.1075794285714 3216.4793379310345,843.6288872380952 3204.4208551724137,835.190897904762 3203.2150068965516,826.7529085714286 3211.655944827586,823.1366274285715 3190.5536,801.4389405714286 "></polygon><polygon class="imp-shape  imp-shape-poly" style="fill: rgba(0, 0, 0, 0);stroke: rgba(255, 255, 255, 0.75);stroke-width: 0px;stroke-dasharray: 0;stroke-linecap: round;opacity: 1;" data-index="55" id="poly-413" data-shape-title="poly-413" points="3142.9248,769.4975600000001 3154.9750857142853,786.3689911111112 3168.2304,791.1894000000001 3162.8077714285714,774.317968888889 3152.5650285714282,769.4975600000001 "></polygon><polygon class="imp-shape  imp-shape-poly" style="fill: rgba(0, 0, 0, 0);stroke: rgba(255, 255, 255, 0.75);stroke-width: 0px;stroke-dasharray: 0;stroke-linecap: round;opacity: 1;" data-index="56" id="poly-6851" data-shape-title="australia" points="3216.401471763255,1682.1365572624798 3200.1680729963005,1670.7131306602253 3185.1371482120835,1668.3081987439612 3164.09385351418,1687.547654074074 3149.0629287299626,1701.9772455716584 3147.8604547472255,1709.7932742995167 3136.4369519112206,1707.9895753623186 3128.6208710234278,1718.210536006441 3119.6023161528974,1736.8487583574877 3102.1664434032054,1744.06355410628 3078.1169637484586,1751.2783498550723 3033.0241893958073,1770.517805185185 3015.588316646116,1784.9473966827695 3009.5759467324287,1801.1806871175522 3009.5759467324287,1825.230006280193 3004.766050801479,1859.5002860869563 3007.772235758323,1886.5557701449275 3010.1771837237975,1908.2001573913042 2999.3549178791613,1925.034680805153 2990.9375999999997,1937.0593403864732 2999.3549178791613,1944.8753691143315 3014.3858426633783,1946.6790680515296 3028.2142934648577,1945.4766020933976 3055.871195067817,1936.4581074074072 3076.914489765721,1931.648243574879 3092.546651541307,1932.249476553945 3123.2097381011095,1917.2186520772946 3164.6950905055483,1908.8013903703702 3195.9594140567197,1906.396458454106 3212.794049815043,1916.6174190982285 3224.8187896424165,1937.0593403864732 3229.0274485819973,1944.2741361352655 3255.481876202219,1925.6359137842187 3259.089298150431,1926.8383797423508 3256.083113193588,1940.0655052818033 3247.0645583230576,1944.8753691143315 3247.6657953144263,1952.6913978421899 3257.2855871763254,1946.6790680515296 3264.5004310727495,1964.7160574235104 3260.8930091245375,1980.9493478582929 3269.911563995068,1993.5752404186794 3292.157332675709,1998.3851042512076 3305.3845464858196,1995.3789393558775 3322.2191822441428,2005.5998999999997 3342.661239950678,1991.1703085024153 3369.1156675709,1991.1703085024153 3387.1527773119606,1966.5197563607085 3406.9935980271266,1947.2803010305956 3419.0183378545003,1927.4396127214168 3447.2764764488284,1908.2001573913042 3465.3135861898886,1883.549605249597 3476.135852034525,1843.2669956521736 3478.5407999999998,1822.825074363929 3471.3259561035757,1807.1930169082125 3458.6999792848333,1792.1621924315618 3441.8653435265105,1756.6894466666665 3431.043077681874,1740.4561562318838 3419.619574845869,1729.0327296296296 3420.2208118372378,1717.008070048309 3422.6257598027123,1696.5661487600642 3414.2084419235507,1676.1242274718195 3400.3799911220713,1655.0810732045086 3393.165147225647,1635.841617874396 3385.950303329223,1632.2342199999998 3377.5329854500615,1647.8662774557165 3370.3181415536374,1676.7254604508855 3362.5020606658445,1702.5784785507244 3351.6797948212084,1714.001905152979 3331.838974106042,1706.7871094041866 3305.3845464858196,1688.750120032206 3299.372176572133,1680.3328583252817 3302.979598520345,1665.903266827697 3311.9981533908754,1654.4798402254426 3310.194442416769,1647.2650444766505 3286.7461997533906,1639.4490157487921 3266.905379038224,1639.4490157487921 3246.463321331689,1646.0625785185184 3230.8311595561036,1656.8847721417067 3224.8187896424165,1677.9279264090176 "></polygon><polygon class="imp-shape  imp-shape-poly" style="fill: rgba(0, 0, 0, 0);stroke: rgba(255, 255, 255, 0.75);stroke-width: 0px;stroke-dasharray: 0;stroke-linecap: round;opacity: 1;" data-index="57" id="poly-1625" data-shape-title="poly-1625" points="3344.1396363636363,1558.0987783068783 3347.7562181818184,1566.5363886772489 3345.947927272727,1577.384744867725 3338.112,1585.8223552380953 3344.1396363636363,1591.2465333333334 3356.1949090909093,1590.643846878307 3368.2501818181818,1597.273397883598 3383.3192727272726,1606.3136947089947 3397.7856,1603.9029488888891 3406.8270545454548,1596.068024973545 3414.662981818182,1586.4250416931218 3427.923781818182,1586.4250416931218 3442.9928727272727,1597.273397883598 3452.637090909091,1613.5459321693122 3470.1172363636365,1623.1889154497355 3497.2416000000003,1629.2157800000002 3486.3918545454544,1610.53249989418 3465.2951272727273,1595.4653385185186 3458.0619636363635,1580.3981771428573 3454.445381818182,1559.9068376719579 3440.581818181818,1546.0450492063494 3402.6077090909093,1523.7456503703704 3377.2916363636364,1515.3080400000001 3370.6612363636364,1538.2101252910054 "></polygon><polygon class="imp-shape  imp-shape-poly" style="fill: rgba(0, 0, 0, 0);stroke: rgba(255, 255, 255, 0.75);stroke-width: 0px;stroke-dasharray: 0;stroke-linecap: round;opacity: 1;" data-index="58" id="poly-2163" data-shape-title="poly-2163" points="3497.231582608695,1518.3000473333332 3508.080417391304,1527.342577333333 3515.312973913043,1536.3851073333333 3496.628869565217,1552.6616613333333 3474.9311999999995,1562.3070266666666 3489.999026086956,1568.33538 3506.272278260869,1561.7041913333333 3515.9156869565213,1547.8389786666664 3526.161808695652,1543.0162959999998 3530.3807999999995,1536.3851073333333 3516.5183999999995,1522.5198946666665 3505.6695652173908,1514.0801999999999 "></polygon><polygon class="imp-shape  imp-shape-poly" style="fill: rgba(0, 0, 0, 0);stroke: rgba(255, 255, 255, 0.75);stroke-width: 0px;stroke-dasharray: 0;stroke-linecap: round;opacity: 1;" data-index="59" id="poly-6628" data-shape-title="poly-6628" points="3623.8080000000004,1734.09378 3628.6310400000007,1761.2101989873418 3650.3347200000003,1779.890398734177 3659.9808000000003,1781.69816 3632.2483200000006,1738.3118896202532 "></polygon><polygon class="imp-shape  imp-shape-poly" style="fill: rgba(0, 0, 0, 0);stroke: rgba(255, 255, 255, 0.75);stroke-width: 0px;stroke-dasharray: 0;stroke-linecap: round;opacity: 1;" data-index="60" id="poly-1729" data-shape-title="poly-1729" points="3796.8,1720.824816551724 3807.0396342857143,1729.25916 3817.8816,1718.415004137931 3805.8349714285714,1711.78802 3796.8,1714.8002855172413 "></polygon><polygon class="imp-shape  imp-shape-poly" style="fill: rgba(0, 0, 0, 0);stroke: rgba(255, 255, 255, 0.75);stroke-width: 0px;stroke-dasharray: 0;stroke-linecap: round;opacity: 1;" data-index="61" id="poly-3295" data-shape-title="poly-3295" points="3661.1904000000004,1949.2727399999999 3673.2466758620694,1955.2998084931505 3672.0410482758625,1969.7647728767122 3676.86355862069,1984.2297372602739 3696.1536,1988.4486852054793 3686.508579310345,2002.310942739726 3652.1481931034486,2027.0219235616437 3626.2272000000003,2037.26794 3638.2834758620693,2019.1867345205478 3633.4609655172417,2007.7353043835615 3648.531310344828,1996.8865810958903 3660.587586206897,1988.4486852054793 3662.3960275862073,1974.5864276712327 3659.38195862069,1961.9295838356163 "></polygon><polygon class="imp-shape  imp-shape-poly" style="fill: rgba(0, 0, 0, 0);stroke: rgba(255, 255, 255, 0.75);stroke-width: 0px;stroke-dasharray: 0;stroke-linecap: round;opacity: 1;" data-index="62" id="poly-9849" data-shape-title="poly-9849" points="3603.926817391304,2025.21976 3612.3648,2031.2461662992125 3612.3648,2043.901619527559 3590.6671304347824,2056.5570727559057 3565.3531826086955,2072.8283697637794 3539.4365217391305,2087.894385511811 3516.5334260869568,2101.1524793700787 3492.424904347826,2101.75512 3487.6032,2094.523432440945 3494.8357565217393,2083.073260472441 3534.012104347826,2069.212525984252 3569.5721739130436,2050.530666456693 "></polygon><polygon class="imp-shape  imp-shape-poly" style="fill: rgba(0, 0, 0, 0);stroke: rgba(255, 255, 255, 0.75);stroke-width: 0px;stroke-dasharray: 0;stroke-linecap: round;opacity: 1;" data-index="63" id="poly-6255" data-shape-title="poly-6255" points="3292.9218560000004,2061.9610268852457 3311.0005760000004,2054.7298544262294 3326.6688000000004,2036.0493255737704 3319.437312,2028.818153114754 3309.192704,2031.8311416393442 3288.703488,2027.01036 3285.690368,2035.4467278688523 3283.882496,2046.293486557377 3281.472,2059.5506360655736 3285.690368,2063.76882 "></polygon><polygon class="imp-shape  imp-shape-poly" style="fill: rgba(0, 0, 0, 0);stroke: rgba(255, 255, 255, 0.75);stroke-width: 0px;stroke-dasharray: 0;stroke-linecap: round;opacity: 1;" data-index="64" id="poly-5332" data-shape-title="antarctica" points="618.9030737947652,2455.6592162499996 611.6736000000001,2473.74107875 627.3374598886579,2483.38473875 661.6774604137927,2479.76836625 693.6076363406725,2477.35745125 755.6606197457405,2477.35745125 774.9392165317811,2488.8092975 765.9023742883246,2497.8502287499996 709.2714962293304,2493.0283987499997 736.9844791092637,2506.8911599999997 792.4104448691304,2517.13754875 836.9921999368491,2517.7402774999996 846.6314983298695,2523.7675649999996 842.4143052829231,2528.589395 762.287637390942,2527.98666625 723.7304438188609,2535.2194112499997 721.3206192206057,2543.0548849999996 761.0827250918144,2555.1094599999997 3108.2512813361045,2555.1094599999997 3184.1607561811393,2524.3702937499997 3189.582861527213,2517.7402774999996 3176.931282386374,2511.71299 3096.804614494393,2506.8911599999997 3072.103912362278,2509.9048037499997 3059.4523332214394,2495.4393137499997 3063.067070118822,2480.9738237499996 3110.6611059343595,2470.1247062499997 3143.7961941603667,2467.7137912499998 3145.001106459494,2447.2210137499997 3180.546019283757,2429.7418799999996 3226.3326866506027,2415.8791187499996 3296.2176,2387.5508674999996 3273.324266316577,2376.7017499999997 3253.443213380973,2383.934495 3226.935142800167,2364.6471749999996 3182.353387732448,2355.60624375 3151.0256679551317,2353.1953287499996 3138.9765449638567,2339.9352962499997 3064.874438567513,2331.4970937499997 3064.2719824179494,2317.6343325 3051.62040327711,2326.67526375 3015.4730343032843,2326.67526375 3000.41163056419,2341.7434824999996 2989.5674198720426,2338.12711 2981.1330337781496,2327.2779925 2911.248722884902,2340.538025 2890.16275765017,2337.52438125 2881.7283715562776,2329.6889075 2864.8595993684917,2327.2779925 2861.847318620673,2322.4561624999997 2834.1343357407395,2336.3189237499996 2800.3967913651686,2332.70255125 2770.27398388698,2316.4288749999996 2757.0199485965773,2324.26434875 2743.7659133061743,2315.2234175 2714.24556197755,2316.4288749999996 2700.9915266871467,2330.8943649999997 2675.6883684054687,2339.3325674999996 2657.614683918556,2335.11346625 2642.5532801794616,2338.7298387499995 2635.3238063846966,2329.08617875 2599.1764374108707,2336.9216524999997 2575.0781914283198,2329.08617875 2574.4757352787556,2344.1543975 2546.160296249259,2354.40078625 2488.926962040701,2371.87992 2463.0213476094586,2359.8253449999997 2462.418891459895,2348.3734987499997 2373.857837474021,2343.55166875 2355.784152987108,2341.7434824999996 2346.1448545940875,2329.08617875 2313.0097663680804,2327.2779925 2300.960643376805,2332.0998225 2296.140994180295,2338.7298387499995 2278.067309693382,2337.52438125 2250.9567829630123,2345.96258375 2201.5553786987834,2355.003515 2185.8915188101255,2369.469005 2167.215378173649,2370.0717337499996 2153.961342883246,2358.6198874999995 2122.031166956366,2371.2771912499998 2097.9329209738153,2370.0717337499996 2079.8592364869023,2375.4962925 1982.2613402575719,2373.6881062499997 1979.8515156593166,2364.6471749999996 1959.9704627237127,2376.7017499999997 1937.679585189853,2372.48264875 1922.6181814507588,2377.9072075 1863.5774787935097,2373.6881062499997 1847.311162755288,2368.2635474999997 1810.561337631898,2383.33176625 1790.6802846962935,2379.1126649999997 1779.2336178545822,2385.1399524999997 1775.0164248076355,2392.3726975 1753.9304595729038,2392.9754262499996 1718.3855467486417,2410.4545599999997 1720.7953713468967,2415.8791187499996 1722.0002836460242,2424.9200499999997 1712.360985253004,2427.9336937499997 1699.7094061121647,2439.3855399999998 1658.1399317922649,2440.5909975 1605.726246780217,2451.440115 1589.4599307419953,2458.6728599999997 1593.0746676393778,2473.1383499999997 1630.4269489123315,2471.33016375 1635.8490542584057,2483.38473875 1598.4967729854518,2487.6038399999998 1546.685544122968,2498.4529574999997 1470.1736131283692,2501.4666012499997 1438.2434372014895,2509.3020749999996 1426.194314210214,2500.8638724999996 1259.3139607810506,2479.1656375 1269.5557153236346,2461.6865037499997 1287.6293998105475,2462.2892325 1283.4122067636013,2458.0701312499996 1253.8918554349766,2451.440115 1251.4820308367216,2442.39918375 1268.350803024507,2442.39918375 1287.0269436609838,2449.6319287499996 1331.0062425791389,2432.152795 1347.2725586173606,2418.2900337499996 1327.3915056817564,2383.934495 1305.7030842974605,2364.04444625 1277.3876452679635,2354.40078625 1273.170452221017,2338.12711 1293.6539613061852,2332.70255125 1295.4613297548765,2317.6343325 1317.1497511391722,2303.1688424999998 1309.9202773444072,2294.7306399999998 1285.8220313618563,2300.7579275 1250.8795746871579,2326.072535 1246.0599254906476,2336.9216524999997 1254.4943115845404,2348.3734987499997 1220.1543110594057,2362.2362599999997 1237.625539396755,2382.1263087499997 1212.3223811150765,2394.7836125 1230.9985217515534,2400.20817125 1244.8550131915201,2395.38634125 1247.2648377897751,2405.63273 1253.2893992854129,2414.0709325 1194.8511527777273,2414.67366125 1184.609398235143,2409.2491025 1176.777468290814,2418.2900337499996 1141.8350116161157,2415.8791187499996 1106.2900987918536,2401.4136287499996 1094.8434319501418,2411.6600175 1048.4543084337317,2406.8381874999995 993.6307988234288,2403.221815 989.4136057764824,2410.4545599999997 1020.1388694042346,2423.7145925 1015.9216763572882,2434.56371 967.7251843921867,2424.3173212499996 962.9055351956766,2433.96098125 946.0367630078912,2418.8927624999997 936.3974646148708,2425.52277875 927.3606223714144,2418.8927624999997 905.0697448375549,2418.8927624999997 903.2623763888637,2426.72823625 886.3936042010782,2423.7145925 871.332200461984,2412.26274625 828.5578138429564,2420.09822 814.098866253426,2411.0572887499998 800.8448309630231,2414.67366125 777.3490411300362,2424.3173212499996 751.4434266987942,2424.3173212499996 724.3328999684246,2435.1664387499995 701.4395662850014,2432.152795 673.7265834050681,2441.1937262499996 668.3044780589942,2456.2619449999997 650.2307935720812,2459.2755887499998 624.9276352904029,2450.83738625 "></polygon><polygon class="imp-shape  imp-shape-poly" style="fill: rgba(0, 0, 0, 0);stroke: rgba(255, 255, 255, 0.75);stroke-width: 0px;stroke-dasharray: 0;stroke-linecap: round;opacity: 1;" data-index="65" id="poly-4210" data-shape-title="poly-4210" points="1397.6515764705882,2478.16482 1364.5056,2486.6021272 1366.313562352941,2492.0261104 1397.0489223529412,2493.23144 1415.7312,2489.0127864 1412.7179294117648,2481.178144 "></polygon><polygon class="imp-shape  imp-shape-poly" style="fill: rgba(0, 0, 0, 0);stroke: rgba(255, 255, 255, 0.75);stroke-width: 0px;stroke-dasharray: 0;stroke-linecap: round;opacity: 1;" data-index="66" id="poly-4497" data-shape-title="poly-4497" points="1459.1232,2490.239975272727 1462.1376,2494.4592799999996 1480.224,2492.651006545454 1515.79392,2494.4592799999996 1531.4688,2487.828944 1518.20544,2467.335178181818 1508.55936,2461.3075999999996 1474.79808,2466.732420363636 1474.1951999999999,2480.5958501818177 "></polygon></svg>
+    </div>
+
+    </article>
+        </main>
+            </div>
+</div>
+
+	</div>
+
+	
+	<section class="footer" id="footer" x-data="{ olympusAtTop: true }">
+	    <div class="container">
+
+			<div class="row footer-content">							<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+					<div class="row">
+											</div>
+				</div>
+				</div>
+							
+				<div class="sub-footer-copyright">
+					<span class="site-copyright-text">
+						Site is built by Amar Mnifi & Mohamed Ali Hamden					</span>
+				</div>
+				
+							    </div>
+	</section>
+	
+<input type="hidden" id="yzpr-post-reaction-nonce" name="yzpr-post-reaction-nonce" value="62c24c3578"><input type="hidden" name="_wp_http_referer" value="/ta3lim/test-map/">		<script>
+		( function ( body ) {
+			'use strict';
+			body.className = body.className.replace( /\btribe-no-js\b/, 'tribe-js' );
+		} )( document.body );
+		</script>
+		</div>
+    <div class="yz-popup-login" style="opacity: 0; visibility: hidden;">
+        <div class="logy-login-shortcode">		
+		<div class="logy-form logy-login-page logy-with-header logy-with-labels logy-fields-icon logy-full-border logy-border-flat logy-icons-left logy-silver-icons">
+
+			
+    	<header class="logy-form-header">
+	    		    		<div class="logy-form-cover logy-custom-cover" style="background-image: url( https://smarty-2020.github.io/Smarty/wp-content/uploads/2020/06/3560436-scaled.jpg )">
+			        <h2 class="form-cover-title">Hi, Welcome Back!</h2>
+	    		</div>
+	    	    	</header>
+
+	    					
+		
+		
+		
+		
+	
+			<form id="logy-form" class="logy-login-form" method="post" action="https://smarty-2020.github.io/Smarty/wp-login.php">
+
+				
+				
+								<div class="logy-form-item">
+		    		<div class="logy-item-content">
+			           				           		<label for="user_login">Username or Email</label>
+			        				           <div class="logy-field-content">
+		           								           <div class="logy-field-icon">
+		           					<i class="fas fa-user"></i>
+		           				</div>
+		        							    		<input type="text" name="log" autocomplete="false" placeholder="" value="" required>
+			            </div>
+		        	</div>
+		       	</div>
+							<div class="logy-form-item">
+		    		<div class="logy-item-content">
+			           				           		<label for="user_pass">Password</label>
+			        				           <div class="logy-field-content">
+		           								           <div class="logy-field-icon">
+		           					<i class="fas fa-lock"></i>
+		           				</div>
+		        							    		<input type="password" name="pwd" autocomplete="false" placeholder="" value="" required>
+			            </div>
+		        	</div>
+		       	</div>
+					    	<div class="logy-form-item logy-remember-me">
+		    		<div class="logy-item-content">
+			        	<label class="logy_checkbox_field"><input name="rememberme" type="checkbox" value="forever"><div class="logy_field_indication"></div>Remember Me</label>
+		    			
+		        	</div>
+					<a class="logy-forgot-password" href="https://smarty-2020.github.io/Smarty/lost-password/">Lost password?</a>		        </div>
+							<div class="logy-form-actions logy-fullwidth-button logy-border-radius">				<div class="logy-action-item logy-submit-item">
+					<div class="logy-item-inner">
+	           			<button type="submit" value="submit" name="signin_submit">
+	            				           				<span class="logy-button-title">Log In</span>
+	           			</button>
+	            	</div>
+	            </div>
+							<div class="logy-action-item logy-link-item">
+					<div class="logy-item-inner">
+	            		<a href="https://smarty-2020.github.io/Smarty/register/" class="logy-link-button">
+	            				           				Create New Account	            		</a>
+	            	</div>
+	            </div>
+										</div>
+				
+						
+		<input type="hidden" name="yz_ajax_login_nonce" value="5f75706ad1">
+
+		
+				<input type="hidden" name="logy-form" value="1">
+
+			</form>
+
+		</div>
+
+		</div>    </div>
+
+    <script> /* <![CDATA[ */var tribe_l10n_datatables = {"aria":{"sort_ascending":": activate to sort column ascending","sort_descending":": activate to sort column descending"},"length_menu":"Show _MENU_ entries","empty_table":"No data available in table","info":"Showing _START_ to _END_ of _TOTAL_ entries","info_empty":"Showing 0 to 0 of 0 entries","info_filtered":"(filtered from _MAX_ total entries)","zero_records":"No matching records found","search":"Search:","all_selected_text":"All items on this page were selected. ","select_all_link":"Select all pages","clear_selection":"Clear Selection.","pagination":{"all":"All","next":"Next","previous":"Previous"},"select":{"rows":{"0":"","_":": Selected %d rows","1":": Selected 1 row"}},"datepicker":{"dayNames":["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"],"dayNamesShort":["Sun","Mon","Tue","Wed","Thu","Fri","Sat"],"dayNamesMin":["S","M","T","W","T","F","S"],"monthNames":["January","February","March","April","May","June","July","August","September","October","November","December"],"monthNamesShort":["January","February","March","April","May","June","July","August","September","October","November","December"],"monthNamesMin":["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],"nextText":"Next","prevText":"Prev","currentText":"Today","closeText":"Done","today":"Today","clear":"Clear"}};/* ]]> */ </script><script type="text/javascript">
+/* <![CDATA[ */
+var ekit_site_url = {"siteurl":"https:\/\/PLACEHOLDER.wpsho"};
+/* ]]> */
+</script>
+<script type="text/javascript" src="https://smarty-2020.github.io/Smarty/wp-content/plugins/elementskit-lite/widgets/mail-chimp/assets/js/mail-chimp.js"></script>
+<script type="text/javascript">
+/* <![CDATA[ */
+var ajaxurl = "https:\/\/smarty-2020.github.io\/Smarty\/wp-admin\/admin-ajax.php";
+var ldVars = {"postID":"1631","videoReqMsg":"You must watch the video before accessing this content"};
+/* ]]> */
+</script>
+<script type="text/javascript" src="http://PLACEHOLDER.wpsho/wp-content/plugins/sfwd-lms/themes/ld30/assets/js/learndash.js"></script>
+<script type="text/javascript">
+/* <![CDATA[ */
+var wppreloaderData = {"options_type":"fill_radio_options","effect":"fadeOut","delay":"500","load_type":"window","load_time":"1500","transition":"600"};
+/* ]]> */
+</script>
+<script type="text/javascript" src="https://smarty-2020.github.io/Smarty/wp-content/plugins/wppu-preloader-unlimited/public/js/fill/fill-fadeOut.js"></script>
+<script type="text/javascript" src="https://smarty-2020.github.io/Smarty/wp-includes/js/dist/vendor/wp-polyfill.min.js"></script>
+<script type="text/javascript">
+( 'fetch' in window ) || document.write( '<script src="https://smarty-2020.github.io/Smarty/wp-includes/js/dist/vendor/wp-polyfill-fetch.min.js?ver=3.0.0">' + 'ipt>' );( document.contains ) || document.write( '<script src="https://smarty-2020.github.io/Smarty/wp-includes/js/dist/vendor/wp-polyfill-node-contains.min.js?ver=3.42.0">' + 'ipt>' );( window.DOMRect ) || document.write( '<script src="https://smarty-2020.github.io/Smarty/wp-includes/js/dist/vendor/wp-polyfill-dom-rect.min.js?ver=3.42.0">' + 'ipt>' );( window.URL && window.URL.prototype && window.URLSearchParams ) || document.write( '<script src="https://smarty-2020.github.io/Smarty/wp-includes/js/dist/vendor/wp-polyfill-url.min.js?ver=3.6.4">' + 'ipt>' );( window.FormData && window.FormData.prototype.keys ) || document.write( '<script src="https://smarty-2020.github.io/Smarty/wp-includes/js/dist/vendor/wp-polyfill-formdata.min.js?ver=3.0.12">' + 'ipt>' );( Element.prototype.matches && Element.prototype.closest ) || document.write( '<script src="https://smarty-2020.github.io/Smarty/wp-includes/js/dist/vendor/wp-polyfill-element-closest.min.js?ver=2.0.2">' + 'ipt>' );
+</script>
+<script type="text/javascript" src="https://smarty-2020.github.io/Smarty/wp-includes/js/dist/i18n.min.js"></script>
+<script type="text/javascript">
+/* <![CDATA[ */
+var Youzer = {"unknown_error":"An unknown error occurred. Please try again later.","slideshow_auto":"1","slides_height_type":"fixed","activity_autoloader":"on","authenticating":"Authenticating ...","security_nonce":"23dd0f1d29","displayed_user_id":"0","ajax_url":"https:\/\/smarty-2020.github.io\/Smarty\/wp-admin\/admin-ajax.php","save_changes":"Save Changes","thanks":"OK! Thanks","confirm":"Confirm","cancel":"Cancel","menu_title":"Menu","gotit":"Got it!","done":"Done !","ops":"Oops !","slideshow_speed":"5","assets":"https:\/\/smarty-2020.github.io\/Smarty\/wp-content\/plugins\/youzer\/includes\/public\/assets\/","youzer_url":"https:\/\/smarty-2020.github.io\/Smarty\/wp-content\/plugins\/youzer\/","ajax_enabled":"on","login_popup":"on"};
+/* ]]> */
+</script>
+<script type="text/javascript" src="https://smarty-2020.github.io/Smarty/wp-content/plugins/youzer/includes/public/assets/js/youzer.min.js"></script>
+<script type="text/javascript" src="https://smarty-2020.github.io/Smarty/wp-content/plugins/youzer-activity-reactions/assets/js/yz-posts-reactions.min.js"></script>
+<script type="text/javascript" src="https://smarty-2020.github.io/Smarty/wp-content/themes/olympus/js/plugins/swiper.min.js"></script>
+<script type="text/javascript" src="https://smarty-2020.github.io/Smarty/wp-content/themes/olympus/js/alpine.min.js"></script>
+<script type="text/javascript" src="https://smarty-2020.github.io/Smarty/wp-content/themes/olympus/js/plugins/magnific-popup.min.js"></script>
+<script type="text/javascript" src="https://smarty-2020.github.io/Smarty/wp-content/themes/olympus/js/plugins/perfect-scrollbar.min.js"></script>
+<script type="text/javascript" src="https://smarty-2020.github.io/Smarty/wp-content/themes/olympus/Bootstrap/dist/js/bootstrap.bundle.js"></script>
+<script type="text/javascript" src="https://smarty-2020.github.io/Smarty/wp-content/themes/olympus/js/crum-mega-menu.js"></script>
+<script type="text/javascript" src="https://smarty-2020.github.io/Smarty/wp-content/themes/olympus/js/plugins/jquery.scrollTo.min.js"></script>
+<script type="text/javascript" src="https://smarty-2020.github.io/Smarty/wp-content/themes/olympus/js/plugins/smooth-scroll.js"></script>
+<script type="text/javascript" src="https://smarty-2020.github.io/Smarty/wp-content/themes/olympus/js/plugins/material-forms.js"></script>
+<script type="text/javascript" src="https://smarty-2020.github.io/Smarty/wp-content/themes/olympus/js/plugins/scroll-to-fixed.js"></script>
+<script type="text/javascript">
+/* <![CDATA[ */
+var themeOptions = {"ajaxUrl":"https:\/\/smarty-2020.github.io\/Smarty\/wp-admin\/admin-ajax.php"};
+/* ]]> */
+</script>
+<script type="text/javascript" src="https://smarty-2020.github.io/Smarty/wp-content/themes/olympus/js/theme-main.js"></script>
+<script type="text/javascript" src="https://smarty-2020.github.io/Smarty/wp-content/themes/olympus/js/svg-loader.js"></script>
+<script type="text/javascript">
+/* <![CDATA[ */
+var fwAjaxUrl = "\/ta3lim\/wp-admin\/admin-ajax.php";
+/* ]]> */
+</script>
+<script type="text/javascript" src="https://smarty-2020.github.io/Smarty/wp-content/plugins/unyson/framework/static/js/fw-form-helpers.js"></script>
+<script type="text/javascript">
+/* <![CDATA[ */
+var signFormConfig = {"menuLocation":"menu-vcard","builderComponent":"sign-form","registerLinkSC":"register-link","currentUserSC":"current-user","actions":{"signIn":"crumina-signin-form","signUp":"crumina-signup-form"},"selectors":{"form":"crumina-sign-form","formContainer":"crumina-sign-form-container","formRegister":"crumina-sign-form-register","formLogin":"crumina-sign-form-login"},"ajaxUrl":"https:\/\/smarty-2020.github.io\/Smarty\/wp-admin\/admin-ajax.php"};
+/* ]]> */
+</script>
+<script type="text/javascript" src="https://smarty-2020.github.io/Smarty/wp-content/plugins/unyson/framework/extensions/sign-form/static/js/scripts.js"></script>
+<script type="text/javascript" src="https://smarty-2020.github.io/Smarty/wp-content/plugins/elementskit-lite/libs/framework/assets/js/frontend-script.js"></script>
+<script type="text/javascript">
+        //console.log(window.elementskit);
+
+		var elementskit = {
+            resturl: 'https://smarty-2020.github.io/Smarty/wp-json/elementskit/v1/',
+        }
+
+        //console.log(window.elementskit);
+		
+</script>
+<script type="text/javascript" src="https://smarty-2020.github.io/Smarty/wp-content/plugins/elementskit-lite/widgets/init/assets/js/nav-menu.js"></script>
+<script type="text/javascript" src="https://smarty-2020.github.io/Smarty/wp-content/plugins/elementskit-lite/widgets/init/assets/js/ui-slim.min.js"></script>
+
+
+</body>
+</html>

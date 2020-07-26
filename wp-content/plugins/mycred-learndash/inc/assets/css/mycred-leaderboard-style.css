@@ -1,0 +1,4 @@
+.top-scores {list-style: none;margin-bottom: 30px;}
+.top-scores li {padding: 12px 0px;border-bottom: 1px solid #eee;display: flex;align-items: center;}
+.top-scores li:first-child {padding-top: 0;}
+.top-scores li label {margin-right: 15px;flex-basis: 40%;}
